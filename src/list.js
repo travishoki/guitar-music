@@ -144,4 +144,9 @@ module.exports = [
         artist: 'Misc Christmas',
         link: 'https://tabs.ultimate-guitar.com/m/misc_christmas/what_child_is_this_crd.htm'
     },
+    {
+        title: 'Baby I Love Your Way',
+        artist: 'Peter Frampton',
+        link: 'https://tabs.ultimate-guitar.com/p/peter_frampton/baby_i_love_your_way_crd.htm'
+    }
 ];
