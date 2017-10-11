@@ -5,8 +5,9 @@ import { MuiThemeProvider, getMuiTheme } from 'material-ui/styles';
 import { AppBar } from 'material-ui';
 import { cyan700 } from 'material-ui/styles/colors';
 import { colors } from 'material-ui/styles';
+// import './styles/index.less';
 
-import SongList from './SongList';
+import SongTable from './SongTable';
 
 const muiTheme = getMuiTheme({
     palette: {
@@ -17,9 +18,11 @@ const muiTheme = getMuiTheme({
 const App = () => {
     return (
         <MuiThemeProvider muiTheme={muiTheme}>
-            <AppBar title="Hoki Campfire Songs" showMenuIconButton={false} />
+            <div>
+                <AppBar title="Hoki Campfire Songs" showMenuIconButton={false} />
 
-            <SongList />
+                <SongTable />
+            </div>
         </MuiThemeProvider>
     );
 };
