@@ -26,10 +26,27 @@ class SongTable extends React.Component {
     }
     render() {
         const filterTerm = this.state.search.toLowerCase();
-        const filteredSongs = SongList.filter((song) => {
-            const title = song.title.toLowerCase();
-            return filterTerm == '' || title.indexOf(filterTerm) > -1;
-        });
+        const filteredSongs = SongList
+            .filter((song) => {
+                const title = song.title.toLowerCase();
+                return filterTerm == '' || title.indexOf(filterTerm) > -1;
+            })
+            .sort((a, b) => {
+                if (a.title < b.title)
+                  return -1;
+                if (a.title > b.title)
+                  return 1;
+                return 0;
+            });
+        const tdStyle = {
+            paddingLeft: 10,
+            paddingRight: 10,
+        };
+        const ctrlTdStyle = {
+            paddingLeft: 10,
+            paddingRight: 10,
+            width: '32px'
+        };
         return (
             <div>
                 {/*
@@ -44,15 +61,21 @@ class SongTable extends React.Component {
                         <TableRow>
                             <TableHeaderColumn>Title</TableHeaderColumn>
                             <TableHeaderColumn>Artist</TableHeaderColumn>
-                            <TableHeaderColumn>Link</TableHeaderColumn>
+                            <TableHeaderColumn style={ctrlTdStyle}>Link</TableHeaderColumn>
                         </TableRow>
                     </TableHeader>
                     <TableBody displayRowCheckbox={false}>
                         {filteredSongs.map((song) => (
                             <TableRow key={song.title}>
-                                <TableRowColumn>{song.title}</TableRowColumn>
-                                <TableRowColumn>{song.artist}</TableRowColumn>
-                                <TableRowColumn>
+                                <TableRowColumn
+                                    style={tdStyle}
+                                >{song.title}</TableRowColumn>
+                                <TableRowColumn
+                                    style={tdStyle}
+                                >{song.artist}</TableRowColumn>
+                                <TableRowColumn
+                                    style={ctrlTdStyle}
+                                >
                                     <a href={song.link} target="_blank">
                                         <img
                                             src="http://www.iconarchive.com/download/i97937/flat-icons.com/flat/Guitar.ico"

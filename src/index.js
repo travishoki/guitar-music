@@ -1,13 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import UGS from 'ultimate-guitar-scraper';
 import { MuiThemeProvider, getMuiTheme } from 'material-ui/styles';
 import { AppBar } from 'material-ui';
 import { cyan700 } from 'material-ui/styles/colors';
 import { colors } from 'material-ui/styles';
-// import './styles/index.less';
-
 import SongTable from './SongTable';
+import './styles/index.less';
 
 const muiTheme = getMuiTheme({
     palette: {
