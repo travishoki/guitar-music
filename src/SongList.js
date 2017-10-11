@@ -148,5 +148,25 @@ module.exports = [
         title: 'Baby I Love Your Way',
         artist: 'Peter Frampton',
         link: 'https://tabs.ultimate-guitar.com/p/peter_frampton/baby_i_love_your_way_crd.htm'
+    },
+    {
+        title: 'Yellow Submarine',
+        artist: 'The Beatles',
+        link: 'https://tabs.ultimate-guitar.com/t/the_beatles/yellow_submarine_ver2_crd.htm'
+    },
+    {
+        title: 'Baby Baluga',
+        artist: 'Raffi',
+        link: 'https://tabs.ultimate-guitar.com/r/raffi/baby_beluga_crd.htm'
+    },
+    {
+        title: 'The Cate Came Back',
+        artist: 'Harry S Miller',
+        link: 'https://tabs.ultimate-guitar.com/h/harry_s_miller/the_cat_came_back_crd.htm'
+    },
+    {
+        title: 'Tie Me Kangaroo Down',
+        artist: 'Rolf Harris',
+        link: 'https://tabs.ultimate-guitar.com/r/rolf_harris/tie_me_kangaroo_down_sport_ver4_crd.htm'
     }
 ];
