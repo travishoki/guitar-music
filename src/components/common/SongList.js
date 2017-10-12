@@ -156,7 +156,7 @@ module.exports = [
     },
     {
         title: 'Baby Baluga',
-        artist: 'Raffi',
+        artist: 'Raffi Cavoukian',
         link: 'https://tabs.ultimate-guitar.com/r/raffi/baby_beluga_crd.htm'
     },
     {
@@ -165,7 +165,7 @@ module.exports = [
         link: 'https://tabs.ultimate-guitar.com/h/harry_s_miller/the_cat_came_back_crd.htm'
     },
     {
-        title: 'Tie Me Kangaroo Down',
+        title: 'Tie Me Kangaroo Down Sport',
         artist: 'Rolf Harris',
         link: 'https://tabs.ultimate-guitar.com/r/rolf_harris/tie_me_kangaroo_down_sport_ver4_crd.htm'
     }

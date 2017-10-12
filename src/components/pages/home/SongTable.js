@@ -1,5 +1,6 @@
-import React, { PropTypes } from 'react';
-import SongList from './SongList';
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom'
 import {
     Table,
     TableHeader,
@@ -8,6 +9,8 @@ import {
     TableRow,
     TableRowColumn
 } from 'material-ui';
+import SongList from '../../common/SongList';
+import GuitarTabLink from '../../common/GuitarTabLink';
 
 class SongTable extends React.Component {
     constructor(props) {
@@ -71,20 +74,14 @@ class SongTable extends React.Component {
                             <TableRow key={song.title}>
                                 <TableRowColumn
                                     style={tdStyle}
-                                >{song.title}</TableRowColumn>
+                                ><Link to={'/song/'+song.title}>{song.title}</Link></TableRowColumn>
                                 <TableRowColumn
                                     style={tdStyle}
                                 >{song.artist}</TableRowColumn>
                                 <TableRowColumn
                                     style={ctrlTdStyle}
                                 >
-                                    <a href={song.link} target="_blank">
-                                        <img
-                                            src="http://www.iconarchive.com/download/i97937/flat-icons.com/flat/Guitar.ico"
-                                            width="30"
-                                            height="30"
-                                        />
-                                    </a>
+                                    <GuitarTabLink song={song} />
                                 </TableRowColumn>
                             </TableRow>
                         ))}
