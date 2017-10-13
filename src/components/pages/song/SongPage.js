@@ -9,7 +9,7 @@ class SongPage extends React.Component {
 
         const title = props.match.params.title;
         const song = SongList.filter((songListItem) => {
-            return songListItem.title === title;
+            return songListItem.title.replace(/ /g, '-').toLowerCase() === title;
         })[0];
 
         this.state = {

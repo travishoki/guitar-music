@@ -52,6 +52,9 @@ class SongTable extends React.Component {
             paddingRight: 10,
             width: '32px'
         };
+        function fixUrlTitle(title) {
+            return title.replace(/ /g, '-').toLowerCase();
+        }
         return (
             <div>
                 {/*
@@ -74,7 +77,7 @@ class SongTable extends React.Component {
                             <TableRow key={song.title}>
                                 <TableRowColumn
                                     style={tdStyle}
-                                ><Link to={'/song/'+song.title}>{song.title}</Link></TableRowColumn>
+                                ><Link to={'/song/'+fixUrlTitle(song.title)}>{song.title}</Link></TableRowColumn>
                                 <TableRowColumn
                                     style={tdStyle}
                                 >{song.artist}</TableRowColumn>
