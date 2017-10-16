@@ -19,7 +19,7 @@ const App = () => (
 );
 
 render((
-    <BrowserRouter>
+    <BrowserRouter basename="/guitar">
         <App />
     </BrowserRouter>
 ), document.getElementById('app'));

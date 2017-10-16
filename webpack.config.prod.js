@@ -15,7 +15,7 @@ module.exports = {
     target: 'web',
     output: {
         path: '/guitar', // Note: Physical files are only output by the production build task `npm run build`.
-        publicPath: '/guitar/',
+        publicPath: '/',
         filename: 'bundle.js'
     },
     plugins: [
@@ -34,7 +34,13 @@ module.exports = {
             {test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, loader: 'url?limit=10000&mimetype=image/svg+xml'},
             //font-awesome
             { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "url-loader?limit=10000&minetype=application/font-woff" },
-            { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader" }
+            { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader" },
+            {test: /\.json$/, loader: 'json-loader'}
         ]
+    },
+    node: {
+        net: 'empty',
+        fs: 'empty',
+        tls: 'empty'
     }
 };
