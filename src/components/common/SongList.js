@@ -67,13 +67,13 @@ module.exports = [
   {
     title: "Country Roads",
     artist: "John Denver",
-    link: "https://tabs.ultimate-guitar.com/j/john_denver/country_roads_ver2_crd.htm",
+    // link: "https://tabs.ultimate-guitar.com/j/john_denver/country_roads_ver2_crd.htm",
     lyrics: CountryRoads,
   },
   {
     title: "Edelweiss",
     artist: "Bob Carlisle",
-    link: "https://tabs.ultimate-guitar.com/s/sound_of_music/edelweiss_crd.htm",
+    // link: "https://tabs.ultimate-guitar.com/s/sound_of_music/edelweiss_crd.htm",
     lyrics: Edelweiss,
   },
   {
@@ -97,7 +97,7 @@ module.exports = [
   {
     title: "Leaving on a Jet Plane",
     artist: "John Denver",
-    link: "https://tabs.ultimate-guitar.com/j/john_denver/leaving_on_a_jetplane_ver2_crd.htm",
+    // link: "https://tabs.ultimate-guitar.com/j/john_denver/leaving_on_a_jetplane_ver2_crd.htm",
     lyrics: LeavingOnAJetPlane,
   },
   {
@@ -109,13 +109,13 @@ module.exports = [
   {
     title: "Michael Finnegan",
     artist: "Misc Traditional",
-    link: "https://tabs.ultimate-guitar.com/m/misc_traditional/misc_traditional_-_michael_finnigan_crd.htm",
+    // link: "https://tabs.ultimate-guitar.com/m/misc_traditional/misc_traditional_-_michael_finnigan_crd.htm",
     lyrics: MichaelFinnegan,
   },
   {
     title: "Michael Row the Boat Ashore",
     artist: "Misc Traditional",
-    link: "https://tabs.ultimate-guitar.com/t/the_highwaymen/michael_row_the_boat_ashore_crd.htm",
+    // link: "https://tabs.ultimate-guitar.com/t/the_highwaymen/michael_row_the_boat_ashore_crd.htm",
     lyrics: MichaelRowTheBoatAshore,
   },
   {
@@ -127,7 +127,7 @@ module.exports = [
   {
     title: "Morning Has Broken",
     artist: "Cat Stevens",
-    link: "https://tabs.ultimate-guitar.com/c/cat_stevens/morning_has_broken_crd.htm",
+    // link: "https://tabs.ultimate-guitar.com/c/cat_stevens/morning_has_broken_crd.htm",
     lyrics: MorningHasBroken,
   },
   {
@@ -139,13 +139,13 @@ module.exports = [
   {
     title: "One Tin Soldier",
     artist: "The Original Caste",
-    link: "https://tabs.ultimate-guitar.com/m/misc_unsigned_bands/the_original_caste_-_one_tin_soldier_crd.htm",
+    // link: "https://tabs.ultimate-guitar.com/m/misc_unsigned_bands/the_original_caste_-_one_tin_soldier_crd.htm",
     lyrics: OneTinSoldier,
   },
   {
     title: "Over the Rainbow",
     artist: "Israel Kamakawiwo'ole",
-    link: "https://tabs.ultimate-guitar.com/i/israel_kamakawiwoole/somewhere_over_the_rainbow_crd.htm",
+    // link: "https://tabs.ultimate-guitar.com/i/israel_kamakawiwoole/somewhere_over_the_rainbow_crd.htm",
     lyrics: OverTheRainbow,
   },
   {
@@ -199,13 +199,11 @@ module.exports = [
   {
     title: 'Turn" Turn" Turn',
     artist: "The Byrds",
-    link: "https://tabs.ultimate-guitar.com/t/the_byrds/turn_turn_turn_ver2_crd.htm",
     lyrics: TurnTurnTurn,
   },
   {
     title: "Wedding Song",
     artist: "Paul Stookey",
-    link: "https://tabs.ultimate-guitar.com/p/paul_stookey/wedding_song_crd.htm",
     lyrics: WeddingSong,
   },
   {
@@ -235,7 +233,7 @@ module.exports = [
   {
     title: "You Are My Sunshine",
     artist: "Chris Stapleton",
-    link: "https://tabs.ultimate-guitar.com/c/chris_stapleton/you_are_my_sunshine_crd.htm",
+    // link: "https://tabs.ultimate-guitar.com/c/chris_stapleton/you_are_my_sunshine_crd.htm",
     lyrics: YouAreMySunshine,
   },
 ];
