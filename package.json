@@ -9,7 +9,8 @@
     "open:src": "babel-node tools/srcServer.js",
     "build:html": "babel-node tools/buildHtml.js",
     "build:dev": "webpack --config ./webpack.config.dev.js",
-    "build:prod": "webpack --config ./webpack.config.prod.js"
+    "build:prod": "webpack --config ./webpack.config.prod.js",
+    "lint": "eslint --ext .js,.ts,.tsx src/"
   },
   "repository": {
     "type": "git",
