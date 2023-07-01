@@ -1,8 +1,6 @@
-import React from 'react';
-import SongTable from './SongTable';
+import React from "react";
+import SongTable from "./SongTable";
 
-const HomePage = () => (
-    <SongTable />
-);
+const HomePage = () => <SongTable />;
 
 export default HomePage;
