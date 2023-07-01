@@ -61,7 +61,7 @@ module.exports = [
   {
     title: "Blowin' in the Wind",
     artist: "Bob Dylan",
-    link: "https://tabs.ultimate-guitar.com/b/bob_dylan/blowin_in_the_wind_ver10_crd_1086954id_25082011date.htm",
+    // link: "https://tabs.ultimate-guitar.com/b/bob_dylan/blowin_in_the_wind_ver10_crd_1086954id_25082011date.htm",
     lyrics: BlowinInTheWind,
   },
   {
