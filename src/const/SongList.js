@@ -1,18 +1,18 @@
-import { GENRE_FOLK, GENRE_TRADITIONAL } from "./genres";
+import * as GENRE from "./genres";
 import LYRIC_LIST from "../components/lyrics";
 
 module.exports = [
   {
     title: "All Through the Night",
     artist: "Misc Traditional",
-    genres: [GENRE_TRADITIONAL],
+    genres: [GENRE.GENRE_TRADITIONAL],
     link: "https://tabs.ultimate-guitar.com/m/misc_traditional/all_through_the_night_crd.htm",
     lyrics: LYRIC_LIST.AllThroughTheNight,
   },
   {
     title: "America the Beautiful",
     artist: "Misc Traditional",
-    genres: [GENRE_TRADITIONAL],
+    genres: [GENRE.GENRE_TRADITIONAL],
     link: "https://tabs.ultimate-guitar.com/m/misc_traditional/america_the_beautiful_crd.htm",
     lyrics: LYRIC_LIST.AmericaTheBeautiful,
   },
@@ -55,12 +55,14 @@ module.exports = [
   {
     title: "God Bless the USA",
     artist: "Lee Greenwood",
+    genres: [GENRE.GENRE_PATRIOTIC],
     link: "https://tabs.ultimate-guitar.com/l/lee_greenwood/god_bless_the_usa_crd.htm",
     lyrics: LYRIC_LIST.GodBlessTheUSA,
   },
   {
     title: "He's Got the Whole World in His Hands",
     artist: "Misc Praise",
+    genres: [GENRE.GENRE_TRADITIONAL],
     link: "https://tabs.ultimate-guitar.com/m/misc_praise_songs/hes_got_the_whole_world_in_his_hands_crd.htm",
     lyrics: LYRIC_LIST.HesGotTheWholeWorldInHisHands,
   },
@@ -68,6 +70,7 @@ module.exports = [
     title: "Leaving on a Jet Plane",
     artist: "John Denver",
     // link: "https://tabs.ultimate-guitar.com/j/john_denver/leaving_on_a_jetplane_ver2_crd.htm",
+    genres: [GENRE.GENRE_ROCK],
     lyrics: LYRIC_LIST.LeavingOnAJetPlane,
   },
   {
@@ -80,14 +83,14 @@ module.exports = [
     title: "Michael Finnegan",
     artist: "Misc Traditional",
     // link: "https://tabs.ultimate-guitar.com/m/misc_traditional/misc_traditional_-_michael_finnigan_crd.htm",
-    genres: [GENRE_TRADITIONAL],
+    genres: [GENRE.GENRE_TRADITIONAL],
     lyrics: LYRIC_LIST.MichaelFinnegan,
   },
   {
     title: "Michael Row the Boat Ashore",
     artist: "Misc Traditional",
     // link: "https://tabs.ultimate-guitar.com/t/the_highwaymen/michael_row_the_boat_ashore_crd.htm",
-    genres: [GENRE_TRADITIONAL],
+    genres: [GENRE.GENRE_TRADITIONAL],
     lyrics: LYRIC_LIST.MichaelRowTheBoatAshore,
   },
   {
@@ -123,7 +126,7 @@ module.exports = [
   {
     title: "Puff The Magic Dragon",
     artist: "Peter, Paul & Mary",
-    genres: [GENRE_FOLK],
+    genres: [GENRE.GENRE_FOLK],
     link: "https://tabs.ultimate-guitar.com/p/peter_paul_and_mary/puff_the_magic_dragon_ver3_crd.htm",
     lyrics: LYRIC_LIST.PuffTheMagicDragon,
   },
@@ -154,6 +157,7 @@ module.exports = [
   {
     title: "The Sounds of Silence",
     artist: "Simon & Garfunkel",
+    genres: [GENRE.GENRE_FOLK],
     link: "https://tabs.ultimate-guitar.com/s/simon_garfunkel/the_sound_of_silence_ver4_crd.htm",
     lyrics: LYRIC_LIST.TheSoundsOfSilence,
   },
@@ -194,6 +198,7 @@ module.exports = [
   {
     title: "Where Have All the Flowers Gone",
     artist: "Pete Seeger",
+    genres: [GENRE.GENRE_FOLK],
     link: "https://tabs.ultimate-guitar.com/p/peter_paul_and_mary/where_have_all_the_flowers_gone_ver2_crd.htm",
     lyrics: LYRIC_LIST.WhereHaveAllTheFlowersGone,
   },
@@ -206,6 +211,7 @@ module.exports = [
   {
     title: "You Are My Sunshine",
     artist: "Chris Stapleton",
+    genres: [GENRE.GENRE_TRADITIONAL],
     // link: "https://tabs.ultimate-guitar.com/c/chris_stapleton/you_are_my_sunshine_crd.htm",
     lyrics: LYRIC_LIST.YouAreMySunshine,
   },
