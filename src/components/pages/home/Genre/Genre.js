@@ -1,6 +1,6 @@
 import React from "react";
 
-const GENRE_LIST = ["All", "Folk", "Traditional"];
+const GENRE_LIST = ["All", GENRE_FOLK, GENRE_TRADITIONAL];
 
 const Genre = ({ currentGenre, onClick }) => (
   <div id="genre-filters">
