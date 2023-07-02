@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import SongList from "../../common/SongList";
 import GuitarTabLink from "../../common/GuitarTabLink";
 
-const SongPage = () => {
+const SongPage = (props) => {
   const title = props.match.params.title;
 
   const song = SongList.filter((songListItem) => {
