@@ -1,10 +1,9 @@
 import React from "react";
-import { AppBar } from "material-ui";
 import DarkModeToggle from "./DarkModeToggle/DarkModeToggle";
 
 const Header = ({ isdarkMode, onToggleIsDarkMode }) => (
   <header>
-    <AppBar title="Hoki Campfire Songs" showMenuIconButton={false} />
+    <h1>Hoki Campfire Songs</h1>
     <DarkModeToggle
       isdarkMode={isdarkMode}
       onToggleIsDarkMode={onToggleIsDarkMode}

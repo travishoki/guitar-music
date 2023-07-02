@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import { render } from "react-dom";
-import { MuiThemeProvider } from "material-ui/styles";
 import { BrowserRouter } from "react-router-dom";
 
 import Header from "./components/common/Header/Header";
 import Main from "./components/common/Main";
-import { DarkTheme, LightTheme } from "./components/common/MuiTheme";
 import "./styles/index.less";
 
 const App = () => {
@@ -16,15 +14,10 @@ const App = () => {
   };
 
   return (
-    <MuiThemeProvider muiTheme={LightTheme}>
-      <div id="container" className={isdarkMode ? "dark-mode" : "light-mode"}>
-        <Header
-          isdarkMode={isdarkMode}
-          onToggleIsDarkMode={onToggleIsDarkMode}
-        />
-        <Main />
-      </div>
-    </MuiThemeProvider>
+    <div id="container" className={isdarkMode ? "dark-mode" : "light-mode"}>
+      <Header isdarkMode={isdarkMode} onToggleIsDarkMode={onToggleIsDarkMode} />
+      <Main />
+    </div>
   );
 };
 

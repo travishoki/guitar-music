@@ -1,14 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import {
-  Table,
-  TableHeader,
-  TableHeaderColumn,
-  TableBody,
-  TableRow,
-  TableRowColumn,
-} from "material-ui";
 import SongList from "../../common/SongList";
 import GuitarTabLink from "../../common/GuitarTabLink";
 import Genre from "./Genre/Genre";
@@ -70,30 +62,30 @@ class SongTable extends React.Component {
     return (
       <div>
         <Genre currentGenre={this.state.genre} onClick={this.onSelectGenre} />
-        <Table>
-          <TableHeader displaySelectAll={false} adjustForCheckbox={false}>
-            <TableRow>
-              <TableHeaderColumn>Title</TableHeaderColumn>
-              <TableHeaderColumn>Artist</TableHeaderColumn>
-              <TableHeaderColumn style={ctrlTdStyle}>Tabs</TableHeaderColumn>
-            </TableRow>
-          </TableHeader>
-          <TableBody displayRowCheckbox={false}>
+        <table>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Artist</th>
+              <th style={ctrlTdStyle}>Tabs</th>
+            </tr>
+          </thead>
+          <tbody>
             {filteredSongs.map((song) => (
-              <TableRow key={song.title}>
-                <TableRowColumn style={tdStyle}>
+              <tr key={song.title}>
+                <td style={tdStyle}>
                   <Link to={"/song/" + fixUrlTitle(song.title)}>
                     {song.title}
                   </Link>
-                </TableRowColumn>
-                <TableRowColumn style={tdStyle}>{song.artist}</TableRowColumn>
-                <TableRowColumn style={ctrlTdStyle}>
+                </td>
+                <td style={tdStyle}>{song.artist}</td>
+                <td style={ctrlTdStyle}>
                   <GuitarTabLink song={song} />
-                </TableRowColumn>
-              </TableRow>
+                </td>
+              </tr>
             ))}
-          </TableBody>
-        </Table>
+          </tbody>
+        </table>
       </div>
     );
   }
