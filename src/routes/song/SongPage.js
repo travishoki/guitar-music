@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import SongList from "../../../const/SongList";
-import GuitarTabLink from "../../common/GuitarTabLink";
+import SongList from "../../const/SongList";
+import GuitarTabLink from "../../components/common/GuitarTabLink";
 
 const SongPage = (props) => {
   const title = props.match.params.title;

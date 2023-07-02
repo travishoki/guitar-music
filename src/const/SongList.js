@@ -32,10 +32,8 @@ import WhatTheWorldNeedsNowIsLove from "../components/lyrics/WhatTheWorldNeedsNo
 import WhereHaveAllTheFlowersGone from "../components/lyrics/WhereHaveAllTheFlowersGone";
 import YellowSubmarine from "../components/lyrics/YellowSubmarine";
 import YouAreMySunshine from "../components/lyrics/YouAreMySunshine";
-import {
-  GENRE_FOLK,
-  GENRE_TRADITIONAL,
-} from "../components/pages/home/Genre/const";
+
+import { GENRE_FOLK, GENRE_TRADITIONAL } from "./genres";
 
 module.exports = [
   {

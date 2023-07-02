@@ -1,5 +1,9 @@
 import React from "react";
-import { GENRE_ALL, GENRE_FOLK, GENRE_TRADITIONAL } from "./const";
+import {
+  GENRE_ALL,
+  GENRE_FOLK,
+  GENRE_TRADITIONAL,
+} from "../../../const/genres";
 
 const GENRE_LIST = [GENRE_ALL, GENRE_FOLK, GENRE_TRADITIONAL];
 

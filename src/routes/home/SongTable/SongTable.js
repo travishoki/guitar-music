@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import SongList from "../../../../const/SongList";
-import GuitarTabLink from "../../../common/GuitarTabLink";
+import SongList from "../../../const/SongList";
+import GuitarTabLink from "../../../components/common/GuitarTabLink";
 import Genre from "../Genre/Genre";
-import { GENRE_ALL } from "../Genre/const";
+import { GENRE_ALL } from "../../../const/genres";
 
 const SongTable = () => {
   const [search, setSearch] = useState("");
