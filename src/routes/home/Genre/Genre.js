@@ -1,11 +1,12 @@
 import React from "react";
-import {
-  GENRE_ALL,
-  GENRE_FOLK,
-  GENRE_TRADITIONAL,
-} from "../../../const/genres";
+import * as GENRE from "../../../const/genres";
 
-const GENRE_LIST = [GENRE_ALL, GENRE_FOLK, GENRE_TRADITIONAL];
+const GENRE_LIST = [
+  GENRE.GENRE_ALL,
+  GENRE.GENRE_FOLK,
+  GENRE.GENRE_PATRIOTIC,
+  GENRE.GENRE_TRADITIONAL,
+];
 
 const Genre = ({ currentGenre, onClick }) => (
   <div id="genre-filters">
