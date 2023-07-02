@@ -3,9 +3,9 @@ import { render } from "react-dom";
 import { MuiThemeProvider } from "material-ui/styles";
 import { BrowserRouter } from "react-router-dom";
 
-import Header from "./components/common/Header";
+import Header from "./components/common/Header/Header";
 import Main from "./components/common/Main";
-import MuiTheme from "./components/common/MuiTheme";
+import { DarkTheme, LightTheme } from "./components/common/MuiTheme";
 import "./styles/index.less";
 
 const App = () => {
@@ -16,8 +16,8 @@ const App = () => {
   };
 
   return (
-    <MuiThemeProvider muiTheme={MuiTheme}>
-      <div>
+    <MuiThemeProvider muiTheme={isdarkMode ? DarkTheme : LightTheme}>
+      <div id="container">
         <Header
           isdarkMode={isdarkMode}
           onToggleIsDarkMode={onToggleIsDarkMode}
