@@ -32,17 +32,20 @@ import WhatTheWorldNeedsNowIsLove from "../lyrics/WhatTheWorldNeedsNowIsLove";
 import WhereHaveAllTheFlowersGone from "../lyrics/WhereHaveAllTheFlowersGone";
 import YellowSubmarine from "../lyrics/YellowSubmarine";
 import YouAreMySunshine from "../lyrics/YouAreMySunshine";
+import { GENRE_FOLK, GENRE_TRADITIONAL } from "../pages/home/Genre/const";
 
 module.exports = [
   {
     title: "All Through the Night",
     artist: "Misc Traditional",
+    genres: [GENRE_TRADITIONAL],
     link: "https://tabs.ultimate-guitar.com/m/misc_traditional/all_through_the_night_crd.htm",
     lyrics: AllThroughTheNight,
   },
   {
     title: "America the Beautiful",
     artist: "Misc Traditional",
+    genres: [GENRE_TRADITIONAL],
     link: "https://tabs.ultimate-guitar.com/m/misc_traditional/america_the_beautiful_crd.htm",
     lyrics: AmericaTheBeautiful,
   },
@@ -110,12 +113,14 @@ module.exports = [
     title: "Michael Finnegan",
     artist: "Misc Traditional",
     // link: "https://tabs.ultimate-guitar.com/m/misc_traditional/misc_traditional_-_michael_finnigan_crd.htm",
+    genres: [GENRE_TRADITIONAL],
     lyrics: MichaelFinnegan,
   },
   {
     title: "Michael Row the Boat Ashore",
     artist: "Misc Traditional",
     // link: "https://tabs.ultimate-guitar.com/t/the_highwaymen/michael_row_the_boat_ashore_crd.htm",
+    genres: [GENRE_TRADITIONAL],
     lyrics: MichaelRowTheBoatAshore,
   },
   {
@@ -151,6 +156,7 @@ module.exports = [
   {
     title: "Puff The Magic Dragon",
     artist: "Peter, Paul & Mary",
+    genres: [GENRE_FOLK],
     link: "https://tabs.ultimate-guitar.com/p/peter_paul_and_mary/puff_the_magic_dragon_ver3_crd.htm",
     lyrics: PuffTheMagicDragon,
   },

@@ -12,6 +12,7 @@ import {
 import SongList from "../../common/SongList";
 import GuitarTabLink from "../../common/GuitarTabLink";
 import Genre from "./Genre/Genre";
+import { GENRE_ALL } from "./Genre/const";
 
 class SongTable extends React.Component {
   constructor(props) {
@@ -20,7 +21,7 @@ class SongTable extends React.Component {
     this.state = {
       search: "",
       sort: "title",
-      genre: "All",
+      genre: GENRE_ALL,
     };
 
     this.onSelectGenre = this.onSelectGenre.bind(this);
@@ -42,11 +43,17 @@ class SongTable extends React.Component {
     const filteredSongs = SongList.filter((song) => {
       const title = song.title.toLowerCase();
       return filterTerm == "" || title.indexOf(filterTerm) > -1;
-    }).sort((a, b) => {
-      if (a[sortTerm] < b[sortTerm]) return -1;
-      if (a[sortTerm] > b[sortTerm]) return 1;
-      return 0;
-    });
+    })
+      .filter((song) => {
+        if (this.state.genre === GENRE_ALL) return true;
+        if (!song.genres) return false;
+        return song.genres.includes(this.state.genre);
+      })
+      .sort((a, b) => {
+        if (a[sortTerm] < b[sortTerm]) return -1;
+        if (a[sortTerm] > b[sortTerm]) return 1;
+        return 0;
+      });
     const tdStyle = {
       paddingLeft: 10,
       paddingRight: 10,
