@@ -26,10 +26,12 @@ const SongPage = (props) => {
         </div>
       )}
 
-      <div className="go-to-tabs">
-        <GuitarTabLink song={song} />
-        <p>Go to tabs</p>
-      </div>
+      {song.link && (
+        <div className="go-to-tabs">
+          <GuitarTabLink song={song} />
+          <p>Go to tabs</p>
+        </div>
+      )}
     </div>
   );
 };
