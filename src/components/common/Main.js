@@ -1,7 +1,7 @@
 import React from "react";
-import HomePage from "../pages/home/HomePage";
-import SongPage from "../pages/song/SongPage";
-import NotFoundPage from "../pages/notFound/NotFoundPage";
+import HomePage from "../routes/home/HomePage";
+import SongPage from "../routes/song/SongPage";
+import NotFoundPage from "../routes/notFound/NotFoundPage";
 import { Switch, Route } from "react-router-dom";
 
 const Main = () => (

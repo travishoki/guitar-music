@@ -1,7 +1,7 @@
 const webpack = require("webpack");
 const path = require("path");
 const FtpOutputPlugin = require("ftp-output-webpack-plugin");
-const ftpOptions = require("./ftpOptions");
+// const ftpOptions = require("./ftpOptions");
 
 module.exports = {
   debug: true,
@@ -21,7 +21,7 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
-    new FtpOutputPlugin(ftpOptions), // ftpOptions see as above description
+    // new FtpOutputPlugin(ftpOptions), // ftpOptions see as above description
   ],
   module: {
     loaders: [
