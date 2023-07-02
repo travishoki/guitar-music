@@ -53,19 +53,12 @@ class SongTable extends React.Component {
     }
     return (
       <div>
-        {/*
-                <input
-                    type="text"
-                    value={this.state.search}
-                    onChange={this.searchSong}
-                />
-                */}
         <Table>
           <TableHeader displaySelectAll={false} adjustForCheckbox={false}>
             <TableRow>
               <TableHeaderColumn>Title</TableHeaderColumn>
               <TableHeaderColumn>Artist</TableHeaderColumn>
-              <TableHeaderColumn style={ctrlTdStyle}>Link</TableHeaderColumn>
+              <TableHeaderColumn style={ctrlTdStyle}>Tabs</TableHeaderColumn>
             </TableRow>
           </TableHeader>
           <TableBody displayRowCheckbox={false}>
