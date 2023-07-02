@@ -15,8 +15,13 @@ const App = () => {
 
   return (
     <div id="container" className={isdarkMode ? "dark-mode" : "light-mode"}>
-      <Header isdarkMode={isdarkMode} onToggleIsDarkMode={onToggleIsDarkMode} />
-      <Main />
+      <div id="content">
+        <Header
+          isdarkMode={isdarkMode}
+          onToggleIsDarkMode={onToggleIsDarkMode}
+        />
+        <Main />
+      </div>
     </div>
   );
 };

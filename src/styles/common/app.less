@@ -4,14 +4,11 @@ body {
   margin: 0;
 }
 
-#app {
-  max-width: 1024px;
-  margin: 0 auto;
-  display: block;
-}
-
 #container {
-  padding: 10px;
+  display: block;
+  height: 100%;
+  position: fixed;
+  overflow: auto;
 
   &.dark-mode {
     background: #202124;
@@ -22,6 +19,12 @@ body {
     background: white;
     color: black;
   }
+}
+
+#content {
+  margin: 0 auto;
+  max-width: 1024px;
+  padding: 10px;
 }
 
 /*----- Svg -----*/
