@@ -1,38 +1,41 @@
-import AllThroughTheNight from "../lyrics/AllThroughTheNight";
-import AmericaTheBeautiful from "../lyrics/AmericaTheBeautiful";
-import BabyBaluga from "../lyrics/BabyBaluga";
-import BabyILoveYourWay from "../lyrics/BabyILoveYourWay";
-import BlowinInTheWind from "../lyrics/BlowinInTheWind";
-import CountryRoads from "../lyrics/CountryRoads";
-import Edelweiss from "../lyrics/Edelweiss";
-import FiveHundredMiles from "../lyrics/FiveHundredMiles";
-import GodBlessTheUSA from "../lyrics/GodBlessTheUSA";
-import HesGotTheWholeWorldInHisHands from "../lyrics/HesGotTheWholeWorldInHisHands";
-import LeavingOnAJetPlane from "../lyrics/LeavingOnAJetPlane";
-import LetThereBePeaceOnEarch from "../lyrics/LetThereBePeaceOnEarch";
-import MichaelFinnegan from "../lyrics/MichaelFinnegan";
-import MichaelRowTheBoatAshore from "../lyrics/MichaelRowTheBoatAshore";
-import Mockingbird from "../lyrics/Mockingbird";
-import MorningHasBroken from "../lyrics/MorningHasBroken";
-import NoahsArk from "../lyrics/NoahsArk";
-import OneTinSoldier from "../lyrics/OneTinSoldier";
-import OverTheRainbow from "../lyrics/OverTheRainbow";
-import PuffTheMagicDragon from "../lyrics/PuffTheMagicDragon";
-import PutYourHandInTheHand from "../lyrics/PutYourHandInTheHand";
-import Seattle from "../lyrics/Seattle";
-import TellMeWhy from "../lyrics/TellMeWhy";
-import TheCatCameBack from "../lyrics/TheCatCameBack";
-import TheSoundsOfSilence from "../lyrics/TheSoundsOfSilence";
-import ThisLandIsYourLand from "../lyrics/ThisLandIsYourLand";
-import TieMeKangarooDownSport from "../lyrics/TieMeKangarooDownSport";
-import TurnTurnTurn from "../lyrics/TurnTurnTurn";
-import WeddingSong from "../lyrics/WeddingSong";
-import WhatChildIsThis from "../lyrics/WhatChildIsThis";
-import WhatTheWorldNeedsNowIsLove from "../lyrics/WhatTheWorldNeedsNowIsLove";
-import WhereHaveAllTheFlowersGone from "../lyrics/WhereHaveAllTheFlowersGone";
-import YellowSubmarine from "../lyrics/YellowSubmarine";
-import YouAreMySunshine from "../lyrics/YouAreMySunshine";
-import { GENRE_FOLK, GENRE_TRADITIONAL } from "../pages/home/Genre/const";
+import AllThroughTheNight from "../components/lyrics/AllThroughTheNight";
+import AmericaTheBeautiful from "../components/lyrics/AmericaTheBeautiful";
+import BabyBaluga from "../components/lyrics/BabyBaluga";
+import BabyILoveYourWay from "../components/lyrics/BabyILoveYourWay";
+import BlowinInTheWind from "../components/lyrics/BlowinInTheWind";
+import CountryRoads from "../components/lyrics/CountryRoads";
+import Edelweiss from "../components/lyrics/Edelweiss";
+import FiveHundredMiles from "../components/lyrics/FiveHundredMiles";
+import GodBlessTheUSA from "../components/lyrics/GodBlessTheUSA";
+import HesGotTheWholeWorldInHisHands from "../components/lyrics/HesGotTheWholeWorldInHisHands";
+import LeavingOnAJetPlane from "../components/lyrics/LeavingOnAJetPlane";
+import LetThereBePeaceOnEarch from "../components/lyrics/LetThereBePeaceOnEarch";
+import MichaelFinnegan from "../components/lyrics/MichaelFinnegan";
+import MichaelRowTheBoatAshore from "../components/lyrics/MichaelRowTheBoatAshore";
+import Mockingbird from "../components/lyrics/Mockingbird";
+import MorningHasBroken from "../components/lyrics/MorningHasBroken";
+import NoahsArk from "../components/lyrics/NoahsArk";
+import OneTinSoldier from "../components/lyrics/OneTinSoldier";
+import OverTheRainbow from "../components/lyrics/OverTheRainbow";
+import PuffTheMagicDragon from "../components/lyrics/PuffTheMagicDragon";
+import PutYourHandInTheHand from "../components/lyrics/PutYourHandInTheHand";
+import Seattle from "../components/lyrics/Seattle";
+import TellMeWhy from "../components/lyrics/TellMeWhy";
+import TheCatCameBack from "../components/lyrics/TheCatCameBack";
+import TheSoundsOfSilence from "../components/lyrics/TheSoundsOfSilence";
+import ThisLandIsYourLand from "../components/lyrics/ThisLandIsYourLand";
+import TieMeKangarooDownSport from "../components/lyrics/TieMeKangarooDownSport";
+import TurnTurnTurn from "../components/lyrics/TurnTurnTurn";
+import WeddingSong from "../components/lyrics/WeddingSong";
+import WhatChildIsThis from "../components/lyrics/WhatChildIsThis";
+import WhatTheWorldNeedsNowIsLove from "../components/lyrics/WhatTheWorldNeedsNowIsLove";
+import WhereHaveAllTheFlowersGone from "../components/lyrics/WhereHaveAllTheFlowersGone";
+import YellowSubmarine from "../components/lyrics/YellowSubmarine";
+import YouAreMySunshine from "../components/lyrics/YouAreMySunshine";
+import {
+  GENRE_FOLK,
+  GENRE_TRADITIONAL,
+} from "../components/pages/home/Genre/const";
 
 module.exports = [
   {

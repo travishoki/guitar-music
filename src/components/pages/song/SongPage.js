@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import SongList from "../../common/SongList";
+import SongList from "../../../const/SongList";
 import GuitarTabLink from "../../common/GuitarTabLink";
 
 const SongPage = (props) => {
