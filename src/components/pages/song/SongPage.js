@@ -15,13 +15,17 @@ const SongPage = () => {
       <Link to="/" className="back-button">
         Back
       </Link>
+
       <h1>{song.title}</h1>
+
       <p>by {song.artist}</p>
+
       {song.lyrics && (
         <div className="lyrics">
           <song.lyrics />
         </div>
       )}
+
       <div className="go-to-tabs">
         <GuitarTabLink song={song} />
         <p>Go to tabs</p>
