@@ -1,3 +1,5 @@
+/*----- General -----*/
+
 body {
   margin: 0;
 }
@@ -15,32 +17,68 @@ body {
     background: #202124;
     color: white;
   }
+
   &.light-mode {
+    background: white;
     color: black;
   }
 }
 
+/*----- Button -----*/
+
+button {
+  border-radius: 5px;
+  border: none;
+}
+
+.dark-mode {
+  button {
+    background: #ccc;
+    color: black;
+
+    &.active {
+      background-color: #666;
+    }
+
+    svg {
+      fill: #333;
+    }
+  }
+}
+
+.light-mode {
+  button {
+    background: #666;
+    color: white;
+
+    &.active {
+      background-color: #333;
+    }
+
+    svg {
+      fill: #ccc;
+    }
+  }
+}
+
+/*----- Genre Filters -----*/
+
 #genre-filters {
   ul {
-    list-style: none;
     display: flex;
     flex-direction: row;
+    list-style: none;
     margin: 0;
     padding: 10px;
 
     button {
-      border: none;
-      background: #ccc;
-      padding: 5px 10px;
       margin-right: 10px;
-    }
-    li.active {
-      button {
-        background: #aaa;
-      }
+      padding: 5px 10px;
     }
   }
 }
+
+/*----- Header -----*/
 
 header {
   padding: 10px;
@@ -55,8 +93,6 @@ header {
 
   button {
     align-items: center;
-    border: none;
-    border-radius: 5px;
     display: flex;
     height: 30px;
     justify-content: center;
@@ -70,21 +106,32 @@ header {
   }
 }
 
-#container {
-  &.dark-mode {
-    header button {
-      background: #ccc;
-      svg {
-        fill: #333;
-      }
+/*----- Links -----*/
+
+a {
+  color: inherit;
+}
+
+/*----- Table -----*/
+
+table {
+  td {
+    padding: 5px;
+  }
+}
+
+.dark-mode {
+  td {
+    svg {
+      fill: white;
     }
   }
-  &.light-mode {
-    header button {
-      background: #333;
-      svg {
-        fill: #ccc;
-      }
+}
+
+.light-mode {
+  td {
+    svg {
+      fill: black;
     }
   }
 }

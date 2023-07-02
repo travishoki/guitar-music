@@ -7,8 +7,13 @@ const Genre = ({ currentGenre, onClick }) => (
   <div id="genre-filters">
     <ul>
       {GENRE_LIST.map((genre) => (
-        <li key={genre} className={genre === currentGenre ? "active" : ""}>
-          <button onClick={() => onClick(genre)}>{genre}</button>
+        <li key={genre}>
+          <button
+            className={genre === currentGenre ? "active" : ""}
+            onClick={() => onClick(genre)}
+          >
+            {genre}
+          </button>
         </li>
       ))}
     </ul>
