@@ -2,11 +2,11 @@ import React from "react";
 import * as GENRE from "../../../const/genres";
 
 const GENRE_LIST = [
-  GENRE.GENRE_ALL,
-  GENRE.GENRE_FOLK,
-  GENRE.GENRE_PATRIOTIC,
-  GENRE.GENRE_ROCK,
-  GENRE.GENRE_TRADITIONAL,
+  GENRE.ALL,
+  GENRE.FOLK,
+  GENRE.PATRIOTIC,
+  GENRE.ROCK,
+  GENRE.TRADITIONAL,
 ];
 
 const Genre = ({ currentGenre, onClick }) => (

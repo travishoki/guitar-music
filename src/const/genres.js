@@ -1,6 +1,6 @@
-export const GENRE_ALL = "All";
+export const ALL = "All";
 
-export const GENRE_FOLK = "Folk";
-export const GENRE_PATRIOTIC = "Patriotic";
-export const GENRE_ROCK = "Rock";
-export const GENRE_TRADITIONAL = "Traditional";
+export const FOLK = "Folk";
+export const PATRIOTIC = "Patriotic";
+export const ROCK = "Rock";
+export const TRADITIONAL = "Traditional";

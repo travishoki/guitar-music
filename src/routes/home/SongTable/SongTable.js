@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 import SongList from "../../../const/SongList";
 import GuitarTabLink from "../../../components/common/GuitarTabLink";
 import Genre from "../Genre/Genre";
-import { GENRE_ALL } from "../../../const/genres";
+import { ALL } from "../../../const/genres";
 
 const SongTable = () => {
   const [search, setSearch] = useState("");
   const [sort, setSort] = useState("title");
-  const [genre, setGenre] = useState(GENRE_ALL);
+  const [genre, setGenre] = useState(ALL);
 
   const searchSong = (e) => {
     console.log("searchSong");
@@ -28,7 +28,7 @@ const SongTable = () => {
     return filterTerm == "" || title.indexOf(filterTerm) > -1;
   })
     .filter((song) => {
-      if (genre === GENRE_ALL) return true;
+      if (genre === ALL) return true;
       if (!song.genres) return false;
       return song.genres.includes(genre);
     })
