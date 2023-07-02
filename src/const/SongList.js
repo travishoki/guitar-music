@@ -12,7 +12,7 @@ module.exports = [
   {
     title: "America the Beautiful",
     artist: "Misc Traditional",
-    genres: [GENRE.TRADITIONAL],
+    genres: [GENRE.PATRIOTIC],
     link: "https://tabs.ultimate-guitar.com/m/misc_traditional/america_the_beautiful_crd.htm",
     lyrics: LYRIC_LIST.AmericaTheBeautiful,
   },
@@ -108,6 +108,7 @@ module.exports = [
   {
     title: "Noah's Ark",
     artist: "Misc Children",
+    genres: [GENRE.RELIGIOUS],
     link: "https://tabs.ultimate-guitar.com/m/misc_children/rise_and_shine_arky_arky_crd.htm",
     lyrics: LYRIC_LIST.NoahsArk,
   },
