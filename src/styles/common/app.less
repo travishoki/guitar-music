@@ -3,3 +3,25 @@
   margin: 0 auto;
   display: block;
 }
+
+#genre-filters {
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 10px;
+
+    button {
+      border: none;
+      background: #ccc;
+      padding: 5px 10px;
+      margin-right: 10px;
+    }
+    li.active {
+      button {
+        background: #aaa;
+      }
+    }
+  }
+}

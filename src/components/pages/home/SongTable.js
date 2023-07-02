@@ -11,6 +11,7 @@ import {
 } from "material-ui";
 import SongList from "../../common/SongList";
 import GuitarTabLink from "../../common/GuitarTabLink";
+import Genre from "./Genre/Genre";
 
 class SongTable extends React.Component {
   constructor(props) {
@@ -19,8 +20,10 @@ class SongTable extends React.Component {
     this.state = {
       search: "",
       sort: "title",
+      genre: "All",
     };
 
+    this.onSelectGenre = this.onSelectGenre.bind(this);
     this.searchSong = this.searchSong.bind(this);
   }
   searchSong(e) {
@@ -28,6 +31,11 @@ class SongTable extends React.Component {
     const search = e.currentTarget.value;
     this.setState({ search });
   }
+  onSelectGenre(newGenre) {
+    console.log(`newGenre: ${newGenre}`);
+    this.setState({ genre: newGenre });
+  }
+
   render() {
     const filterTerm = this.state.search.toLowerCase();
     const sortTerm = this.state.sort;
@@ -51,8 +59,10 @@ class SongTable extends React.Component {
     function fixUrlTitle(title) {
       return title.replace(/ /g, "-").toLowerCase();
     }
+
     return (
       <div>
+        <Genre currentGenre={this.state.genre} onClick={this.onSelectGenre} />
         <Table>
           <TableHeader displaySelectAll={false} adjustForCheckbox={false}>
             <TableRow>
