@@ -46,15 +46,18 @@ class SongTable extends React.Component {
         if (a[sortTerm] > b[sortTerm]) return 1;
         return 0;
       });
+
     const tdStyle = {
       paddingLeft: 10,
       paddingRight: 10,
     };
+
     const ctrlTdStyle = {
       paddingLeft: 10,
       paddingRight: 10,
       width: "32px",
     };
+
     function fixUrlTitle(title) {
       return title.replace(/ /g, "-").toLowerCase();
     }
