@@ -16,8 +16,8 @@ const App = () => {
   };
 
   return (
-    <MuiThemeProvider muiTheme={isdarkMode ? DarkTheme : LightTheme}>
-      <div id="container">
+    <MuiThemeProvider muiTheme={LightTheme}>
+      <div id="container" className={isdarkMode ? "dark-mode" : "light-mode"}>
         <Header
           isdarkMode={isdarkMode}
           onToggleIsDarkMode={onToggleIsDarkMode}
