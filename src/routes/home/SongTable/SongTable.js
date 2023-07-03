@@ -14,11 +14,13 @@ const SongTable = ({ genre, isGuitarMode, sortTerm }) => {
 
   const finalSongsList = sortBy(filteredSongs, sortTerm);
 
-  const tdStyle = {
+  const rowStyle = {
+    display: "flex",
+    justifyContent: "space-between",
     padding: 10,
   };
 
-  const ctrlTdStyle = {
+  const guitarLink = {
     padding: 10,
     width: 32,
   };
@@ -39,39 +41,32 @@ const SongTable = ({ genre, isGuitarMode, sortTerm }) => {
     fontSize: 14,
   };
 
-  const barStyle = {
-    margin: 0,
-  };
-
   const fixUrlTitle = (title) => {
     return title.replace(/ /g, "-").toLowerCase();
   };
 
   return (
-    <table className="song-table">
-      <tbody>
-        {finalSongsList.map((song) => (
-          <tr key={song.title}>
-            <td style={tdStyle}>
-              <Link to={"/song/" + fixUrlTitle(song.title)} style={linkStyle}>
-                <p className="title-font" style={titleStyle}>
-                  {song.title}
-                </p>
-                <p className="secondary-text-color" style={artistStyle}>
-                  {song.artist}
-                  {song.barChords && "*"}
-                </p>
-              </Link>
-            </td>
-            {isGuitarMode && (
-              <td style={ctrlTdStyle}>
-                <GuitarTabLink song={song} />
-              </td>
-            )}
-          </tr>
-        ))}
-      </tbody>
-    </table>
+    <div>
+      {finalSongsList.map((song) => (
+        <div style={rowStyle} key={song.title}>
+          <Link to={"/song/" + fixUrlTitle(song.title)} style={linkStyle}>
+            <p className="title-font" style={titleStyle}>
+              {song.title}
+            </p>
+            <p className="secondary-text-color" style={artistStyle}>
+              {song.artist}
+              {song.barChords && "*"}
+            </p>
+          </Link>
+
+          {isGuitarMode && (
+            <div style={guitarLink}>
+              <GuitarTabLink song={song} />
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
   );
 };
 
