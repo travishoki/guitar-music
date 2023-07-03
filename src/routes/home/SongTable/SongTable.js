@@ -21,7 +21,6 @@ const SongTable = ({ genre, isGuitarMode, sortTerm }) => {
   };
 
   const guitarLink = {
-    padding: 10,
     width: 32,
   };
 
