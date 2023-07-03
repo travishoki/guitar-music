@@ -20,18 +20,21 @@ const HomePage = ({
   return (
     <div>
       <div className="top-controls">
-        <DarkModeToggle
-          isdarkMode={isdarkMode}
-          onToggleIsDarkMode={onToggleIsDarkMode}
-        />
-        <GuitarModeToggle
-          isGuitarMode={isGuitarMode}
-          onToggleIsGuitarMode={onToggleIsGuitarMode}
-        />
+        <Sort currentOption={sortTerm} onClick={setSort} sortTerm={sortTerm} />
+
+        <div className="toggle-controls">
+          <DarkModeToggle
+            isdarkMode={isdarkMode}
+            onToggleIsDarkMode={onToggleIsDarkMode}
+          />
+          <GuitarModeToggle
+            isGuitarMode={isGuitarMode}
+            onToggleIsGuitarMode={onToggleIsGuitarMode}
+          />
+        </div>
       </div>
 
       <Genre currentOption={genre} onClick={setGenre} />
-      <Sort currentOption={sortTerm} onClick={setSort} sortTerm={sortTerm} />
       <SongTable
         isGuitarMode={isGuitarMode}
         genre={genre}
