@@ -63,7 +63,7 @@ module.exports = [
   {
     title: "He's Got the Whole World in His Hands",
     artist: "Misc Praise",
-    genres: [GENRE.TRADITIONAL],
+    genres: [GENRE.TRADITIONAL, GENRE.RELIGIOUS],
     link: "https://tabs.ultimate-guitar.com/m/misc_praise_songs/hes_got_the_whole_world_in_his_hands_crd.htm",
     lyrics: LYRIC_LIST.HesGotTheWholeWorldInHisHands,
   },
