@@ -25,6 +25,11 @@ const SongTable = () => {
     return 0;
   });
 
+  const thStyle = {
+    padding: 10,
+    textAlign: "left",
+  };
+
   const tdStyle = {
     padding: 10,
   };
@@ -60,8 +65,8 @@ const SongTable = () => {
       <table className="song-table">
         <thead>
           <tr>
-            <th>Title</th>
-            <th style={ctrlTdStyle}>Tabs</th>
+            <th style={thStyle}>Title</th>
+            <th style={thStyle}>Tabs</th>
           </tr>
         </thead>
         <tbody>
