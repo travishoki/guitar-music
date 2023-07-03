@@ -53,8 +53,8 @@ const SongTable = () => {
 
   return (
     <div>
-      <Genre currentGenre={genre} onClick={setGenre} />
-      <Sort currentGenre={sortTerm} onClick={setSort} />
+      <Genre currentOption={genre} onClick={setGenre} />
+      <Sort currentOption={sortTerm} onClick={setSort} />
       <table className="song-table">
         <tbody>
           {finalSongsList.map((song) => (

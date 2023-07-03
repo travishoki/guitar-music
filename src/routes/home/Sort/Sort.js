@@ -1,21 +1,13 @@
 import React from "react";
 import { SORT_LIST } from "../../../const/sort";
+import SideSCrollSelector from "../../../components/SideScrollSelector/SideScrollSelector";
 
-const Sort = ({ currentGenre, onClick }) => (
-  <div className="genre-filters">
-    <ul>
-      {SORT_LIST.map((genre) => (
-        <li key={genre}>
-          <button
-            className={genre === currentGenre ? "active" : ""}
-            onClick={() => onClick(genre)}
-          >
-            {genre}
-          </button>
-        </li>
-      ))}
-    </ul>
-  </div>
+const Sort = ({ currentOption, onClick }) => (
+  <SideSCrollSelector
+    currentOption={currentOption}
+    list={SORT_LIST}
+    onClick={onClick}
+  />
 );
 
 export default Sort;
