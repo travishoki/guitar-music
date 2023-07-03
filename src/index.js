@@ -4,6 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 
 import Header from "./components/common/Header/Header";
 import Main from "./components/common/Main";
+import DarkModeToggle from "./components/DarkModeToggle/DarkModeToggle";
 import "./styles/index.less";
 
 const App = () => {
@@ -16,10 +17,13 @@ const App = () => {
   return (
     <div id="container" className={isdarkMode ? "dark-mode" : "light-mode"}>
       <div id="content">
-        <Header
-          isdarkMode={isdarkMode}
-          onToggleIsDarkMode={onToggleIsDarkMode}
-        />
+        <Header />
+        <div className="top-controls">
+          <DarkModeToggle
+            isdarkMode={isdarkMode}
+            onToggleIsDarkMode={onToggleIsDarkMode}
+          />
+        </div>
         <Main />
       </div>
     </div>
