@@ -25,11 +25,6 @@ const SongTable = () => {
     return 0;
   });
 
-  const thStyle = {
-    padding: 10,
-    textAlign: "left",
-  };
-
   const tdStyle = {
     padding: 10,
   };
@@ -63,12 +58,6 @@ const SongTable = () => {
     <div>
       <Genre currentGenre={genre} onClick={onSelectGenre} />
       <table className="song-table">
-        <thead>
-          <tr>
-            <th style={thStyle}>Title</th>
-            <th style={thStyle}>Tabs</th>
-          </tr>
-        </thead>
         <tbody>
           {filteredSongs.map((song) => (
             <tr key={song.title}>
