@@ -8,7 +8,7 @@ import "./styles/index.less";
 
 const App = () => {
   const [isdarkMode, setIsdarkMode] = useState(true);
-  const [isGuitarMode, setIsGuitarMode] = useState(true);
+  const [isGuitarMode, setIsGuitarMode] = useState(false);
 
   const onToggleIsDarkMode = () => {
     setIsdarkMode(!isdarkMode);
