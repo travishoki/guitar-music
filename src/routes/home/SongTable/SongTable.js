@@ -33,7 +33,22 @@ const SongTable = () => {
   const ctrlTdStyle = {
     paddingLeft: 10,
     paddingRight: 10,
-    width: "32px",
+    width: 32,
+  };
+
+  const linkStyle = {
+    textDecoration: "none",
+  };
+
+  const titleStyle = {
+    fontSize: 20,
+    fontWeight: "bold",
+    margin: 0,
+    marginBottom: 2,
+  };
+
+  const artistStyle = {
+    margin: 0,
   };
 
   const fixUrlTitle = (title) => {
@@ -43,11 +58,10 @@ const SongTable = () => {
   return (
     <div>
       <Genre currentGenre={genre} onClick={onSelectGenre} />
-      <table>
+      <table className="song-table">
         <thead>
           <tr>
             <th>Title</th>
-            <th>Artist</th>
             <th style={ctrlTdStyle}>Tabs</th>
           </tr>
         </thead>
@@ -55,11 +69,13 @@ const SongTable = () => {
           {filteredSongs.map((song) => (
             <tr key={song.title}>
               <td style={tdStyle}>
-                <Link to={"/song/" + fixUrlTitle(song.title)}>
-                  {song.title}
+                <Link to={"/song/" + fixUrlTitle(song.title)} style={linkStyle}>
+                  <p style={titleStyle}>{song.title}</p>
+                  <p className="secondary-text" style={artistStyle}>
+                    {song.artist}
+                  </p>
                 </Link>
               </td>
-              <td style={tdStyle}>{song.artist}</td>
               <td style={ctrlTdStyle}>
                 <GuitarTabLink song={song} />
               </td>
