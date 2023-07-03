@@ -5,13 +5,19 @@ import { BrowserRouter } from "react-router-dom";
 import Header from "./components/common/Header/Header";
 import Main from "./components/common/Main";
 import DarkModeToggle from "./components/DarkModeToggle/DarkModeToggle";
+import GuitarModeToggle from "./components/GuitarModeToggle/GuitarModeToggle";
 import "./styles/index.less";
 
 const App = () => {
   const [isdarkMode, setIsdarkMode] = useState(true);
+  const [isGuitarMode, setIsGuitarMode] = useState(true);
 
   const onToggleIsDarkMode = () => {
     setIsdarkMode(!isdarkMode);
+  };
+
+  const onToggleIsGuitarMode = () => {
+    setIsGuitarMode(!isGuitarMode);
   };
 
   return (
@@ -22,6 +28,10 @@ const App = () => {
           <DarkModeToggle
             isdarkMode={isdarkMode}
             onToggleIsDarkMode={onToggleIsDarkMode}
+          />
+          <GuitarModeToggle
+            isGuitarMode={isGuitarMode}
+            onToggleIsGuitarMode={onToggleIsGuitarMode}
           />
         </div>
         <Main />
