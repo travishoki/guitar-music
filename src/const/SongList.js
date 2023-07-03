@@ -6,6 +6,7 @@ module.exports = [
     title: "All Through the Night",
     artist: "Misc Traditional",
     genres: [GENRE.TRADITIONAL],
+    barCords: true,
     link: "https://tabs.ultimate-guitar.com/m/misc_traditional/all_through_the_night_crd.htm",
     lyrics: LYRIC_LIST.AllThroughTheNight,
   },
