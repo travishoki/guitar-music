@@ -19,6 +19,7 @@ module.exports = [
   {
     title: "Baby Baluga",
     artist: "Raffi Cavoukian",
+    genres: [GENRE.KIDS],
     link: "https://tabs.ultimate-guitar.com/r/raffi/baby_beluga_crd.htm",
     lyrics: LYRIC_LIST.BabyBaluga,
   },
@@ -83,7 +84,7 @@ module.exports = [
     title: "Michael Finnegan",
     artist: "Misc Traditional",
     // link: "https://tabs.ultimate-guitar.com/m/misc_traditional/misc_traditional_-_michael_finnigan_crd.htm",
-    genres: [GENRE.TRADITIONAL],
+    genres: [GENRE.TRADITIONAL, GENRE.KIDS],
     lyrics: LYRIC_LIST.MichaelFinnegan,
   },
   {
@@ -127,7 +128,7 @@ module.exports = [
   {
     title: "Puff The Magic Dragon",
     artist: "Peter, Paul & Mary",
-    genres: [GENRE.FOLK],
+    genres: [GENRE.FOLK, GENRE.KIDS],
     link: "https://tabs.ultimate-guitar.com/p/peter_paul_and_mary/puff_the_magic_dragon_ver3_crd.htm",
     lyrics: LYRIC_LIST.PuffTheMagicDragon,
   },
@@ -152,6 +153,7 @@ module.exports = [
   {
     title: "The Cat Came Back",
     artist: "Harry S Miller",
+    genres: [GENRE.KIDS],
     link: "https://tabs.ultimate-guitar.com/h/harry_s_miller/the_cat_came_back_crd.htm",
     lyrics: LYRIC_LIST.TheCatCameBack,
   },
@@ -165,18 +167,21 @@ module.exports = [
   {
     title: "This Land is your Land",
     artist: "Woody Guthrie",
+    genres: [GENRE.PATRIOTIC],
     link: "http://www.guitaretab.com/w/woody-guthrie/223617.html",
     lyrics: LYRIC_LIST.ThisLandIsYourLand,
   },
   {
     title: "Tie Me Kangaroo Down Sport",
     artist: "Rolf Harris",
+    genres: [GENRE.KIDS],
     link: "https://tabs.ultimate-guitar.com/r/rolf_harris/tie_me_kangaroo_down_sport_ver4_crd.htm",
     lyrics: LYRIC_LIST.TieMeKangarooDownSport,
   },
   {
     title: 'Turn" Turn" Turn',
     artist: "The Byrds",
+    genres: [GENRE.FOLK],
     lyrics: LYRIC_LIST.TurnTurnTurn,
   },
   {
