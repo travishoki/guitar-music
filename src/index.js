@@ -34,7 +34,7 @@ const App = () => {
             onToggleIsGuitarMode={onToggleIsGuitarMode}
           />
         </div>
-        <Main />
+        <Main isGuitarMode={isGuitarMode} />
       </div>
     </div>
   );

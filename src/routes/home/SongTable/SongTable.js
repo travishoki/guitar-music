@@ -10,7 +10,7 @@ import { ALL } from "../../../const/genres";
 
 const DEFAULT_SORT_TERM = "title";
 
-const SongTable = () => {
+const SongTable = ({ isGuitarMode }) => {
   const [sortTerm, setSort] = useState(DEFAULT_SORT_TERM);
   const [genre, setGenre] = useState(ALL);
 
@@ -51,6 +51,8 @@ const SongTable = () => {
     return title.replace(/ /g, "-").toLowerCase();
   };
 
+  console.log(`isGuitarMode: ${isGuitarMode}`);
+
   return (
     <div>
       <Genre currentOption={genre} onClick={setGenre} />
@@ -69,9 +71,11 @@ const SongTable = () => {
                   </p>
                 </Link>
               </td>
-              <td style={ctrlTdStyle}>
-                <GuitarTabLink song={song} />
-              </td>
+              {isGuitarMode && (
+                <td style={ctrlTdStyle}>
+                  <GuitarTabLink song={song} />
+                </td>
+              )}
             </tr>
           ))}
         </tbody>
