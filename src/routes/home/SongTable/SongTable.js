@@ -26,13 +26,11 @@ const SongTable = () => {
   });
 
   const tdStyle = {
-    paddingLeft: 10,
-    paddingRight: 10,
+    padding: 10,
   };
 
   const ctrlTdStyle = {
-    paddingLeft: 10,
-    paddingRight: 10,
+    padding: 10,
     width: 32,
   };
 
@@ -49,6 +47,7 @@ const SongTable = () => {
 
   const artistStyle = {
     margin: 0,
+    fontSize: 14,
   };
 
   const fixUrlTitle = (title) => {
@@ -70,8 +69,10 @@ const SongTable = () => {
             <tr key={song.title}>
               <td style={tdStyle}>
                 <Link to={"/song/" + fixUrlTitle(song.title)} style={linkStyle}>
-                  <p style={titleStyle}>{song.title}</p>
-                  <p className="secondary-text" style={artistStyle}>
+                  <p className="title-font" style={titleStyle}>
+                    {song.title}
+                  </p>
+                  <p className="secondary-text-color" style={artistStyle}>
                     {song.artist}
                   </p>
                 </Link>
