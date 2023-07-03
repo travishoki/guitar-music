@@ -1,29 +1,26 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import { sortBy } from "lodash";
 import SongList from "../../../const/SongList";
 import GuitarTabLink from "../../../components/common/GuitarTabLink";
 import Genre from "../Genre/Genre";
+import Sort from "../Sort/Sort";
 import { ALL } from "../../../const/genres";
 
+const DEFAULT_SORT_TERM = "title";
+
 const SongTable = () => {
-  const [sort, setSort] = useState("title");
+  const [sortTerm, setSort] = useState(DEFAULT_SORT_TERM);
   const [genre, setGenre] = useState(ALL);
 
-  const onSelectGenre = (newGenre) => {
-    setGenre(newGenre);
-  };
-
-  const sortTerm = sort;
   const filteredSongs = SongList.filter((song) => {
     if (genre === ALL) return true;
     if (!song.genres) return false;
     return song.genres.includes(genre);
-  }).sort((a, b) => {
-    if (a[sortTerm] < b[sortTerm]) return -1;
-    if (a[sortTerm] > b[sortTerm]) return 1;
-    return 0;
   });
+
+  const finalSongsList = sortBy(filteredSongs, sortTerm);
 
   const tdStyle = {
     padding: 10,
@@ -56,10 +53,11 @@ const SongTable = () => {
 
   return (
     <div>
-      <Genre currentGenre={genre} onClick={onSelectGenre} />
+      <Genre currentGenre={genre} onClick={setGenre} />
+      <Sort currentGenre={sortTerm} onClick={setSort} />
       <table className="song-table">
         <tbody>
-          {filteredSongs.map((song) => (
+          {finalSongsList.map((song) => (
             <tr key={song.title}>
               <td style={tdStyle}>
                 <Link to={"/song/" + fixUrlTitle(song.title)} style={linkStyle}>

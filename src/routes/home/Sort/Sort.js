@@ -1,10 +1,10 @@
 import React from "react";
-import { GENRE_LIST } from "../../../const/genres";
+import { SORT_LIST } from "../../../const/sort";
 
-const Genre = ({ currentGenre, onClick }) => (
+const Sort = ({ currentGenre, onClick }) => (
   <div className="genre-filters">
     <ul>
-      {GENRE_LIST.map((genre) => (
+      {SORT_LIST.map((genre) => (
         <li key={genre}>
           <button
             className={genre === currentGenre ? "active" : ""}
@@ -18,4 +18,4 @@ const Genre = ({ currentGenre, onClick }) => (
   </div>
 );
 
-export default Genre;
+export default Sort;
