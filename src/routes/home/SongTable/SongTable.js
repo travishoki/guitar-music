@@ -16,19 +16,14 @@ const SongTable = () => {
 
   const sortTerm = sort;
   const filteredSongs = SongList.filter((song) => {
-    const title = song.title.toLowerCase();
-    return filterTerm == "" || title.indexOf(filterTerm) > -1;
-  })
-    .filter((song) => {
-      if (genre === ALL) return true;
-      if (!song.genres) return false;
-      return song.genres.includes(genre);
-    })
-    .sort((a, b) => {
-      if (a[sortTerm] < b[sortTerm]) return -1;
-      if (a[sortTerm] > b[sortTerm]) return 1;
-      return 0;
-    });
+    if (genre === ALL) return true;
+    if (!song.genres) return false;
+    return song.genres.includes(genre);
+  }).sort((a, b) => {
+    if (a[sortTerm] < b[sortTerm]) return -1;
+    if (a[sortTerm] > b[sortTerm]) return 1;
+    return 0;
+  });
 
   const tdStyle = {
     paddingLeft: 10,
