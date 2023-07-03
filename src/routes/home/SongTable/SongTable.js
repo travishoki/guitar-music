@@ -39,6 +39,10 @@ const SongTable = ({ genre, isGuitarMode, sortTerm }) => {
     fontSize: 14,
   };
 
+  const barStyle = {
+    margin: 0,
+  };
+
   const fixUrlTitle = (title) => {
     return title.replace(/ /g, "-").toLowerCase();
   };
@@ -55,8 +59,8 @@ const SongTable = ({ genre, isGuitarMode, sortTerm }) => {
                 </p>
                 <p className="secondary-text-color" style={artistStyle}>
                   {song.artist}
+                  {song.barChords && "*"}
                 </p>
-                {song.barCords && <p>Bar</p>}
               </Link>
             </td>
             {isGuitarMode && (
