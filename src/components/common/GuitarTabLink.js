@@ -8,11 +8,16 @@ const GuitarTabLink = ({ song }) => {
 
   if (!link) return null;
 
+  const guitarLink = {
+    width: 32,
+  };
+
   return (
     <a
       href={link}
       target="_blank"
       className="guitar-tab-link"
+      style={guitarLink}
       title="Go to Guitar Tabs"
     >
       <SvgGuitar />

@@ -20,10 +20,6 @@ const SongTable = ({ genre, isGuitarMode, sortTerm }) => {
     padding: 10,
   };
 
-  const guitarLink = {
-    width: 32,
-  };
-
   const linkStyle = {
     textDecoration: "none",
   };
@@ -58,11 +54,7 @@ const SongTable = ({ genre, isGuitarMode, sortTerm }) => {
             </p>
           </Link>
 
-          {isGuitarMode && (
-            <div style={guitarLink}>
-              <GuitarTabLink song={song} />
-            </div>
-          )}
+          {isGuitarMode && <GuitarTabLink song={song} />}
         </div>
       ))}
     </div>
