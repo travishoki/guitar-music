@@ -108,9 +108,15 @@ button {
     padding: 10px;
 
     button {
-      margin-right: 10px;
       padding: 5px 10px;
       text-transform: capitalize;
+    }
+    li {
+      &:not(:last-child) {
+        button {
+          margin-right: 10px;
+        }
+      }
     }
   }
 }
