@@ -7,21 +7,13 @@ import Genre from "../Genre/Genre";
 import { ALL } from "../../../const/genres";
 
 const SongTable = () => {
-  const [search, setSearch] = useState("");
   const [sort, setSort] = useState("title");
   const [genre, setGenre] = useState(ALL);
-
-  const searchSong = (e) => {
-    console.log("searchSong");
-    const newSearch = e.currentTarget.value;
-    setSearch(newSearch);
-  };
 
   const onSelectGenre = (newGenre) => {
     setGenre(newGenre);
   };
 
-  const filterTerm = search.toLowerCase();
   const sortTerm = sort;
   const filteredSongs = SongList.filter((song) => {
     const title = song.title.toLowerCase();
