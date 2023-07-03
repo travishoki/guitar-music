@@ -64,11 +64,11 @@ button {
 
 .dark-mode {
   button {
-    background: #ccc;
+    background: #666;
     color: black;
 
     &.active {
-      background-color: #666;
+      background: #ccc;
     }
 
     svg {
@@ -79,11 +79,11 @@ button {
 
 .light-mode {
   button {
-    background: #666;
+    background: #333;
     color: white;
 
     &.active {
-      background-color: #333;
+      background: #666;
     }
 
     svg {
@@ -110,6 +110,7 @@ button {
       padding: 5px 10px;
       text-transform: capitalize;
     }
+
     li {
       &:not(:last-child) {
         button {
