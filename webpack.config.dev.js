@@ -2,7 +2,8 @@ const webpack = require("webpack");
 const path = require("path");
 
 module.exports = {
-  devtool: "cheap-module-eval-source-map",
+  mode: "development",
+  devtool: "cheap-module-source-map",
   entry: [
     "eventsource-polyfill", // necessary for hot reloading with IE
     "webpack-hot-middleware/client?reload=true", //note that it reloads the page if hot module reloading fails.
@@ -26,28 +27,50 @@ module.exports = {
       {
         test: /\.js$/,
         include: path.join(__dirname, "src"),
-        loaders: ["babel-loader"],
+        use: ["babel-loader"],
       },
       {
         test: /(\.less)$/,
-        loaders: ["style-loader", "css-loader", "less-loader"],
+        use: ["style-loader", "css-loader", "less-loader"],
       },
       { test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, loader: "file" },
-      { test: /\.(woff|woff2)$/, loader: "url?prefix=font/&limit=5000" },
+      {
+        test: /\.(woff|woff2)$/,
+        use: [
+          {
+            loader: "url-loader",
+            options: {
+              limit: 5000,
+              prefix: "font/",
+            },
+          },
+        ],
+      },
       {
         test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
-        loader: "url?limit=10000&mimetype=application/octet-stream",
+        use: [
+          {
+            loader: "url-loader",
+            options: {
+              limit: 10000,
+              mimetype: "application/octet-stream",
+            },
+          },
+        ],
       },
       {
         test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
-        loader: "url?limit=10000&mimetype=image/svg+xml",
+        use: [
+          {
+            loader: "url-loader",
+            options: {
+              limit: 10000,
+              mimetype: "image/svg+xml",
+            },
+          },
+        ],
       },
-      { test: /\.(jpg|png)$/, loaders: ["file"] },
+      { test: /\.(jpg|png)$/, use: ["file"] },
     ],
-  },
-  node: {
-    net: "empty",
-    fs: "empty",
-    tls: "empty",
   },
 };

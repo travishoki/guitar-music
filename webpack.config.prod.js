@@ -4,11 +4,12 @@ const FtpOutputPlugin = require("ftp-output-webpack-plugin");
 // const ftpOptions = require("./ftpOptions");
 
 module.exports = {
+  mode: "production",
   devtool: "inline-source-map",
   entry: [
     "eventsource-polyfill", // necessary for hot reloading with IE
     "webpack-hot-middleware/client?reload=true", //note that it reloads the page if hot module reloading fails.
-    path.resolve(__dirname, "src/index"),
+    "./src/index",
   ],
   target: "web",
   output: {
@@ -18,7 +19,6 @@ module.exports = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoEmitOnErrorsPlugin(),
     // new FtpOutputPlugin(ftpOptions), // ftpOptions see as above description
   ],
   module: {
@@ -26,12 +26,12 @@ module.exports = {
       {
         test: /\.js$/,
         include: path.join(__dirname, "src"),
-        loaders: ["babel-loader"],
+        use: ["babel-loader"],
       },
-      { test: /\.(jpg|png)$/, loaders: ["file"] },
+      { test: /\.(jpg|png)$/, use: ["file"] },
       {
         test: /(\.less)$/,
-        loaders: ["style-loader", "css-loader", "less-loader"],
+        use: ["style-loader", "css-loader", "less-loader"],
       },
       { test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, loader: "file" },
       { test: /\.(woff|woff2)$/, loader: "url?prefix=font/&limit=5000" },
@@ -53,10 +53,5 @@ module.exports = {
         loader: "file-loader",
       },
     ],
-  },
-  node: {
-    net: "empty",
-    fs: "empty",
-    tls: "empty",
   },
 };
