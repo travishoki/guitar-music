@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import GuitarTabLink from "../../../../components/common/GuitarTabLink";
+import SvgBarGraph from "../../../../icons/SvgBarGraph";
 
 const SongRow = ({ isGuitarMode, song }) => {
   const rowStyle = {
@@ -25,6 +26,11 @@ const SongRow = ({ isGuitarMode, song }) => {
     fontSize: 14,
   };
 
+  const iconBarGraph = {
+    height: 20,
+    width: 20,
+  };
+
   const fixUrlTitle = (title) => {
     return title.replace(/ /g, "-").toLowerCase();
   };
@@ -37,8 +43,8 @@ const SongRow = ({ isGuitarMode, song }) => {
         </p>
         <p className="secondary-text-color" style={artistStyle}>
           {song.artist}
-          {song.barChords && "*"}
         </p>
+        {isGuitarMode && song.barChords && <SvgBarGraph style={iconBarGraph} />}
       </Link>
       {isGuitarMode && <GuitarTabLink song={song} />}
     </div>
