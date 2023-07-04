@@ -1,4 +1,5 @@
 import * as GENRE from "./genres";
+import * as ERAS from "./eras";
 import LYRIC_LIST from "../components/lyrics";
 
 export const SongList = [
@@ -14,6 +15,7 @@ export const SongList = [
     title: "Baby I Love Your Way",
     artist: "Peter Frampton",
     barChords: true,
+    era: ERAS.NINETIES,
     link: "https://tabs.ultimate-guitar.com/p/peter_frampton/baby_i_love_your_way_crd.htm",
     lyrics: LYRIC_LIST.BabyILoveYourWay,
   },
