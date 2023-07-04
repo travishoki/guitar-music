@@ -5,12 +5,7 @@ import { ALL, UNCATEGORIZED } from "../../../const/genres";
 import SongRow from "./SongRow/SongRow";
 import NoSongs from "./NoSongs/NoSongs";
 
-const SongTable = ({
-  currentEra,
-  currentGenre,
-  isGuitarMode,
-  currentSortTerm,
-}) => {
+const SongTable = ({ currentGenre, isGuitarMode, currentSortTerm }) => {
   const filteredSongs = SongList.filter(({ genres }) => {
     if (currentGenre === ALL) return true;
     if (currentGenre === UNCATEGORIZED) {
@@ -19,14 +14,6 @@ const SongTable = ({
     if (!genres) return false;
 
     return genres.includes(currentGenre);
-  }).filter(({ era }) => {
-    if (currentEra === ALL) return true;
-    if (currentEra === UNCATEGORIZED) {
-      return !era;
-    }
-    if (!era) return false;
-
-    return era === currentEra;
   });
 
   const finalSongsList = sortBy(filteredSongs, currentSortTerm);
