@@ -2,9 +2,7 @@ const webpack = require("webpack");
 const path = require("path");
 
 module.exports = {
-  debug: true,
   devtool: "cheap-module-eval-source-map",
-  noInfo: false,
   entry: [
     "eventsource-polyfill", // necessary for hot reloading with IE
     "webpack-hot-middleware/client?reload=true", //note that it reloads the page if hot module reloading fails.
@@ -21,16 +19,19 @@ module.exports = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin(),
+    new webpack.NoEmitOnErrorsPlugin(),
   ],
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
         include: path.join(__dirname, "src"),
-        loaders: ["babel"],
+        loaders: ["babel-loader"],
       },
-      { test: /(\.less)$/, loaders: ["style", "css", "less"] },
+      {
+        test: /(\.less)$/,
+        loaders: ["style-loader", "css-loader", "less-loader"],
+      },
       { test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, loader: "file" },
       { test: /\.(woff|woff2)$/, loader: "url?prefix=font/&limit=5000" },
       {
@@ -42,7 +43,6 @@ module.exports = {
         loader: "url?limit=10000&mimetype=image/svg+xml",
       },
       { test: /\.(jpg|png)$/, loaders: ["file"] },
-      { test: /\.json$/, loader: "json-loader" },
     ],
   },
   node: {
