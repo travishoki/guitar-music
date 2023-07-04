@@ -43,13 +43,6 @@ export const SongList = [
     lyrics: LYRIC_LIST.Edelweiss,
   },
   {
-    title: "Five Hundred Miles",
-    artist: "Peter, Paul & Mary",
-    barChords: true,
-    link: "https://tabs.ultimate-guitar.com/p/peter_paul_and_mary/500_miles_crd.htm",
-    lyrics: LYRIC_LIST.FiveHundredMiles,
-  },
-  {
     title: "God Bless the USA",
     artist: "Lee Greenwood",
     genres: [GENRE.PATRIOTIC],

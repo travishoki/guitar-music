@@ -4,7 +4,6 @@ import BlowinInTheWind from "./BlowinInTheWind";
 import ButterflyKisses from "./ButterflyKisses";
 import CountryRoads from "./CountryRoads";
 import Edelweiss from "./Edelweiss";
-import FiveHundredMiles from "./FiveHundredMiles";
 import GodBlessTheUSA from "./GodBlessTheUSA";
 import HesGotTheWholeWorldInHisHands from "./HesGotTheWholeWorldInHisHands";
 import LeavingOnAJetPlane from "./LeavingOnAJetPlane";
@@ -33,7 +32,6 @@ export default {
   ButterflyKisses,
   CountryRoads,
   Edelweiss,
-  FiveHundredMiles,
   GodBlessTheUSA,
   HesGotTheWholeWorldInHisHands,
   LeavingOnAJetPlane,
