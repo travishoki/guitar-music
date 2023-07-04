@@ -31,6 +31,13 @@ const SongRow = ({ isGuitarMode, song }) => {
     width: 20,
   };
 
+  const rightSectionStyle = {
+    alignItems: "center",
+    display: "flex",
+    justifyContent: "flex-end",
+    width: 60,
+  };
+
   const fixUrlTitle = (title) => {
     return title.replace(/ /g, "-").toLowerCase();
   };
@@ -45,10 +52,12 @@ const SongRow = ({ isGuitarMode, song }) => {
           {song.artist}
         </p>
       </Link>
-      <div>
-        {isGuitarMode && song.barChords && <SvgBarGraph style={iconBarGraph} />}
-        {isGuitarMode && <GuitarTabLink song={song} />}
-      </div>
+      {isGuitarMode && (
+        <div style={rightSectionStyle}>
+          {song.barChords && <SvgBarGraph style={iconBarGraph} />}
+          <GuitarTabLink song={song} />
+        </div>
+      )}
     </div>
   );
 };
