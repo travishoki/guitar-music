@@ -20,12 +20,13 @@ export const SongList = [
   {
     title: "Blowin' in the Wind",
     artist: "Bob Dylan",
-    // link: "",
+    link: "https://tabs.ultimate-guitar.com/tab/bob-dylan/blowin-in-the-wind-chords-14835",
     lyrics: LYRIC_LIST.BlowinInTheWind,
   },
   {
     title: "Butterfly Kisses",
     artist: "Bob Carlisle",
+    barChords: true,
     link: "https://tabs.ultimate-guitar.com/tab/bob-carlisle/butterfly-kisses-chords-64393",
     lyrics: LYRIC_LIST.ButterflyKisses,
   },
@@ -66,21 +67,22 @@ export const SongList = [
   {
     title: "Leaving on a Jet Plane",
     artist: "John Denver",
-    // link: "",
+    link: "https://tabs.ultimate-guitar.com/tab/john-denver/leaving-on-a-jet-plane-chords-32979",
     genres: [GENRE.ROCK],
     lyrics: LYRIC_LIST.LeavingOnAJetPlane,
   },
   {
     title: "Michael Finnegan",
     artist: "Misc Traditional",
-    // link: "",
+    link: "https://tabs.ultimate-guitar.com/tab/misc-children/michael-finnegan-chords-1721165",
     genres: [GENRE.TRADITIONAL, GENRE.KIDS],
     lyrics: LYRIC_LIST.MichaelFinnegan,
   },
   {
     title: "Michael Row the Boat Ashore",
     artist: "Misc Traditional",
-    // link: "",
+    barChords: true,
+    link: "https://tabs.ultimate-guitar.com/tab/highwaymen/michael-row-the-boat-ashore-chords-1813491",
     genres: [GENRE.TRADITIONAL],
     lyrics: LYRIC_LIST.MichaelRowTheBoatAshore,
   },
@@ -101,13 +103,15 @@ export const SongList = [
   {
     title: "One Tin Soldier",
     artist: "The Original Caste",
-    // link: "",
+    barChords: true,
+    link: "https://tabs.ultimate-guitar.com/tab/the-original-caste/one-tin-soldier-chords-980986",
     lyrics: LYRIC_LIST.OneTinSoldier,
   },
   {
     title: "Over the Rainbow",
     artist: "Israel Kamakawiwo'ole",
-    // link: "",
+    barChords: true,
+    link: "https://tabs.ultimate-guitar.com/tab/2135261",
     lyrics: LYRIC_LIST.OverTheRainbow,
   },
   {
@@ -150,6 +154,8 @@ export const SongList = [
   {
     title: 'Turn" Turn" Turn',
     artist: "The Byrds",
+    barChords: true,
+    link: "https://tabs.ultimate-guitar.com/tab/the-byrds/turn-turn-turn-to-everything-there-is-a-season-chords-1055233",
     genres: [GENRE.FOLK],
     lyrics: LYRIC_LIST.TurnTurnTurn,
   },
@@ -185,7 +191,7 @@ export const SongList = [
     title: "You Are My Sunshine",
     artist: "Chris Stapleton",
     genres: [GENRE.TRADITIONAL],
-    // link: "",
+    link: "https://tabs.ultimate-guitar.com/tab/morgane-stapleton/you-are-my-sunshine-chords-1843946",
     lyrics: LYRIC_LIST.YouAreMySunshine,
   },
 ];
