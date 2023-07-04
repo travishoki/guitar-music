@@ -31,6 +31,13 @@ export const SongList = [
     lyrics: LYRIC_LIST.ButterflyKisses,
   },
   {
+    title: "Closing Time Chords",
+    artist: "Semisonic",
+    link: "https://tabs.ultimate-guitar.com/tab/semisonic/closing-time-chords-1743417",
+    lyrics: LYRIC_LIST.ClosingTimeChords,
+  },
+
+  {
     title: "Country Roads",
     artist: "John Denver",
     link: "https://tabs.ultimate-guitar.com/tab/john-denver/take-me-home-country-roads-chords-1101747",
@@ -56,6 +63,18 @@ export const SongList = [
     genres: [GENRE.TRADITIONAL, GENRE.RELIGIOUS],
     link: "https://tabs.ultimate-guitar.com/m/misc_praise_songs/hes_got_the_whole_world_in_his_hands_crd.htm",
     lyrics: LYRIC_LIST.HesGotTheWholeWorldInHisHands,
+  },
+  {
+    title: "I Cant Make You Love Me Chords",
+    artist: "Bonnie Raitt",
+    link: "https://tabs.ultimate-guitar.com/tab/bonnie-raitt/i-cant-make-you-love-me-chords-611294",
+    lyrics: LYRIC_LIST.ICantMakeYouLoveMe,
+  },
+  {
+    title: "Its Your Love",
+    artist: "Tim McGraw",
+    link: "https://tabs.ultimate-guitar.com/tab/tim-mcgraw/its-your-love-chords-76292",
+    lyrics: LYRIC_LIST.ItsYourLove,
   },
   {
     title: "Leaving on a Jet Plane",
@@ -108,6 +127,19 @@ export const SongList = [
     lyrics: LYRIC_LIST.PuffTheMagicDragon,
   },
   {
+    title: "Right Here Waiting Chords",
+    artist: "Richard Marx",
+    barChords: true,
+    link: "https://tabs.ultimate-guitar.com/tab/richard-marx/right-here-waiting-chords-93388",
+    lyrics: LYRIC_LIST.RightHereWaitingChords,
+  },
+  {
+    title: "Sunshine",
+    artist: "Jonathan Edwards",
+    link: "https://tabs.ultimate-guitar.com/tab/jonathan-edwards/sunshine-chords-105167",
+    lyrics: LYRIC_LIST.Sunshine,
+  },
+  {
     title: "The Cat Came Back",
     artist: "Harry S Miller",
     genres: [GENRE.KIDS],
@@ -145,6 +177,12 @@ export const SongList = [
     lyrics: LYRIC_LIST.TurnTurnTurn,
   },
   {
+    title: "Walking On Sunshine",
+    artist: "Katrina and the Waves",
+    link: "https://tabs.ultimate-guitar.com/tab/katrina-and-the-waves/walking-on-sunshine-chords-595283",
+    lyrics: LYRIC_LIST.WalkingOnSunshine,
+  },
+  {
     title: "What the World Needs Now is Love",
     artist: "Jackie DeShannon",
     barChords: true,
@@ -171,5 +209,11 @@ export const SongList = [
     genres: [GENRE.TRADITIONAL],
     link: "https://tabs.ultimate-guitar.com/tab/morgane-stapleton/you-are-my-sunshine-chords-1843946",
     lyrics: LYRIC_LIST.YouAreMySunshine,
+  },
+  {
+    title: "You're Still The One",
+    artist: "Shania Twain",
+    link: "https://tabs.ultimate-guitar.com/tab/shania-twain/youre-still-the-one-chords-1345",
+    lyrics: LYRIC_LIST.YoureStillTheOne,
   },
 ];
