@@ -3,21 +3,6 @@ import LYRIC_LIST from "../components/lyrics";
 
 export const SongList = [
   {
-    title: "All Through the Night",
-    artist: "Misc Traditional",
-    genres: [GENRE.TRADITIONAL],
-    barChords: true,
-    link: "https://tabs.ultimate-guitar.com/m/misc_traditional/all_through_the_night_crd.htm",
-    lyrics: LYRIC_LIST.AllThroughTheNight,
-  },
-  {
-    title: "America the Beautiful",
-    artist: "Misc Traditional",
-    genres: [GENRE.PATRIOTIC],
-    link: "https://tabs.ultimate-guitar.com/m/misc_traditional/america_the_beautiful_crd.htm",
-    lyrics: LYRIC_LIST.AmericaTheBeautiful,
-  },
-  {
     title: "Baby Baluga",
     artist: "Raffi Cavoukian",
     genres: [GENRE.KIDS],
@@ -77,12 +62,6 @@ export const SongList = [
     lyrics: LYRIC_LIST.LeavingOnAJetPlane,
   },
   {
-    title: "Let there be Peace on Earth",
-    artist: "Vince Gill",
-    link: "https://tabs.ultimate-guitar.com/v/vince_gill/let_there_be_peace_on_earth_crd.htm",
-    lyrics: LYRIC_LIST.LetThereBePeaceOnEarch,
-  },
-  {
     title: "Michael Finnegan",
     artist: "Misc Traditional",
     // link: "https://tabs.ultimate-guitar.com/m/misc_traditional/misc_traditional_-_michael_finnigan_crd.htm",
@@ -101,12 +80,6 @@ export const SongList = [
     artist: "Misc Traditional",
     link: "https://tabs.ultimate-guitar.com/m/mother_goose/hush_little_baby_crd.htm",
     lyrics: LYRIC_LIST.Mockingbird,
-  },
-  {
-    title: "Morning Has Broken",
-    artist: "Cat Stevens",
-    // link: "https://tabs.ultimate-guitar.com/c/cat_stevens/morning_has_broken_crd.htm",
-    lyrics: LYRIC_LIST.MorningHasBroken,
   },
   {
     title: "Noah's Ark",
@@ -133,24 +106,6 @@ export const SongList = [
     genres: [GENRE.FOLK, GENRE.KIDS],
     link: "https://tabs.ultimate-guitar.com/p/peter_paul_and_mary/puff_the_magic_dragon_ver3_crd.htm",
     lyrics: LYRIC_LIST.PuffTheMagicDragon,
-  },
-  {
-    title: "Put Your Hand in the Hand",
-    artist: "Anne Murray",
-    link: "https://tabs.ultimate-guitar.com/a/anne_murray/put_your_hand_in_the_hand_ver2_crd.htm",
-    lyrics: LYRIC_LIST.PutYourHandInTheHand,
-  },
-  {
-    title: "Seattle",
-    artist: "Perry Como",
-    link: "http://www.classic-country-song-lyrics.com/seattlelyricschords.html",
-    lyrics: LYRIC_LIST.Seattle,
-  },
-  {
-    title: "Tell My Why",
-    artist: "Misc Traditional",
-    link: "https://tabs.ultimate-guitar.com/m/melanie/tell_me_why_crd.htm",
-    lyrics: LYRIC_LIST.TellMeWhy,
   },
   {
     title: "The Cat Came Back",
@@ -185,11 +140,6 @@ export const SongList = [
     artist: "The Byrds",
     genres: [GENRE.FOLK],
     lyrics: LYRIC_LIST.TurnTurnTurn,
-  },
-  {
-    title: "Wedding Song",
-    artist: "Paul Stookey",
-    lyrics: LYRIC_LIST.WeddingSong,
   },
   {
     title: "What Child is This",
