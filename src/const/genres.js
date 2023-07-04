@@ -1,4 +1,5 @@
 export const ALL = "All";
+export const UNCATEGORIZED = "Uncategorized";
 
 export const FOLK = "Folk";
 export const KIDS = "Kids";
@@ -15,4 +16,5 @@ export const GENRE_LIST = [
   ROCK,
   RELIGIOUS,
   TRADITIONAL,
+  UNCATEGORIZED,
 ];
