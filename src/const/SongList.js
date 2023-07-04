@@ -1,7 +1,7 @@
 import * as GENRE from "./genres";
 import LYRIC_LIST from "../components/lyrics";
 
-module.exports = [
+export const SongList = [
   {
     title: "All Through the Night",
     artist: "Misc Traditional",

@@ -1,6 +1,6 @@
 import React from "react";
 import { sortBy } from "lodash";
-import SongList from "../../../const/SongList";
+import { SongList } from "../../../const/SongList";
 import { ALL } from "../../../const/genres";
 import SongRow from "./SongRow/SongRow";
 
