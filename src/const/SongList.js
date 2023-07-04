@@ -39,7 +39,7 @@ export const SongList = [
   {
     title: "Edelweiss",
     artist: "Bob Carlisle",
-    // link: "",
+    link: "https://tabs.ultimate-guitar.com/tab/misc-musicals/the-sound-of-music-edelweiss-chords-168569",
     lyrics: LYRIC_LIST.Edelweiss,
   },
   {
