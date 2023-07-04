@@ -1,6 +1,7 @@
 import BabyBaluga from "./BabyBaluga";
 import BabyILoveYourWay from "./BabyILoveYourWay";
 import BlowinInTheWind from "./BlowinInTheWind";
+import ButterflyKisses from "./ButterflyKisses";
 import CountryRoads from "./CountryRoads";
 import Edelweiss from "./Edelweiss";
 import FiveHundredMiles from "./FiveHundredMiles";
@@ -29,6 +30,7 @@ export default {
   BabyBaluga,
   BabyILoveYourWay,
   BlowinInTheWind,
+  ButterflyKisses,
   CountryRoads,
   Edelweiss,
   FiveHundredMiles,

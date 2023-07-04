@@ -20,19 +20,25 @@ export const SongList = [
   {
     title: "Blowin' in the Wind",
     artist: "Bob Dylan",
-    // link: "https://tabs.ultimate-guitar.com/b/bob_dylan/blowin_in_the_wind_ver10_crd_1086954id_25082011date.htm",
+    // link: "",
     lyrics: LYRIC_LIST.BlowinInTheWind,
+  },
+  {
+    title: "Butterfly Kisses",
+    artist: "Bob Carlisle",
+    link: "https://tabs.ultimate-guitar.com/tab/bob-carlisle/butterfly-kisses-chords-64393",
+    lyrics: LYRIC_LIST.ButterflyKisses,
   },
   {
     title: "Country Roads",
     artist: "John Denver",
-    // link: "https://tabs.ultimate-guitar.com/j/john_denver/country_roads_ver2_crd.htm",
+    link: "https://tabs.ultimate-guitar.com/tab/john-denver/take-me-home-country-roads-chords-1101747",
     lyrics: LYRIC_LIST.CountryRoads,
   },
   {
     title: "Edelweiss",
     artist: "Bob Carlisle",
-    // link: "https://tabs.ultimate-guitar.com/s/sound_of_music/edelweiss_crd.htm",
+    // link: "",
     lyrics: LYRIC_LIST.Edelweiss,
   },
   {
@@ -60,21 +66,21 @@ export const SongList = [
   {
     title: "Leaving on a Jet Plane",
     artist: "John Denver",
-    // link: "https://tabs.ultimate-guitar.com/j/john_denver/leaving_on_a_jetplane_ver2_crd.htm",
+    // link: "",
     genres: [GENRE.ROCK],
     lyrics: LYRIC_LIST.LeavingOnAJetPlane,
   },
   {
     title: "Michael Finnegan",
     artist: "Misc Traditional",
-    // link: "https://tabs.ultimate-guitar.com/m/misc_traditional/misc_traditional_-_michael_finnigan_crd.htm",
+    // link: "",
     genres: [GENRE.TRADITIONAL, GENRE.KIDS],
     lyrics: LYRIC_LIST.MichaelFinnegan,
   },
   {
     title: "Michael Row the Boat Ashore",
     artist: "Misc Traditional",
-    // link: "https://tabs.ultimate-guitar.com/t/the_highwaymen/michael_row_the_boat_ashore_crd.htm",
+    // link: "",
     genres: [GENRE.TRADITIONAL],
     lyrics: LYRIC_LIST.MichaelRowTheBoatAshore,
   },
@@ -95,13 +101,13 @@ export const SongList = [
   {
     title: "One Tin Soldier",
     artist: "The Original Caste",
-    // link: "https://tabs.ultimate-guitar.com/m/misc_unsigned_bands/the_original_caste_-_one_tin_soldier_crd.htm",
+    // link: "",
     lyrics: LYRIC_LIST.OneTinSoldier,
   },
   {
     title: "Over the Rainbow",
     artist: "Israel Kamakawiwo'ole",
-    // link: "https://tabs.ultimate-guitar.com/i/israel_kamakawiwoole/somewhere_over_the_rainbow_crd.htm",
+    // link: "",
     lyrics: LYRIC_LIST.OverTheRainbow,
   },
   {
@@ -179,7 +185,7 @@ export const SongList = [
     title: "You Are My Sunshine",
     artist: "Chris Stapleton",
     genres: [GENRE.TRADITIONAL],
-    // link: "https://tabs.ultimate-guitar.com/c/chris_stapleton/you_are_my_sunshine_crd.htm",
+    // link: "",
     lyrics: LYRIC_LIST.YouAreMySunshine,
   },
 ];
