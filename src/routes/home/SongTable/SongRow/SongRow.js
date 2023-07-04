@@ -36,7 +36,7 @@ const SongRow = ({ isGuitarMode, song }) => {
   };
 
   return (
-    <div style={rowStyle}>
+    <div className="bottom-border" style={rowStyle}>
       <Link to={"/song/" + fixUrlTitle(song.title)} style={linkStyle}>
         <p className="title-font" style={titleStyle}>
           {song.title}
