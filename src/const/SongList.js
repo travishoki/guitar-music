@@ -47,7 +47,7 @@ export const SongList = [
     artist: "Lee Greenwood",
     genres: [GENRE.PATRIOTIC],
     barChords: true,
-    link: "https://tabs.ultimate-guitar.com/l/lee_greenwood/god_bless_the_usa_crd.htm",
+    link: "https://tabs.ultimate-guitar.com/tab/lee-greenwood/god-bless-the-usa-chords-825566",
     lyrics: LYRIC_LIST.GodBlessTheUSA,
   },
   {
@@ -84,14 +84,6 @@ export const SongList = [
     artist: "Misc Traditional",
     link: "https://tabs.ultimate-guitar.com/m/mother_goose/hush_little_baby_crd.htm",
     lyrics: LYRIC_LIST.Mockingbird,
-  },
-  {
-    title: "Noah's Ark",
-    artist: "Misc Children",
-    genres: [GENRE.RELIGIOUS],
-    barChords: true,
-    link: "https://tabs.ultimate-guitar.com/m/misc_children/rise_and_shine_arky_arky_crd.htm",
-    lyrics: LYRIC_LIST.NoahsArk,
   },
   {
     title: "One Tin Soldier",
@@ -153,15 +145,8 @@ export const SongList = [
     lyrics: LYRIC_LIST.TurnTurnTurn,
   },
   {
-    title: "What Child is This",
-    artist: "Misc Christmas",
-    barChords: true,
-    link: "https://tabs.ultimate-guitar.com/m/misc_christmas/what_child_is_this_crd.htm",
-    lyrics: LYRIC_LIST.WhatChildIsThis,
-  },
-  {
     title: "What the World Needs Now is Love",
-    artist: "Diana Ross",
+    artist: "Jackie DeShannon",
     barChords: true,
     link: "https://tabs.ultimate-guitar.com/j/jackie_deshannon/what_the_world_needs_now_is_love_crd.htm",
     lyrics: LYRIC_LIST.WhatTheWorldNeedsNowIsLove,

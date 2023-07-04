@@ -10,7 +10,6 @@ import LeavingOnAJetPlane from "./LeavingOnAJetPlane";
 import MichaelFinnegan from "./MichaelFinnegan";
 import MichaelRowTheBoatAshore from "./MichaelRowTheBoatAshore";
 import Mockingbird from "./Mockingbird";
-import NoahsArk from "./NoahsArk";
 import OneTinSoldier from "./OneTinSoldier";
 import OverTheRainbow from "./OverTheRainbow";
 import PuffTheMagicDragon from "./PuffTheMagicDragon";
@@ -19,7 +18,6 @@ import TheSoundsOfSilence from "./TheSoundsOfSilence";
 import ThisLandIsYourLand from "./ThisLandIsYourLand";
 import TieMeKangarooDownSport from "./TieMeKangarooDownSport";
 import TurnTurnTurn from "./TurnTurnTurn";
-import WhatChildIsThis from "./WhatChildIsThis";
 import WhatTheWorldNeedsNowIsLove from "./WhatTheWorldNeedsNowIsLove";
 import WhereHaveAllTheFlowersGone from "./WhereHaveAllTheFlowersGone";
 import YellowSubmarine from "./YellowSubmarine";
@@ -38,7 +36,6 @@ export default {
   MichaelFinnegan,
   MichaelRowTheBoatAshore,
   Mockingbird,
-  NoahsArk,
   OneTinSoldier,
   OverTheRainbow,
   PuffTheMagicDragon,
@@ -47,7 +44,6 @@ export default {
   ThisLandIsYourLand,
   TieMeKangarooDownSport,
   TurnTurnTurn,
-  WhatChildIsThis,
   WhatTheWorldNeedsNowIsLove,
   WhereHaveAllTheFlowersGone,
   YellowSubmarine,
