@@ -44,9 +44,11 @@ const SongRow = ({ isGuitarMode, song }) => {
         <p className="secondary-text-color" style={artistStyle}>
           {song.artist}
         </p>
-        {isGuitarMode && song.barChords && <SvgBarGraph style={iconBarGraph} />}
       </Link>
-      {isGuitarMode && <GuitarTabLink song={song} />}
+      <div>
+        {isGuitarMode && song.barChords && <SvgBarGraph style={iconBarGraph} />}
+        {isGuitarMode && <GuitarTabLink song={song} />}
+      </div>
     </div>
   );
 };

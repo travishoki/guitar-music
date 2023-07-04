@@ -9,7 +9,7 @@ const GuitarTabLink = ({ song }) => {
   if (!link) return null;
 
   const guitarLink = {
-    width: 32,
+    width: 40,
   };
 
   return (
@@ -17,10 +17,9 @@ const GuitarTabLink = ({ song }) => {
       href={link}
       target="_blank"
       className="guitar-tab-link"
-      style={guitarLink}
       title="Go to Guitar Tabs"
     >
-      <SvgGuitar />
+      <SvgGuitar style={guitarLink} />
     </a>
   );
 };
