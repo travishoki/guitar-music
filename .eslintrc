@@ -1,27 +1,27 @@
 {
-  "parserOptions": {
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "jsx": true
-    }
-  },
-  "plugins": ["react", "import", "no-only-tests", "sort-destructure-keys"],
-  "extends": ["eslint:recommended"],
-  "rules": {
-    // General
-    "dot-notation": "error",
-    "eqeqeq": "error",
-    "no-duplicate-imports": "error",
-    "no-else-return": "error",
-    "no-extra-boolean-cast": 0,
-    "no-nested-ternary": "error",
-    "no-only-tests/no-only-tests": "error",
-    "no-param-reassign": "error",
-    "quotes": [
-      1,
-      "single",
-      { "avoidEscape": true, "allowTemplateLiterals": true }
-    ],
-    "semi": [2, "always"]
-  }
+	"parserOptions": {
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"jsx": true
+		}
+	},
+	"plugins": ["react", "import", "no-only-tests", "sort-destructure-keys"],
+	"extends": ["eslint:recommended", "plugin:react/recommended"],
+	"rules": {
+		// General
+		"dot-notation": "error",
+		"eqeqeq": "error",
+		"no-duplicate-imports": "error",
+		"no-else-return": "error",
+		"no-extra-boolean-cast": 0,
+		"no-nested-ternary": "error",
+		"no-only-tests/no-only-tests": "error",
+		"no-param-reassign": "error",
+		"quotes": [
+			1,
+			"single",
+			{ "avoidEscape": true, "allowTemplateLiterals": true }
+		],
+		"semi": [2, "always"]
+	}
 }
