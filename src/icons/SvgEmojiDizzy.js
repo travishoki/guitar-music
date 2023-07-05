@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const SvgEmojiDizzy = ({ style }) => (
   <svg viewBox="0 0 512 512" style={style}>

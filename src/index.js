@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import { render } from "react-dom";
-import { BrowserRouter } from "react-router-dom";
+import React, { useState } from 'react';
+import { render } from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 
-import Header from "./components/common/Header/Header";
-import Main from "./components/common/Main";
-import "./styles/index.less";
+import Header from './components/common/Header/Header';
+import Main from './components/common/Main';
+import './styles/index.less';
 
 const App = () => {
   const [isdarkMode, setIsdarkMode] = useState(true);
@@ -26,7 +26,7 @@ const App = () => {
   };
 
   return (
-    <div id="container" className={isdarkMode ? "dark-mode" : "light-mode"}>
+    <div id="container" className={isdarkMode ? 'dark-mode' : 'light-mode'}>
       <div id="content">
         <Header />
         <Main
@@ -46,5 +46,5 @@ render(
   <BrowserRouter basename="/guitar">
     <App />
   </BrowserRouter>,
-  document.getElementById("app")
+  document.getElementById('app')
 );

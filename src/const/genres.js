@@ -1,14 +1,14 @@
-import { ERA_LIST } from "./eras";
+import { ERA_LIST } from './eras';
 
-export const ALL = "All";
-export const UNCATEGORIZED = "Uncategorized";
+export const ALL = 'All';
+export const UNCATEGORIZED = 'Uncategorized';
 
-export const FOLK = "Folk";
-export const KIDS = "Kids";
-export const PATRIOTIC = "Patriotic";
-export const RELIGIOUS = "Religious";
-export const ROCK = "Rock";
-export const TRADITIONAL = "Traditional";
+export const FOLK = 'Folk';
+export const KIDS = 'Kids';
+export const PATRIOTIC = 'Patriotic';
+export const RELIGIOUS = 'Religious';
+export const ROCK = 'Rock';
+export const TRADITIONAL = 'Traditional';
 
 export const GENRE_LIST = [FOLK, KIDS, PATRIOTIC, ROCK, RELIGIOUS, TRADITIONAL];
 

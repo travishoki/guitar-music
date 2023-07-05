@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import SvgBarGraph from "../../icons/SvgBarGraph";
+import SvgBarGraph from '../../icons/SvgBarGraph';
 
 const BarChordToggle = ({ includesBarChord, onClick }) => (
   <button onClick={onClick}>

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const SideSCrollSelector = ({ currentOption, list, onClick }) => (
   <div className="side-scroll-selector">
@@ -6,7 +6,7 @@ const SideSCrollSelector = ({ currentOption, list, onClick }) => (
       {list.map((option) => (
         <li key={option}>
           <button
-            className={option === currentOption ? "active" : ""}
+            className={option === currentOption ? 'active' : ''}
             onClick={() => onClick(option)}
           >
             {option}

@@ -1,6 +1,6 @@
-import React from "react";
-import { SORT_LIST } from "../../../const/sort";
-import SideSCrollSelector from "../../../components/SideScrollSelector/SideScrollSelector";
+import React from 'react';
+import { SORT_LIST } from '../../../const/sort';
+import SideSCrollSelector from '../../../components/SideScrollSelector/SideScrollSelector';
 
 const Sort = ({ currentOption, onClick }) => (
   <SideSCrollSelector

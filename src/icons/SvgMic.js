@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const SvgMic = () => (
   <svg viewBox="0 0 256 256">

@@ -1,7 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import SvgGuitar from "../../icons/SvgGuitar";
+import SvgGuitar from '../../icons/SvgGuitar';
 
 const GuitarTabLink = ({ song }) => {
   const { link } = song;
@@ -9,7 +9,7 @@ const GuitarTabLink = ({ song }) => {
   if (!link) return null;
 
   const guitarLink = {
-    width: 40,
+    width: 40
   };
 
   return (
@@ -25,7 +25,7 @@ const GuitarTabLink = ({ song }) => {
 };
 
 GuitarTabLink.propTypes = {
-  song: PropTypes.object.isRequired,
+  song: PropTypes.object.isRequired
 };
 
 export default GuitarTabLink;

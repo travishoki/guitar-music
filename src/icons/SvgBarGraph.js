@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const SvgBarGraph = ({ style }) => (
   <svg viewBox="0 0 24 24" style={style}>

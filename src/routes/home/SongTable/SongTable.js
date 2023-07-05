@@ -1,15 +1,15 @@
-import React from "react";
-import { sortBy } from "lodash";
-import { SongList } from "../../../const/SongList";
-import { ALL, UNCATEGORIZED } from "../../../const/genres";
-import SongRow from "./SongRow/SongRow";
-import NoSongs from "./NoSongs/NoSongs";
+import React from 'react';
+import { sortBy } from 'lodash';
+import { SongList } from '../../../const/SongList';
+import { ALL, UNCATEGORIZED } from '../../../const/genres';
+import SongRow from './SongRow/SongRow';
+import NoSongs from './NoSongs/NoSongs';
 
 const SongTable = ({
   currentGenre,
   currentSortTerm,
   includesBarChord,
-  isGuitarMode,
+  isGuitarMode
 }) => {
   const filteredSongs = SongList.filter(({ barChords, genres }) => {
     if (!includesBarChord && barChords) return false;
