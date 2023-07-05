@@ -25,11 +25,11 @@ const HomePage = ({
         <div className="toggle-controls">
           <DarkModeToggle
             isdarkMode={isdarkMode}
-            onToggleIsDarkMode={onToggleIsDarkMode}
+            onClick={onToggleIsDarkMode}
           />
           <GuitarModeToggle
             isGuitarMode={isGuitarMode}
-            onToggleIsGuitarMode={onToggleIsGuitarMode}
+            onClick={onToggleIsGuitarMode}
           />
         </div>
       </div>
