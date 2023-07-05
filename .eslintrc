@@ -1,0 +1,18 @@
+{
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": ["react", "import", "no-only-tests", "sort-destructure-keys"],
+  "extends": ["eslint:recommended"],
+  "rules": {
+    "quotes": [
+      1,
+      "single",
+      { "avoidEscape": true, "allowTemplateLiterals": true }
+    ],
+    "semi": [2, "always"]
+  }
+}
