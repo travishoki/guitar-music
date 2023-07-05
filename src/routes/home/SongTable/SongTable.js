@@ -5,8 +5,14 @@ import { ALL, UNCATEGORIZED } from "../../../const/genres";
 import SongRow from "./SongRow/SongRow";
 import NoSongs from "./NoSongs/NoSongs";
 
-const SongTable = ({ currentGenre, isGuitarMode, currentSortTerm }) => {
-  const filteredSongs = SongList.filter(({ genres }) => {
+const SongTable = ({
+  currentGenre,
+  currentSortTerm,
+  includesBarChord,
+  isGuitarMode,
+}) => {
+  const filteredSongs = SongList.filter(({ barChords, genres }) => {
+    if (!includesBarChord && barChords) return false;
     if (currentGenre === ALL) return true;
     if (currentGenre === UNCATEGORIZED) {
       return !genres;

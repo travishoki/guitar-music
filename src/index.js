@@ -9,6 +9,9 @@ import "./styles/index.less";
 const App = () => {
   const [isdarkMode, setIsdarkMode] = useState(true);
   const [isGuitarMode, setIsGuitarMode] = useState(false);
+  const [includesBarChord, setIncludesBarChord] = useState(true);
+
+  onToggleIncludesBarChord;
 
   const onToggleIsDarkMode = () => {
     setIsdarkMode(!isdarkMode);
@@ -18,15 +21,21 @@ const App = () => {
     setIsGuitarMode(!isGuitarMode);
   };
 
+  const onToggleIncludesBarChord = () => {
+    setIncludesBarChord(!includesBarChord);
+  };
+
   return (
     <div id="container" className={isdarkMode ? "dark-mode" : "light-mode"}>
       <div id="content">
         <Header />
         <Main
-          isdarkMode={isdarkMode}
+          includesBarChord={includesBarChord}
           isGuitarMode={isGuitarMode}
+          isdarkMode={isdarkMode}
           onToggleIsDarkMode={onToggleIsDarkMode}
           onToggleIsGuitarMode={onToggleIsGuitarMode}
+          onToggleIncludesBarChord={onToggleIncludesBarChord}
         />
       </div>
     </div>

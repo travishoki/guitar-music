@@ -4,13 +4,15 @@ import Genre from "./Genre/Genre";
 import Sort from "./Sort/Sort";
 import { TITLE } from "../../const/sort";
 import { ALL as GENRE_ALL } from "../../const/genres";
+import BarChordToggle from "../../components/BarChordToggle/BarChordToggle";
 import DarkModeToggle from "../../components/DarkModeToggle/DarkModeToggle";
 import GuitarModeToggle from "../../components/GuitarModeToggle/GuitarModeToggle";
 
 const HomePage = ({
-  isdarkMode,
+  includesBarChord,
   isGuitarMode,
-
+  isdarkMode,
+  onToggleIncludesBarChord,
   onToggleIsDarkMode,
   onToggleIsGuitarMode,
 }) => {
@@ -23,6 +25,10 @@ const HomePage = ({
         <Sort currentOption={sortTerm} onClick={setSort} />
 
         <div className="toggle-controls">
+          <BarChordToggle
+            includesBarChord={includesBarChord}
+            onClick={onToggleIncludesBarChord}
+          />
           <DarkModeToggle
             isdarkMode={isdarkMode}
             onClick={onToggleIsDarkMode}
@@ -37,8 +43,9 @@ const HomePage = ({
       <Genre currentOption={genre} onClick={setGenre} />
       <SongTable
         currentGenre={genre}
-        isGuitarMode={isGuitarMode}
         currentSortTerm={sortTerm}
+        includesBarChord={includesBarChord}
+        isGuitarMode={isGuitarMode}
       />
     </div>
   );

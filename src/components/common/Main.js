@@ -5,10 +5,12 @@ import NotFoundPage from "../../routes/notFound/NotFoundPage";
 import { Switch, Route } from "react-router-dom";
 
 const Main = ({
+  includesBarChord,
   isdarkMode,
   isGuitarMode,
   onToggleIsDarkMode,
   onToggleIsGuitarMode,
+  onToggleIncludesBarChord,
 }) => (
   <main>
     <Switch>
@@ -17,8 +19,10 @@ const Main = ({
         path="/"
         render={() => (
           <HomePage
+            includesBarChord={includesBarChord}
             isdarkMode={isdarkMode}
             isGuitarMode={isGuitarMode}
+            onToggleIncludesBarChord={onToggleIncludesBarChord}
             onToggleIsDarkMode={onToggleIsDarkMode}
             onToggleIsGuitarMode={onToggleIsGuitarMode}
           />
