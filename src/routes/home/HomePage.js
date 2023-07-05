@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import SongTable from './SongTable/SongTable';
-import Genre from './Genre/Genre';
-import Sort from './Sort/Sort';
-import { TITLE } from '../../const/sort';
-import { ALL as GENRE_ALL } from '../../const/genres';
-import BarChordToggle from '../../components/BarChordToggle/BarChordToggle';
-import DarkModeToggle from '../../components/DarkModeToggle/DarkModeToggle';
-import GuitarModeToggle from '../../components/GuitarModeToggle/GuitarModeToggle';
+import React, { useState } from "react";
+import SongTable from "./SongTable/SongTable";
+import Genre from "./Genre/Genre";
+import Sort from "./Sort/Sort";
+import { TITLE } from "../../const/sort";
+import { ALL as GENRE_ALL } from "../../const/genres";
+import BarChordToggle from "../../components/BarChordToggle/BarChordToggle";
+import DarkModeToggle from "../../components/DarkModeToggle/DarkModeToggle";
+import GuitarModeToggle from "../../components/GuitarModeToggle/GuitarModeToggle";
 
 const HomePage = ({
   includesBarChord,
@@ -14,7 +14,7 @@ const HomePage = ({
   isdarkMode,
   onToggleIncludesBarChord,
   onToggleIsDarkMode,
-  onToggleIsGuitarMode
+  onToggleIsGuitarMode,
 }) => {
   const [genre, setGenre] = useState(GENRE_ALL);
   const [sortTerm, setSort] = useState(TITLE);
