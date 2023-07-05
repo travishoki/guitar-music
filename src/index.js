@@ -7,44 +7,42 @@ import Main from './components/common/Main';
 import './styles/index.less';
 
 const App = () => {
-  const [isdarkMode, setIsdarkMode] = useState(true);
-  const [isGuitarMode, setIsGuitarMode] = useState(false);
-  const [includesBarChord, setIncludesBarChord] = useState(true);
+	const [isdarkMode, setIsdarkMode] = useState(true);
+	const [isGuitarMode, setIsGuitarMode] = useState(false);
+	const [includesBarChord, setIncludesBarChord] = useState(true);
 
-  onToggleIncludesBarChord;
+	const onToggleIsDarkMode = () => {
+		setIsdarkMode(!isdarkMode);
+	};
 
-  const onToggleIsDarkMode = () => {
-    setIsdarkMode(!isdarkMode);
-  };
+	const onToggleIsGuitarMode = () => {
+		setIsGuitarMode(!isGuitarMode);
+	};
 
-  const onToggleIsGuitarMode = () => {
-    setIsGuitarMode(!isGuitarMode);
-  };
+	const onToggleIncludesBarChord = () => {
+		setIncludesBarChord(!includesBarChord);
+	};
 
-  const onToggleIncludesBarChord = () => {
-    setIncludesBarChord(!includesBarChord);
-  };
-
-  return (
-    <div id="container" className={isdarkMode ? 'dark-mode' : 'light-mode'}>
-      <div id="content">
-        <Header />
-        <Main
-          includesBarChord={includesBarChord}
-          isGuitarMode={isGuitarMode}
-          isdarkMode={isdarkMode}
-          onToggleIsDarkMode={onToggleIsDarkMode}
-          onToggleIsGuitarMode={onToggleIsGuitarMode}
-          onToggleIncludesBarChord={onToggleIncludesBarChord}
-        />
-      </div>
-    </div>
-  );
+	return (
+		<div id="container" className={isdarkMode ? 'dark-mode' : 'light-mode'}>
+			<div id="content">
+				<Header />
+				<Main
+					includesBarChord={includesBarChord}
+					isGuitarMode={isGuitarMode}
+					isdarkMode={isdarkMode}
+					onToggleIsDarkMode={onToggleIsDarkMode}
+					onToggleIsGuitarMode={onToggleIsGuitarMode}
+					onToggleIncludesBarChord={onToggleIncludesBarChord}
+				/>
+			</div>
+		</div>
+	);
 };
 
 render(
-  <BrowserRouter basename="/guitar">
-    <App />
-  </BrowserRouter>,
-  document.getElementById('app')
+	<BrowserRouter basename="/guitar">
+		<App />
+	</BrowserRouter>,
+	document.getElementById('app'),
 );
