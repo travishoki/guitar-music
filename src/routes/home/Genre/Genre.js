@@ -1,6 +1,6 @@
-import React from 'react';
-import { FILTER_LIST } from '../../../const/genres';
-import SideSCrollSelector from '../../../components/SideScrollSelector/SideScrollSelector';
+import React from "react";
+import { FILTER_LIST } from "../../../const/genres";
+import SideSCrollSelector from "../../../components/SideScrollSelector/SideScrollSelector";
 
 const Genre = ({ currentOption, onClick }) => (
   <SideSCrollSelector
