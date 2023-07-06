@@ -3,16 +3,16 @@ import SvgEmojiDizzy from '../../../../icons/SvgEmojiDizzy';
 
 const NoSongs = () => {
   const titleStyle = {
-    fontSize: 24
+    fontSize: 24,
   };
 
   const containerStyle = {
-    textAlign: 'center'
+    textAlign: 'center',
   };
 
   const iconstyle = {
     height: 100,
-    width: 100
+    width: 100,
   };
 
   return (

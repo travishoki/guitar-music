@@ -9,7 +9,7 @@ const SongTable = ({
   currentGenre,
   currentSortTerm,
   includesBarChord,
-  isGuitarMode
+  isGuitarMode,
 }) => {
   const filteredSongs = SongList.filter(({ barChords, genres }) => {
     if (!includesBarChord && barChords) return false;

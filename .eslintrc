@@ -23,6 +23,9 @@
 			"single",
 			{ "avoidEscape": true, "allowTemplateLiterals": true }
 		],
-		"semi": [2, "always"]
+		"semi": [2, "always"],
+
+		// Layout & Formatting
+		"comma-dangle": ["error", "always-multiline"]		
 	}
 }

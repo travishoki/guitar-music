@@ -9,7 +9,7 @@ const GuitarTabLink = ({ song }) => {
   if (!link) return null;
 
   const guitarLink = {
-    width: 40
+    width: 40,
   };
 
   return (
@@ -25,7 +25,7 @@ const GuitarTabLink = ({ song }) => {
 };
 
 GuitarTabLink.propTypes = {
-  song: PropTypes.object.isRequired
+  song: PropTypes.object.isRequired,
 };
 
 export default GuitarTabLink;

@@ -61,5 +61,5 @@ export default {
   WhereHaveAllTheFlowersGone,
   YellowSubmarine,
   YouAreMySunshine,
-  YoureStillTheOne
+  YoureStillTheOne,
 };

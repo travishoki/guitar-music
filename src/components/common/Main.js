@@ -10,7 +10,7 @@ const Main = ({
   isGuitarMode,
   onToggleIsDarkMode,
   onToggleIsGuitarMode,
-  onToggleIncludesBarChord
+  onToggleIncludesBarChord,
 }) => (
   <main>
     <Switch>

@@ -7,35 +7,35 @@ const SongRow = ({ isGuitarMode, song }) => {
   const rowStyle = {
     display: 'flex',
     justifyContent: 'space-between',
-    padding: 10
+    padding: 10,
   };
 
   const linkStyle = {
-    textDecoration: 'none'
+    textDecoration: 'none',
   };
 
   const titleStyle = {
     fontSize: 20,
     fontWeight: 'bold',
     margin: 0,
-    marginBottom: 2
+    marginBottom: 2,
   };
 
   const artistStyle = {
     margin: 0,
-    fontSize: 14
+    fontSize: 14,
   };
 
   const iconBarGraph = {
     height: 20,
-    width: 20
+    width: 20,
   };
 
   const rightSectionStyle = {
     alignItems: 'center',
     display: 'flex',
     justifyContent: 'flex-end',
-    width: 60
+    width: 60,
   };
 
   const fixUrlTitle = (title) => {
