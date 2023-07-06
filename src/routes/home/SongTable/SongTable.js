@@ -1,25 +1,40 @@
-import React from "react";
-import { sortBy } from "lodash";
-import { SongList } from "../../../const/SongList";
-import { ALL } from "../../../const/genres";
-import SongRow from "./SongRow/SongRow";
+import React from 'react';
+import { sortBy } from 'lodash';
+import { SongList } from '../../../const/SongList';
+import { ALL, UNCATEGORIZED } from '../../../const/genres';
+import SongRow from './SongRow/SongRow';
+import NoSongs from './NoSongs/NoSongs';
 
-const SongTable = ({ genre, isGuitarMode, sortTerm }) => {
-  const filteredSongs = SongList.filter((song) => {
-    if (genre === ALL) return true;
-    if (!song.genres) return false;
-    return song.genres.includes(genre);
-  });
+const SongTable = ({
+	currentGenre,
+	currentSortTerm,
+	includesBarChord,
+	isGuitarMode,
+}) => {
+	const filteredSongs = SongList.filter(({ barChords, genres }) => {
+		if (!includesBarChord && barChords) return false;
+		if (currentGenre === ALL) return true;
+		if (currentGenre === UNCATEGORIZED) {
+			return !genres;
+		}
+		if (!genres) return false;
 
-  const finalSongsList = sortBy(filteredSongs, sortTerm);
+		return genres.includes(currentGenre);
+	});
 
-  return (
-    <div>
-      {finalSongsList.map((song) => (
-        <SongRow key={song.title} isGuitarMode={isGuitarMode} song={song} />
-      ))}
-    </div>
-  );
+	const finalSongsList = sortBy(filteredSongs, currentSortTerm);
+
+	if (finalSongsList.length === 0) {
+		return <NoSongs />;
+	}
+
+	return (
+		<div>
+			{finalSongsList.map((song) => (
+				<SongRow isGuitarMode={isGuitarMode} key={song.title} song={song} />
+			))}
+		</div>
+	);
 };
 
 export default SongTable;

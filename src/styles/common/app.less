@@ -59,6 +59,7 @@ body {
 
 button {
   border-radius: 5px;
+  cursor: pointer;
   border: none;
 }
 
@@ -79,11 +80,11 @@ button {
 
 .light-mode {
   button {
-    background: #333;
+    background: #666;
     color: white;
 
     &.active {
-      background: #666;
+      background: #333;
     }
 
     svg {
@@ -191,5 +192,19 @@ a {
 .light-mode {
   .secondary-text-color {
     color: #666;
+  }
+}
+
+/*----- Text -----*/
+
+.dark-mode {
+  .bottom-border {
+    border-bottom: solid 1px #666;
+  }
+}
+
+.light-mode {
+  .bottom-border {
+    border-bottom: solid 1px #ccc;
   }
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const SvgMoon = () => (
   <svg viewBox="0 0 24 24">
