@@ -1,3 +1,4 @@
+/* global document */
 import React, { useState } from 'react';
 import { render } from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
