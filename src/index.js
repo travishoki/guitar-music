@@ -17,6 +17,7 @@ const App = () => {
 
 	const onToggleIsGuitarMode = () => {
 		setIsGuitarMode(!isGuitarMode);
+		setIncludesBarChord(true);
 	};
 
 	const onToggleIncludesBarChord = () => {

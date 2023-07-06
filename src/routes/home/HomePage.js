@@ -25,10 +25,12 @@ const HomePage = ({
 				<Sort currentOption={sortTerm} onClick={setSort} />
 
 				<div className="toggle-controls">
-					<BarChordToggle
-						includesBarChord={includesBarChord}
-						onClick={onToggleIncludesBarChord}
-					/>
+					{isGuitarMode && (
+						<BarChordToggle
+							includesBarChord={includesBarChord}
+							onClick={onToggleIncludesBarChord}
+						/>
+					)}
 					<DarkModeToggle
 						isdarkMode={isdarkMode}
 						onClick={onToggleIsDarkMode}
