@@ -4,13 +4,13 @@ import { SongList } from '../../const/SongList';
 import GuitarTabLink from '../../components/common/GuitarTabLink';
 
 const SongPage = (props) => {
-  const title = props.match.params.title;
+  		const title = props.match.params.title;
 
-  const song = SongList.filter((songListItem) => {
-    return songListItem.title.replace(/ /g, '-').toLowerCase() === title;
+  		const song = SongList.filter((songListItem) => {
+    		return songListItem.title.replace(/ /g, '-').toLowerCase() === title;
   })[0];
 
-  return (
+  		return (
     <div id="songPage">
       <Link to="/" className="back-button">
         Back

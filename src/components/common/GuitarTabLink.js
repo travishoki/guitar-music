@@ -4,15 +4,15 @@ import PropTypes from 'prop-types';
 import SvgGuitar from '../../icons/SvgGuitar';
 
 const GuitarTabLink = ({ song }) => {
-  const { link } = song;
+  	const { link } = song;
 
-  if (!link) return null;
+  	if (!link) return null;
 
-  const guitarLink = {
-    width: 40,
+  	const guitarLink = {
+    	width: 40,
   };
 
-  return (
+  	return (
     <a
       href={link}
       target="_blank"
@@ -25,7 +25,7 @@ const GuitarTabLink = ({ song }) => {
 };
 
 GuitarTabLink.propTypes = {
-  song: PropTypes.object.isRequired,
+  	song: PropTypes.object.isRequired,
 };
 
 export default GuitarTabLink;

@@ -11,24 +11,24 @@ const SongTable = ({
   includesBarChord,
   isGuitarMode,
 }) => {
-  const filteredSongs = SongList.filter(({ barChords, genres }) => {
-    if (!includesBarChord && barChords) return false;
-    if (currentGenre === ALL) return true;
-    if (currentGenre === UNCATEGORIZED) {
-      return !genres;
+  		const filteredSongs = SongList.filter(({ barChords, genres }) => {
+    		if (!includesBarChord && barChords) return false;
+    		if (currentGenre === ALL) return true;
+    		if (currentGenre === UNCATEGORIZED) {
+      		return !genres;
     }
-    if (!genres) return false;
+    		if (!genres) return false;
 
-    return genres.includes(currentGenre);
+    		return genres.includes(currentGenre);
   });
 
-  const finalSongsList = sortBy(filteredSongs, currentSortTerm);
+  		const finalSongsList = sortBy(filteredSongs, currentSortTerm);
 
-  if (finalSongsList.length === 0) {
-    return <NoSongs />;
+  		if (finalSongsList.length === 0) {
+    		return <NoSongs />;
   }
 
-  return (
+  		return (
     <div>
       {finalSongsList.map((song) => (
         <SongRow key={song.title} isGuitarMode={isGuitarMode} song={song} />
