@@ -12,7 +12,7 @@ const SongPage = (props) => {
 
 	return (
 		<div id="songPage">
-			<Link to="/" className="back-button">
+			<Link className="back-button" to="/">
 				Back
 			</Link>
 

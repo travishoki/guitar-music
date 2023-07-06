@@ -31,7 +31,7 @@ const SongTable = ({
 	return (
 		<div>
 			{finalSongsList.map((song) => (
-				<SongRow key={song.title} isGuitarMode={isGuitarMode} song={song} />
+				<SongRow isGuitarMode={isGuitarMode} key={song.title} song={song} />
 			))}
 		</div>
 	);

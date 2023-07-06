@@ -14,9 +14,9 @@ const GuitarTabLink = ({ song }) => {
 
 	return (
 		<a
+			className="guitar-tab-link"
 			href={link}
 			target="_blank"
-			className="guitar-tab-link"
 			title="Go to Guitar Tabs"
 		>
 			<SvgGuitar style={guitarLink} />

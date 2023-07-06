@@ -22,8 +22,8 @@ const SongRow = ({ isGuitarMode, song }) => {
 	};
 
 	const artistStyle = {
-		margin: 0,
 		fontSize: 14,
+		margin: 0,
 	};
 
 	const iconBarGraph = {
@@ -44,7 +44,7 @@ const SongRow = ({ isGuitarMode, song }) => {
 
 	return (
 		<div className="bottom-border" style={rowStyle}>
-			<Link to={'/song/' + fixUrlTitle(song.title)} style={linkStyle}>
+			<Link style={linkStyle} to={'/song/' + fixUrlTitle(song.title)}>
 				<p className="title-font" style={titleStyle}>
 					{song.title}
 				</p>

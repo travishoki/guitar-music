@@ -31,6 +31,24 @@
 		"keyword-spacing": [1],
 		"no-multiple-empty-lines": ["error", { "max": 1 }],
 		"no-trailing-spaces": 1,
-		"object-curly-spacing": ["error", "always"]		
+		"object-curly-spacing": ["error", "always"],
+		"space-before-blocks": 1,
+
+		// React
+		"jsx-quotes": ["error", "prefer-double"],
+		"react/display-name": 0,
+		"react/jsx-key": 1,
+		"react/jsx-no-duplicate-props": 1,
+		"react/jsx-sort-props": ["error"],
+		"react/jsx-uses-react": 1,
+		"react/jsx-uses-vars": 1,
+		"react/no-danger": 1,
+		"react/no-direct-mutation-state": 1,
+		"react/no-unknown-property": 1,
+		"react/prefer-es6-class": 1,
+		"react/prop-types": 1,
+		"react/react-in-jsx-scope": 1,
+		"react/self-closing-comp": 1
+		
 	}
 }

@@ -25,16 +25,16 @@ const App = () => {
 	};
 
 	return (
-		<div id="container" className={isdarkMode ? 'dark-mode' : 'light-mode'}>
+		<div className={isdarkMode ? 'dark-mode' : 'light-mode'} id="container">
 			<div id="content">
 				<Header />
 				<Main
 					includesBarChord={includesBarChord}
 					isGuitarMode={isGuitarMode}
 					isdarkMode={isdarkMode}
+					onToggleIncludesBarChord={onToggleIncludesBarChord}
 					onToggleIsDarkMode={onToggleIsDarkMode}
 					onToggleIsGuitarMode={onToggleIsGuitarMode}
-					onToggleIncludesBarChord={onToggleIncludesBarChord}
 				/>
 			</div>
 		</div>

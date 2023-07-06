@@ -6,11 +6,11 @@ import { Switch, Route } from 'react-router-dom';
 
 const Main = ({
 	includesBarChord,
-	isdarkMode,
 	isGuitarMode,
+	isdarkMode,
+	onToggleIncludesBarChord,
 	onToggleIsDarkMode,
 	onToggleIsGuitarMode,
-	onToggleIncludesBarChord,
 }) => (
 	<main>
 		<Switch>
@@ -20,8 +20,8 @@ const Main = ({
 				render={() => (
 					<HomePage
 						includesBarChord={includesBarChord}
-						isdarkMode={isdarkMode}
 						isGuitarMode={isGuitarMode}
+						isdarkMode={isdarkMode}
 						onToggleIncludesBarChord={onToggleIncludesBarChord}
 						onToggleIsDarkMode={onToggleIsDarkMode}
 						onToggleIsGuitarMode={onToggleIsGuitarMode}
@@ -29,7 +29,7 @@ const Main = ({
 				)}
 			/>
 			<Route path="/song/:title" render={(props) => <SongPage {...props} />} />
-			<Route path="*" component={NotFoundPage} />
+			<Route component={NotFoundPage} path="*" />
 		</Switch>
 	</main>
 );
