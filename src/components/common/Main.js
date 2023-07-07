@@ -29,7 +29,7 @@ const Main = ({
 				)}
 			/>
 			<Route path="/song/:title" render={(props) => <SongPage {...props} />} />
-			<Route component={NotFoundPage} path="*" />
+			<Route element={NotFoundPage} path="*" />
 		</Routes>
 	</main>
 );
