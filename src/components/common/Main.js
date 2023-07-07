@@ -17,7 +17,7 @@ const Main = ({
 			<Route
 				exact
 				path="/"
-				render={() => (
+				element={
 					<HomePage
 						includesBarChord={includesBarChord}
 						isGuitarMode={isGuitarMode}
@@ -26,9 +26,9 @@ const Main = ({
 						onToggleIsDarkMode={onToggleIsDarkMode}
 						onToggleIsGuitarMode={onToggleIsGuitarMode}
 					/>
-				)}
+				}
 			/>
-			<Route path="/song/:title" render={(props) => <SongPage {...props} />} />
+			<Route path="/song/:title" element={<SongPage />} />
 			<Route element={NotFoundPage} path="*" />
 		</Routes>
 	</main>

@@ -1,7 +1,11 @@
-const webpack = require('webpack');
-const path = require('path');
+import webpack from 'webpack';
+import { fileURLToPath } from 'url';
+import path from 'path';
 
-module.exports = {
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+export default {
 	mode: 'development',
 	devtool: 'cheap-module-source-map',
 	entry: [
@@ -71,6 +75,16 @@ module.exports = {
 				],
 			},
 			{ test: /\.(jpg|png)$/, use: ['file'] },
+			{
+				test: /\.m?js/,
+				type: 'javascript/auto',
+			},
+			{
+				test: /\.m?js/,
+				resolve: {
+					fullySpecified: false,
+				},
+			},
 		],
 	},
 };

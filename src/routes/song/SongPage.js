@@ -1,10 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { SongList } from '../../const/SongList';
 import GuitarTabLink from '../../components/common/GuitarTabLink';
 
-const SongPage = (props) => {
-	const title = props.match.params.title;
+const SongPage = () => {
+	const params = useParams();
+	const { title } = params;
 
 	const song = SongList.filter((songListItem) => {
 		return songListItem.title.replace(/ /g, '-').toLowerCase() === title;

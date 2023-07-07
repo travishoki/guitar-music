@@ -1,6 +1,6 @@
 /* global document */
 import React, { useState } from 'react';
-import { render } from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 
 import Header from './components/common/Header/Header';
@@ -42,9 +42,8 @@ const App = () => {
 	);
 };
 
-render(
-	<BrowserRouter basename="/guitar">
+createRoot(document.getElementById('app')).render(
+	<BrowserRouter>
 		<App />
 	</BrowserRouter>,
-	document.getElementById('app'),
 );

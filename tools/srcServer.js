@@ -4,8 +4,12 @@ import path from 'path';
 import open from 'open';
 import webpackDevMiddleware from 'webpack-dev-middleware';
 import webpackHotMiddleware from 'webpack-hot-middleware';
+import { fileURLToPath } from 'url';
 
 import config from '../webpack.config.dev.js';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const port = 3000;
 const app = express();
