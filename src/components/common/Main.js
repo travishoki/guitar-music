@@ -2,7 +2,7 @@ import React from 'react';
 import HomePage from '../../routes/home/HomePage';
 import SongPage from '../../routes/song/SongPage';
 import NotFoundPage from '../../routes/notFound/NotFoundPage';
-import { Switch, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 const Main = ({
 	includesBarChord,
@@ -13,7 +13,7 @@ const Main = ({
 	onToggleIsGuitarMode,
 }) => (
 	<main>
-		<Switch>
+		<Routes>
 			<Route
 				exact
 				path="/"
@@ -30,7 +30,7 @@ const Main = ({
 			/>
 			<Route path="/song/:title" render={(props) => <SongPage {...props} />} />
 			<Route component={NotFoundPage} path="*" />
-		</Switch>
+		</Routes>
 	</main>
 );
 
