@@ -3,12 +3,15 @@
 		"outDir": "./dist/",
 		"noImplicitAny": true,
 		"sourceMap": true,
+		"skipLibCheck": true,
 		"module": "es6",
 		"target": "es5",
+		"typeRoots": ["node_modules/@types", "src/types"],
 		"jsx": "react",
 		"allowJs": true,
 		"moduleResolution": "node",
 		"allowSyntheticDefaultImports": true
 	},
+	"include": ["src/**/*"],
 	"exclude": ["node_modules", "dist"]
 }
