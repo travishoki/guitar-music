@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import GuitarTabLink from '../../../../components/common/GuitarTabLink';
 import SvgBarGraph from '../../../../icons/SvgBarGraph';
 import { SongType } from '../../../../types';
+import { fixUrlTitle } from './helpers';
 
 const SongRow = ({ isGuitarMode, song }: SongRowTypes) => {
 	const rowStyle: React.CSSProperties = {
@@ -37,10 +38,6 @@ const SongRow = ({ isGuitarMode, song }: SongRowTypes) => {
 		display: 'flex',
 		justifyContent: 'flex-end',
 		width: 60,
-	};
-
-	const fixUrlTitle = (title: string) => {
-		return title.replace(/ /g, '-').toLowerCase();
 	};
 
 	return (
