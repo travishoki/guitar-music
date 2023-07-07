@@ -1,104 +1,104 @@
 import React from 'react';
 
 const YoureStillTheOne = () => (
-  <div>
+	<div>
     When I first saw you, I saw love
-    <br />
+		<br />
     And the first time you touched me, I felt love
-    <br />
+		<br />
     And after all this time
-    <br />
+		<br />
     You're still the one I love, mmm, yeah-yeah
-    <br />
-    <br />
+		<br />
+		<br />
     Looks like we made it
-    <br />
+		<br />
     Look how far we've come, my baby
-    <br />
+		<br />
     We mighta took the long way
-    <br />
+		<br />
     We knew we'd get there someday
-    <br />
-    <br />
+		<br />
+		<br />
     They said, "I bet they'll never make it"
-    <br />
+		<br />
     But just look at us holding on
-    <br />
+		<br />
     We're still together, still going strong, mm
-    <br />
-    <br />
+		<br />
+		<br />
     You're still the one I run to
-    <br />
+		<br />
     The one that I belong to
-    <br />
+		<br />
     You're still the one I want for life
-    <br />
+		<br />
     (You're still the one)
-    <br />
+		<br />
     You're still the one that I love
-    <br />
+		<br />
     The only one I dream of
-    <br />
+		<br />
     You're still the one I kiss goodnight
-    <br />
-    <br />
+		<br />
+		<br />
     Ain't nothin' better
-    <br />
+		<br />
     We beat the odds together
-    <br />
+		<br />
     I'm glad we didn't listen
-    <br />
+		<br />
     Look at what we would be missin'
-    <br />
-    <br />
+		<br />
+		<br />
     They said, "I bet they'll never make it"
-    <br />
+		<br />
     But just look at us holding on
-    <br />
+		<br />
     We're still together, still going strong
-    <br />
-    <br />
+		<br />
+		<br />
     oh
-    <br />
+		<br />
     You're still the one I run to
-    <br />
+		<br />
     The one that I belong to
-    <br />
+		<br />
     You're still the one I want for life
-    <br />
+		<br />
     (You're still the one)
-    <br />
+		<br />
     You're still the one that I love
-    <br />
+		<br />
     The only one I dream of
-    <br />
+		<br />
     You're still the one I kiss goodnight
-    <br />
-    <br />
+		<br />
+		<br />
     You're still the one
-    <br />
-    <br />
+		<br />
+		<br />
     Yeah (you're still the one)
-    <br />
+		<br />
     You're still the one I run to
-    <br />
+		<br />
     The one that I belong to
-    <br />
+		<br />
     You're still the one I want for life, oh yeah
-    <br />
+		<br />
     (You're still the one)
-    <br />
+		<br />
     You're still the one that I love
-    <br />
+		<br />
     The only one I dream of
-    <br />
+		<br />
     You're still the one I kiss goodnight
-    <br />
-    <br />
+		<br />
+		<br />
     I'm so glad we made it
-    <br />
+		<br />
     Look how far we've come, my baby
-  </div>
+	</div>
 );
 
 export default YoureStillTheOne;

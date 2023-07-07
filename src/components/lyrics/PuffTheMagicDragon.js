@@ -1,69 +1,69 @@
 import React from 'react';
 
 const PuffTheMagicDragon = () => (
-  <div>
+	<div>
     Puff the magic dragon lived by the sea
-    <br />
+		<br />
     And frolicked in the autumn mist in a land called Honali
-    <br />
+		<br />
     Little Jackie Paper loved that rascal Puff
-    <br />
+		<br />
     And brought him strings and sealing wax and other fancy stuff
-    <br />
-    <br />
+		<br />
+		<br />
     Oh, Puff the magic dragon lived by the sea
-    <br />
+		<br />
     And frolicked in the autumn mist in a land called Honali
-    <br />
+		<br />
     Puff the magic dragon lived by the sea
-    <br />
+		<br />
     And frolicked in the autumn mist in a land called Honali
-    <br />
-    <br />
+		<br />
+		<br />
     Together they would travel on a boat with billowed sail
-    <br />
+		<br />
     Jackie kept a lookout perched on Puff&apos;s gigantic tail
-    <br />
+		<br />
     Noble kings and princes would bow whene&apos;er they came
-    <br />
+		<br />
     Pirate ships would lower their flags when Puff roared out his name
-    <br />
-    <br />
+		<br />
+		<br />
     Oh, Puff the magic dragon lived by the sea
-    <br />
+		<br />
     And frolicked in the autumn mist in a land called Honali
-    <br />
+		<br />
     Puff the magic dragon lived by the sea
-    <br />
+		<br />
     And frolicked in the autumn mist in a land called Honali
-    <br />
-    <br />
+		<br />
+		<br />
     A dragon lives forever, but not so little boys
-    <br />
+		<br />
     Painted wings and giant&apos;s rings make way for other toys
-    <br />
+		<br />
     One gray night it happened, Jackie Paper came no more
-    <br />
+		<br />
     And Puff, that mighty dragon, he ceased his fearless roar
-    <br />
-    <br />
+		<br />
+		<br />
     His head was bent in sorrow, green scales fell like rain
-    <br />
+		<br />
     Puff no longer went to play along the cherry lane
-    <br />
+		<br />
     Without his lifelong friend, Puff could not be brave
-    <br />
+		<br />
     So Puff, that mighty dragon, sadly slipped into his cave
-    <br />
-    <br />
+		<br />
+		<br />
     Oh, Puff the magic dragon lived by the sea
-    <br />
+		<br />
     And frolicked in the autumn mist in a land called Honali
-    <br />
+		<br />
     Puff the magic dragon lived by the sea
-    <br />
+		<br />
     And frolicked in the autumn mist in a land called Honali
-  </div>
+	</div>
 );
 
 export default PuffTheMagicDragon;

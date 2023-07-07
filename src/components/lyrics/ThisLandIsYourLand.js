@@ -1,63 +1,63 @@
 import React from 'react';
 
 const ThisLandIsYourLand = () => (
-  <div>
+	<div>
     This land is your land, this land is my land,
-    <br />
+		<br />
     From California, to the New York Island,
-    <br />
+		<br />
     From the Redwood Forest, to the Gulf Stream Waters,
-    <br />
+		<br />
     This land was made for you and me. <br />
-    <br />
+		<br />
     I roamed and rambled, and I followed my footsteps
-    <br />
+		<br />
     To the sparkling sands of her diamond deserts
-    <br />
+		<br />
     And all around me a voice was singing
-    <br />
+		<br />
     This land was made for you and me! <br />
-    <br />
+		<br />
     This land is your land, this land is my land,
-    <br />
+		<br />
     From California, to the New York Island,
-    <br />
+		<br />
     From the Redwood Forest, to the Gulf Stream Waters,
-    <br />
+		<br />
     This land was made for you and me. <br />
-    <br />
+		<br />
     As I went walking that ribbon of highway
-    <br />
+		<br />
     I saw above me that endless skyway
-    <br />
+		<br />
     I saw below me those golden valleys
-    <br />
+		<br />
     This land was made for you and me! <br />
-    <br />
+		<br />
     This land is your land, this land is my land,
-    <br />
+		<br />
     From California, to the New York Island,
-    <br />
+		<br />
     From the Redwood Forest, to the Gulf Stream Waters,
-    <br />
+		<br />
     This land was made for you and me. <br />
-    <br />
+		<br />
     As the sun was shining, and I was strolling,
-    <br />
+		<br />
     And the wheat fields waving, and the dust clouds rolling,
-    <br />
+		<br />
     As the fog was lifting, a voice was saying
-    <br />
+		<br />
     "This land was made for you and me!" <br />
-    <br />
+		<br />
     This land is your land, this land is my land,
-    <br />
+		<br />
     From California, to the New York Island,
-    <br />
+		<br />
     From the Redwood Forest, to the Gulf Stream Waters,
-    <br />
+		<br />
     This land was made for you and me.
-  </div>
+	</div>
 );
 
 export default ThisLandIsYourLand;

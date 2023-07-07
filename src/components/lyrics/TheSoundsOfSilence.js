@@ -1,81 +1,81 @@
 import React from 'react';
 
 const TheSoundsOfSilence = () => (
-  <div>
+	<div>
     Hello darkness, my old friend
-    <br />
+		<br />
     I&apos;ve come to talk with you again
-    <br />
+		<br />
     Because a vision softly creeping
-    <br />
+		<br />
     Left its seeds while I was sleeping
-    <br />
+		<br />
     And the vision that was planted in my brain
-    <br />
+		<br />
     Still remains
-    <br />
+		<br />
     Within the sound of silence
-    <br />
-    <br />
+		<br />
+		<br />
     In restless dreams I walked alone
-    <br />
+		<br />
     Narrow streets of cobblestone
-    <br />
+		<br />
     ‘Neath the halo of a streetlamp
-    <br />
+		<br />
     I turned my collar to the cold and damp
-    <br />
+		<br />
     When my eyes were stabbed by the flash of a neon light
-    <br />
+		<br />
     That split the night
-    <br />
+		<br />
     And touched the sound of silence
-    <br />
-    <br />
+		<br />
+		<br />
     And in the naked light I saw
-    <br />
+		<br />
     Ten thousand people, maybe more
-    <br />
+		<br />
     People talking without speaking
-    <br />
+		<br />
     People hearing without listening
-    <br />
+		<br />
     People writing songs that voices never share
-    <br />
+		<br />
     No one dare
-    <br />
+		<br />
     Disturb the sound of silence
-    <br />
-    <br />
+		<br />
+		<br />
     “Fools” said I, “You do not know
-    <br />
+		<br />
     Silence like a cancer grows
-    <br />
+		<br />
     Hear my words that I might teach you
-    <br />
+		<br />
     Take my arms that I might reach you”
-    <br />
+		<br />
     But my words like silent raindrops fell
-    <br />
+		<br />
     And echoed in the wells of silence
-    <br />
-    <br />
+		<br />
+		<br />
     And the people bowed and prayed
-    <br />
+		<br />
     To the neon god they made
-    <br />
+		<br />
     And the sign flashed out its warning
-    <br />
+		<br />
     In the words that it was forming
-    <br />
+		<br />
     And the sign said “The words of the prophets
-    <br />
+		<br />
     Are written on the subway walls
-    <br />
+		<br />
     And tenement halls
-    <br />
+		<br />
     And whispered in the sounds of silence”
-  </div>
+	</div>
 );
 
 export default TheSoundsOfSilence;

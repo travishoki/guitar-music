@@ -1,33 +1,33 @@
 import React from 'react';
 
 const Edelweiss = () => (
-  <div>
+	<div>
     Edelweiss, Edelweiss
-    <br />
+		<br />
     Every morning you greet me
-    <br />
+		<br />
     Small and white, clean and bright
-    <br />
+		<br />
     You look happy to meet me
-    <br />
-    <br />
+		<br />
+		<br />
     Blossom of snow may you bloom and grow
-    <br />
+		<br />
     Bloom and grow forever
-    <br />
+		<br />
     Edelweiss, Edelweiss
-    <br />
+		<br />
     Bless my homeland forever
-    <br />
-    <br />
+		<br />
+		<br />
     Blossom of snow may you bloom and grow
-    <br />
+		<br />
     Bloom and grow forever
-    <br />
+		<br />
     Edelweiss, Edelweiss
-    <br />
+		<br />
     Bless my homeland forever
-  </div>
+	</div>
 );
 
 export default Edelweiss;

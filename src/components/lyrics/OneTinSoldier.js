@@ -1,109 +1,109 @@
 import React from 'react';
 
 const OneTinSoldier = () => (
-  <div>
+	<div>
     Listen children to a story
-    <br />
+		<br />
     That was written long ago
-    <br />
+		<br />
     About a kingdom, on a mountain
-    <br />
+		<br />
     And the valley folk below
-    <br />
+		<br />
     On the mountain was a treasure
-    <br />
+		<br />
     Burred deep beneath a stone
-    <br />
+		<br />
     And the valley people swore
-    <br />
+		<br />
     Theyd have it for their very own
-    <br />
-    <br />
+		<br />
+		<br />
     Go ahead and hate your neighbor
-    <br />
+		<br />
     Go ahead and cheat a friend
-    <br />
+		<br />
     Do it in the name of Heaven
-    <br />
+		<br />
     You can justify it in the end
-    <br />
+		<br />
     There wont be any trumpets blowing
-    <br />
+		<br />
     Come the judgement day
-    <br />
+		<br />
     On the bloody morning after... <br />
     One tin soldier rides away
-    <br />
-    <br />
+		<br />
+		<br />
     So the people of the valley
-    <br />
+		<br />
     Sent a message up the hill
-    <br />
+		<br />
     Asking for the buried treasure
-    <br />
+		<br />
     Tons of gold for which they&apos;d kill
-    <br />
+		<br />
     Came an answer from the kingdom
-    <br />
+		<br />
     With our brothers we will share
-    <br />
+		<br />
     All the secrets of our mountain
-    <br />
+		<br />
     All the riches buried there
-    <br />
-    <br />
+		<br />
+		<br />
     Now the valley cried in anger
-    <br />
+		<br />
     Mount your horses
-    <br />
+		<br />
     Draw your sword
-    <br />
+		<br />
     And they killed the mountain people
-    <br />
+		<br />
     Sure they&apos;d won their just reward
-    <br />
+		<br />
     Now they stood beside the treasure
-    <br />
+		<br />
     On the mountain dark and red
-    <br />
+		<br />
     Turned the stone and looked beneath it
-    <br />
+		<br />
     Peace on Earth
-    <br />
+		<br />
     Was all it said
-    <br />
-    <br />
+		<br />
+		<br />
     Go ahead and hate your neighbor
-    <br />
+		<br />
     Go ahead and cheat a friend
-    <br />
+		<br />
     Do it in the name of Heaven
-    <br />
+		<br />
     You can justify it in the end
-    <br />
+		<br />
     There wont be any trumpets blowing
-    <br />
+		<br />
     Come the judgement day
-    <br />
+		<br />
     On the bloody morning after... <br />
     One tin soldier rides away
-    <br />
-    <br />
+		<br />
+		<br />
     Go ahead and hate your neighbor
-    <br />
+		<br />
     Go ahead and cheat a friend
-    <br />
+		<br />
     Do it in the name of Heaven
-    <br />
+		<br />
     You can justify it in the end
-    <br />
+		<br />
     There wont be any trumpets blowing
-    <br />
+		<br />
     Come the judgement day
-    <br />
+		<br />
     On the bloody morning after... <br />
     One tin soldier rides away
-  </div>
+	</div>
 );
 
 export default OneTinSoldier;

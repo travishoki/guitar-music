@@ -1,58 +1,58 @@
 import React from 'react';
 
 const LeavingOnAJetPlane = () => (
-  <div>
+	<div>
     All my bags are packed, I&apos;m ready to go, I&apos;m standing here outside
     your door,
-    <br />
+		<br />
     I hate to wake you up to say good-bye.
-    <br />
+		<br />
     But the dawn is breaking, it&apos;s early morn, the taxi&apos;s waiting
     He&apos;s blowing his horn.
-    <br />
+		<br />
     Already I&apos;m so lonesome I could die.
-    <br />
+		<br />
     So kiss me and smile for me, tell me that you&apos;ll wait for me, hold me
     like you&apos;ll never let me go.
-    <br />
+		<br />
     &apos;Cause I&apos;m leaving on a jet plane, don&apos;t know when I&apos;ll
     be back again. Oh, babe, I hate to go.
-    <br />
-    <br />
+		<br />
+		<br />
     There&apos;s so many times I&apos;ve let you down, so many times I&apos;ve
     played around,
-    <br />
+		<br />
     I tell you now they don&apos;t mean a thing.
-    <br />
+		<br />
     Every place I go I&apos;ll think of you, every song I sing I&apos;ll sing
     for you,
-    <br />
+		<br />
     when I come back, I&apos;ll bring your wedding ring.
-    <br />
+		<br />
     So kiss me and smile for me, tell me that you&apos;ll wait for me, hold me
     like you&apos;ll never let me go.
-    <br />
+		<br />
     &apos;Cause I&apos;m leaving on a jet plane, don&apos;t know when I&apos;ll
     be back again. Oh, babe, I hate to go.
-    <br />
-    <br />
+		<br />
+		<br />
     Now the time has come to leave you, one more time let me kiss you,
-    <br />
+		<br />
     then close your eyes, I&apos;ll be on my way.
-    <br />
+		<br />
     Dream about the days to come when I won&apos;t have to leave alone,
-    <br />
+		<br />
     about the times I won&apos;t have to say:
-    <br />
+		<br />
     kiss me and smile for me, tell me that you&apos;ll wait for me, hold me like
     you&apos;ll never let me go.
-    <br />
+		<br />
     &apos;Cause I&apos;m leaving on a jet plane, don&apos;t know when I&apos;ll
     be back again. Oh, babe, I hate to go.
-    <br />
+		<br />
     I&apos;m leaving on a jet plane, don&apos;t know when I&apos;ll be back
     again. Oh, babe, I hate to go.
-  </div>
+	</div>
 );
 
 export default LeavingOnAJetPlane;

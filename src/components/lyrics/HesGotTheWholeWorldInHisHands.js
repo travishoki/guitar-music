@@ -1,52 +1,52 @@
 import React from 'react';
 
 const HesGotTheWholeWorldInHisHands = () => (
-  <div>
+	<div>
     He&apos;s got the whole world in his hands
-    <br />
+		<br />
     He&apos;s got the whole wide world in his hands
-    <br />
+		<br />
     He&apos;s got the whole wide world in his hands
-    <br />
+		<br />
     He&apos;s got the whole world in his hands
-    <br />
-    <br />
+		<br />
+		<br />
     He&apos;s got the little bitty baby in his hands
-    <br />
+		<br />
     He&apos;s got the little bitty baby in his hands
-    <br />
+		<br />
     He&apos;s got the little bitty baby in his hands
-    <br />
+		<br />
     He&apos;s got the whole world in his hands
-    <br />
+		<br />
     He&apos;s got the whole world in his hands...
-    <br />
-    <br />
+		<br />
+		<br />
     He&apos;s got you and me brother in his hands
-    <br />
+		<br />
     He&apos;s got you and me sister in his hands
-    <br />
+		<br />
     He&apos;s got you and me brother in his hands
-    <br />
+		<br />
     He&apos;s got the whole world in his hands
-    <br />
+		<br />
     He&apos;s got the whole world in his hands...
-    <br />
-    <br />
+		<br />
+		<br />
     He&apos;s got everybody here in his hands
-    <br />
+		<br />
     He&apos;s got everybody here in his hands
-    <br />
+		<br />
     He&apos;s got everybody here in his hands
-    <br />
+		<br />
     He&apos;s got the whole world in his hands
-    <br />
+		<br />
     He&apos;s got the whole world in his hands...
-    <br />
+		<br />
     He&apos;s got you and me brother...
-    <br />
+		<br />
     He&apos;s got the whole world in his hands...
-  </div>
+	</div>
 );
 
 export default HesGotTheWholeWorldInHisHands;

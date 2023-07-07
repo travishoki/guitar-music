@@ -1,119 +1,119 @@
 import React from 'react';
 
 const TieMeKangarooDownSport = () => (
-  <div>
+	<div>
     There&apos;s an old Australian stockman lying, dying. He gets himself up
-    <br />
+		<br />
     onto one elbow and &apos;e turns to his mates, who are all gathered around
     and &apos;e says:
-    <br />
-    <br />
-    <br />
+		<br />
+		<br />
+		<br />
     Watch me wallabies feed, mate
-    <br />
+		<br />
     Watch me wallabies feed,
-    <br />
+		<br />
     They&apos;re a dangerous breed, mate
-    <br />
+		<br />
     So watch me wallabies feed
-    <br />
+		<br />
     Altogether now!
-    <br />
-    <br />
+		<br />
+		<br />
     CHORUS:
-    <br />
+		<br />
     Tie me kangaroo down, sport
-    <br />
+		<br />
     Tie me kangaroo down
-    <br />
+		<br />
     Tie me kangaroo down, sport
-    <br />
+		<br />
     Tie me kangaroo down
-    <br />
-    <br />
+		<br />
+		<br />
     Keep me cockatoo cool, Curl,
-    <br />
+		<br />
     Keep me cockatoo cool
-    <br />
+		<br />
     Ah, don&apos;t go acting the fool, Curl
-    <br />
+		<br />
     Just keep me cockatoo cool
-    <br />
+		<br />
     Altogether now!
-    <br />
-    <br />
+		<br />
+		<br />
     (CHORUS)
-    <br />
-    <br />
+		<br />
+		<br />
     &apos;n&apos; take me koala back, Jack
-    <br />
+		<br />
     Take me koala back
-    <br />
+		<br />
     He lives somewhere out on the track, Mac
-    <br />
+		<br />
     So take me koala back
-    <br />
+		<br />
     Altogether now!
-    <br />
-    <br />
+		<br />
+		<br />
     (CHORUS)
-    <br />
-    <br />
+		<br />
+		<br />
     Let me abos go loose, Lew
-    <br />
+		<br />
     Let me abos go loose
-    <br />
+		<br />
     They&apos;re of no further use, Lew
-    <br />
+		<br />
     So let me abos go loose
-    <br />
+		<br />
     Altogether now!
-    <br />
-    <br />
+		<br />
+		<br />
     (CHORUS)
-    <br />
-    <br />
+		<br />
+		<br />
     And mind me platypus duck, Bill
-    <br />
+		<br />
     Mind me platypus duck
-    <br />
+		<br />
     Ah, don&apos;t let &apos;im go running amok, Bill
-    <br />
+		<br />
     Just mind me platypus duck
-    <br />
+		<br />
     Altogether now!
-    <br />
-    <br />
+		<br />
+		<br />
     (CHORUS)
-    <br />
-    <br />
+		<br />
+		<br />
     Play your didgeridoo, Blue
-    <br />
+		<br />
     Play your didgeridoo
-    <br />
+		<br />
     Ah, like, keep playin&apos; &apos;til I shoot thru, Blue
-    <br />
+		<br />
     Play your didgeridoo
-    <br />
+		<br />
     Altogether now!
-    <br />
-    <br />
+		<br />
+		<br />
     (CHORUS)
-    <br />
-    <br />
+		<br />
+		<br />
     Tan me hide when I&apos;m dead, Fred
-    <br />
+		<br />
     Tan me hide when I&apos;m dead
-    <br />
+		<br />
     So we tanned his hide when he died, Clyde
-    <br />
+		<br />
     And that&apos;s it hangin&apos; on the shed!!
-    <br />
+		<br />
     Altogether now!
-    <br />
-    <br />
+		<br />
+		<br />
     (CHORUS)
-  </div>
+	</div>
 );
 
 export default TieMeKangarooDownSport;

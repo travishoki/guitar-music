@@ -1,66 +1,66 @@
 import React from 'react';
 
 const BabyBaluga = () => (
-  <div>
+	<div>
     Baby beluga in the deep blue sea
-    <br />
+		<br />
     Swim so wild and you swim so free
-    <br />
+		<br />
     Heaven above and the sea below
-    <br />
+		<br />
     And a little white whale on the go
-    <br />
-    <br />
+		<br />
+		<br />
     Baby beluga, baby beluga
-    <br />
+		<br />
     Is the water warm
-    <br />
+		<br />
     Is your mama home with you, so happy
-    <br />
-    <br />
+		<br />
+		<br />
     Way down yonder where the dolphins play
-    <br />
+		<br />
     Where you dive and splash all day
-    <br />
+		<br />
     Waves roll in and the waves roll out
-    <br />
+		<br />
     See the water squirtin&apos; out of your spout
-    <br />
-    <br />
+		<br />
+		<br />
     Baby beluga, oh, baby beluga
-    <br />
+		<br />
     Sing your little song
-    <br />
+		<br />
     Sing for all your friends, we like to hear you
-    <br />
-    <br />
+		<br />
+		<br />
     When it&apos;s dark, you&apos;re home and fed
-    <br />
+		<br />
     Curl up, snug in your water bed
-    <br />
+		<br />
     Moon is shining and the stars are out
-    <br />
+		<br />
     Good night, little whale, good night
-    <br />
-    <br />
+		<br />
+		<br />
     Baby beluga, oh, baby beluga
-    <br />
+		<br />
     With tomorrow&apos;s sun, another day&apos;s begun
-    <br />
+		<br />
     You&apos;ll soon be wakin&apos;
-    <br />
-    <br />
+		<br />
+		<br />
     Baby beluga in the deep blue sea
-    <br />
+		<br />
     Swim so wild and you swim so free
-    <br />
+		<br />
     Heaven above and the sea below
-    <br />
+		<br />
     And a little white whale on the go
-    <br />
+		<br />
     You&apos;re just a little white whale on the go
-    <br />
-  </div>
+		<br />
+	</div>
 );
 
 export default BabyBaluga;

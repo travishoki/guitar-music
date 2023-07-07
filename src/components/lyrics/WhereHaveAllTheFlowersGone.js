@@ -1,80 +1,80 @@
 import React from 'react';
 
 const WhereHaveAllTheFlowersGone = () => (
-  <div>
+	<div>
     Where have all the flowers gone, long time passing?
-    <br />
+		<br />
     Where have all the flowers gone, long time ago?
-    <br />
+		<br />
     Where have all the flowers gone?
-    <br />
+		<br />
     Young girls have picked them everyone.
-    <br />
+		<br />
     Oh, when will they ever learn?
-    <br />
+		<br />
     Oh, when will they ever learn? <br />
-    <br />
+		<br />
     Where have all the young girls gone, long time passing?
-    <br />
+		<br />
     Where have all the young girls gone, long time ago?
-    <br />
+		<br />
     Where have all the young girls gone?
-    <br />
+		<br />
     Gone for husbands everyone.
-    <br />
+		<br />
     Oh, when will they ever learn?
-    <br />
+		<br />
     Oh, when will they ever learn?
-    <br />
-    <br />
+		<br />
+		<br />
     Where have all the husbands gone, long time passing?
-    <br />
+		<br />
     Where have all the husbands gone, long time ago?
-    <br />
+		<br />
     Where have all the husbands gone?
-    <br />
+		<br />
     Gone for soldiers everyone
-    <br />
+		<br />
     Oh, when will they ever learn?
-    <br />
+		<br />
     Oh, when will they ever learn? <br />
-    <br />
+		<br />
     Where have all the soldiers gone, long time passing?
-    <br />
+		<br />
     Where have all the soldiers gone, long time ago?
-    <br />
+		<br />
     Where have all the soldiers gone?
-    <br />
+		<br />
     Gone to graveyards, everyone.
-    <br />
+		<br />
     Oh, when will they ever learn?
-    <br />
+		<br />
     Oh, when will they ever learn? <br />
-    <br />
+		<br />
     Where have all the graveyards gone, long time passing?
-    <br />
+		<br />
     Where have all the graveyards gone, long time ago?
-    <br />
+		<br />
     Where have all the graveyards gone?
-    <br />
+		<br />
     Gone to flowers, everyone.
-    <br />
+		<br />
     Oh, when will they ever learn?
-    <br />
+		<br />
     Oh, when will they ever learn? <br />
-    <br />
+		<br />
     Where have all the flowers gone, long time passing?
-    <br />
+		<br />
     Where have all the flowers gone, long time ago?
-    <br />
+		<br />
     Where have all the flowers gone?
-    <br />
+		<br />
     Young girls have picked them everyone.
-    <br />
+		<br />
     Oh, when will they ever learn?
-    <br />
+		<br />
     Oh, when will they ever learn?
-  </div>
+	</div>
 );
 
 export default WhereHaveAllTheFlowersGone;

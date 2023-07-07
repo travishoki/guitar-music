@@ -1,78 +1,78 @@
 import React from 'react';
 
 const RightHereWaitingChords = () => (
-  <div>
+	<div>
     Oceans apart, day after day
-    <br />
+		<br />
     And I slowly go insane
-    <br />
+		<br />
     I hear your voice on the line
-    <br />
+		<br />
     But it doesn't stop the pain
-    <br />
-    <br />
+		<br />
+		<br />
     If I see you next to never
-    <br />
+		<br />
     How can we say forever?
-    <br />
-    <br />
+		<br />
+		<br />
     Wherever you go, whatever you do
-    <br />
+		<br />
     I will be right here waiting for you
-    <br />
+		<br />
     Whatever it takes or how my heart breaks
-    <br />
+		<br />
     I will be right here waiting for you
-    <br />
-    <br />
+		<br />
+		<br />
     I took for granted all the times
-    <br />
+		<br />
     That I thought would last somehow
-    <br />
+		<br />
     I hear the laughter, I taste the tears
-    <br />
+		<br />
     But I can't get near you now
-    <br />
-    <br />
+		<br />
+		<br />
     Oh, can't you see it, baby?
-    <br />
+		<br />
     You've got me goin' crazy
-    <br />
-    <br />
+		<br />
+		<br />
     Wherever you go, whatever you do
-    <br />
+		<br />
     I will be right here waiting for you
-    <br />
+		<br />
     Whatever it takes or how my heart breaks
-    <br />
+		<br />
     I will be right here waiting for you
-    <br />
-    <br />
+		<br />
+		<br />
     I wonder how we can survive
-    <br />
+		<br />
     This romance
-    <br />
+		<br />
     But in the end, if I'm with you
-    <br />
+		<br />
     I'll take the chance
-    <br />
-    <br />
+		<br />
+		<br />
     Oh, can't you see it, baby?
-    <br />
+		<br />
     You've got me goin' crazy
-    <br />
-    <br />
+		<br />
+		<br />
     Wherever you go, whatever you do
-    <br />
+		<br />
     I will be right here waiting for you
-    <br />
+		<br />
     Whatever it takes or how my heart breaks
-    <br />
+		<br />
     I will be right here waiting for you
-    <br />
-    <br />
+		<br />
+		<br />
     Waiting for you
-  </div>
+	</div>
 );
 
 export default RightHereWaitingChords;

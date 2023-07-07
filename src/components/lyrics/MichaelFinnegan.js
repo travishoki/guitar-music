@@ -1,39 +1,39 @@
 import React from 'react';
 
 const MichaelFinnegan = () => (
-  <div>
+	<div>
     There was an old man named Michael Finnegan
-    <br />
+		<br />
     He had whiskers on his chinnegan
-    <br />
+		<br />
     They fell out and then grew in again
-    <br />
+		<br />
     Poor old Michael Finnegan
-    <br />
+		<br />
     Begin again.
-    <br />
-    <br />
+		<br />
+		<br />
     There was an old man named Michael Finnegan
-    <br />
+		<br />
     He went fishing with a pinnegan
-    <br />
+		<br />
     Caught a fish and dropped it in again
-    <br />
+		<br />
     Poor old Michael Finnegan
-    <br />
+		<br />
     Begin again.
-    <br />
-    <br />
+		<br />
+		<br />
     There was an old man named Michael Finnegan
-    <br />
+		<br />
     He grew fat and then grew thin again
-    <br />
+		<br />
     Then he died and had to begin again
-    <br />
+		<br />
     Poor old Michael Finnegan
-    <br />
+		<br />
     Begin again.
-  </div>
+	</div>
 );
 
 export default MichaelFinnegan;

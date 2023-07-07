@@ -1,75 +1,75 @@
 import React from 'react';
 
 const YellowSubmarine = () => (
-  <div>
+	<div>
     In the town where I was born
-    <br />
+		<br />
     Lived a man who sailed to sea
-    <br />
+		<br />
     And he told us of his life
-    <br />
+		<br />
     In the land of submarines
-    <br />
-    <br />
+		<br />
+		<br />
     So we sailed up to the sun
-    <br />
+		<br />
     Till we found the sea of green
-    <br />
+		<br />
     And we lived beneath the waves
-    <br />
+		<br />
     In our yellow submarine
-    <br />
-    <br />
+		<br />
+		<br />
     We all live in a yellow submarine
-    <br />
+		<br />
     Yellow submarine, yellow submarine
-    <br />
+		<br />
     We all live in a yellow submarine
-    <br />
+		<br />
     Yellow submarine, yellow submarine
-    <br />
-    <br />
+		<br />
+		<br />
     And our friends are all on board
-    <br />
+		<br />
     Many more of them live next door
-    <br />
+		<br />
     And the band begins to play
-    <br />
-    <br />
+		<br />
+		<br />
     We all live in a yellow submarine
-    <br />
+		<br />
     Yellow submarine, yellow submarine
-    <br />
+		<br />
     We all live in a yellow submarine
-    <br />
+		<br />
     Yellow submarine, yellow submarine
-    <br />
-    <br />
+		<br />
+		<br />
     As we live a life of ease
-    <br />
+		<br />
     Everyone of us has all we need
-    <br />
+		<br />
     Sky of blue and sea of green
-    <br />
+		<br />
     In our yellow submarine
-    <br />
-    <br />
+		<br />
+		<br />
     We all live in a yellow submarine
-    <br />
+		<br />
     Yellow submarine, yellow submarine
-    <br />
+		<br />
     We all live in a yellow submarine
-    <br />
+		<br />
     Yellow submarine, yellow submarine
-    <br />
+		<br />
     We all live in a yellow submarine
-    <br />
+		<br />
     Yellow submarine, yellow submarine
-    <br />
+		<br />
     We all live in a yellow submarine
-    <br />
+		<br />
     Yellow submarine, yellow submarine
-  </div>
+	</div>
 );
 
 export default YellowSubmarine;

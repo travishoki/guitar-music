@@ -1,89 +1,89 @@
 import React from 'react';
 
 const ClosingTimeChords = () => (
-  <div>
+	<div>
     Closing time, open all the doors
-    <br />
+		<br />
     And let you out into the world
-    <br />
+		<br />
     Closing time, turn all of the lights on
-    <br />
+		<br />
     Over every boy and every girl
-    <br />
+		<br />
     Closing time, one last call for alcohol
-    <br />
-    <br />
+		<br />
+		<br />
     So, finish your whiskey or beer
-    <br />
+		<br />
     Closing time, you don't have to go home
-    <br />
+		<br />
     But you can't stay here
-    <br />
-    <br />
+		<br />
+		<br />
     I know who I want to take me home
-    <br />
+		<br />
     I know who I want to take me home
-    <br />
+		<br />
     I know who I want to take me home
-    <br />
+		<br />
     Take me home
-    <br />
-    <br />
+		<br />
+		<br />
     Closing time, time for you to go out
-    <br />
+		<br />
     To the places you will be from
-    <br />
+		<br />
     Closing time, this room won't be open
-    <br />
+		<br />
     Till your brothers or your sisters come
-    <br />
-    <br />
+		<br />
+		<br />
     So, gather up your jackets, move it to the exits
-    <br />
+		<br />
     I hope you have found a friend
-    <br />
+		<br />
     Closing time, every new beginning
-    <br />
+		<br />
     Comes from some other beginning's end, yeah
-    <br />
-    <br />
+		<br />
+		<br />
     I know who I want to take me home
-    <br />
+		<br />
     I know who I want to take me home
-    <br />
+		<br />
     I know who I want to take me home
-    <br />
+		<br />
     Take me home
-    <br />
-    <br />
+		<br />
+		<br />
     Closing time, time for you to go out
-    <br />
+		<br />
     To the places you will be from
-    <br />
-    <br />
+		<br />
+		<br />
     I know who I want to take me home
-    <br />
+		<br />
     I know who I want to take me home
-    <br />
+		<br />
     I know who I want to take me home
-    <br />
+		<br />
     Take me home
-    <br />
-    <br />
+		<br />
+		<br />
     I know who I want to take me home
-    <br />
+		<br />
     I know who I want to take me home
-    <br />
+		<br />
     I know who I want to take me home
-    <br />
+		<br />
     Take me home
-    <br />
-    <br />
+		<br />
+		<br />
     Closing time, every new beginning
-    <br />
+		<br />
     Comes from some other beginning's end
-    <br />
-  </div>
+		<br />
+	</div>
 );
 
 export default ClosingTimeChords;

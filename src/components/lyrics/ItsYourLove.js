@@ -1,125 +1,125 @@
 import React from 'react';
 
 const ItsYourLove = () => (
-  <div>
+	<div>
     Yeah, yeah, yeah, mmhmm
-    <br />
-    <br />
+		<br />
+		<br />
     Dancing in the dark
-    <br />
+		<br />
     Middle of the night
-    <br />
+		<br />
     Taking your heart
-    <br />
+		<br />
     And holding it tight
-    <br />
+		<br />
     Emotional touch
-    <br />
+		<br />
     Touching my skin
-    <br />
+		<br />
     And askin' you to do
-    <br />
+		<br />
     What you've been doing
-    <br />
+		<br />
     All over again
-    <br />
-    <br />
+		<br />
+		<br />
     Oh, it's a beautiful thing
-    <br />
+		<br />
     Don't think I can keep it all in
-    <br />
+		<br />
     I just gotta let you know
-    <br />
+		<br />
     What it is that won't let me go
-    <br />
-    <br />
+		<br />
+		<br />
     It's your love
-    <br />
+		<br />
     It just does something to me
-    <br />
+		<br />
     It sends a shock right through me
-    <br />
+		<br />
     I can't get enough
-    <br />
+		<br />
     And if you wonder
-    <br />
+		<br />
     About the spell I'm under
-    <br />
+		<br />
     Oh it's your love
-    <br />
-    <br />
+		<br />
+		<br />
     Better than I was
-    <br />
+		<br />
     More than I am
-    <br />
+		<br />
     And all of this happened
-    <br />
+		<br />
     By taking your hand
-    <br />
+		<br />
     And who I am now
-    <br />
+		<br />
     Is who I wanted to be
-    <br />
+		<br />
     And now that we're together
-    <br />
+		<br />
     I'm stronger than ever, I'm happy and free
-    <br />
-    <br />
+		<br />
+		<br />
     Oh, it's a beautiful thing
-    <br />
+		<br />
     Don't think I can keep it all in (oh oh)
-    <br />
+		<br />
     And if you ask me why I've changed
-    <br />
+		<br />
     All I gotta do is say your sweet name
-    <br />
-    <br />
+		<br />
+		<br />
     It's your love
-    <br />
+		<br />
     It just does something to me
-    <br />
+		<br />
     It sends a shock right through me
-    <br />
+		<br />
     I can't get enough
-    <br />
+		<br />
     And if you wonder
-    <br />
+		<br />
     About the spell I'm under
-    <br />
+		<br />
     Oh it's your love
-    <br />
+		<br />
     (Woah oh baby)
-    <br />
+		<br />
     (Oh, oh, oh)
-    <br />
-    <br />
+		<br />
+		<br />
     Oh, it's a beautiful thing
-    <br />
+		<br />
     Don't think I can keep it all in
-    <br />
+		<br />
     I just gotta let you know
-    <br />
+		<br />
     What it is that won't let me go
-    <br />
-    <br />
+		<br />
+		<br />
     It's your love
-    <br />
+		<br />
     It just does something to me
-    <br />
+		<br />
     It sends a shock right through me
-    <br />
+		<br />
     I can't get enough
-    <br />
+		<br />
     (Oh) And if you wonder
-    <br />
+		<br />
     About the spell I'm under
-    <br />
+		<br />
     Oh it's your love
-    <br />
+		<br />
     It's your love
-    <br />
+		<br />
     It's your love
-  </div>
+	</div>
 );
 
 export default ItsYourLove;

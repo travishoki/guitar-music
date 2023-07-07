@@ -1,100 +1,100 @@
 import React from 'react';
 
 const OverTheRainbow = () => (
-  <div>
+	<div>
     Somewhere over the rainbow
-    <br />
+		<br />
     Way up high
-    <br />
+		<br />
     And the dreams that you dreamed of
-    <br />
+		<br />
     Once in a lullaby
-    <br />
-    <br />
+		<br />
+		<br />
     Somewhere over the rainbow
-    <br />
+		<br />
     Blue birds fly
-    <br />
+		<br />
     And the dreams that you dreamed of
-    <br />
+		<br />
     Dreams really do come true ooh oh
-    <br />
-    <br />
+		<br />
+		<br />
     Someday I&apos;ll wish upon a star
-    <br />
+		<br />
     Wake up where the clouds are far behind me
-    <br />
+		<br />
     Where trouble melts like lemon drops
-    <br />
+		<br />
     High above the chimney top
-    <br />
+		<br />
     That&apos;s where you&apos;ll find me
-    <br />
-    <br />
+		<br />
+		<br />
     Oh, somewhere over the rainbow bluebirds fly
-    <br />
+		<br />
     And the dream that you dare to,
-    <br />
+		<br />
     Oh why, oh why can&apos;t I?
-    <br />
-    <br />
+		<br />
+		<br />
     Well I see trees of green and red roses too,
-    <br />
+		<br />
     I&apos;ll watch them bloom for me and you
-    <br />
+		<br />
     And I think to myself
-    <br />
+		<br />
     What a wonderful world
-    <br />
-    <br />
+		<br />
+		<br />
     Well I see skies of blue
-    <br />
+		<br />
     And I see clouds of white
-    <br />
+		<br />
     And the brightness of day
-    <br />
+		<br />
     I like the dark
-    <br />
+		<br />
     And I think to myself
-    <br />
+		<br />
     What a wonderful world
-    <br />
-    <br />
+		<br />
+		<br />
     The colors of the rainbow so pretty in the sky
-    <br />
+		<br />
     Are also on the faces of people passing by
-    <br />
+		<br />
     I see friends shaking hands
-    <br />
+		<br />
     Singing, "How do you do?"
-    <br />
+		<br />
     They&apos;re really singing, "I...I love you."
-    <br />
-    <br />
+		<br />
+		<br />
     I hear babies cry and I watch them grow,
-    <br />
+		<br />
     They&apos;ll learn much more than we&apos;ll know
-    <br />
+		<br />
     And I think to myself
-    <br />
+		<br />
     What a wonderful world world
-    <br />
-    <br />
+		<br />
+		<br />
     Someday I&apos;ll wish upon a star,
-    <br />
+		<br />
     Wake up where the clouds are far behind me
-    <br />
+		<br />
     Where trouble melts like lemon drops
-    <br />
+		<br />
     High above the chimney top
-    <br />
+		<br />
     That&apos;s where you&apos;ll find me
-    <br />
-    <br />
+		<br />
+		<br />
     Oh, somewhere over the rainbow way up high
-    <br />
+		<br />
     And the dream that you dare to, why, oh why can&apos;t I? I?
-  </div>
+	</div>
 );
 
 export default OverTheRainbow;

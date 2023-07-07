@@ -1,81 +1,81 @@
 import React from 'react';
 
 const BabyILoveYourWay = () => (
-  <div>
+	<div>
     Shadows grow so long before my eyes
-    <br />
+		<br />
     And they&apos;re moving across the page
-    <br />
+		<br />
     Suddenly the day turns into night
-    <br />
+		<br />
     Far away from the city
-    <br />
+		<br />
     Don&apos;t hesitate
-    <br />
+		<br />
     &apos;Cause your love won&apos;t wait
-    <br />
-    <br />
+		<br />
+		<br />
     Oh baby I love your way, everyday
-    <br />
+		<br />
     Wanna tell you I love your way, everyday
-    <br />
+		<br />
     Wanna be with you night and day
-    <br />
-    <br />
+		<br />
+		<br />
     Moon appears to shine and light the sky
-    <br />
+		<br />
     With the help of some firefly
-    <br />
+		<br />
     Wonder how they have the power to shine, shine, shine
-    <br />
+		<br />
     I can see them under the pine
-    <br />
+		<br />
     Don&apos;t hesitate
-    <br />
+		<br />
     &apos;Cause your love won&apos;t wait
-    <br />
-    <br />
+		<br />
+		<br />
     Oh baby I love your way, everyday
-    <br />
+		<br />
     Wanna tell you I love your way, oh
-    <br />
+		<br />
     Wanna be with you night and day, oh yeah
-    <br />
-    <br />
+		<br />
+		<br />
     Well don&apos;t hesitate
-    <br />
+		<br />
     &apos;Cause your love won&apos;t wait
-    <br />
-    <br />
+		<br />
+		<br />
     I can see the sunset in your eyes
-    <br />
+		<br />
     Brown and gray, blue besides
-    <br />
+		<br />
     Clouds are stalking islands in the sun
-    <br />
+		<br />
     I wish I could buy one
-    <br />
+		<br />
     Out of season
-    <br />
-    <br />
+		<br />
+		<br />
     Don&apos;t hesitate
-    <br />
+		<br />
     &apos;Cause your love won&apos;t wait
-    <br />
-    <br />
+		<br />
+		<br />
     Oh baby I love your way, everyday
-    <br />
+		<br />
     Wanna tell you I love your way
-    <br />
+		<br />
     Wanna be with you night and day
-    <br />
-    <br />
+		<br />
+		<br />
     Oh baby I love your way, everyday
-    <br />
+		<br />
     Wanna tell you I love your way
-    <br />
+		<br />
     Wanna be with you night and day, yeah
-  </div>
+	</div>
 );
 
 export default BabyILoveYourWay;

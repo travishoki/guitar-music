@@ -1,69 +1,69 @@
 import React from 'react';
 
 const TheCatCameBack = () => (
-  <p>
+	<p>
     Sunshine go away today
-    <br />
+		<br />
     I don't feel much like dancing
-    <br />
+		<br />
     Some man's gone, he's tried to run my life
-    <br />
+		<br />
     Don't know what he's asking
-    <br />
-    <br />
+		<br />
+		<br />
     He tells me I'd better get in line
-    <br />
+		<br />
     Can't hear what he's saying
-    <br />
+		<br />
     When I grow up, I'm going to make it mine
-    <br />
+		<br />
     But these aren't dues I been paying
-    <br />
-    <br />
+		<br />
+		<br />
     How much does it cost, I'll buy it
-    <br />
+		<br />
     The time is all we've lost, I'll try it
-    <br />
+		<br />
     But he can't even run his own life
-    <br />
+		<br />
     I'll be damned if he'll run mine, Sunshine
-    <br />
-    <br />
+		<br />
+		<br />
     Sunshine go away today
-    <br />
+		<br />
     I don't feel much like dancing
-    <br />
+		<br />
     Some man's gone, he's tried to run my life
-    <br />
+		<br />
     Don't know what he's asking
-    <br />
-    <br />
+		<br />
+		<br />
     Working starts to make me wonder where
-    <br />
+		<br />
     The fruits of what I do are going
-    <br />
+		<br />
     He says in love and war all is fair
-    <br />
+		<br />
     But he's got cards he ain't showing
-    <br />
-    <br />
+		<br />
+		<br />
     How much does it cost, I'll buy it
-    <br />
+		<br />
     The time is all we've lost, I'll try it
-    <br />
+		<br />
     And he can't even run his own life
-    <br />
+		<br />
     I'll be damned if he'll run mine, Sunshine
-    <br />
-    <br />
+		<br />
+		<br />
     Sunshine come on back another day
-    <br />
+		<br />
     I promise you I'll be singing
-    <br />
+		<br />
     This old world, she's gonna turn around
-    <br />
+		<br />
     Brand new bells'll be ringing
-  </p>
+	</p>
 );
 
 export default TheCatCameBack;

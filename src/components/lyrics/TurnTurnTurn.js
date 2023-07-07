@@ -1,69 +1,69 @@
 import React from 'react';
 
 const TurnTurnTurn = () => (
-  <div>
+	<div>
     To everything - turn, turn, turn
-    <br />
+		<br />
     There is a season - turn, turn, turn
-    <br />
+		<br />
     And a time to every purpose under heaven
-    <br />
-    <br />
+		<br />
+		<br />
     A time to be born, a time to die
-    <br />
+		<br />
     A time to plant, a time to reap
-    <br />
+		<br />
     A time to kill, a time to heal
-    <br />
+		<br />
     A time to laugh, a time to weep
-    <br />
-    <br />
+		<br />
+		<br />
     To everything - turn, turn, turn
-    <br />
+		<br />
     There is a season - turn, turn, turn
-    <br />
+		<br />
     And a time to every purpose under heaven
-    <br />
-    <br />
+		<br />
+		<br />
     A time to build up, a time to break down
-    <br />
+		<br />
     A time to dance, a time to mourn
-    <br />
+		<br />
     A time to cast away stones
-    <br />
+		<br />
     A time to gather stones together
-    <br />
-    <br />
+		<br />
+		<br />
     To everything - turn, turn, turn
-    <br />
+		<br />
     There is a season - turn, turn, turn
-    <br />
+		<br />
     And a time to every purpose under heaven
-    <br />
-    <br />
+		<br />
+		<br />
     A time of love, a time of hate
-    <br />
+		<br />
     A time of war, a time of peace
-    <br />
+		<br />
     A time you may embrace
-    <br />
+		<br />
     A time to refrain from embracing
-    <br />
-    <br />
+		<br />
+		<br />
     To everything - turn, turn, turn
-    <br />
+		<br />
     There is a season - turn, turn, turn
-    <br />
+		<br />
     And a time to every purpose under heaven
-    <br />
-    <br />
+		<br />
+		<br />
     A time to gain, a time to lose
-    <br />
+		<br />
     A time to rend, a time to sew
-    <br />
+		<br />
     A time for love, a time for hate
-    <br />A time for peace, I swear it&apos;s not too late!
-  </div>
+		<br />A time for peace, I swear it&apos;s not too late!
+	</div>
 );
 
 export default TurnTurnTurn;

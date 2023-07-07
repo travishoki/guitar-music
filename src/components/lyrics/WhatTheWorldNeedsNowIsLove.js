@@ -1,68 +1,68 @@
 import React from 'react';
 
 const WhatTheWorldNeedsNowIsLove = () => (
-  <div>
+	<div>
     What the world needs now is love, sweet love
-    <br />
+		<br />
     It&apos;s the only thing that there&apos;s just too little of
-    <br />
+		<br />
     What the world needs now is love, sweet love
-    <br />
+		<br />
     No not just for some but for everyone
-    <br />
-    <br />
+		<br />
+		<br />
     Lord we don&apos;t need another mountain
-    <br />
+		<br />
     There are mountains and hillsides
-    <br />
+		<br />
     Enough to climb
-    <br />
+		<br />
     There are oceans and rivers
-    <br />
+		<br />
     Enough to cross. enough to last
-    <br />
+		<br />
     &apos;Till the end of time
-    <br />
-    <br />
+		<br />
+		<br />
     What the world needs now is love, sweet love
-    <br />
+		<br />
     It&apos;s the only thing that there&apos;s just too little of
-    <br />
+		<br />
     What the world needs now is love, sweet love
-    <br />
+		<br />
     No not just for some but for everyone
-    <br />
-    <br />
+		<br />
+		<br />
     Lord we don&apos;t need another meadow
-    <br />
+		<br />
     There are corn fields and wheat fields
-    <br />
+		<br />
     Enough to grow
-    <br />
+		<br />
     There are sun beams and moon beams
-    <br />
+		<br />
     Enough to shine
-    <br />
+		<br />
     Oh listen Lord if you want to know
-    <br />
-    <br />
+		<br />
+		<br />
     What the world needs now is love, sweet love
-    <br />
+		<br />
     It&apos;s the only thing that there&apos;s just too little of
-    <br />
+		<br />
     What the world needs now is love, sweet love
-    <br />
+		<br />
     No not just for some but for everyone
-    <br />
-    <br />
+		<br />
+		<br />
     What the world needs now is love, sweet love
-    <br />
+		<br />
     What the world needs now is love, sweet love
-    <br />
+		<br />
     What the world needs now is love, sweet love
-    <br />
+		<br />
     What the world needs now...
-  </div>
+	</div>
 );
 
 export default WhatTheWorldNeedsNowIsLove;

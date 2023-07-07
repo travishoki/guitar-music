@@ -15,8 +15,6 @@ const Main = ({
 	<main>
 		<Routes>
 			<Route
-				exact
-				path="/"
 				element={
 					<HomePage
 						includesBarChord={includesBarChord}
@@ -27,8 +25,10 @@ const Main = ({
 						onToggleIsGuitarMode={onToggleIsGuitarMode}
 					/>
 				}
+				exact
+				path="/"
 			/>
-			<Route path="/song/:title" element={<SongPage />} />
+			<Route element={<SongPage />} path="/song/:title" />
 			<Route element={NotFoundPage} path="*" />
 		</Routes>
 	</main>
