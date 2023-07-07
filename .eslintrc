@@ -92,6 +92,42 @@
 
 		// Typescript
 		"@typescript-eslint/explicit-function-return-type": "off", // handled by Typescript
+		"@typescript-eslint/member-delimiter-style": [
+			"error",
+			{
+				"multiline": {
+					"delimiter": "semi", // 'none' or 'semi' or 'comma'
+					"requireLast": true
+				},
+				"singleline": {
+					"delimiter": "comma", // 'semi' or 'comma'
+					"requireLast": false
+				}
+			}
+		],
+		"@typescript-eslint/naming-convention": [
+			"error",
+			{
+				"selector": "class",
+				"format": ["PascalCase"]
+			},
+			{
+				"selector": "enum",
+				"format": ["UPPER_CASE"]
+			},
+			{
+				"selector": "enumMember",
+				"format": ["UPPER_CASE"]
+			},
+			{
+				"selector": "interface",
+				"format": ["PascalCase"]
+			},
+			{
+				"selector": "typeAlias",
+				"format": ["PascalCase"]
+			}
+		],
 		"@typescript-eslint/no-empty-interface": "error",
 		"typescript-sort-keys/interface": "error",
 		"typescript-sort-keys/string-enum": "error"
