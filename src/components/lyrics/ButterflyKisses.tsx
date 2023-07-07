@@ -2,136 +2,136 @@ import React from 'react';
 
 const BlowinInTheWind = () => (
 	<div>
-    There's two things I know for sure
+		There&apos;s two things I know for sure
 		<br />
-    She was sent here from heaven
+		She was sent here from heaven
 		<br />
-    And she's daddy's little girl
+		And she&apos;s daddy&apos;s little girl
 		<br />
-    As I drop to my knees by her bed at night
+		As I drop to my knees by her bed at night
 		<br />
-    She talks to Jesus
+		She talks to Jesus
 		<br />
-    And I close my eyes
+		And I close my eyes
 		<br />
-    And I thank God for all of the joy in my life
+		And I thank God for all of the joy in my life
 		<br />
-    Oh, but most of all
+		Oh, but most of all
 		<br />
 		<br />
-    For butterfly kisses after bedtime prayer
+		For butterfly kisses after bedtime prayer
 		<br />
-    Sticking little white flowers all up in her hair
+		Sticking little white flowers all up in her hair
 		<br />
-    "Walk beside the pony, Daddy, it's my first ride"
+		&quot;Walk beside the pony, Daddy, it&apos;s my first ride&quot;
 		<br />
-    "I know the cake looks funny, Daddy, but I sure tried"
+		&quot;I know the cake looks funny, Daddy, but I sure tried&quot;
 		<br />
-    Oh, with all that I've done wrong
+		Oh, with all that I&apos;ve done wrong
 		<br />
-    I must have done something right
+		I must have done something right
 		<br />
-    To deserve a hug every morning
+		To deserve a hug every morning
 		<br />
-    And butterfly kisses at night
+		And butterfly kisses at night
 		<br />
 		<br />
-    Sweet 16 today
+		Sweet 16 today
 		<br />
-    She's looking like her mama
+		She&apos;s looking like her mama
 		<br />
-    A little more everyday
+		A little more everyday
 		<br />
-    One part woman
+		One part woman
 		<br />
-    The other part girl
+		The other part girl
 		<br />
-    To perfume and make-up
+		To perfume and make-up
 		<br />
-    From ribbons and curls
+		From ribbons and curls
 		<br />
-    Trying her wings out in a great big world
+		Trying her wings out in a great big world
 		<br />
-    But I remember
+		But I remember
 		<br />
 		<br />
-    Butterfly kisses after bedtime prayer
+		Butterfly kisses after bedtime prayer
 		<br />
-    Sticking little white flowers all up in her hair
+		Sticking little white flowers all up in her hair
 		<br />
-    "You know how much I love you, Daddy, but if you don't mind"
+		&quot;You know how much I love you, Daddy, but if you don&apos;t mind&quot;
 		<br />
-    "I'm only gonna kiss you on the cheek this time"
+		&quot;I&apos;m only gonna kiss you on the cheek this time&quot;
 		<br />
-    Oh, with all that I've done wrong
+		Oh, with all that I&apos;ve done wrong
 		<br />
-    I must have done something right
+		I must have done something right
 		<br />
-    To deserve her love every morning
+		To deserve her love every morning
 		<br />
-    And butterfly kisses at night
+		And butterfly kisses at night
 		<br />
 		<br />
-    All the precious time
+		All the precious time
 		<br />
-    Ooh
+		Ooh
 		<br />
-    Like the wind, the years go by
+		Like the wind, the years go by
 		<br />
-    Precious butterfly
+		Precious butterfly
 		<br />
-    Spread your wings and fly
+		Spread your wings and fly
 		<br />
 		<br />
-    She'll change her name today
+		She&apos;ll change her name today
 		<br />
-    She'll make a promise
+		She&apos;ll make a promise
 		<br />
-    And I'll give her away
+		And I&apos;ll give her away
 		<br />
-    Standing in the bride-room
+		Standing in the bride-room
 		<br />
-    Just staring at her
+		Just staring at her
 		<br />
-    She asked me what I'm thinking
+		She asked me what I&apos;m thinking
 		<br />
-    And I said, "I'm not sure"
+		And I said, &quot;I&apos;m not sure&quot;
 		<br />
-    "I just feel like I'm losing my baby girl"
+		&quot;I just feel like I&apos;m losing my baby girl&quot;
 		<br />
-    And she leaned over
+		And she leaned over
 		<br />
 		<br />
-    Gave me butterfly kisses with her mama there
+		Gave me butterfly kisses with her mama there
 		<br />
-    Sticking little white flowers all up in her hair
+		Sticking little white flowers all up in her hair
 		<br />
-    "Walk me down the aisle, Daddy, it's just about time"
+		&quot;Walk me down the aisle, Daddy, it&apos;s just about time&quot;
 		<br />
-    "Does my wedding gown look pretty, Daddy?"
+		&quot;Does my wedding gown look pretty, Daddy?&quot;
 		<br />
-    "Daddy, don't cry"
+		&quot;Daddy, don&apos;t cry&quot;
 		<br />
-    Oh, with all that I've done wrong
+		Oh, with all that I&apos;ve done wrong
 		<br />
-    I must have done something right
+		I must have done something right
 		<br />
-    To deserve her love every morning
+		To deserve her love every morning
 		<br />
-    And butterfly kisses
+		And butterfly kisses
 		<br />
 		<br />
-    I couldn't ask God for more
+		I couldn&apos;t ask God for more
 		<br />
-    Man, this is what love is
+		Man, this is what love is
 		<br />
-    I know I gotta let her go
+		I know I gotta let her go
 		<br />
-    But I'll always remember
+		But I&apos;ll always remember
 		<br />
-    Every hug in the morning
+		Every hug in the morning
 		<br />
-    And butterfly kisses
+		And butterfly kisses
 		<br />
 	</div>
 );

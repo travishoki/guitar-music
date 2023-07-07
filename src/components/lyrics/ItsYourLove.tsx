@@ -2,123 +2,123 @@ import React from 'react';
 
 const ItsYourLove = () => (
 	<div>
-    Yeah, yeah, yeah, mmhmm
+		Yeah, yeah, yeah, mmhmm
 		<br />
 		<br />
-    Dancing in the dark
+		Dancing in the dark
 		<br />
-    Middle of the night
+		Middle of the night
 		<br />
-    Taking your heart
+		Taking your heart
 		<br />
-    And holding it tight
+		And holding it tight
 		<br />
-    Emotional touch
+		Emotional touch
 		<br />
-    Touching my skin
+		Touching my skin
 		<br />
-    And askin' you to do
+		And askin&apos; you to do
 		<br />
-    What you've been doing
+		What you&apos;ve been doing
 		<br />
-    All over again
-		<br />
-		<br />
-    Oh, it's a beautiful thing
-		<br />
-    Don't think I can keep it all in
-		<br />
-    I just gotta let you know
-		<br />
-    What it is that won't let me go
+		All over again
 		<br />
 		<br />
-    It's your love
+		Oh, it&apos;s a beautiful thing
 		<br />
-    It just does something to me
+		Don&apos;t think I can keep it all in
 		<br />
-    It sends a shock right through me
+		I just gotta let you know
 		<br />
-    I can't get enough
-		<br />
-    And if you wonder
-		<br />
-    About the spell I'm under
-		<br />
-    Oh it's your love
+		What it is that won&apos;t let me go
 		<br />
 		<br />
-    Better than I was
+		It&apos;s your love
 		<br />
-    More than I am
+		It just does something to me
 		<br />
-    And all of this happened
+		It sends a shock right through me
 		<br />
-    By taking your hand
+		I can&apos;t get enough
 		<br />
-    And who I am now
+		And if you wonder
 		<br />
-    Is who I wanted to be
+		About the spell I&apos;m under
 		<br />
-    And now that we're together
-		<br />
-    I'm stronger than ever, I'm happy and free
+		Oh it&apos;s your love
 		<br />
 		<br />
-    Oh, it's a beautiful thing
+		Better than I was
 		<br />
-    Don't think I can keep it all in (oh oh)
+		More than I am
 		<br />
-    And if you ask me why I've changed
+		And all of this happened
 		<br />
-    All I gotta do is say your sweet name
+		By taking your hand
 		<br />
+		And who I am now
 		<br />
-    It's your love
+		Is who I wanted to be
 		<br />
-    It just does something to me
+		And now that we&apos;re together
 		<br />
-    It sends a shock right through me
-		<br />
-    I can't get enough
-		<br />
-    And if you wonder
-		<br />
-    About the spell I'm under
-		<br />
-    Oh it's your love
-		<br />
-    (Woah oh baby)
-		<br />
-    (Oh, oh, oh)
+		I&apos;m stronger than ever, I&apos;m happy and free
 		<br />
 		<br />
-    Oh, it's a beautiful thing
+		Oh, it&apos;s a beautiful thing
 		<br />
-    Don't think I can keep it all in
+		Don&apos;t think I can keep it all in (oh oh)
 		<br />
-    I just gotta let you know
+		And if you ask me why I&apos;ve changed
 		<br />
-    What it is that won't let me go
+		All I gotta do is say your sweet name
 		<br />
 		<br />
-    It's your love
+		It&apos;s your love
 		<br />
-    It just does something to me
+		It just does something to me
 		<br />
-    It sends a shock right through me
+		It sends a shock right through me
 		<br />
-    I can't get enough
+		I can&apos;t get enough
 		<br />
-    (Oh) And if you wonder
+		And if you wonder
 		<br />
-    About the spell I'm under
+		About the spell I&apos;m under
 		<br />
-    Oh it's your love
+		Oh it&apos;s your love
 		<br />
-    It's your love
+		(Woah oh baby)
 		<br />
-    It's your love
+		(Oh, oh, oh)
+		<br />
+		<br />
+		Oh, it&apos;s a beautiful thing
+		<br />
+		Don&apos;t think I can keep it all in
+		<br />
+		I just gotta let you know
+		<br />
+		What it is that won&apos;t let me go
+		<br />
+		<br />
+		It&apos;s your love
+		<br />
+		It just does something to me
+		<br />
+		It sends a shock right through me
+		<br />
+		I can&apos;t get enough
+		<br />
+		(Oh) And if you wonder
+		<br />
+		About the spell I&apos;m under
+		<br />
+		Oh it&apos;s your love
+		<br />
+		It&apos;s your love
+		<br />
+		It&apos;s your love
 	</div>
 );
 

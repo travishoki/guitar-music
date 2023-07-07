@@ -2,98 +2,98 @@ import React from 'react';
 
 const OverTheRainbow = () => (
 	<div>
-    Somewhere over the rainbow
+		Somewhere over the rainbow
 		<br />
-    Way up high
+		Way up high
 		<br />
-    And the dreams that you dreamed of
+		And the dreams that you dreamed of
 		<br />
-    Once in a lullaby
-		<br />
-		<br />
-    Somewhere over the rainbow
-		<br />
-    Blue birds fly
-		<br />
-    And the dreams that you dreamed of
-		<br />
-    Dreams really do come true ooh oh
+		Once in a lullaby
 		<br />
 		<br />
-    Someday I&apos;ll wish upon a star
+		Somewhere over the rainbow
 		<br />
-    Wake up where the clouds are far behind me
+		Blue birds fly
 		<br />
-    Where trouble melts like lemon drops
+		And the dreams that you dreamed of
 		<br />
-    High above the chimney top
-		<br />
-    That&apos;s where you&apos;ll find me
+		Dreams really do come true ooh oh
 		<br />
 		<br />
-    Oh, somewhere over the rainbow bluebirds fly
+		Someday I&apos;ll wish upon a star
 		<br />
-    And the dream that you dare to,
+		Wake up where the clouds are far behind me
 		<br />
-    Oh why, oh why can&apos;t I?
+		Where trouble melts like lemon drops
 		<br />
+		High above the chimney top
 		<br />
-    Well I see trees of green and red roses too,
-		<br />
-    I&apos;ll watch them bloom for me and you
-		<br />
-    And I think to myself
-		<br />
-    What a wonderful world
+		That&apos;s where you&apos;ll find me
 		<br />
 		<br />
-    Well I see skies of blue
+		Oh, somewhere over the rainbow bluebirds fly
 		<br />
-    And I see clouds of white
+		And the dream that you dare to,
 		<br />
-    And the brightness of day
-		<br />
-    I like the dark
-		<br />
-    And I think to myself
-		<br />
-    What a wonderful world
+		Oh why, oh why can&apos;t I?
 		<br />
 		<br />
-    The colors of the rainbow so pretty in the sky
+		Well I see trees of green and red roses too,
 		<br />
-    Are also on the faces of people passing by
+		I&apos;ll watch them bloom for me and you
 		<br />
-    I see friends shaking hands
+		And I think to myself
 		<br />
-    Singing, "How do you do?"
-		<br />
-    They&apos;re really singing, "I...I love you."
+		What a wonderful world
 		<br />
 		<br />
-    I hear babies cry and I watch them grow,
+		Well I see skies of blue
 		<br />
-    They&apos;ll learn much more than we&apos;ll know
+		And I see clouds of white
 		<br />
-    And I think to myself
+		And the brightness of day
 		<br />
-    What a wonderful world world
+		I like the dark
 		<br />
+		And I think to myself
 		<br />
-    Someday I&apos;ll wish upon a star,
-		<br />
-    Wake up where the clouds are far behind me
-		<br />
-    Where trouble melts like lemon drops
-		<br />
-    High above the chimney top
-		<br />
-    That&apos;s where you&apos;ll find me
+		What a wonderful world
 		<br />
 		<br />
-    Oh, somewhere over the rainbow way up high
+		The colors of the rainbow so pretty in the sky
 		<br />
-    And the dream that you dare to, why, oh why can&apos;t I? I?
+		Are also on the faces of people passing by
+		<br />
+		I see friends shaking hands
+		<br />
+		Singing, &quot;How do you do?&quot;
+		<br />
+		They&apos;re really singing, &quot;I...I love you.&quot;
+		<br />
+		<br />
+		I hear babies cry and I watch them grow,
+		<br />
+		They&apos;ll learn much more than we&apos;ll know
+		<br />
+		And I think to myself
+		<br />
+		What a wonderful world world
+		<br />
+		<br />
+		Someday I&apos;ll wish upon a star,
+		<br />
+		Wake up where the clouds are far behind me
+		<br />
+		Where trouble melts like lemon drops
+		<br />
+		High above the chimney top
+		<br />
+		That&apos;s where you&apos;ll find me
+		<br />
+		<br />
+		Oh, somewhere over the rainbow way up high
+		<br />
+		And the dream that you dare to, why, oh why can&apos;t I? I?
 	</div>
 );
 

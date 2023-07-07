@@ -2,130 +2,133 @@ import React from 'react';
 
 const WalkingOnSunshine = () => (
 	<div>
-    Oh!
+		Oh!
 		<br />
 		<br />
-    Ohhhh, yeeeh
+		Ohhhh, yeeeh
 		<br />
 		<br />
-    I used to think maybe you loved me now baby I'm sure
+		I used to think maybe you loved me now baby I&apos;m sure
 		<br />
-    And I just can't wait till the day when you knock on my door
+		And I just can&apos;t wait till the day when you knock on my door
 		<br />
-    Now everytime I go for the mailbox, gotta hold myself down
+		Now everytime I go for the mailbox, gotta hold myself down
 		<br />
-    'Cause I just can't wait till you write me you're coming around
+		&apos;Cause I just can&apos;t wait till you write me you&apos;re coming
+		around
 		<br />
 		<br />
-    I'm walking on sunshine, wooah
+		I&apos;m walking on sunshine, wooah
 		<br />
-    I'm walking on sunshine, woooah
+		I&apos;m walking on sunshine, woooah
 		<br />
-    I'm walking on sunshine, woooah
+		I&apos;m walking on sunshine, woooah
 		<br />
-    And don't it feel good!
+		And don&apos;t it feel good!
 		<br />
 		<br />
-    Hey, alright now
+		Hey, alright now
 		<br />
-    And dont it feel good!
+		And dont it feel good!
 		<br />
-    Hey yeah
+		Hey yeah
 		<br />
 		<br />
-    I used to think maybe you loved me, now I know that it's true
+		I used to think maybe you loved me, now I know that it&apos;s true
 		<br />
-    And I don't want to spend my whole life, just waiting for you
+		And I don&apos;t want to spend my whole life, just waiting for you
 		<br />
 		<br />
-    Now I don't want u back for the weekend
+		Now I don&apos;t want u back for the weekend
 		<br />
-    Not back for a day, no no no
+		Not back for a day, no no no
 		<br />
-    I said baby I just want you back and I want you to stay
+		I said baby I just want you back and I want you to stay
 		<br />
 		<br />
-    Woah yeah!
+		Woah yeah!
 		<br />
-    I'm walking on sunshine, wooah
+		I&apos;m walking on sunshine, wooah
 		<br />
-    I'm walking on sunshine, woooah
+		I&apos;m walking on sunshine, woooah
 		<br />
-    I'm walking on sunshine, woooah
+		I&apos;m walking on sunshine, woooah
 		<br />
-    And don't it feel good!!
+		And don&apos;t it feel good!!
 		<br />
 		<br />
-    Hey, alright now
+		Hey, alright now
 		<br />
-    And don't it feel good!!
+		And don&apos;t it feel good!!
 		<br />
-    Yeah, oh yeah
+		Yeah, oh yeah
 		<br />
-    And don't it feel good!!
+		And don&apos;t it feel good!!
 		<br />
 		<br />
-    Walking on sunshine
+		Walking on sunshine
 		<br />
-    Walking on sunshine
+		Walking on sunshine
 		<br />
 		<br />
-    I feel alive, I feel the love, I feel the love that's really real
+		I feel alive, I feel the love, I feel the love that&apos;s really real
 		<br />
-    I feel alive, I feel the love, I feel the love that's really real
+		I feel alive, I feel the love, I feel the love that&apos;s really real
 		<br />
 		<br />
-    I'm on sunshine baby oh, oh yeah
+		I&apos;m on sunshine baby oh, oh yeah
 		<br />
-    I'm on sunshine baby oh
+		I&apos;m on sunshine baby oh
 		<br />
 		<br />
-    I'm walking on sunshine, wooah
+		I&apos;m walking on sunshine, wooah
 		<br />
-    I'm walking on sunshine, wooah
+		I&apos;m walking on sunshine, wooah
 		<br />
-    I'm walking on sunshine, woooah
+		I&apos;m walking on sunshine, woooah
 		<br />
-    And don't it feel good
+		And don&apos;t it feel good
 		<br />
 		<br />
-    Hey, alright now
+		Hey, alright now
 		<br />
-    And don't it feel good
+		And don&apos;t it feel good
 		<br />
 		<br />
-    I'll say it, say it, say it again now
+		I&apos;ll say it, say it, say it again now
 		<br />
-    And don't it feel good!!
+		And don&apos;t it feel good!!
 		<br />
 		<br />
-    Ohhhh, yeahhhh
+		Ohhhh, yeahhhh
 		<br />
-    And don't it feel good
+		And don&apos;t it feel good
 		<br />
-    Now don't it, don't it, don't it, don't it, don't it, don't it feel good
+		Now don&apos;t it, don&apos;t it, don&apos;t it, don&apos;t it, don&apos;t
+		it, don&apos;t it feel good
 		<br />
 		<br />
-    I'll say it, say it, say it again now
+		I&apos;ll say it, say it, say it again now
 		<br />
-    And don't feel good
+		And don&apos;t feel good
 		<br />
-    Now don't it, don't it, don't it, don't it, don't it, don't it feel good
+		Now don&apos;t it, don&apos;t it, don&apos;t it, don&apos;t it, don&apos;t
+		it, don&apos;t it feel good
 		<br />
 		<br />
-    Tell me, tell me, tell me again now
+		Tell me, tell me, tell me again now
 		<br />
-    And don't it feel good
+		And don&apos;t it feel good
 		<br />
-    Ohhhh, yeahhhh
+		Ohhhh, yeahhhh
 		<br />
-    And don't it feel good
+		And don&apos;t it feel good
 		<br />
-    Oh don't it feel good, don't it feel good
+		Oh don&apos;t it feel good, don&apos;t it feel good
 		<br />
-    Now don't it feel good?
+		Now don&apos;t it feel good?
 		<br />
-    Oh yeah, oh yeah, oh yeah (Don't it feel good)
+		Oh yeah, oh yeah, oh yeah (Don&apos;t it feel good)
 	</div>
 );
 

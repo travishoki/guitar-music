@@ -22,7 +22,7 @@ const NoSongs = () => {
 			<p>
 				You are asking too much of
 				<br />
-				Travis' musical capabilities!
+				Travis&apos; musical capabilities!
 			</p>
 		</div>
 	);

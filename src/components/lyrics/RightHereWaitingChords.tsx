@@ -2,76 +2,76 @@ import React from 'react';
 
 const RightHereWaitingChords = () => (
 	<div>
-    Oceans apart, day after day
+		Oceans apart, day after day
 		<br />
-    And I slowly go insane
+		And I slowly go insane
 		<br />
-    I hear your voice on the line
+		I hear your voice on the line
 		<br />
-    But it doesn't stop the pain
-		<br />
-		<br />
-    If I see you next to never
-		<br />
-    How can we say forever?
+		But it doesn&apos;t stop the pain
 		<br />
 		<br />
-    Wherever you go, whatever you do
+		If I see you next to never
 		<br />
-    I will be right here waiting for you
-		<br />
-    Whatever it takes or how my heart breaks
-		<br />
-    I will be right here waiting for you
+		How can we say forever?
 		<br />
 		<br />
-    I took for granted all the times
+		Wherever you go, whatever you do
 		<br />
-    That I thought would last somehow
+		I will be right here waiting for you
 		<br />
-    I hear the laughter, I taste the tears
+		Whatever it takes or how my heart breaks
 		<br />
-    But I can't get near you now
-		<br />
-		<br />
-    Oh, can't you see it, baby?
-		<br />
-    You've got me goin' crazy
+		I will be right here waiting for you
 		<br />
 		<br />
-    Wherever you go, whatever you do
+		I took for granted all the times
 		<br />
-    I will be right here waiting for you
+		That I thought would last somehow
 		<br />
-    Whatever it takes or how my heart breaks
+		I hear the laughter, I taste the tears
 		<br />
-    I will be right here waiting for you
-		<br />
-		<br />
-    I wonder how we can survive
-		<br />
-    This romance
-		<br />
-    But in the end, if I'm with you
-		<br />
-    I'll take the chance
+		But I can&apos;t get near you now
 		<br />
 		<br />
-    Oh, can't you see it, baby?
+		Oh, can&apos;t you see it, baby?
 		<br />
-    You've got me goin' crazy
-		<br />
-		<br />
-    Wherever you go, whatever you do
-		<br />
-    I will be right here waiting for you
-		<br />
-    Whatever it takes or how my heart breaks
-		<br />
-    I will be right here waiting for you
+		You&apos;ve got me goin&apos; crazy
 		<br />
 		<br />
-    Waiting for you
+		Wherever you go, whatever you do
+		<br />
+		I will be right here waiting for you
+		<br />
+		Whatever it takes or how my heart breaks
+		<br />
+		I will be right here waiting for you
+		<br />
+		<br />
+		I wonder how we can survive
+		<br />
+		This romance
+		<br />
+		But in the end, if I&apos;m with you
+		<br />
+		I&apos;ll take the chance
+		<br />
+		<br />
+		Oh, can&apos;t you see it, baby?
+		<br />
+		You&apos;ve got me goin&apos; crazy
+		<br />
+		<br />
+		Wherever you go, whatever you do
+		<br />
+		I will be right here waiting for you
+		<br />
+		Whatever it takes or how my heart breaks
+		<br />
+		I will be right here waiting for you
+		<br />
+		<br />
+		Waiting for you
 	</div>
 );
 

@@ -53,7 +53,7 @@ const ThisLandIsYourLand = () => (
 		<br />
 		As the fog was lifting, a voice was saying
 		<br />
-		"This land was made for you and me!"
+		&quot;This land was made for you and me!&quot;
 		<br />
 		<br />
 		This land is your land, this land is my land,

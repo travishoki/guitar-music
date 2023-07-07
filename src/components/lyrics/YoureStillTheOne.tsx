@@ -2,102 +2,102 @@ import React from 'react';
 
 const YoureStillTheOne = () => (
 	<div>
-    When I first saw you, I saw love
+		When I first saw you, I saw love
 		<br />
-    And the first time you touched me, I felt love
+		And the first time you touched me, I felt love
 		<br />
-    And after all this time
+		And after all this time
 		<br />
-    You're still the one I love, mmm, yeah-yeah
-		<br />
-		<br />
-    Looks like we made it
-		<br />
-    Look how far we've come, my baby
-		<br />
-    We mighta took the long way
-		<br />
-    We knew we'd get there someday
+		You&apos;re still the one I love, mmm, yeah-yeah
 		<br />
 		<br />
-    They said, "I bet they'll never make it"
+		Looks like we made it
 		<br />
-    But just look at us holding on
+		Look how far we&apos;ve come, my baby
 		<br />
-    We're still together, still going strong, mm
+		We mighta took the long way
 		<br />
-		<br />
-    You're still the one I run to
-		<br />
-    The one that I belong to
-		<br />
-    You're still the one I want for life
-		<br />
-    (You're still the one)
-		<br />
-    You're still the one that I love
-		<br />
-    The only one I dream of
-		<br />
-    You're still the one I kiss goodnight
+		We knew we&apos;d get there someday
 		<br />
 		<br />
-    Ain't nothin' better
+		They said, &quot;I bet they&apos;ll never make it&quot;
 		<br />
-    We beat the odds together
+		But just look at us holding on
 		<br />
-    I'm glad we didn't listen
-		<br />
-    Look at what we would be missin'
+		We&apos;re still together, still going strong, mm
 		<br />
 		<br />
-    They said, "I bet they'll never make it"
+		You&apos;re still the one I run to
 		<br />
-    But just look at us holding on
+		The one that I belong to
 		<br />
-    We're still together, still going strong
+		You&apos;re still the one I want for life
 		<br />
+		(You&apos;re still the one)
 		<br />
-    oh
+		You&apos;re still the one that I love
 		<br />
-    You're still the one I run to
+		The only one I dream of
 		<br />
-    The one that I belong to
-		<br />
-    You're still the one I want for life
-		<br />
-    (You're still the one)
-		<br />
-    You're still the one that I love
-		<br />
-    The only one I dream of
-		<br />
-    You're still the one I kiss goodnight
+		You&apos;re still the one I kiss goodnight
 		<br />
 		<br />
-    You're still the one
+		Ain&apos;t nothin&apos; better
+		<br />
+		We beat the odds together
+		<br />
+		I&apos;m glad we didn&apos;t listen
+		<br />
+		Look at what we would be missin&apos;
 		<br />
 		<br />
-    Yeah (you're still the one)
+		They said, &quot;I bet they&apos;ll never make it&quot;
 		<br />
-    You're still the one I run to
+		But just look at us holding on
 		<br />
-    The one that I belong to
-		<br />
-    You're still the one I want for life, oh yeah
-		<br />
-    (You're still the one)
-		<br />
-    You're still the one that I love
-		<br />
-    The only one I dream of
-		<br />
-    You're still the one I kiss goodnight
+		We&apos;re still together, still going strong
 		<br />
 		<br />
-    I'm so glad we made it
+		oh
 		<br />
-    Look how far we've come, my baby
+		You&apos;re still the one I run to
+		<br />
+		The one that I belong to
+		<br />
+		You&apos;re still the one I want for life
+		<br />
+		(You&apos;re still the one)
+		<br />
+		You&apos;re still the one that I love
+		<br />
+		The only one I dream of
+		<br />
+		You&apos;re still the one I kiss goodnight
+		<br />
+		<br />
+		You&apos;re still the one
+		<br />
+		<br />
+		Yeah (you&apos;re still the one)
+		<br />
+		You&apos;re still the one I run to
+		<br />
+		The one that I belong to
+		<br />
+		You&apos;re still the one I want for life, oh yeah
+		<br />
+		(You&apos;re still the one)
+		<br />
+		You&apos;re still the one that I love
+		<br />
+		The only one I dream of
+		<br />
+		You&apos;re still the one I kiss goodnight
+		<br />
+		<br />
+		I&apos;m so glad we made it
+		<br />
+		Look how far we&apos;ve come, my baby
 	</div>
 );
 
