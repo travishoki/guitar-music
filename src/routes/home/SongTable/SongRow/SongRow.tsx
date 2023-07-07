@@ -2,43 +2,44 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import GuitarTabLink from '../../../../components/common/GuitarTabLink';
 import SvgBarGraph from '../../../../icons/SvgBarGraph';
+import { SongType } from '../../../../types';
 
-const SongRow = ({ isGuitarMode, song }) => {
-	const rowStyle = {
+const SongRow = ({ isGuitarMode, song }: SongRowTypes) => {
+	const rowStyle: React.CSSProperties = {
 		display: 'flex',
 		justifyContent: 'space-between',
 		padding: 10,
 	};
 
-	const linkStyle = {
+	const linkStyle: React.CSSProperties = {
 		textDecoration: 'none',
 	};
 
-	const titleStyle = {
+	const titleStyle: React.CSSProperties = {
 		fontSize: 20,
 		fontWeight: 'bold',
 		margin: 0,
 		marginBottom: 2,
 	};
 
-	const artistStyle = {
+	const artistStyle: React.CSSProperties = {
 		fontSize: 14,
 		margin: 0,
 	};
 
-	const iconBarGraph = {
+	const iconBarGraph: React.CSSProperties = {
 		height: 20,
 		width: 20,
 	};
 
-	const rightSectionStyle = {
+	const rightSectionStyle: React.CSSProperties = {
 		alignItems: 'center',
 		display: 'flex',
 		justifyContent: 'flex-end',
 		width: 60,
 	};
 
-	const fixUrlTitle = (title) => {
+	const fixUrlTitle = (title: string) => {
 		return title.replace(/ /g, '-').toLowerCase();
 	};
 
@@ -60,6 +61,11 @@ const SongRow = ({ isGuitarMode, song }) => {
 			)}
 		</div>
 	);
+};
+
+type SongRowTypes = {
+	isGuitarMode: boolean;
+	song: SongType;
 };
 
 export default SongRow;

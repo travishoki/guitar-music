@@ -11,7 +11,7 @@ const Main = ({
 	onToggleIncludesBarChord,
 	onToggleIsDarkMode,
 	onToggleIsGuitarMode,
-}) => (
+}: MainTypes) => (
 	<main>
 		<Routes>
 			<Route
@@ -25,13 +25,21 @@ const Main = ({
 						onToggleIsGuitarMode={onToggleIsGuitarMode}
 					/>
 				}
-				exact
 				path="/"
 			/>
 			<Route element={<SongPage />} path="/song/:title" />
-			<Route element={NotFoundPage} path="*" />
+			<Route element={<NotFoundPage />} path="*" />
 		</Routes>
 	</main>
 );
+
+type MainTypes = {
+	includesBarChord: boolean;
+	isGuitarMode: boolean;
+	isdarkMode: boolean;
+	onToggleIncludesBarChord: () => void;
+	onToggleIsDarkMode: () => void;
+	onToggleIsGuitarMode: () => void;
+};
 
 export default Main;

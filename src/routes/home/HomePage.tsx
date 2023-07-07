@@ -15,7 +15,7 @@ const HomePage = ({
 	onToggleIncludesBarChord,
 	onToggleIsDarkMode,
 	onToggleIsGuitarMode,
-}) => {
+}: HomePageTypes) => {
 	const [genre, setGenre] = useState(GENRE_ALL);
 	const [sortTerm, setSort] = useState(TITLE);
 
@@ -51,6 +51,15 @@ const HomePage = ({
 			/>
 		</div>
 	);
+};
+
+type HomePageTypes = {
+	includesBarChord: boolean;
+	isGuitarMode: boolean;
+	isdarkMode: boolean;
+	onToggleIncludesBarChord: () => void;
+	onToggleIsDarkMode: () => void;
+	onToggleIsGuitarMode: () => void;
 };
 
 export default HomePage;

@@ -10,7 +10,7 @@ const SongTable = ({
 	currentSortTerm,
 	includesBarChord,
 	isGuitarMode,
-}) => {
+}: SongTableTypes) => {
 	const filteredSongs = SongList.filter(({ barChords, genres }) => {
 		if (!includesBarChord && barChords) return false;
 		if (currentGenre === ALL) return true;
@@ -35,6 +35,13 @@ const SongTable = ({
 			))}
 		</div>
 	);
+};
+
+type SongTableTypes = {
+	currentGenre: string;
+	currentSortTerm: string;
+	includesBarChord: boolean;
+	isGuitarMode: boolean;
 };
 
 export default SongTable;

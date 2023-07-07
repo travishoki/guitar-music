@@ -1,9 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import SvgGuitar from '../../icons/SvgGuitar';
+import { SongType } from '../../types';
 
-const GuitarTabLink = ({ song }) => {
+const GuitarTabLink = ({ song }: GuitarTabLinkTypes) => {
 	const { link } = song;
 
 	if (!link) return null;
@@ -17,15 +17,16 @@ const GuitarTabLink = ({ song }) => {
 			className="guitar-tab-link"
 			href={link}
 			rel="noreferrer"
-			target="_blank" title="Go to Guitar Tabs"
+			target="_blank"
+			title="Go to Guitar Tabs"
 		>
 			<SvgGuitar style={guitarLink} />
 		</a>
 	);
 };
 
-GuitarTabLink.propTypes = {
-	song: PropTypes.object.isRequired,
+type GuitarTabLinkTypes = {
+	song: SongType;
 };
 
 export default GuitarTabLink;

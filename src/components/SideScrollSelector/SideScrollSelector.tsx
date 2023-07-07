@@ -1,6 +1,10 @@
 import React from 'react';
 
-const SideSCrollSelector = ({ currentOption, list, onClick }) => (
+const SideSCrollSelector = ({
+	currentOption,
+	list,
+	onClick,
+}: SideSCrollSelectorTypes) => (
 	<div className="side-scroll-selector">
 		<ul>
 			{list.map((option) => (
@@ -16,5 +20,11 @@ const SideSCrollSelector = ({ currentOption, list, onClick }) => (
 		</ul>
 	</div>
 );
+
+type SideSCrollSelectorTypes = {
+	currentOption: string;
+	list: string[];
+	onClick: (option: string) => void;
+};
 
 export default SideSCrollSelector;

@@ -1,8 +1,9 @@
 import * as GENRE from './genres';
 import * as ERAS from './eras';
 import LYRIC_LIST from '../components/lyrics';
+import { SongType } from '../types';
 
-export const SongList = [
+export const SongList: SongType[] = [
 	{
 		title: 'Baby Baluga',
 		artist: 'Raffi Cavoukian',

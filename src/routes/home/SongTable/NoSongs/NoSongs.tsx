@@ -2,15 +2,15 @@ import React from 'react';
 import SvgEmojiDizzy from '../../../../icons/SvgEmojiDizzy';
 
 const NoSongs = () => {
-	const titleStyle = {
+	const titleStyle: React.CSSProperties = {
 		fontSize: 24,
 	};
 
-	const containerStyle = {
+	const containerStyle: React.CSSProperties = {
 		textAlign: 'center',
 	};
 
-	const iconstyle = {
+	const iconstyle: React.CSSProperties = {
 		height: 100,
 		width: 100,
 	};
