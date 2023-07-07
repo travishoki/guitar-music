@@ -11,7 +11,8 @@
 		"build:dev": "webpack --config ./webpack.config.dev.js",
 		"build:prod": "webpack --config ./webpack.config.prod.js",
 		"lint": "eslint --ext .js,.ts,.tsx src/",
-		"bounce": "rm -rf node_modules && yarn install"
+		"bounce": "rm -rf node_modules && yarn install",
+		"ts-check": "npx tsc"
 	},
 	"type": "module",
 	"repository": {
