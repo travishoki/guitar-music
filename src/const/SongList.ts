@@ -1,5 +1,5 @@
-import * as GENRE from './genres';
 import * as ERAS from './eras';
+import * as GENRE from './genres';
 import LYRIC_LIST from '../components/lyrics';
 import { SongType } from '../types';
 

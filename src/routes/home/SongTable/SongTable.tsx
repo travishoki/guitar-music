@@ -1,9 +1,11 @@
 import React from 'react';
+
 import { sortBy } from 'lodash';
+
+import NoSongs from './NoSongs/NoSongs';
+import SongRow from './SongRow/SongRow';
 import { SongList } from '../../../const/SongList';
 import { ALL, UNCATEGORIZED } from '../../../const/genres';
-import SongRow from './SongRow/SongRow';
-import NoSongs from './NoSongs/NoSongs';
 
 const SongTable = ({
 	currentGenre,

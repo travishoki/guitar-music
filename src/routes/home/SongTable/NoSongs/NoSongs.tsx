@@ -1,4 +1,5 @@
 import React from 'react';
+
 import SvgEmojiDizzy from '../../../../svg/SvgEmojiDizzy';
 
 const NoSongs = () => {

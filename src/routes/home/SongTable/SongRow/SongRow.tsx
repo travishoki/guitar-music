@@ -1,9 +1,11 @@
 import React from 'react';
+
 import { Link } from 'react-router-dom';
+
+import { fixUrlTitle } from './helpers';
 import GuitarTabLink from '../../../../components/common/GuitarTabLink';
 import SvgBarGraph from '../../../../svg/SvgBarGraph';
 import { SongType } from '../../../../types';
-import { fixUrlTitle } from './helpers';
 
 const SongRow = ({ isGuitarMode, song }: SongRowTypes) => {
 	const rowStyle: React.CSSProperties = {

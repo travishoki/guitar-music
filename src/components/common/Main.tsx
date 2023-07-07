@@ -1,8 +1,10 @@
 import React from 'react';
-import HomePage from '../../routes/home/HomePage';
-import SongPage from '../../routes/song/SongPage';
-import NotFoundPage from '../../routes/notFound/NotFoundPage';
+
 import { Routes, Route } from 'react-router-dom';
+
+import HomePage from '../../routes/home/HomePage';
+import NotFoundPage from '../../routes/notFound/NotFoundPage';
+import SongPage from '../../routes/song/SongPage';
 
 const Main = ({
 	includesBarChord,

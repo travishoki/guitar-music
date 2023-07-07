@@ -1,6 +1,7 @@
 import React from 'react';
-import { SORT_LIST } from '../../../const/sort';
+
 import SideSCrollSelector from '../../../components/SideScrollSelector/SideScrollSelector';
+import { SORT_LIST } from '../../../const/sort';
 
 const Sort = ({ currentOption, onClick }: SortTypes) => (
 	<SideSCrollSelector

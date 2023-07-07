@@ -1,7 +1,9 @@
 import React from 'react';
+
 import { Link, useParams } from 'react-router-dom';
-import { SongList } from '../../const/SongList';
+
 import GuitarTabLink from '../../components/common/GuitarTabLink';
+import { SongList } from '../../const/SongList';
 import { fixUrlTitle } from '../home/SongTable/SongRow/helpers';
 
 const SongPage = () => {
