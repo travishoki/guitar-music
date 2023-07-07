@@ -21,6 +21,11 @@
 		"plugin:react/recommended",
 	],
 	"parser": "@typescript-eslint/parser",
+	"settings": {
+		"react": {
+			"version": "detect"
+		}
+	},
 	"rules": {
 		// General
 		"dot-notation": "error",
