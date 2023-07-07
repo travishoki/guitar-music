@@ -38,3 +38,10 @@ dist
 
 # FTP Credentials
 ftpOptions.js
+
+# Testing
+/coverage
+/jest-coverage
+
+# Lint
+.eslintcache
