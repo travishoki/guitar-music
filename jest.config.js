@@ -19,5 +19,6 @@ export default {
 	moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
 	preset: 'ts-jest',
 	testEnvironment: 'node',
-	transformIgnorePatterns: ['node_modules', 'dist'],
+	testPathIgnorePatterns: ['<rootDir>/dist'],
+	transformIgnorePatterns: ['node_modules'],
 };
