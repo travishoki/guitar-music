@@ -61,12 +61,17 @@
 		"yoda": "error",
 
 		// Layout & Formatting
+		"arrow-parens": [1, "always", { "requireForBlockBody": false }],
 		"comma-dangle": ["error", "always-multiline"],
 		"indent": [2, "tab", { "SwitchCase": 1 }],
 		"keyword-spacing": [1],
 		"no-multiple-empty-lines": ["error", { "max": 1 }],
 		"no-trailing-spaces": 1,
 		"object-curly-spacing": ["error", "always"],
+		"padding-line-between-statements": [
+			1,
+			{ "blankLine": "always", "prev": "*", "next": "return" }
+		],
 		"space-before-blocks": 1,
 
 		// React
@@ -86,6 +91,9 @@
 		"react/self-closing-comp": 1,
 
 		// Typescript
-		"@typescript-eslint/no-empty-interface": "error"
+		"@typescript-eslint/explicit-function-return-type": "off", // handled by Typescript
+		"@typescript-eslint/no-empty-interface": "error",
+		"typescript-sort-keys/interface": "error",
+		"typescript-sort-keys/string-enum": "error"
 	}
 }
