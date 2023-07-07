@@ -12,4 +12,4 @@ export const TRADITIONAL = 'Traditional';
 
 export const GENRE_LIST = [FOLK, KIDS, PATRIOTIC, ROCK, RELIGIOUS, TRADITIONAL];
 
-export const FILTER_LIST = [ALL, ...GENRE_LIST, ...ERA_LIST, UNCATEGORIZED];
+export const FILTER_LIST = [ALL, ...GENRE_LIST, ...ERA_LIST /*UNCATEGORIZED*/];
