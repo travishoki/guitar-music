@@ -1,5 +1,5 @@
 import React from 'react';
-import SvgEmojiDizzy from '../../../../icons/SvgEmojiDizzy';
+import SvgEmojiDizzy from '../../../../svg/SvgEmojiDizzy';
 
 const NoSongs = () => {
 	const titleStyle: React.CSSProperties = {

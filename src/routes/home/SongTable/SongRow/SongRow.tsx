@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import GuitarTabLink from '../../../../components/common/GuitarTabLink';
-import SvgBarGraph from '../../../../icons/SvgBarGraph';
+import SvgBarGraph from '../../../../svg/SvgBarGraph';
 import { SongType } from '../../../../types';
 import { fixUrlTitle } from './helpers';
 
