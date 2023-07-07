@@ -1,7 +1,7 @@
 import React from 'react';
 
-import SvgMoon from '../../svg/SvgMoon';
-import SvgSun from '../../svg/SvgSun';
+import SvgMoon from '~svg/SvgMoon';
+import SvgSun from '~svg/SvgSun';
 
 const DarkModeToggle = ({ isdarkMode, onClick }: DarkModeToggleTypes) => (
 	<button onClick={onClick}>{isdarkMode ? <SvgMoon /> : <SvgSun />}</button>
