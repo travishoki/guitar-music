@@ -2,63 +2,63 @@ import React from 'react';
 
 const BabyBaluga = () => (
 	<div>
-    Baby beluga in the deep blue sea
+		Baby beluga in the deep blue sea
 		<br />
-    Swim so wild and you swim so free
+		Swim so wild and you swim so free
 		<br />
-    Heaven above and the sea below
+		Heaven above and the sea below
 		<br />
-    And a little white whale on the go
-		<br />
-		<br />
-    Baby beluga, baby beluga
-		<br />
-    Is the water warm
-		<br />
-    Is your mama home with you, so happy
+		And a little white whale on the go
 		<br />
 		<br />
-    Way down yonder where the dolphins play
+		Baby beluga, baby beluga
 		<br />
-    Where you dive and splash all day
+		Is the water warm
 		<br />
-    Waves roll in and the waves roll out
-		<br />
-    See the water squirtin&apos; out of your spout
+		Is your mama home with you, so happy
 		<br />
 		<br />
-    Baby beluga, oh, baby beluga
+		Way down yonder where the dolphins play
 		<br />
-    Sing your little song
+		Where you dive and splash all day
 		<br />
-    Sing for all your friends, we like to hear you
+		Waves roll in and the waves roll out
 		<br />
-		<br />
-    When it&apos;s dark, you&apos;re home and fed
-		<br />
-    Curl up, snug in your water bed
-		<br />
-    Moon is shining and the stars are out
-		<br />
-    Good night, little whale, good night
+		See the water squirtin&apos; out of your spout
 		<br />
 		<br />
-    Baby beluga, oh, baby beluga
+		Baby beluga, oh, baby beluga
 		<br />
-    With tomorrow&apos;s sun, another day&apos;s begun
+		Sing your little song
 		<br />
-    You&apos;ll soon be wakin&apos;
+		Sing for all your friends, we like to hear you
 		<br />
 		<br />
-    Baby beluga in the deep blue sea
+		When it&apos;s dark, you&apos;re home and fed
 		<br />
-    Swim so wild and you swim so free
+		Curl up, snug in your water bed
 		<br />
-    Heaven above and the sea below
+		Moon is shining and the stars are out
 		<br />
-    And a little white whale on the go
+		Good night, little whale, good night
 		<br />
-    You&apos;re just a little white whale on the go
+		<br />
+		Baby beluga, oh, baby beluga
+		<br />
+		With tomorrow&apos;s sun, another day&apos;s begun
+		<br />
+		You&apos;ll soon be wakin&apos;
+		<br />
+		<br />
+		Baby beluga in the deep blue sea
+		<br />
+		Swim so wild and you swim so free
+		<br />
+		Heaven above and the sea below
+		<br />
+		And a little white whale on the go
+		<br />
+		You&apos;re just a little white whale on the go
 		<br />
 	</div>
 );

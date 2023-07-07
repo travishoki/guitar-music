@@ -2,66 +2,66 @@ import React from 'react';
 
 const WhatTheWorldNeedsNowIsLove = () => (
 	<div>
-    What the world needs now is love, sweet love
+		What the world needs now is love, sweet love
 		<br />
-    It&apos;s the only thing that there&apos;s just too little of
+		It&apos;s the only thing that there&apos;s just too little of
 		<br />
-    What the world needs now is love, sweet love
+		What the world needs now is love, sweet love
 		<br />
-    No not just for some but for everyone
-		<br />
-		<br />
-    Lord we don&apos;t need another mountain
-		<br />
-    There are mountains and hillsides
-		<br />
-    Enough to climb
-		<br />
-    There are oceans and rivers
-		<br />
-    Enough to cross. enough to last
-		<br />
-    &apos;Till the end of time
+		No not just for some but for everyone
 		<br />
 		<br />
-    What the world needs now is love, sweet love
+		Lord we don&apos;t need another mountain
 		<br />
-    It&apos;s the only thing that there&apos;s just too little of
+		There are mountains and hillsides
 		<br />
-    What the world needs now is love, sweet love
+		Enough to climb
 		<br />
-    No not just for some but for everyone
+		There are oceans and rivers
 		<br />
+		Enough to cross. enough to last
 		<br />
-    Lord we don&apos;t need another meadow
-		<br />
-    There are corn fields and wheat fields
-		<br />
-    Enough to grow
-		<br />
-    There are sun beams and moon beams
-		<br />
-    Enough to shine
-		<br />
-    Oh listen Lord if you want to know
+		&apos;Till the end of time
 		<br />
 		<br />
-    What the world needs now is love, sweet love
+		What the world needs now is love, sweet love
 		<br />
-    It&apos;s the only thing that there&apos;s just too little of
+		It&apos;s the only thing that there&apos;s just too little of
 		<br />
-    What the world needs now is love, sweet love
+		What the world needs now is love, sweet love
 		<br />
-    No not just for some but for everyone
+		No not just for some but for everyone
 		<br />
 		<br />
-    What the world needs now is love, sweet love
+		Lord we don&apos;t need another meadow
 		<br />
-    What the world needs now is love, sweet love
+		There are corn fields and wheat fields
 		<br />
-    What the world needs now is love, sweet love
+		Enough to grow
 		<br />
-    What the world needs now...
+		There are sun beams and moon beams
+		<br />
+		Enough to shine
+		<br />
+		Oh listen Lord if you want to know
+		<br />
+		<br />
+		What the world needs now is love, sweet love
+		<br />
+		It&apos;s the only thing that there&apos;s just too little of
+		<br />
+		What the world needs now is love, sweet love
+		<br />
+		No not just for some but for everyone
+		<br />
+		<br />
+		What the world needs now is love, sweet love
+		<br />
+		What the world needs now is love, sweet love
+		<br />
+		What the world needs now is love, sweet love
+		<br />
+		What the world needs now...
 	</div>
 );
 

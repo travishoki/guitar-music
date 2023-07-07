@@ -2,79 +2,79 @@ import React from 'react';
 
 const BabyILoveYourWay = () => (
 	<div>
-    Shadows grow so long before my eyes
+		Shadows grow so long before my eyes
 		<br />
-    And they&apos;re moving across the page
+		And they&apos;re moving across the page
 		<br />
-    Suddenly the day turns into night
+		Suddenly the day turns into night
 		<br />
-    Far away from the city
+		Far away from the city
 		<br />
-    Don&apos;t hesitate
+		Don&apos;t hesitate
 		<br />
-    &apos;Cause your love won&apos;t wait
-		<br />
-		<br />
-    Oh baby I love your way, everyday
-		<br />
-    Wanna tell you I love your way, everyday
-		<br />
-    Wanna be with you night and day
+		&apos;Cause your love won&apos;t wait
 		<br />
 		<br />
-    Moon appears to shine and light the sky
+		Oh baby I love your way, everyday
 		<br />
-    With the help of some firefly
+		Wanna tell you I love your way, everyday
 		<br />
-    Wonder how they have the power to shine, shine, shine
-		<br />
-    I can see them under the pine
-		<br />
-    Don&apos;t hesitate
-		<br />
-    &apos;Cause your love won&apos;t wait
+		Wanna be with you night and day
 		<br />
 		<br />
-    Oh baby I love your way, everyday
+		Moon appears to shine and light the sky
 		<br />
-    Wanna tell you I love your way, oh
+		With the help of some firefly
 		<br />
-    Wanna be with you night and day, oh yeah
+		Wonder how they have the power to shine, shine, shine
 		<br />
+		I can see them under the pine
 		<br />
-    Well don&apos;t hesitate
+		Don&apos;t hesitate
 		<br />
-    &apos;Cause your love won&apos;t wait
-		<br />
-		<br />
-    I can see the sunset in your eyes
-		<br />
-    Brown and gray, blue besides
-		<br />
-    Clouds are stalking islands in the sun
-		<br />
-    I wish I could buy one
-		<br />
-    Out of season
+		&apos;Cause your love won&apos;t wait
 		<br />
 		<br />
-    Don&apos;t hesitate
+		Oh baby I love your way, everyday
 		<br />
-    &apos;Cause your love won&apos;t wait
+		Wanna tell you I love your way, oh
 		<br />
-		<br />
-    Oh baby I love your way, everyday
-		<br />
-    Wanna tell you I love your way
-		<br />
-    Wanna be with you night and day
+		Wanna be with you night and day, oh yeah
 		<br />
 		<br />
-    Oh baby I love your way, everyday
+		Well don&apos;t hesitate
 		<br />
-    Wanna tell you I love your way
+		&apos;Cause your love won&apos;t wait
 		<br />
-    Wanna be with you night and day, yeah
+		<br />
+		I can see the sunset in your eyes
+		<br />
+		Brown and gray, blue besides
+		<br />
+		Clouds are stalking islands in the sun
+		<br />
+		I wish I could buy one
+		<br />
+		Out of season
+		<br />
+		<br />
+		Don&apos;t hesitate
+		<br />
+		&apos;Cause your love won&apos;t wait
+		<br />
+		<br />
+		Oh baby I love your way, everyday
+		<br />
+		Wanna tell you I love your way
+		<br />
+		Wanna be with you night and day
+		<br />
+		<br />
+		Oh baby I love your way, everyday
+		<br />
+		Wanna tell you I love your way
+		<br />
+		Wanna be with you night and day, yeah
 	</div>
 );
 
