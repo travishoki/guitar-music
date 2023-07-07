@@ -2,13 +2,14 @@ import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { SongList } from '../../const/SongList';
 import GuitarTabLink from '../../components/common/GuitarTabLink';
+import { fixUrlTitle } from '../home/SongTable/SongRow/helpers';
 
 const SongPage = () => {
 	const params = useParams();
 	const { title } = params;
 
 	const song = SongList.filter((songListItem) => {
-		return songListItem.title.replace(/ /g, '-').toLowerCase() === title;
+		return fixUrlTitle(songListItem.title) === title;
 	})[0];
 
 	return (
