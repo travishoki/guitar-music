@@ -1,7 +1,7 @@
 /*----- General -----*/
 
 body {
-  font-family: "Raleway", serif;
+	font-family: 'Raleway', serif;
 }
 
 h1,
@@ -10,201 +10,210 @@ h3,
 h4,
 h5,
 .title-font {
-  font-family: "Roboto", serif;
+	font-family: 'Roboto', serif;
 }
 
 body {
-  margin: 0;
+	margin: 0;
 }
 
 #container {
-  display: block;
-  height: 100%;
-  position: fixed;
-  overflow: auto;
-  width: 100%;
+	display: block;
+	height: 100%;
+	position: fixed;
+	overflow: auto;
+	width: 100%;
 
-  &.dark-mode {
-    background: #202124;
-    color: white;
-  }
+	&.dark-mode {
+		background: #202124;
+		color: white;
+	}
 
-  &.light-mode {
-    background: white;
-    color: black;
-  }
+	&.light-mode {
+		background: white;
+		color: black;
+	}
 }
 
 #content {
-  margin: 0 auto;
-  max-width: 768px;
-  padding: 10px;
+	margin: 0 auto;
+	max-width: 768px;
+	padding: 10px;
 }
 
 /*----- Svg -----*/
 
 .dark-mode {
-  svg {
-    fill: white;
-  }
+	svg {
+		fill: white;
+	}
 }
 
 .light-mode {
-  svg {
-    fill: black;
-  }
+	svg {
+		fill: black;
+	}
 }
 
 /*----- Button -----*/
 
 button {
-  border-radius: 5px;
-  cursor: pointer;
-  border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	border: none;
 }
 
 .dark-mode {
-  button {
-    background: #666;
-    color: black;
+	button {
+		background: #666;
+		color: black;
 
-    &.active {
-      background: #ccc;
-    }
+		&.active {
+			background: #ccc;
+		}
 
-    svg {
-      fill: #333;
-    }
-  }
+		svg {
+			fill: #333;
+		}
+	}
 }
 
 .light-mode {
-  button {
-    background: #666;
-    color: white;
+	button {
+		background: #666;
+		color: white;
 
-    &.active {
-      background: #333;
-    }
+		&.active {
+			background: #333;
+		}
 
-    svg {
-      fill: #ccc;
-    }
-  }
+		svg {
+			fill: #ccc;
+		}
+	}
 }
 
 /*----- Genre Filters -----*/
 
 .side-scroll-selector {
-  display: inline-block;
-  max-width: 100%;
-  overflow-x: scroll;
+	display: inline-block;
+	max-width: 100%;
+	overflow-x: scroll;
 
-  ul {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    margin: 0;
-    padding: 10px;
+	ul {
+		display: flex;
+		flex-direction: row;
+		list-style: none;
+		margin: 0;
+		padding: 10px;
 
-    button {
-      padding: 5px 10px;
-      text-transform: capitalize;
-    }
+		button {
+			padding: 5px 10px;
+			text-transform: capitalize;
+		}
 
-    li {
-      &:not(:last-child) {
-        button {
-          margin-right: 10px;
-        }
-      }
-    }
-  }
+		li {
+			&:not(:last-child) {
+				button {
+					margin-right: 10px;
+				}
+			}
+		}
+	}
 }
 
 .dark-mode {
-  .side-scroll-selector {
-    background: #111;
-  }
+	.side-scroll-selector {
+		background: #111;
+	}
 }
 
 .light-mode {
-  .side-scroll-selector {
-    background: #ccc;
-  }
+	.side-scroll-selector {
+		background: #ccc;
+	}
+}
+
+/*----- Titles -----*/
+
+h1 {
+	font-size: 32px;
+	margin: 0;
+	text-align: center;
+}
+
+h2 {
+	font-size: 28px;
+	margin: 0;
+	text-align: center;
 }
 
 /*----- Header -----*/
 
 header {
-  padding: 10px;
-
-  h1 {
-    margin: 0 0 10px 0;
-    text-align: center;
-  }
+	padding: 10px;
 }
 
 .top-controls {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
 }
 
 .toggle-controls {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 
-  button {
-    align-items: center;
-    display: flex;
-    height: 30px;
-    justify-content: center;
-    margin-left: 5px;
-    margin-right: 5px;
-    padding: 0;
-    width: 30px;
+	button {
+		align-items: center;
+		display: flex;
+		height: 30px;
+		justify-content: center;
+		margin-left: 5px;
+		margin-right: 5px;
+		padding: 0;
+		width: 30px;
 
-    svg {
-      height: 20px;
-      width: 20px;
-    }
-  }
+		svg {
+			height: 20px;
+			width: 20px;
+		}
+	}
 }
 
 /*----- Links -----*/
 
 a {
-  color: inherit;
+	color: inherit;
 }
 
 /*----- Text -----*/
 
 .dark-mode {
-  .secondary-text-color {
-    color: #ccc;
-  }
+	.secondary-text-color {
+		color: #ccc;
+	}
 }
 
 .light-mode {
-  .secondary-text-color {
-    color: #666;
-  }
+	.secondary-text-color {
+		color: #666;
+	}
 }
 
 /*----- Text -----*/
 
 .dark-mode {
-  .bottom-border {
-    border-bottom: solid 1px #666;
-  }
+	.bottom-border {
+		border-bottom: solid 1px #666;
+	}
 }
 
 .light-mode {
-  .bottom-border {
-    border-bottom: solid 1px #ccc;
-  }
+	.bottom-border {
+		border-bottom: solid 1px #ccc;
+	}
 }
