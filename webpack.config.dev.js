@@ -26,6 +26,9 @@ export default {
 		new webpack.HotModuleReplacementPlugin(),
 		new webpack.NoEmitOnErrorsPlugin(),
 	],
+	resolve: {
+		extensions: ['.tsx', '.ts', '.js'],
+	},
 	module: {
 		rules: [
 			{
@@ -84,6 +87,11 @@ export default {
 				resolve: {
 					fullySpecified: false,
 				},
+			},
+			{
+				test: /\.tsx?$/,
+				use: 'ts-loader',
+				exclude: /node_modules/,
 			},
 		],
 	},
