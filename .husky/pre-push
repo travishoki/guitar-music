@@ -17,3 +17,6 @@ printTitle
 
 printSectionTitle "Typescripting"
 yarn ts-check
+
+printSectionTitle "Unit Testing"
+yarn test
