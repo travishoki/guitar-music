@@ -31,12 +31,29 @@
 		"no-nested-ternary": "error",
 		"no-only-tests/no-only-tests": "error",
 		"no-param-reassign": "error",
+		"no-unused-vars": "off",
+		"promise/catch-or-return": ["error", { "allowFinally": true }],
+		"promise/no-nesting": "error",
+		"@typescript-eslint/no-unused-vars": [
+			"warn", // or error
+			{
+				"argsIgnorePattern": "^_",
+				"varsIgnorePattern": "^_",
+				"caughtErrorsIgnorePattern": "^_"
+			}
+		],
+		"no-var": 1,
+		"object-shorthand": [1, "properties"],
+		"prefer-const": 1,
 		"quotes": [
 			1,
 			"single",
 			{ "avoidEscape": true, "allowTemplateLiterals": true }
 		],
 		"semi": [2, "always"],
+		"sort-destructure-keys/sort-destructure-keys": 2,
+		"sort-keys": "error",
+		"yoda": "error",
 
 		// Layout & Formatting
 		"comma-dangle": ["error", "always-multiline"],
