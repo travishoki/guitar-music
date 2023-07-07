@@ -1,4 +1,14 @@
 {
-  "presets": ["@babel/preset-env", "@babel/preset-react"],
-  "plugins": ["@babel/transform-object-rest-spread"]
+	"presets": ["@babel/preset-env", "@babel/preset-react"],
+	"plugins": [
+		"@babel/transform-object-rest-spread",
+		[
+			"module-resolver",
+			{
+				"alias": {
+					"~svg": "./src/svg"
+				}
+			}
+		]
+	]
 }

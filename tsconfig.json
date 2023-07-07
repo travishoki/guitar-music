@@ -5,6 +5,9 @@
 		"sourceMap": true,
 		"skipLibCheck": true,
 		"module": "es6",
+		"paths": {
+			"~svg/*": ["./src/svg/*"]
+		},
 		"target": "es5",
 		"typeRoots": ["node_modules/@types", "src/types"],
 		"jsx": "react",

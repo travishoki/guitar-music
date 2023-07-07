@@ -1,6 +1,7 @@
 import React from 'react';
 
-import SvgGuitar from '../../svg/SvgGuitar';
+import SvgGuitar from '~svg/SvgGuitar';
+
 import { SongType } from '../../types';
 
 const GuitarTabLink = ({ song }: GuitarTabLinkTypes) => {

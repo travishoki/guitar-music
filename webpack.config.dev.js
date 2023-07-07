@@ -28,6 +28,9 @@ export default {
 	],
 	resolve: {
 		extensions: ['.tsx', '.ts', '.js'],
+		alias: {
+			'~svg': path.resolve(__dirname, 'src/svg'),
+		},
 	},
 	module: {
 		rules: [
