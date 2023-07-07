@@ -2,107 +2,110 @@ import React from 'react';
 
 const OneTinSoldier = () => (
 	<div>
-    Listen children to a story
+		Listen children to a story
 		<br />
-    That was written long ago
+		That was written long ago
 		<br />
-    About a kingdom, on a mountain
+		About a kingdom, on a mountain
 		<br />
-    And the valley folk below
+		And the valley folk below
 		<br />
-    On the mountain was a treasure
+		On the mountain was a treasure
 		<br />
-    Burred deep beneath a stone
+		Burred deep beneath a stone
 		<br />
-    And the valley people swore
+		And the valley people swore
 		<br />
-    Theyd have it for their very own
-		<br />
-		<br />
-    Go ahead and hate your neighbor
-		<br />
-    Go ahead and cheat a friend
-		<br />
-    Do it in the name of Heaven
-		<br />
-    You can justify it in the end
-		<br />
-    There wont be any trumpets blowing
-		<br />
-    Come the judgement day
-		<br />
-    On the bloody morning after... <br />
-    One tin soldier rides away
+		Theyd have it for their very own
 		<br />
 		<br />
-    So the people of the valley
+		Go ahead and hate your neighbor
 		<br />
-    Sent a message up the hill
+		Go ahead and cheat a friend
 		<br />
-    Asking for the buried treasure
+		Do it in the name of Heaven
 		<br />
-    Tons of gold for which they&apos;d kill
+		You can justify it in the end
 		<br />
-    Came an answer from the kingdom
+		There wont be any trumpets blowing
 		<br />
-    With our brothers we will share
+		Come the judgement day
 		<br />
-    All the secrets of our mountain
+		On the bloody morning after...
 		<br />
-    All the riches buried there
-		<br />
-		<br />
-    Now the valley cried in anger
-		<br />
-    Mount your horses
-		<br />
-    Draw your sword
-		<br />
-    And they killed the mountain people
-		<br />
-    Sure they&apos;d won their just reward
-		<br />
-    Now they stood beside the treasure
-		<br />
-    On the mountain dark and red
-		<br />
-    Turned the stone and looked beneath it
-		<br />
-    Peace on Earth
-		<br />
-    Was all it said
+		One tin soldier rides away
 		<br />
 		<br />
-    Go ahead and hate your neighbor
+		So the people of the valley
 		<br />
-    Go ahead and cheat a friend
+		Sent a message up the hill
 		<br />
-    Do it in the name of Heaven
+		Asking for the buried treasure
 		<br />
-    You can justify it in the end
+		Tons of gold for which they&apos;d kill
 		<br />
-    There wont be any trumpets blowing
+		Came an answer from the kingdom
 		<br />
-    Come the judgement day
+		With our brothers we will share
 		<br />
-    On the bloody morning after... <br />
-    One tin soldier rides away
+		All the secrets of our mountain
+		<br />
+		All the riches buried there
 		<br />
 		<br />
-    Go ahead and hate your neighbor
+		Now the valley cried in anger
 		<br />
-    Go ahead and cheat a friend
+		Mount your horses
 		<br />
-    Do it in the name of Heaven
+		Draw your sword
 		<br />
-    You can justify it in the end
+		And they killed the mountain people
 		<br />
-    There wont be any trumpets blowing
+		Sure they&apos;d won their just reward
 		<br />
-    Come the judgement day
+		Now they stood beside the treasure
 		<br />
-    On the bloody morning after... <br />
-    One tin soldier rides away
+		On the mountain dark and red
+		<br />
+		Turned the stone and looked beneath it
+		<br />
+		Peace on Earth
+		<br />
+		Was all it said
+		<br />
+		<br />
+		Go ahead and hate your neighbor
+		<br />
+		Go ahead and cheat a friend
+		<br />
+		Do it in the name of Heaven
+		<br />
+		You can justify it in the end
+		<br />
+		There wont be any trumpets blowing
+		<br />
+		Come the judgement day
+		<br />
+		On the bloody morning after...
+		<br />
+		One tin soldier rides away
+		<br />
+		<br />
+		Go ahead and hate your neighbor
+		<br />
+		Go ahead and cheat a friend
+		<br />
+		Do it in the name of Heaven
+		<br />
+		You can justify it in the end
+		<br />
+		There wont be any trumpets blowing
+		<br />
+		Come the judgement day
+		<br />
+		On the bloody morning after...
+		<br />
+		One tin soldier rides away
 	</div>
 );
 

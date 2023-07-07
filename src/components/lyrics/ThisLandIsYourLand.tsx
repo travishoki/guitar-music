@@ -2,61 +2,67 @@ import React from 'react';
 
 const ThisLandIsYourLand = () => (
 	<div>
-    This land is your land, this land is my land,
+		This land is your land, this land is my land,
 		<br />
-    From California, to the New York Island,
+		From California, to the New York Island,
 		<br />
-    From the Redwood Forest, to the Gulf Stream Waters,
+		From the Redwood Forest, to the Gulf Stream Waters,
 		<br />
-    This land was made for you and me. <br />
+		This land was made for you and me.
 		<br />
-    I roamed and rambled, and I followed my footsteps
 		<br />
-    To the sparkling sands of her diamond deserts
+		I roamed and rambled, and I followed my footsteps
 		<br />
-    And all around me a voice was singing
+		To the sparkling sands of her diamond deserts
 		<br />
-    This land was made for you and me! <br />
+		And all around me a voice was singing
 		<br />
-    This land is your land, this land is my land,
+		This land was made for you and me!
 		<br />
-    From California, to the New York Island,
 		<br />
-    From the Redwood Forest, to the Gulf Stream Waters,
+		This land is your land, this land is my land,
 		<br />
-    This land was made for you and me. <br />
+		From California, to the New York Island,
 		<br />
-    As I went walking that ribbon of highway
+		From the Redwood Forest, to the Gulf Stream Waters,
 		<br />
-    I saw above me that endless skyway
+		This land was made for you and me.
 		<br />
-    I saw below me those golden valleys
 		<br />
-    This land was made for you and me! <br />
+		As I went walking that ribbon of highway
 		<br />
-    This land is your land, this land is my land,
+		I saw above me that endless skyway
 		<br />
-    From California, to the New York Island,
+		I saw below me those golden valleys
 		<br />
-    From the Redwood Forest, to the Gulf Stream Waters,
+		This land was made for you and me!
 		<br />
-    This land was made for you and me. <br />
 		<br />
-    As the sun was shining, and I was strolling,
+		This land is your land, this land is my land,
 		<br />
-    And the wheat fields waving, and the dust clouds rolling,
+		From California, to the New York Island,
 		<br />
-    As the fog was lifting, a voice was saying
+		From the Redwood Forest, to the Gulf Stream Waters,
 		<br />
-    "This land was made for you and me!" <br />
+		This land was made for you and me.
 		<br />
-    This land is your land, this land is my land,
 		<br />
-    From California, to the New York Island,
+		As the sun was shining, and I was strolling,
 		<br />
-    From the Redwood Forest, to the Gulf Stream Waters,
+		And the wheat fields waving, and the dust clouds rolling,
 		<br />
-    This land was made for you and me.
+		As the fog was lifting, a voice was saying
+		<br />
+		"This land was made for you and me!"
+		<br />
+		<br />
+		This land is your land, this land is my land,
+		<br />
+		From California, to the New York Island,
+		<br />
+		From the Redwood Forest, to the Gulf Stream Waters,
+		<br />
+		This land was made for you and me.
 	</div>
 );
 
