@@ -55,6 +55,8 @@ const SongRow = ({ isGuitarMode, song }: SongRowTypes) => {
 			</Link>
 			{isGuitarMode && (
 				<div style={rightSectionStyle}>
+					{song.alteration && <p>{song.alteration}</p>}
+					{song.strumPattern && <p>{song.strumPattern}</p>}
 					{song.barChords && <SvgBarGraph style={iconBarGraph} />}
 					<GuitarTabLink song={song} />
 				</div>
