@@ -35,7 +35,8 @@ const SongTable = ({
 	return (
 		<div>
 			{finalSongsList.map((song) => {
-				const firstLetter = song.title[0];
+				const firstLetter =
+					currentSortTerm === 'artist' ? song.artist[0] : song.title[0];
 				let showHeader = false;
 				if (firstLetter !== letter) {
 					letter = firstLetter;
