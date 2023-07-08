@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 import { sortBy } from 'lodash';
 
@@ -38,20 +38,21 @@ const SongTable = ({
 				const firstLetter =
 					currentSortTerm === 'artist' ? song.artist[0] : song.title[0];
 				let showHeader = false;
+
 				if (firstLetter !== letter) {
 					letter = firstLetter;
 					showHeader = true;
 				}
 
 				return (
-					<div key={song.title}>
+					<Fragment key={song.title}>
 						{showHeader && (
 							<div className="scroll-header" style={letterHeaderStyle}>
 								{letter}
 							</div>
 						)}
 						<SongRow isGuitarMode={isGuitarMode} song={song} />
-					</div>
+					</Fragment>
 				);
 			})}
 		</div>
