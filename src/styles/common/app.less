@@ -1,3 +1,8 @@
+/*----- Colors -----*/
+
+@WHITE: #ffffff;
+@BLACK: #000000;
+
 /*----- General -----*/
 
 body {
@@ -26,12 +31,12 @@ body {
 
 	&.dark-mode {
 		background: #202124;
-		color: white;
+		color: @WHITE;
 	}
 
 	&.light-mode {
-		background: white;
-		color: black;
+		background: @WHITE;
+		color: @BLACK;
 	}
 }
 
@@ -44,13 +49,13 @@ body {
 
 .dark-mode {
 	svg {
-		fill: white;
+		fill: @WHITE;
 	}
 }
 
 .light-mode {
 	svg {
-		fill: black;
+		fill: @BLACK;
 	}
 }
 
@@ -65,7 +70,7 @@ button {
 .dark-mode {
 	button {
 		background: #666;
-		color: black;
+		color: @BLACK;
 
 		&.active {
 			background: #ccc;
@@ -80,7 +85,7 @@ button {
 .light-mode {
 	button {
 		background: #666;
-		color: white;
+		color: @WHITE;
 
 		&.active {
 			background: #333;
