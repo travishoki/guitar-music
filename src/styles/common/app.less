@@ -155,8 +155,27 @@ h2 {
 /*----- Header -----*/
 
 header {
-	padding: 10px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: sticky;
+	top: 0;
 }
+
+.dark-mode {
+	header {
+		background: #202124;
+	}
+}
+
+.light-mode {
+	header {
+		background: @WHITE;
+	}
+}
+
+/*----- Controls -----*/
 
 .top-controls {
 	align-items: center;

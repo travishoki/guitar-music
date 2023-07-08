@@ -74,7 +74,7 @@ const letterHeaderStyle: React.CSSProperties = {
 	paddingRight: 10,
 	paddingTop: 5,
 	position: 'sticky',
-	top: 0,
+	top: 50,
 };
 
 export default SongTable;
