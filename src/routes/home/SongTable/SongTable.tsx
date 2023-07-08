@@ -65,9 +65,12 @@ type SongTableTypes = {
 };
 
 const letterHeaderStyle: React.CSSProperties = {
-	fontSize: 36,
+	fontSize: 30,
 	fontWeight: 'bold',
-	padding: 10,
+	paddingBottom: 5,
+	paddingLeft: 10,
+	paddingRight: 10,
+	paddingTop: 5,
 	position: 'sticky',
 	top: 0,
 };

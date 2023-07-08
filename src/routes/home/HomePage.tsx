@@ -22,28 +22,31 @@ const HomePage = ({
 
 	return (
 		<div>
-			<div className="top-controls">
-				<Sort currentOption={sortTerm} onClick={setSort} />
+			<div style={controlsStyle}>
+				<div className="top-controls">
+					<Sort currentOption={sortTerm} onClick={setSort} />
 
-				<div className="toggle-controls">
-					{isGuitarMode && (
-						<BarChordToggle
-							includesBarChord={includesBarChord}
-							onClick={onToggleIncludesBarChord}
+					<div className="toggle-controls">
+						{isGuitarMode && (
+							<BarChordToggle
+								includesBarChord={includesBarChord}
+								onClick={onToggleIncludesBarChord}
+							/>
+						)}
+						<DarkModeToggle
+							isdarkMode={isdarkMode}
+							onClick={onToggleIsDarkMode}
 						/>
-					)}
-					<DarkModeToggle
-						isdarkMode={isdarkMode}
-						onClick={onToggleIsDarkMode}
-					/>
-					<GuitarModeToggle
-						isGuitarMode={isGuitarMode}
-						onClick={onToggleIsGuitarMode}
-					/>
+						<GuitarModeToggle
+							isGuitarMode={isGuitarMode}
+							onClick={onToggleIsGuitarMode}
+						/>
+					</div>
 				</div>
+
+				<Genre currentOption={genre} onClick={setGenre} />
 			</div>
 
-			<Genre currentOption={genre} onClick={setGenre} />
 			<SongTable
 				currentGenre={genre}
 				currentSortTerm={sortTerm}
@@ -61,6 +64,10 @@ type HomePageTypes = {
 	onToggleIncludesBarChord: () => void;
 	onToggleIsDarkMode: () => void;
 	onToggleIsGuitarMode: () => void;
+};
+
+const controlsStyle: React.CSSProperties = {
+	padding: 10,
 };
 
 export default HomePage;
