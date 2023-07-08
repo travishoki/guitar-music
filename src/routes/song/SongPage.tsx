@@ -16,19 +16,6 @@ const SongPage = () => {
 		return fixUrlTitle(songListItem.title) === title;
 	})[0];
 
-	const backLinkStyle: React.CSSProperties = {
-		alignItems: 'center',
-		display: 'flex',
-		justifyContent: 'flex-start',
-		margin: 0,
-		textDecoration: 'none',
-	};
-
-	const backIconStyle: React.CSSProperties = {
-		height: 20,
-		width: 20,
-	};
-
 	return (
 		<div id="songPage">
 			<Link className="back-button" style={backLinkStyle} to="/">
@@ -54,6 +41,19 @@ const SongPage = () => {
 			)}
 		</div>
 	);
+};
+
+const backLinkStyle: React.CSSProperties = {
+	alignItems: 'center',
+	display: 'flex',
+	justifyContent: 'flex-start',
+	margin: 0,
+	textDecoration: 'none',
+};
+
+const backIconStyle: React.CSSProperties = {
+	height: 20,
+	width: 20,
 };
 
 export default SongPage;
