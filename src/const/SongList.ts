@@ -50,7 +50,7 @@ export const SongList: SongType[] = [
 	},
 	{
 		artist: 'John Denver',
-		genres: [ERAS.SEVENTIES],
+		genres: [ERAS.SEVENTIES, GENRE.COUNTRY],
 		link: 'https://tabs.ultimate-guitar.com/tab/john-denver/take-me-home-country-roads-chords-1101747',
 		lyrics: LYRIC_LIST.CountryRoads,
 		title: 'Country Roads',
@@ -106,7 +106,7 @@ export const SongList: SongType[] = [
 	},
 	{
 		artist: 'Tim McGraw',
-		genres: [ERAS.NINETIES],
+		genres: [ERAS.NINETIES, GENRE.COUNTRY],
 		link: 'https://tabs.ultimate-guitar.com/tab/tim-mcgraw/its-your-love-chords-76292',
 		lyrics: LYRIC_LIST.ItsYourLove,
 		strumPattern: 'DxDxDxDU',
