@@ -5,14 +5,17 @@ import ButterflyKisses from './ButterflyKisses';
 import ClosingTimeChords from './ClosingTimeChords';
 import CountryRoads from './CountryRoads';
 import Edelweiss from './Edelweiss';
+import GivingTree from './GivingTree';
 import GodBlessTheUSA from './GodBlessTheUSA';
 import HesGotTheWholeWorldInHisHands from './HesGotTheWholeWorldInHisHands';
+import HouseAtPoohCorner from './HouseAtPoohCorner';
 import ICantMakeYouLoveMe from './ICantMakeYouLoveMe';
 import ItsYourLove from './ItsYourLove';
 import LeavingOnAJetPlane from './LeavingOnAJetPlane';
 import MichaelFinnegan from './MichaelFinnegan';
 import MichaelRowTheBoatAshore from './MichaelRowTheBoatAshore';
 import Mockingbird from './Mockingbird';
+import NightChanges from './NightChanges';
 import OneTinSoldier from './OneTinSoldier';
 import OverTheRainbow from './OverTheRainbow';
 import PuffTheMagicDragon from './PuffTheMagicDragon';
@@ -38,14 +41,17 @@ export default {
 	ClosingTimeChords,
 	CountryRoads,
 	Edelweiss,
+	GivingTree,
 	GodBlessTheUSA,
 	HesGotTheWholeWorldInHisHands,
+	HouseAtPoohCorner,
 	ICantMakeYouLoveMe,
 	ItsYourLove,
 	LeavingOnAJetPlane,
 	MichaelFinnegan,
 	MichaelRowTheBoatAshore,
 	Mockingbird,
+	NightChanges,
 	OneTinSoldier,
 	OverTheRainbow,
 	PuffTheMagicDragon,

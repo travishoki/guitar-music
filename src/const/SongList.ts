@@ -3,7 +3,11 @@ import * as GENRE from './genres';
 import LYRIC_LIST from '../components/lyrics';
 import { SongType } from '../types';
 
+const CAPO_2 = 'Capo 2nd';
+const CAPO_5 = 'Capo 5th';
+
 export const SongList: SongType[] = [
+	// - B -
 	{
 		artist: 'Raffi Cavoukian',
 		barChords: true,
@@ -35,7 +39,9 @@ export const SongList: SongType[] = [
 		lyrics: LYRIC_LIST.ButterflyKisses,
 		title: 'Butterfly Kisses',
 	},
+	// - C -
 	{
+		alteration: CAPO_2,
 		artist: 'Semisonic',
 		genres: [ERAS.NINETIES],
 		link: 'https://tabs.ultimate-guitar.com/tab/semisonic/closing-time-chords-1743417',
@@ -49,12 +55,21 @@ export const SongList: SongType[] = [
 		lyrics: LYRIC_LIST.CountryRoads,
 		title: 'Country Roads',
 	},
+	// - E -
 	{
 		artist: 'Bob Carlisle',
 		genres: [ERAS.NINETIES],
 		link: 'https://tabs.ultimate-guitar.com/tab/misc-musicals/the-sound-of-music-edelweiss-chords-168569',
 		lyrics: LYRIC_LIST.Edelweiss,
 		title: 'Edelweiss',
+	},
+	// - G -
+	{
+		artist: "Plain White T's",
+		genres: [ERAS.TENS],
+		link: 'https://tabs.ultimate-guitar.com/tab/plain-white-ts/the-giving-tree-chords-1240804',
+		lyrics: LYRIC_LIST.GivingTree,
+		title: 'The Giving Tree',
 	},
 	{
 		artist: 'Lee Greenwood',
@@ -64,6 +79,7 @@ export const SongList: SongType[] = [
 		lyrics: LYRIC_LIST.GodBlessTheUSA,
 		title: 'God Bless the USA',
 	},
+	// - H -
 	{
 		artist: 'Misc Praise',
 		genres: [GENRE.TRADITIONAL, GENRE.RELIGIOUS],
@@ -71,6 +87,16 @@ export const SongList: SongType[] = [
 		lyrics: LYRIC_LIST.HesGotTheWholeWorldInHisHands,
 		title: "He's Got the Whole World in His Hands",
 	},
+	{
+		alteration: CAPO_5,
+		artist: 'Kenny Loggins',
+		barChords: true,
+		genres: [GENRE.KIDS, ERAS.SEVENTIES],
+		link: 'https://qcukes.com/music2/music.php?action=Song&song=House%20At%20Pooh%20Corner',
+		lyrics: LYRIC_LIST.HouseAtPoohCorner,
+		title: 'House At Pooh Corner',
+	},
+	// - I -
 	{
 		artist: 'Bonnie Raitt',
 		genres: [ERAS.NINETIES],
@@ -83,8 +109,11 @@ export const SongList: SongType[] = [
 		genres: [ERAS.NINETIES],
 		link: 'https://tabs.ultimate-guitar.com/tab/tim-mcgraw/its-your-love-chords-76292',
 		lyrics: LYRIC_LIST.ItsYourLove,
+		strumPattern: 'DxDxDxDU',
 		title: "It's Your Love",
+		// https://www.youtube.com/watch?v=BOibmAAqWuo
 	},
+	// - L -
 	{
 		artist: 'John Denver',
 		genres: [ERAS.SIXTIES, GENRE.ROCK],
@@ -92,6 +121,7 @@ export const SongList: SongType[] = [
 		lyrics: LYRIC_LIST.LeavingOnAJetPlane,
 		title: 'Leaving on a Jet Plane',
 	},
+	// - M -
 	{
 		artist: 'Misc Traditional',
 		genres: [GENRE.TRADITIONAL, GENRE.KIDS],
@@ -114,6 +144,16 @@ export const SongList: SongType[] = [
 		lyrics: LYRIC_LIST.Mockingbird,
 		title: 'Mockingbird',
 	},
+	// - N -
+	{
+		artist: 'One Direction',
+		barChords: true,
+		genres: [ERAS.TENS],
+		link: 'https://tabs.ultimate-guitar.com/tab/one-direction/night-changes-chords-1678440',
+		lyrics: LYRIC_LIST.NightChanges,
+		title: 'Night Changes',
+	},
+	// - O -
 	{
 		artist: 'The Original Caste',
 		barChords: true,
@@ -130,6 +170,7 @@ export const SongList: SongType[] = [
 		lyrics: LYRIC_LIST.OverTheRainbow,
 		title: 'Over the Rainbow',
 	},
+	// - P -
 	{
 		artist: 'Peter, Paul & Mary',
 		barChords: true,
@@ -138,6 +179,7 @@ export const SongList: SongType[] = [
 		lyrics: LYRIC_LIST.PuffTheMagicDragon,
 		title: 'Puff The Magic Dragon',
 	},
+	// - R -
 	{
 		artist: 'Richard Marx',
 		barChords: true,
@@ -146,6 +188,7 @@ export const SongList: SongType[] = [
 		lyrics: LYRIC_LIST.RightHereWaitingChords,
 		title: 'Right Here Waiting',
 	},
+	// - S -
 	{
 		artist: 'Jonathan Edwards',
 		genres: [ERAS.SEVENTIES],
@@ -153,6 +196,7 @@ export const SongList: SongType[] = [
 		lyrics: LYRIC_LIST.Sunshine,
 		title: 'Sunshine',
 	},
+	// - T -
 	{
 		artist: 'Harry S Miller',
 		genres: [GENRE.KIDS],
@@ -190,6 +234,7 @@ export const SongList: SongType[] = [
 		lyrics: LYRIC_LIST.TurnTurnTurn,
 		title: 'Turn" Turn" Turn',
 	},
+	// - W -
 	{
 		artist: 'Katrina and the Waves',
 		genres: [ERAS.EIGHTIES],
@@ -213,6 +258,7 @@ export const SongList: SongType[] = [
 		lyrics: LYRIC_LIST.WhereHaveAllTheFlowersGone,
 		title: 'Where Have All the Flowers Gone',
 	},
+	// - Y -
 	{
 		artist: 'The Beatles',
 		genres: [ERAS.SIXTIES],
