@@ -1,7 +1,7 @@
 import React from 'react';
 
 const BlowinInTheWind = () => (
-	<div>
+	<p>
 		There&apos;s two things I know for sure
 		<br />
 		She was sent here from heaven
@@ -133,7 +133,7 @@ const BlowinInTheWind = () => (
 		<br />
 		And butterfly kisses
 		<br />
-	</div>
+	</p>
 );
 
 export default BlowinInTheWind;

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Mockingbird = () => (
-	<div>
+	<p>
 		Hush, little baby, don&apos;t say a word.
 		<br />
 		Papa&apos;s gonna buy you a mockingbird
@@ -40,7 +40,7 @@ const Mockingbird = () => (
 		And if that horse and cart fall down,
 		<br />
 		You&apos;ll still be the sweetest little baby in town.
-	</div>
+	</p>
 );
 
 export default Mockingbird;

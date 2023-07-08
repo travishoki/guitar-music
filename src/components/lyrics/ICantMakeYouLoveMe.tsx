@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ICantMakeYouLoveMe = () => (
-	<div>
+	<p>
 		Turn down the lights
 		<br />
 		Turn down the bed
@@ -53,7 +53,7 @@ const ICantMakeYouLoveMe = () => (
 		<br />
 		&apos;Cause I can&apos;t make you love me, if you don&apos;t
 		<br />
-	</div>
+	</p>
 );
 
 export default ICantMakeYouLoveMe;

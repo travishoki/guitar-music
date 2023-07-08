@@ -1,7 +1,7 @@
 import React from 'react';
 
 const HesGotTheWholeWorldInHisHands = () => (
-	<div>
+	<p>
 		He&apos;s got the whole world in his hands
 		<br />
 		He&apos;s got the whole wide world in his hands
@@ -46,7 +46,7 @@ const HesGotTheWholeWorldInHisHands = () => (
 		He&apos;s got you and me brother...
 		<br />
 		He&apos;s got the whole world in his hands...
-	</div>
+	</p>
 );
 
 export default HesGotTheWholeWorldInHisHands;

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const WhereHaveAllTheFlowersGone = () => (
-	<div>
+	<p>
 		Where have all the flowers gone, long time passing?
 		<br />
 		Where have all the flowers gone, long time ago?
@@ -78,7 +78,7 @@ const WhereHaveAllTheFlowersGone = () => (
 		Oh, when will they ever learn?
 		<br />
 		Oh, when will they ever learn?
-	</div>
+	</p>
 );
 
 export default WhereHaveAllTheFlowersGone;

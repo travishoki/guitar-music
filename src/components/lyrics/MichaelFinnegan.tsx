@@ -1,7 +1,7 @@
 import React from 'react';
 
 const MichaelFinnegan = () => (
-	<div>
+	<p>
 		There was an old man named Michael Finnegan
 		<br />
 		He had whiskers on his chinnegan
@@ -33,7 +33,7 @@ const MichaelFinnegan = () => (
 		Poor old Michael Finnegan
 		<br />
 		Begin again.
-	</div>
+	</p>
 );
 
 export default MichaelFinnegan;

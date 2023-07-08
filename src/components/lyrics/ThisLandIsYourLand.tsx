@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ThisLandIsYourLand = () => (
-	<div>
+	<p>
 		This land is your land, this land is my land,
 		<br />
 		From California, to the New York Island,
@@ -63,7 +63,7 @@ const ThisLandIsYourLand = () => (
 		From the Redwood Forest, to the Gulf Stream Waters,
 		<br />
 		This land was made for you and me.
-	</div>
+	</p>
 );
 
 export default ThisLandIsYourLand;

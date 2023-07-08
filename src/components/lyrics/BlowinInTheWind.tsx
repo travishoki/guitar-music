@@ -1,7 +1,7 @@
 import React from 'react';
 
 const BlowinInTheWind = () => (
-	<div>
+	<p>
 		How many roads must a man walk down
 		<br />
 		Before you call him a man?
@@ -54,7 +54,7 @@ const BlowinInTheWind = () => (
 		The answer, my friend, is blowin&apos; in the wind
 		<br />
 		The answer is blowin&apos; in the wind.
-	</div>
+	</p>
 );
 
 export default BlowinInTheWind;

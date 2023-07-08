@@ -1,7 +1,7 @@
 import React from 'react';
 
 const GodBlessTheUSA = () => (
-	<div>
+	<p>
 		If tomorrow all the things were gone I&apos;d worked for all my life
 		<br />
 		And I had to start again with just my children and my wife
@@ -45,7 +45,7 @@ const GodBlessTheUSA = () => (
 		&apos;Cause there ain&apos;t no doubt I love this land
 		<br />
 		God bless the USA
-	</div>
+	</p>
 );
 
 export default GodBlessTheUSA;

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const WalkingOnSunshine = () => (
-	<div>
+	<p>
 		Oh!
 		<br />
 		<br />
@@ -129,7 +129,7 @@ const WalkingOnSunshine = () => (
 		Now don&apos;t it feel good?
 		<br />
 		Oh yeah, oh yeah, oh yeah (Don&apos;t it feel good)
-	</div>
+	</p>
 );
 
 export default WalkingOnSunshine;

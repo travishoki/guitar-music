@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Edelweiss = () => (
-	<div>
+	<p>
 		Edelweiss, Edelweiss
 		<br />
 		Every morning you greet me
@@ -27,7 +27,7 @@ const Edelweiss = () => (
 		Edelweiss, Edelweiss
 		<br />
 		Bless my homeland forever
-	</div>
+	</p>
 );
 
 export default Edelweiss;

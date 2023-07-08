@@ -1,7 +1,7 @@
 import React from 'react';
 
 const BabyBaluga = () => (
-	<div>
+	<p>
 		Baby beluga in the deep blue sea
 		<br />
 		Swim so wild and you swim so free
@@ -60,7 +60,7 @@ const BabyBaluga = () => (
 		<br />
 		You&apos;re just a little white whale on the go
 		<br />
-	</div>
+	</p>
 );
 
 export default BabyBaluga;

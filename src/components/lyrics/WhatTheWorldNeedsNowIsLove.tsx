@@ -1,7 +1,7 @@
 import React from 'react';
 
 const WhatTheWorldNeedsNowIsLove = () => (
-	<div>
+	<p>
 		What the world needs now is love, sweet love
 		<br />
 		It&apos;s the only thing that there&apos;s just too little of
@@ -62,7 +62,7 @@ const WhatTheWorldNeedsNowIsLove = () => (
 		What the world needs now is love, sweet love
 		<br />
 		What the world needs now...
-	</div>
+	</p>
 );
 
 export default WhatTheWorldNeedsNowIsLove;

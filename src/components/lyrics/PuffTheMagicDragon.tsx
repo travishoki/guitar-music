@@ -1,7 +1,7 @@
 import React from 'react';
 
 const PuffTheMagicDragon = () => (
-	<div>
+	<p>
 		Puff the magic dragon lived by the sea
 		<br />
 		And frolicked in the autumn mist in a land called Honali
@@ -63,7 +63,7 @@ const PuffTheMagicDragon = () => (
 		Puff the magic dragon lived by the sea
 		<br />
 		And frolicked in the autumn mist in a land called Honali
-	</div>
+	</p>
 );
 
 export default PuffTheMagicDragon;

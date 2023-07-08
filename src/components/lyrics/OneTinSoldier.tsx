@@ -1,7 +1,7 @@
 import React from 'react';
 
 const OneTinSoldier = () => (
-	<div>
+	<p>
 		Listen children to a story
 		<br />
 		That was written long ago
@@ -106,7 +106,7 @@ const OneTinSoldier = () => (
 		On the bloody morning after...
 		<br />
 		One tin soldier rides away
-	</div>
+	</p>
 );
 
 export default OneTinSoldier;

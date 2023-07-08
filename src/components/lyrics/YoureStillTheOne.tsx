@@ -1,7 +1,7 @@
 import React from 'react';
 
 const YoureStillTheOne = () => (
-	<div>
+	<p>
 		When I first saw you, I saw love
 		<br />
 		And the first time you touched me, I felt love
@@ -98,7 +98,7 @@ const YoureStillTheOne = () => (
 		I&apos;m so glad we made it
 		<br />
 		Look how far we&apos;ve come, my baby
-	</div>
+	</p>
 );
 
 export default YoureStillTheOne;

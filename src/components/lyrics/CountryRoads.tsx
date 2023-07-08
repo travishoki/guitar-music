@@ -1,7 +1,7 @@
 import React from 'react';
 
 const CountryRoads = () => (
-	<div>
+	<p>
 		Almost heaven, West Virginia, Blue Ridge Mountains, Shenandoah River.
 		<br />
 		Life is old there, older than the trees, younger than the mountains, blowing
@@ -44,7 +44,7 @@ const CountryRoads = () => (
 		Take me home now, country roads,
 		<br />
 		Take me home now, country roads.
-	</div>
+	</p>
 );
 
 export default CountryRoads;

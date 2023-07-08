@@ -1,7 +1,7 @@
 import React from 'react';
 
 const LeavingOnAJetPlane = () => (
-	<div>
+	<p>
 		All my bags are packed, I&apos;m ready to go, I&apos;m standing here outside
 		your door,
 		<br />
@@ -52,7 +52,7 @@ const LeavingOnAJetPlane = () => (
 		<br />
 		I&apos;m leaving on a jet plane, don&apos;t know when I&apos;ll be back
 		again. Oh, babe, I hate to go.
-	</div>
+	</p>
 );
 
 export default LeavingOnAJetPlane;

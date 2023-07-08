@@ -1,7 +1,7 @@
 import React from 'react';
 
 const YellowSubmarine = () => (
-	<div>
+	<p>
 		In the town where I was born
 		<br />
 		Lived a man who sailed to sea
@@ -69,7 +69,7 @@ const YellowSubmarine = () => (
 		We all live in a yellow submarine
 		<br />
 		Yellow submarine, yellow submarine
-	</div>
+	</p>
 );
 
 export default YellowSubmarine;

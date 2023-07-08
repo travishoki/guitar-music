@@ -1,7 +1,7 @@
 import React from 'react';
 
 const OverTheRainbow = () => (
-	<div>
+	<p>
 		Somewhere over the rainbow
 		<br />
 		Way up high
@@ -94,7 +94,7 @@ const OverTheRainbow = () => (
 		Oh, somewhere over the rainbow way up high
 		<br />
 		And the dream that you dare to, why, oh why can&apos;t I? I?
-	</div>
+	</p>
 );
 
 export default OverTheRainbow;

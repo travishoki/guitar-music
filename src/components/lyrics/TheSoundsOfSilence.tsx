@@ -1,7 +1,7 @@
 import React from 'react';
 
 const TheSoundsOfSilence = () => (
-	<div>
+	<p>
 		Hello darkness, my old friend
 		<br />
 		I&apos;ve come to talk with you again
@@ -75,7 +75,7 @@ const TheSoundsOfSilence = () => (
 		And tenement halls
 		<br />
 		And whispered in the sounds of silence”
-	</div>
+	</p>
 );
 
 export default TheSoundsOfSilence;

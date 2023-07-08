@@ -1,7 +1,7 @@
 import React from 'react';
 
 const TurnTurnTurn = () => (
-	<div>
+	<p>
 		To everything - turn, turn, turn
 		<br />
 		There is a season - turn, turn, turn
@@ -63,7 +63,7 @@ const TurnTurnTurn = () => (
 		<br />
 		A time for love, a time for hate
 		<br />A time for peace, I swear it&apos;s not too late!
-	</div>
+	</p>
 );
 
 export default TurnTurnTurn;

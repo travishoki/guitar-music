@@ -1,7 +1,7 @@
 import React from 'react';
 
 const BabyILoveYourWay = () => (
-	<div>
+	<p>
 		Shadows grow so long before my eyes
 		<br />
 		And they&apos;re moving across the page
@@ -75,7 +75,7 @@ const BabyILoveYourWay = () => (
 		Wanna tell you I love your way
 		<br />
 		Wanna be with you night and day, yeah
-	</div>
+	</p>
 );
 
 export default BabyILoveYourWay;

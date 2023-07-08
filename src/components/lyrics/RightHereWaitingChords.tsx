@@ -1,7 +1,7 @@
 import React from 'react';
 
 const RightHereWaitingChords = () => (
-	<div>
+	<p>
 		Oceans apart, day after day
 		<br />
 		And I slowly go insane
@@ -72,7 +72,7 @@ const RightHereWaitingChords = () => (
 		<br />
 		<br />
 		Waiting for you
-	</div>
+	</p>
 );
 
 export default RightHereWaitingChords;

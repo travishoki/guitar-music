@@ -1,7 +1,7 @@
 import React from 'react';
 
 const TieMeKangarooDownSport = () => (
-	<div>
+	<p>
 		There&apos;s an old Australian stockman lying, dying. He gets himself up
 		<br />
 		onto one elbow and &apos;e turns to his mates, who are all gathered around
@@ -113,7 +113,7 @@ const TieMeKangarooDownSport = () => (
 		<br />
 		<br />
 		(CHORUS)
-	</div>
+	</p>
 );
 
 export default TieMeKangarooDownSport;

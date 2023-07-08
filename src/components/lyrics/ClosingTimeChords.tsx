@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ClosingTimeChords = () => (
-	<div>
+	<p>
 		Closing time, open all the doors
 		<br />
 		And let you out into the world
@@ -83,7 +83,7 @@ const ClosingTimeChords = () => (
 		<br />
 		Comes from some other beginning&apos;s end
 		<br />
-	</div>
+	</p>
 );
 
 export default ClosingTimeChords;

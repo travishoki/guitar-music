@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ItsYourLove = () => (
-	<div>
+	<p>
 		Yeah, yeah, yeah, mmhmm
 		<br />
 		<br />
@@ -119,7 +119,7 @@ const ItsYourLove = () => (
 		It&apos;s your love
 		<br />
 		It&apos;s your love
-	</div>
+	</p>
 );
 
 export default ItsYourLove;

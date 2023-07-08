@@ -1,7 +1,7 @@
 import React from 'react';
 
 const MichaelRowTheBoatAshore = () => (
-	<div>
+	<p>
 		Michael, row the boat ashore, hallelujah
 		<br />
 		Michael, row the boat ashore, hallelujah
@@ -51,7 +51,7 @@ const MichaelRowTheBoatAshore = () => (
 		Sister, help to trim the sail, hallelujah
 		<br />
 		Sister, help to trim the sail, hallelujah
-	</div>
+	</p>
 );
 
 export default MichaelRowTheBoatAshore;
