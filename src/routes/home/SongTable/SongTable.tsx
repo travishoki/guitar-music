@@ -13,6 +13,8 @@ const SongTable = ({
 	includesBarChord,
 	isGuitarMode,
 }: SongTableTypes) => {
+	let letter: string = null;
+
 	const filteredSongs = SongList.filter(({ barChords, genres }) => {
 		if (!includesBarChord && barChords) return false;
 		if (currentGenre === ALL) return true;
@@ -32,9 +34,25 @@ const SongTable = ({
 
 	return (
 		<div>
-			{finalSongsList.map((song) => (
-				<SongRow isGuitarMode={isGuitarMode} key={song.title} song={song} />
-			))}
+			{finalSongsList.map((song) => {
+				const firstLetter = song.title[0];
+				let showHeader = false;
+				if (firstLetter !== letter) {
+					letter = firstLetter;
+					showHeader = true;
+				}
+
+				return (
+					<div key={song.title}>
+						{showHeader && (
+							<div className="scroll-header" style={letterHeaderStyle}>
+								{letter}
+							</div>
+						)}
+						<SongRow isGuitarMode={isGuitarMode} song={song} />
+					</div>
+				);
+			})}
 		</div>
 	);
 };
@@ -44,6 +62,14 @@ type SongTableTypes = {
 	currentSortTerm: string;
 	includesBarChord: boolean;
 	isGuitarMode: boolean;
+};
+
+const letterHeaderStyle: React.CSSProperties = {
+	fontSize: 36,
+	fontWeight: 'bold',
+	padding: 10,
+	position: 'sticky',
+	top: 0,
 };
 
 export default SongTable;
