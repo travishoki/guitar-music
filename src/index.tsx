@@ -37,18 +37,16 @@ const App = () => {
 	}, [isdarkMode]);
 
 	return (
-		<div id="container">
-			<div id="content">
-				<Header />
-				<Main
-					includesBarChord={includesBarChord}
-					isGuitarMode={isGuitarMode}
-					isdarkMode={isdarkMode}
-					onToggleIncludesBarChord={onToggleIncludesBarChord}
-					onToggleIsDarkMode={onToggleIsDarkMode}
-					onToggleIsGuitarMode={onToggleIsGuitarMode}
-				/>
-			</div>
+		<div id="content">
+			<Header />
+			<Main
+				includesBarChord={includesBarChord}
+				isGuitarMode={isGuitarMode}
+				isdarkMode={isdarkMode}
+				onToggleIncludesBarChord={onToggleIncludesBarChord}
+				onToggleIsDarkMode={onToggleIsDarkMode}
+				onToggleIsGuitarMode={onToggleIsGuitarMode}
+			/>
 		</div>
 	);
 };
