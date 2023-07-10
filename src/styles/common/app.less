@@ -34,6 +34,7 @@ body.light-mode {
 
 #content {
 	margin: 0 auto;
+	margin-bottom: 50px;
 	max-width: 768px;
 }
 
@@ -163,6 +164,33 @@ body.dark-mode {
 
 body.light-mode {
 	header {
+		background: @WHITE;
+	}
+}
+
+/*----- Footer -----*/
+
+footer {
+	align-items: center;
+	bottom: 0;
+	display: flex;
+	height: 50px;
+	justify-content: flex-end;
+	left: 0;
+	padding: 10px;
+	position: fixed;
+	right: 0;
+	z-index: 1;
+}
+
+body.dark-mode {
+	footer {
+		background: #202124;
+	}
+}
+
+body.light-mode {
+	footer {
 		background: @WHITE;
 	}
 }

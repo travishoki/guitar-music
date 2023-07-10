@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 
+import Footer from './components/Footer/Footer';
 import Header from './components/common/Header/Header';
 import Main from './components/common/Main';
 import './styles/index.less';
@@ -47,6 +48,7 @@ const App = () => {
 				onToggleIsDarkMode={onToggleIsDarkMode}
 				onToggleIsGuitarMode={onToggleIsGuitarMode}
 			/>
+			<Footer />
 		</div>
 	);
 };
