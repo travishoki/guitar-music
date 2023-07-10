@@ -1,5 +1,5 @@
 /* global document */
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
@@ -26,8 +26,18 @@ const App = () => {
 		setIncludesBarChord(!includesBarChord);
 	};
 
+	useEffect(() => {
+		if (isdarkMode) {
+			document.body.classList.add('dark-mode');
+			document.body.classList.remove('light-mode');
+		} else {
+			document.body.classList.add('light-mode');
+			document.body.classList.remove('dark-mode');
+		}
+	}, [isdarkMode]);
+
 	return (
-		<div className={isdarkMode ? 'dark-mode' : 'light-mode'} id="container">
+		<div id="container">
 			<div id="content">
 				<Header />
 				<Main

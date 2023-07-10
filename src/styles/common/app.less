@@ -28,13 +28,17 @@ body {
 	position: fixed;
 	overflow: auto;
 	width: 100%;
+}
 
-	&.dark-mode {
+.dark-mode {
+	#container {
 		background: #202124;
 		color: @WHITE;
 	}
+}
 
-	&.light-mode {
+.light-mode {
+	#container {
 		background: @WHITE;
 		color: @BLACK;
 	}
@@ -243,13 +247,13 @@ a {
 
 /*----- Scroll Header -----*/
 
-&.dark-mode {
+.dark-mode {
 	.scroll-header {
 		background: #666;
 	}
 }
 
-&.light-mode {
+.light-mode {
 	.scroll-header {
 		background: #ccc;
 	}
