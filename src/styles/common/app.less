@@ -22,26 +22,14 @@ body {
 	margin: 0;
 }
 
-#container {
-	display: block;
-	height: 100%;
-	position: fixed;
-	overflow: auto;
-	width: 100%;
+body.dark-mode {
+	background: #202124;
+	color: @WHITE;
 }
 
-.dark-mode {
-	#container {
-		background: #202124;
-		color: @WHITE;
-	}
-}
-
-.light-mode {
-	#container {
-		background: @WHITE;
-		color: @BLACK;
-	}
+body.light-mode {
+	background: @WHITE;
+	color: @BLACK;
 }
 
 #content {
@@ -51,13 +39,13 @@ body {
 
 /*----- Svg -----*/
 
-.dark-mode {
+body.dark-mode {
 	svg {
 		fill: @WHITE;
 	}
 }
 
-.light-mode {
+body.light-mode {
 	svg {
 		fill: @BLACK;
 	}
@@ -71,7 +59,7 @@ button {
 	border: none;
 }
 
-.dark-mode {
+body.dark-mode {
 	button {
 		background: #666;
 		color: @BLACK;
@@ -86,7 +74,7 @@ button {
 	}
 }
 
-.light-mode {
+body.light-mode {
 	button {
 		background: #666;
 		color: @WHITE;
@@ -130,13 +118,13 @@ button {
 	}
 }
 
-.dark-mode {
+body.dark-mode {
 	.side-scroll-selector {
 		background: #111;
 	}
 }
 
-.light-mode {
+body.light-mode {
 	.side-scroll-selector {
 		background: #ccc;
 	}
@@ -167,13 +155,13 @@ header {
 	top: 0;
 }
 
-.dark-mode {
+body.dark-mode {
 	header {
 		background: #202124;
 	}
 }
 
-.light-mode {
+body.light-mode {
 	header {
 		background: @WHITE;
 	}
@@ -219,13 +207,13 @@ a {
 
 /*----- Text -----*/
 
-.dark-mode {
+body.dark-mode {
 	.secondary-text-color {
 		color: #ccc;
 	}
 }
 
-.light-mode {
+body.light-mode {
 	.secondary-text-color {
 		color: #666;
 	}
@@ -233,13 +221,13 @@ a {
 
 /*----- Text -----*/
 
-.dark-mode {
+body.dark-mode {
 	.bottom-border {
 		border-bottom: solid 1px #666;
 	}
 }
 
-.light-mode {
+body.light-mode {
 	.bottom-border {
 		border-bottom: solid 1px #ccc;
 	}
@@ -247,13 +235,13 @@ a {
 
 /*----- Scroll Header -----*/
 
-.dark-mode {
+body.dark-mode {
 	.scroll-header {
 		background: #666;
 	}
 }
 
-.light-mode {
+body.light-mode {
 	.scroll-header {
 		background: #ccc;
 	}
