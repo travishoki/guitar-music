@@ -21,7 +21,7 @@ const HomePage = ({
 	const [sortTerm, setSort] = useState(TITLE);
 
 	return (
-		<div>
+		<>
 			<div style={controlsStyle}>
 				<div className="top-controls">
 					<Sort currentOption={sortTerm} onClick={setSort} />
@@ -53,7 +53,7 @@ const HomePage = ({
 				includesBarChord={includesBarChord}
 				isGuitarMode={isGuitarMode}
 			/>
-		</div>
+		</>
 	);
 };
 

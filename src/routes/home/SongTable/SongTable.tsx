@@ -33,7 +33,7 @@ const SongTable = ({
 	}
 
 	return (
-		<div>
+		<>
 			{finalSongsList.map((song) => {
 				const firstLetter =
 					currentSortTerm === 'artist' ? song.artist[0] : song.title[0];
@@ -55,7 +55,7 @@ const SongTable = ({
 					</Fragment>
 				);
 			})}
-		</div>
+		</>
 	);
 };
 
