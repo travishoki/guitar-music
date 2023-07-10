@@ -17,11 +17,11 @@ const SongRow = ({ isGuitarMode, song }: SongRowTypes) => (
 			<p className="secondary-text-color" style={artistStyle}>
 				{song.artist}
 			</p>
+			{song.alteration && <p style={alternateStyle}>{song.alteration}</p>}
+			{song.strumPattern && <p style={alternateStyle}>{song.strumPattern}</p>}
 		</Link>
 		{isGuitarMode && (
 			<div style={rightSectionStyle}>
-				{song.alteration && <p>{song.alteration}</p>}
-				{song.strumPattern && <p>{song.strumPattern}</p>}
 				{song.barChords && <SvgBarGraph style={iconBarGraph} />}
 				<GuitarTabLink song={song} />
 			</div>
@@ -66,6 +66,12 @@ const rightSectionStyle: React.CSSProperties = {
 	display: 'flex',
 	justifyContent: 'flex-end',
 	width: 60,
+};
+
+const alternateStyle: React.CSSProperties = {
+	fontSize: 14,
+	margin: 0,
+	marginTop: 3,
 };
 
 export default SongRow;

@@ -3,8 +3,8 @@ import * as GENRE from './genres';
 import LYRIC_LIST from '../components/lyrics';
 import { SongType } from '../types';
 
-const CAPO_2 = 'Capo 2nd';
-const CAPO_5 = 'Capo 5th';
+const CAPO_2 = 'Capo 2';
+const CAPO_5 = 'Capo 5';
 
 export const SongList: SongType[] = [
 	// - B -
