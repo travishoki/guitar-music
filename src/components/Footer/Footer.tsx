@@ -10,9 +10,18 @@ const Footer = () => {
 
 	return (
 		<footer>
-			<button onClick={onClick}>Scroll to Top</button>
+			<div className="max-container" style={footerStyle}>
+				<button onClick={onClick}>Scroll to Top</button>
+			</div>
 		</footer>
 	);
+};
+
+const footerStyle: React.CSSProperties = {
+	alignItems: 'center',
+	display: 'flex',
+	justifyContent: 'flex-end',
+	margin: '0 auto',
 };
 
 export default Footer;

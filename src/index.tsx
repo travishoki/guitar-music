@@ -38,7 +38,7 @@ const App = () => {
 	}, [isdarkMode]);
 
 	return (
-		<div id="content">
+		<div className="max-container" id="content">
 			<Header />
 			<Main
 				includesBarChord={includesBarChord}
