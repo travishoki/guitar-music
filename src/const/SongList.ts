@@ -56,14 +56,6 @@ export const SongList: SongType[] = [
 		lyrics: LYRIC_LIST.CountryRoads,
 		title: 'Country Roads',
 	},
-	// - E -
-	{
-		artist: 'Bob Carlisle',
-		genres: [ERAS.NINETIES],
-		link: 'https://tabs.ultimate-guitar.com/tab/misc-musicals/the-sound-of-music-edelweiss-chords-168569',
-		lyrics: LYRIC_LIST.Edelweiss,
-		title: 'Edelweiss',
-	},
 	// - G -
 	{
 		artist: "Plain White T's",

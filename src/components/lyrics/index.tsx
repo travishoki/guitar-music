@@ -4,7 +4,6 @@ import BlowinInTheWind from './BlowinInTheWind';
 import ButterflyKisses from './ButterflyKisses';
 import ClosingTimeChords from './ClosingTimeChords';
 import CountryRoads from './CountryRoads';
-import Edelweiss from './Edelweiss';
 import GivingTree from './GivingTree';
 import GodBlessTheUSA from './GodBlessTheUSA';
 import GoodAsYou from './GoodAsYou';
@@ -44,7 +43,6 @@ export default {
 	ButterflyKisses,
 	ClosingTimeChords,
 	CountryRoads,
-	Edelweiss,
 	GivingTree,
 	GodBlessTheUSA,
 	GoodAsYou,
