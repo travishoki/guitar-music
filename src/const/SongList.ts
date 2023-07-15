@@ -4,6 +4,7 @@ import LYRIC_LIST from '../components/lyrics';
 import { SongType } from '../types';
 
 const CAPO_2 = 'Capo 2';
+const CAPO_3 = 'Capo 3';
 const CAPO_5 = 'Capo 5';
 
 export const SongList: SongType[] = [
@@ -121,6 +122,15 @@ export const SongList: SongType[] = [
 		strumPattern: 'DxDxDxDU',
 		title: "It's Your Love",
 		// https://www.youtube.com/watch?v=BOibmAAqWuo
+	},
+	// - J -
+	{
+		alteration: CAPO_3,
+		artist: 'Third Eye Blind',
+		genres: [ERAS.NINETIES],
+		link: 'https://tabs.ultimate-guitar.com/tab/third-eye-blind/jumper-chords-159256',
+		lyrics: LYRIC_LIST.Jumper,
+		title: 'Jumper',
 	},
 	// - L -
 	{

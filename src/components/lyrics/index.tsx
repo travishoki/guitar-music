@@ -12,6 +12,7 @@ import HesGotTheWholeWorldInHisHands from './HesGotTheWholeWorldInHisHands';
 import HouseAtPoohCorner from './HouseAtPoohCorner';
 import ICantMakeYouLoveMe from './ICantMakeYouLoveMe';
 import ItsYourLove from './ItsYourLove';
+import Jumper from './Jumper';
 import LeavingOnAJetPlane from './LeavingOnAJetPlane';
 import MichaelFinnegan from './MichaelFinnegan';
 import MichaelRowTheBoatAshore from './MichaelRowTheBoatAshore';
@@ -49,6 +50,7 @@ export default {
 	HouseAtPoohCorner,
 	ICantMakeYouLoveMe,
 	ItsYourLove,
+	Jumper,
 	LeavingOnAJetPlane,
 	MichaelFinnegan,
 	MichaelRowTheBoatAshore,
