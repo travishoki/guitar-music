@@ -23,6 +23,7 @@ import OverTheRainbow from './OverTheRainbow';
 import PuffTheMagicDragon from './PuffTheMagicDragon';
 import RightHereWaitingChords from './RightHereWaitingChords';
 import Sunshine from './Sunshine';
+import TearsInHeaven from './TearsInHeaven';
 import TheCatCameBack from './TheCatCameBack';
 import TheSoundsOfSilence from './TheSoundsOfSilence';
 import ThisLandIsYourLand from './ThisLandIsYourLand';
@@ -31,6 +32,7 @@ import TurnTurnTurn from './TurnTurnTurn';
 import WalkingOnSunshine from './WalkingOnSunshine';
 import WhatTheWorldNeedsNowIsLove from './WhatTheWorldNeedsNowIsLove';
 import WhereHaveAllTheFlowersGone from './WhereHaveAllTheFlowersGone';
+import WithOrWithoutYou from './WithOrWithoutYou';
 import YellowSubmarine from './YellowSubmarine';
 import YouAreMySunshine from './YouAreMySunshine';
 import YoureStillTheOne from './YoureStillTheOne';
@@ -61,6 +63,7 @@ export default {
 	PuffTheMagicDragon,
 	RightHereWaitingChords,
 	Sunshine,
+	TearsInHeaven,
 	TheCatCameBack,
 	TheSoundsOfSilence,
 	ThisLandIsYourLand,
@@ -69,6 +72,7 @@ export default {
 	WalkingOnSunshine,
 	WhatTheWorldNeedsNowIsLove,
 	WhereHaveAllTheFlowersGone,
+	WithOrWithoutYou,
 	YellowSubmarine,
 	YouAreMySunshine,
 	YoureStillTheOne,

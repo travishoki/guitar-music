@@ -217,6 +217,15 @@ export const SongList: SongType[] = [
 	},
 	// - T -
 	{
+		artist: 'Eric Clapton',
+		barChords: true,
+		genres: [ERAS.NINETIES],
+		link: 'https://www.guitartabsexplorer.com/clapton-eric-Tabs/tears-in-heaven-live-crd.php',
+		lyrics: LYRIC_LIST.TearsInHeaven,
+		strumPattern: 'DxDU, DxDU, DxDU UDUDD',
+		title: 'Tears In Heaven',
+	},
+	{
 		artist: 'Harry S Miller',
 		genres: [GENRE.KIDS],
 		link: 'https://tabs.ultimate-guitar.com/h/harry_s_miller/the_cat_came_back_crd.htm',
@@ -276,6 +285,14 @@ export const SongList: SongType[] = [
 		link: 'https://tabs.ultimate-guitar.com/p/peter_paul_and_mary/where_have_all_the_flowers_gone_ver2_crd.htm',
 		lyrics: LYRIC_LIST.WhereHaveAllTheFlowersGone,
 		title: 'Where Have All the Flowers Gone',
+	},
+	{
+		artist: 'U2',
+		barChords: true,
+		genres: [ERAS.EIGHTIES],
+		link: 'https://tabs.ultimate-guitar.com/tab/u2/with-or-without-you-chords-835',
+		lyrics: LYRIC_LIST.WithOrWithoutYou,
+		title: 'With Or Without You',
 	},
 	// - Y -
 	{
