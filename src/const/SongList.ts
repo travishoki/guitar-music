@@ -128,7 +128,7 @@ export const SongList: SongType[] = [
 	{
 		artist: 'John Denver',
 		genres: [ERAS.SIXTIES, GENRE.ROCK],
-		link: 'https://tabs.ultimate-guitar.com/tab/john-denver/leaving-on-a-jet-plane-chords-32979',
+		link: 'https://www.laurenbateman.com/leaving-on-a-jet-plane-chord-chart',
 		lyrics: LYRIC_LIST.LeavingOnAJetPlane,
 		title: 'Leaving on a Jet Plane',
 	},
