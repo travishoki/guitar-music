@@ -82,7 +82,6 @@ const ClosingTimeChords = () => (
 		Closing time, every new beginning
 		<br />
 		Comes from some other beginning&apos;s end
-		<br />
 	</p>
 );
 
