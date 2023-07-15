@@ -17,8 +17,14 @@ const SongRow = ({ isGuitarMode, song }: SongRowTypes) => (
 			<p className="secondary-text-color" style={artistStyle}>
 				{song.artist}
 			</p>
-			{song.alteration && <p style={alternateStyle}>{song.alteration}</p>}
-			{song.strumPattern && <p style={alternateStyle}>{song.strumPattern}</p>}
+			{isGuitarMode && (
+				<>
+					{song.alteration && <p style={alternateStyle}>{song.alteration}</p>}
+					{song.strumPattern && (
+						<p style={alternateStyle}>{song.strumPattern}</p>
+					)}
+				</>
+			)}
 		</Link>
 		{isGuitarMode && (
 			<div style={rightSectionStyle}>
