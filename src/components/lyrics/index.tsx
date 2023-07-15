@@ -13,6 +13,7 @@ import ICantMakeYouLoveMe from './ICantMakeYouLoveMe';
 import ItsYourLove from './ItsYourLove';
 import Jumper from './Jumper';
 import LeavingOnAJetPlane from './LeavingOnAJetPlane';
+import MakeYouFeelMyLove from './MakeYouFeelMyLove';
 import MichaelFinnegan from './MichaelFinnegan';
 import MichaelRowTheBoatAshore from './MichaelRowTheBoatAshore';
 import Mockingbird from './Mockingbird';
@@ -52,6 +53,7 @@ export default {
 	ItsYourLove,
 	Jumper,
 	LeavingOnAJetPlane,
+	MakeYouFeelMyLove,
 	MichaelFinnegan,
 	MichaelRowTheBoatAshore,
 	Mockingbird,
