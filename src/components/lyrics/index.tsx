@@ -1,5 +1,6 @@
 import BabyBaluga from './BabyBaluga';
 import BabyILoveYourWay from './BabyILoveYourWay';
+import BackHome from './BackHome';
 import BlowinInTheWind from './BlowinInTheWind';
 import ButterflyKisses from './ButterflyKisses';
 import ClosingTimeChords from './ClosingTimeChords';
@@ -40,6 +41,7 @@ import YoureStillTheOne from './YoureStillTheOne';
 export default {
 	BabyBaluga,
 	BabyILoveYourWay,
+	BackHome,
 	BlowinInTheWind,
 	ButterflyKisses,
 	ClosingTimeChords,
