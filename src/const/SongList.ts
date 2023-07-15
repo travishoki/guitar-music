@@ -263,6 +263,7 @@ export const SongList: SongType[] = [
 		title: 'Walking On Sunshine',
 	},
 	{
+		alteration: 'Only sing on Choras. The other parts are more like chants',
 		artist: 'Jackie DeShannon',
 		barChords: true,
 		genres: [ERAS.SIXTIES],
