@@ -7,6 +7,7 @@ import CountryRoads from './CountryRoads';
 import Edelweiss from './Edelweiss';
 import GivingTree from './GivingTree';
 import GodBlessTheUSA from './GodBlessTheUSA';
+import GoodAsYou from './GoodAsYou';
 import HesGotTheWholeWorldInHisHands from './HesGotTheWholeWorldInHisHands';
 import HouseAtPoohCorner from './HouseAtPoohCorner';
 import ICantMakeYouLoveMe from './ICantMakeYouLoveMe';
@@ -43,6 +44,7 @@ export default {
 	Edelweiss,
 	GivingTree,
 	GodBlessTheUSA,
+	GoodAsYou,
 	HesGotTheWholeWorldInHisHands,
 	HouseAtPoohCorner,
 	ICantMakeYouLoveMe,

@@ -79,6 +79,15 @@ export const SongList: SongType[] = [
 		lyrics: LYRIC_LIST.GodBlessTheUSA,
 		title: 'God Bless the USA',
 	},
+	{
+		alteration: CAPO_5,
+		artist: 'Kane Brown',
+		genres: [ERAS.TENS, GENRE.COUNTRY],
+		link: 'https://tabs.ultimate-guitar.com/tab/kane-brown/good-as-you-chords-2497455',
+		lyrics: LYRIC_LIST.GoodAsYou,
+		title: 'Good As You',
+		// https://tabs.ultimate-guitar.com/tab/kane-brown/good-as-you-chords-2497455
+	},
 	// - H -
 	{
 		artist: 'Misc Praise',
