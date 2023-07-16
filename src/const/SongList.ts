@@ -63,6 +63,14 @@ export const SongList: SongType[] = [
 		lyrics: LYRIC_LIST.CountryRoads,
 		title: 'Country Roads',
 	},
+	// - F -
+	{
+		artist: 'Tom Petty',
+		genres: [ERAS.EIGHTIES],
+		link: 'https://www.chordie.com/chord.pere/www.guitaretab.com/p/petty-tom/14472.html',
+		lyrics: LYRIC_LIST.FreeFallin,
+		title: 'Free Fallin',
+	},
 	// - G -
 	{
 		artist: "Plain White T's",
@@ -104,6 +112,7 @@ export const SongList: SongType[] = [
 		link: 'https://qcukes.com/music2/music.php?action=Song&song=House%20At%20Pooh%20Corner',
 		lyrics: LYRIC_LIST.HouseAtPoohCorner,
 		title: 'House At Pooh Corner',
+		// https://www.youtube.com/watch?v=hWBE9YCC0Oc
 	},
 	// - I -
 	{
