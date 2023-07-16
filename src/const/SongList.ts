@@ -151,7 +151,7 @@ export const SongList: SongType[] = [
 	// - M -
 	{
 		artist: 'Adele',
-		genres: [ERAS.TENS],
+		genres: [ERAS.ZEROS],
 		link: 'https://tabs.ultimate-guitar.com/tab/adele/make-you-feel-my-love-chords-752102',
 		lyrics: LYRIC_LIST.MakeYouFeelMyLove,
 		strumPattern: '[Rock Strum] DxDUxUDU',
