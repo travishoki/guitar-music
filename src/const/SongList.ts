@@ -241,13 +241,13 @@ export const SongList: SongType[] = [
 		strumPattern: 'DxDU, DxDU, DxDU UDUDD',
 		title: 'Tears In Heaven',
 	},
-	{
-		artist: 'Harry S Miller',
-		genres: [GENRE.KIDS],
-		link: 'https://tabs.ultimate-guitar.com/h/harry_s_miller/the_cat_came_back_crd.htm',
-		lyrics: LYRIC_LIST.TheCatCameBack,
-		title: 'The Cat Came Back',
-	},
+	// {
+	// 	artist: 'Harry S Miller',
+	// 	genres: [GENRE.KIDS],
+	// 	link: 'https://tabs.ultimate-guitar.com/h/harry_s_miller/the_cat_came_back_crd.htm',
+	// 	lyrics: LYRIC_LIST.TheCatCameBack,
+	// 	title: 'The Cat Came Back',
+	// },
 	{
 		artist: 'Simon & Garfunkel',
 		barChords: true,
