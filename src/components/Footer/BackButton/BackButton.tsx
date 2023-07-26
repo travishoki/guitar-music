@@ -15,6 +15,7 @@ const buttonStyle: React.CSSProperties = {
 	alignItems: 'center',
 	display: 'flex',
 	justifyContent: 'center',
+	textDecoration: 'none',
 };
 
 const iconStyle: React.CSSProperties = {
