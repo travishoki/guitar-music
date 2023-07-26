@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import SvgBackArrow from '~svg/SvgBackArrow';
 
 const BackButton = () => (
-	<Link className="back-button" style={buttonStyle} to="/">
+	<Link className="button back-button" style={buttonStyle} to="/">
 		<SvgBackArrow style={iconStyle} />
 		Back
 	</Link>
