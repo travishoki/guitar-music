@@ -10,14 +10,14 @@ const BabyILoveYourWay = () => (
 		<br />
 		Far away from the city
 		<br />
-		Don&apos;t hesitate
+		But don&apos;t hesitate
 		<br />
 		&apos;Cause your love won&apos;t wait
 		<br />
 		<br />
-		Oh baby I love your way, everyday
+		Ooh, baby I love your way, (everyday)
 		<br />
-		Wanna tell you I love your way, everyday
+		Wanna tell you I love your way, (everyday)
 		<br />
 		Wanna be with you night and day
 		<br />
@@ -30,26 +30,21 @@ const BabyILoveYourWay = () => (
 		<br />
 		I can see them under the pine
 		<br />
-		Don&apos;t hesitate
+		But don&apos;t hesitate
 		<br />
 		&apos;Cause your love won&apos;t wait
 		<br />
 		<br />
-		Oh baby I love your way, everyday
+		Ooh, baby I love your way, (everyday)
 		<br />
-		Wanna tell you I love your way, oh
+		Wanna tell you I love your way, (oh)
 		<br />
-		Wanna be with you night and day, oh yeah
-		<br />
-		<br />
-		Well don&apos;t hesitate
-		<br />
-		&apos;Cause your love won&apos;t wait
+		Wanna be with you night and day, (oh yeah)
 		<br />
 		<br />
 		I can see the sunset in your eyes
 		<br />
-		Brown and gray, blue besides
+		Brown and gray, and blue besides
 		<br />
 		Clouds are stalking islands in the sun
 		<br />
@@ -57,24 +52,18 @@ const BabyILoveYourWay = () => (
 		<br />
 		Out of season
 		<br />
-		<br />
-		Don&apos;t hesitate
+		But don&apos;t hesitate
 		<br />
 		&apos;Cause your love won&apos;t wait
 		<br />
 		<br />
-		Oh baby I love your way, everyday
+		Ooh, baby I love your way, (everyday)
 		<br />
 		Wanna tell you I love your way
 		<br />
 		Wanna be with you night and day
 		<br />
-		<br />
-		Oh baby I love your way, everyday
-		<br />
-		Wanna tell you I love your way
-		<br />
-		Wanna be with you night and day, yeah
+		Ooh, baby I love your way
 	</p>
 );
 
