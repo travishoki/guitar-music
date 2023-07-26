@@ -35,18 +35,18 @@ const BackHome = () => (
 		<br />
 		La-dah-dah-dah-dah-dah-dah-dah
 		<br />
-		La-dah-dah-dah-dah-dah-dah-doe
+		La-dah-dah-dah-dah-dah-dah-doe (Hey)
 		<br />
-		(Hey) And no matter where we go
+		And no matter where we go
 		<br />
 		We always find our way back home
 		<br />
 		<br />
 		La-dah-dah-dah-dah-dah-dah-dah
 		<br />
-		La-dah-dah-dah-dah-dah-dah-doe
+		La-dah-dah-dah-dah-dah-dah-doe (Hey)
 		<br />
-		(Hey) And no matter where we go
+		And no matter where we go
 		<br />
 		We always find our way back home
 		<br />
@@ -75,18 +75,18 @@ const BackHome = () => (
 		<br />
 		La-dah-dah-dah-dah-dah-dah-dah
 		<br />
-		La-dah-dah-dah-dah-dah-dah-doe
+		La-dah-dah-dah-dah-dah-dah-doe (Hey)
 		<br />
-		(Hey) And no matter where we go
+		And no matter where we go
 		<br />
 		We always find our way back home
 		<br />
 		<br />
 		La-dah-dah-dah-dah-dah-dah-dah
 		<br />
-		La-dah-dah-dah-dah-dah-dah-doe
+		La-dah-dah-dah-dah-dah-dah-doe (Hey)
 		<br />
-		(Hey) And no matter where we go
+		And no matter where we go
 		<br />
 		We always find our way back home
 		<br />
