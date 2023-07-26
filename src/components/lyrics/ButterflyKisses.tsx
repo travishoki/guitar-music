@@ -72,9 +72,7 @@ const BlowinInTheWind = () => (
 		And butterfly kisses at night
 		<br />
 		<br />
-		All the precious time
-		<br />
-		Ooh
+		Oh precious time
 		<br />
 		Like the wind, the years go by
 		<br />
