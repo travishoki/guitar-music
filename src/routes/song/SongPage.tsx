@@ -2,7 +2,6 @@ import React from 'react';
 
 import { useParams } from 'react-router-dom';
 
-import BackButton from './BackButton/BackButton';
 import Title from './Title/Title';
 import GuitarTabLink from '../../components/common/GuitarTabLink';
 import { SongList } from '../../const/SongList';
@@ -18,8 +17,6 @@ const SongPage = () => {
 
 	return (
 		<div id="songPage">
-			<BackButton />
-
 			<Title title={song.title} />
 
 			<p>by {song.artist}</p>

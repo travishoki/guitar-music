@@ -2,8 +2,8 @@ import React from 'react';
 
 import { useLocation } from 'react-router-dom';
 
+import BackButton from './BackButton/BackButton';
 import ScrollToTopButton from './ScrollToTopButton/ScrollToTopButton';
-import BackButton from '../../routes/song/BackButton/BackButton';
 
 const Footer = () => {
 	const location = useLocation();
