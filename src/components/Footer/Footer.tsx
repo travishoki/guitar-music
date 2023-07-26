@@ -1,10 +1,12 @@
 import React from 'react';
 
 import ScrollToTopButton from './ScrollToTopButton/ScrollToTopButton';
+import BackButton from '../../routes/song/BackButton/BackButton';
 
 const Footer = () => (
 	<footer>
 		<div className="max-container" style={footerStyle}>
+			<BackButton />
 			<ScrollToTopButton />
 		</div>
 	</footer>
@@ -13,7 +15,7 @@ const Footer = () => (
 const footerStyle: React.CSSProperties = {
 	alignItems: 'center',
 	display: 'flex',
-	justifyContent: 'flex-end',
+	justifyContent: 'space-between',
 	margin: '0 auto',
 };
 

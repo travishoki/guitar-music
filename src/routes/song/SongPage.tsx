@@ -1,9 +1,8 @@
 import React from 'react';
 
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
-import SvgBackArrow from '~svg/SvgBackArrow';
-
+import BackButton from './BackButton/BackButton';
 import GuitarTabLink from '../../components/common/GuitarTabLink';
 import { SongList } from '../../const/SongList';
 import { fixUrlTitle } from '../home/SongTable/SongRow/helpers';
@@ -18,10 +17,7 @@ const SongPage = () => {
 
 	return (
 		<div id="songPage">
-			<Link className="back-button" style={backLinkStyle} to="/">
-				<SvgBackArrow style={backIconStyle} />
-				Back
-			</Link>
+			<BackButton />
 
 			<h2>{song.title}</h2>
 
@@ -41,19 +37,6 @@ const SongPage = () => {
 			)}
 		</div>
 	);
-};
-
-const backLinkStyle: React.CSSProperties = {
-	alignItems: 'center',
-	display: 'flex',
-	justifyContent: 'flex-start',
-	margin: 0,
-	textDecoration: 'none',
-};
-
-const backIconStyle: React.CSSProperties = {
-	height: 20,
-	width: 20,
 };
 
 export default SongPage;
