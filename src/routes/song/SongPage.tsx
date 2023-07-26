@@ -18,19 +18,20 @@ const SongPage = () => {
 	return (
 		<div id="songPage">
 			<Title artist={song.artist} title={song.title} />
+			<div className="page-content">
+				{song.lyrics && (
+					<div className="lyrics">
+						<song.lyrics />
+					</div>
+				)}
 
-			{song.lyrics && (
-				<div className="lyrics">
-					<song.lyrics />
-				</div>
-			)}
-
-			{song.link && (
-				<div className="go-to-tabs">
-					<GuitarTabLink song={song} />
-					<p>Go to tabs</p>
-				</div>
-			)}
+				{song.link && (
+					<div className="go-to-tabs">
+						<GuitarTabLink song={song} />
+						<p>Go to tabs</p>
+					</div>
+				)}
+			</div>
 		</div>
 	);
 };

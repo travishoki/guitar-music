@@ -13,7 +13,8 @@ type TitleProps = {
 };
 
 const containerStyle: React.CSSProperties = {
-	paddingBottom: 5,
+	paddingBottom: 15,
+	paddingTop: 15,
 	position: 'sticky',
 	top: 50,
 };
