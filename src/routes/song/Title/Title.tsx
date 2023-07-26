@@ -25,6 +25,7 @@ const h2Style: React.CSSProperties = {
 
 const artistStyle: React.CSSProperties = {
 	margin: 0,
+	textAlign: 'center',
 };
 
 export default Title;
