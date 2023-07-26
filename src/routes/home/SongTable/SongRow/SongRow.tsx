@@ -10,7 +10,13 @@ import { SongType } from '../../../../types';
 
 const SongRow = ({ isGuitarMode, song }: SongRowTypes) => (
 	<div className="bottom-border" style={rowStyle}>
-		<Link style={linkStyle} to={'/song/' + fixUrlTitle(song.title)}>
+		<Link
+			style={{
+				width: isGuitarMode ? 'auto' : '100%',
+				...linkStyle,
+			}}
+			to={'/song/' + fixUrlTitle(song.title)}
+		>
 			<p className="title-font" style={titleStyle}>
 				{song.title}
 			</p>
