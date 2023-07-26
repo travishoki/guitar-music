@@ -3,6 +3,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 
 import BackButton from './BackButton/BackButton';
+import Title from './Title/Title';
 import GuitarTabLink from '../../components/common/GuitarTabLink';
 import { SongList } from '../../const/SongList';
 import { fixUrlTitle } from '../home/SongTable/SongRow/helpers';
@@ -19,7 +20,7 @@ const SongPage = () => {
 		<div id="songPage">
 			<BackButton />
 
-			<h2>{song.title}</h2>
+			<Title title={song.title} />
 
 			<p>by {song.artist}</p>
 
