@@ -12,7 +12,13 @@ const Footer = () => {
 
 	return (
 		<footer>
-			<div className="max-container" style={footerStyle}>
+			<div
+				className="max-container"
+				style={{
+					justifyContent: isRootPath ? 'flex-end' : 'space-between',
+					...footerStyle,
+				}}
+			>
 				{!isRootPath && <BackButton />}
 				<ScrollToTopButton />
 			</div>
@@ -23,7 +29,6 @@ const Footer = () => {
 const footerStyle: React.CSSProperties = {
 	alignItems: 'center',
 	display: 'flex',
-	justifyContent: 'space-between',
 	margin: '0 auto',
 };
 
