@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import { useParams } from 'react-router-dom';
 
@@ -10,6 +10,11 @@ import { fixUrlTitle } from '../home/SongTable/SongRow/helpers';
 const SongPage = () => {
 	const params = useParams();
 	const { title } = params;
+
+	useEffect(() => {
+		// Start with page scrolled to top
+		window.scrollTo(0, 0);
+	}, []);
 
 	const song = SongList.filter((songListItem) => {
 		return fixUrlTitle(songListItem.title) === title;
