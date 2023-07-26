@@ -20,7 +20,7 @@ const FreeFalling = () => (
 		I&apos;m a bad boy for breakin&apos; her heart
 		<br />
 		<br />
-		And I&apos;m free
+		Now I&apos;m free
 		<br />
 		Free fallin&apos;
 		<br />

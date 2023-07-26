@@ -15,7 +15,9 @@ const GoodAsYou = () => (
 		<br />
 		I wanna be the man you want me to be
 		<br />
-		So startin&apos; right now, girl, tell me everything you need
+		So startin&apos; right now, girl,
+		<br />
+		Tell me everything you need
 		<br />
 		<br />
 		I just wanna wake up everyday here in this bed
@@ -29,7 +31,7 @@ const GoodAsYou = () => (
 		<br />
 		Girl, you&apos;re more than just the surface
 		<br />
-		Yeah, you got that heart of gold (that heart of gold)
+		Yeah, you got that heart of gold
 		<br />
 		So when it comes to lovin&apos; you, baby
 		<br />
@@ -40,14 +42,16 @@ const GoodAsYou = () => (
 		<br />
 		I wanna be the man you want me to be
 		<br />
-		So startin&apos; right now, girl, tell me everything you need
+		So startin&apos; right now, girl,
+		<br />
+		Tell me everything you need
 		<br />
 		<br />
 		I just wanna wake up everyday here in this bed
 		<br />
 		Never leave &apos;I love you&apos; left unsaid
 		<br />
-		It might take a hundred lifetimes to do (lifetimes to do)
+		It might take a hundred lifetimes to do
 		<br />
 		But baby, I just wanna be good as you
 		<br />
@@ -62,11 +66,12 @@ const GoodAsYou = () => (
 		<br />
 		But baby, I just wanna be good as you
 		<br />
-		I just wanna wake up everyday here in this bed (here with you, baby)
 		<br />
-		Never leave I love you left unsaid (never leave it unsaid)
+		I just wanna wake up everyday here in this bed
 		<br />
-		It might take a hundred lifetimes to do (a hundred lifetimes now)
+		Never leave I love you left unsaid
+		<br />
+		It might take a hundred lifetimes to do
 		<br />
 		But baby, I just wanna be good as you
 		<br />
