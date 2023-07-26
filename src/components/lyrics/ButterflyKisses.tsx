@@ -52,7 +52,7 @@ const BlowinInTheWind = () => (
 		<br />
 		Trying her wings out in a great big world
 		<br />
-		But I remember
+		But I remember...
 		<br />
 		<br />
 		Butterfly kisses after bedtime prayer

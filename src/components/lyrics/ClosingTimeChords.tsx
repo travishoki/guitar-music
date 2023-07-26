@@ -2,20 +2,28 @@ import React from 'react';
 
 const ClosingTimeChords = () => (
 	<p>
-		Closing time, open all the doors
+		Closing time,
+		<br />
+		Open all the doors
 		<br />
 		And let you out into the world
 		<br />
-		Closing time, turn all of the lights on
+		Closing time,
+		<br />
+		Turn all of the lights on
 		<br />
 		Over every boy and every girl
 		<br />
-		Closing time, one last call for alcohol
+		Closing time,
+		<br />
+		One last call for alcohol
 		<br />
 		<br />
 		So, finish your whiskey or beer
 		<br />
-		Closing time, you don&apos;t have to go home
+		Closing time,
+		<br />
+		You don&apos;t have to go home
 		<br />
 		But you can&apos;t stay here
 		<br />
@@ -29,11 +37,15 @@ const ClosingTimeChords = () => (
 		Take me home
 		<br />
 		<br />
-		Closing time, time for you to go out
+		Closing time,
+		<br />
+		Time for you to go out
 		<br />
 		To the places you will be from
 		<br />
-		Closing time, this room won&apos;t be open
+		Closing time,
+		<br />
+		This room won&apos;t be open
 		<br />
 		Till your brothers or your sisters come
 		<br />
@@ -42,7 +54,9 @@ const ClosingTimeChords = () => (
 		<br />
 		I hope you have found a friend
 		<br />
-		Closing time, every new beginning
+		Closing time,
+		<br />
+		Every new beginning
 		<br />
 		Comes from some other beginning&apos;s end, yeah
 		<br />
@@ -56,7 +70,9 @@ const ClosingTimeChords = () => (
 		Take me home
 		<br />
 		<br />
-		Closing time, time for you to go out
+		Closing time,
+		<br />
+		Time for you to go out
 		<br />
 		To the places you will be from
 		<br />
@@ -79,7 +95,9 @@ const ClosingTimeChords = () => (
 		Take me home
 		<br />
 		<br />
-		Closing time, every new beginning
+		Closing time,
+		<br />
+		Every new beginning
 		<br />
 		Comes from some other beginning&apos;s end
 	</p>
