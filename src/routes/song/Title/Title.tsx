@@ -1,18 +1,29 @@
 import React from 'react';
 
-const Title = ({ title }: TitleProps) => (
-	<h2 className="scroll-header" style={titleStyle}>
-		{title}
-	</h2>
+const Title = ({ artist, title }: TitleProps) => (
+	<div className="body-color" style={containerStyle}>
+		<h2 style={h2Style}>{title}</h2>
+		<p style={artistStyle}>by {artist}</p>
+	</div>
 );
 
 type TitleProps = {
+	artist: string;
 	title: string;
 };
 
-const titleStyle: React.CSSProperties = {
+const containerStyle: React.CSSProperties = {
+	paddingBottom: 5,
 	position: 'sticky',
 	top: 50,
+};
+
+const h2Style: React.CSSProperties = {
+	marginBottom: 5,
+};
+
+const artistStyle: React.CSSProperties = {
+	margin: 0,
 };
 
 export default Title;

@@ -17,9 +17,7 @@ const SongPage = () => {
 
 	return (
 		<div id="songPage">
-			<Title title={song.title} />
-
-			<p>by {song.artist}</p>
+			<Title artist={song.artist} title={song.title} />
 
 			{song.lyrics && (
 				<div className="lyrics">
