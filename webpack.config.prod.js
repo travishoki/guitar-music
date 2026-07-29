@@ -1,56 +1,59 @@
-const webpack = require('webpack');
-const path = require('path');
-const FtpOutputPlugin = require('ftp-output-webpack-plugin');
-// const ftpOptions = require("./ftpOptions");
+import path from 'path';
+import { fileURLToPath } from 'url';
 
-module.exports = {
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+export default {
 	mode: 'production',
-	devtool: 'inline-source-map',
-	entry: [
-		'eventsource-polyfill', // necessary for hot reloading with IE
-		'webpack-hot-middleware/client?reload=true', //note that it reloads the page if hot module reloading fails.
-		'./src/index',
-	],
+	devtool: 'source-map',
+	entry: ['./src/index'],
 	target: 'web',
 	output: {
-		path: '/guitar', // Note: Physical files are only output by the production build task `npm run build`.
+		path: path.resolve(__dirname, 'dist'),
 		publicPath: '/',
 		filename: 'bundle.js',
+		clean: true,
 	},
 	plugins: [
-		new webpack.HotModuleReplacementPlugin(),
-		// new FtpOutputPlugin(ftpOptions), // ftpOptions see as above description
+		new HtmlWebpackPlugin({
+			// index.html already hard-codes <script src="/bundle.js">, so let the
+			// template through verbatim instead of injecting a second tag.
+			inject: false,
+			template: './src/index.html',
+		}),
 	],
+	resolve: {
+		extensions: ['.tsx', '.ts', '.js'],
+		alias: {
+			'~svg': path.resolve(__dirname, 'src/svg'),
+		},
+	},
 	module: {
 		rules: [
+			{
+				test: /\.tsx?$/,
+				use: 'ts-loader',
+				exclude: /node_modules/,
+			},
 			{
 				test: /\.js$/,
 				include: path.join(__dirname, 'src'),
 				use: ['babel-loader'],
 			},
-			{ test: /\.(jpg|png)$/, use: ['file'] },
 			{
-				test: /(\.less)$/,
+				test: /\.less$/,
 				use: ['style-loader', 'css-loader', 'less-loader'],
 			},
-			{ test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, loader: 'file' },
-			{ test: /\.(woff|woff2)$/, loader: 'url?prefix=font/&limit=5000' },
 			{
-				test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
-				loader: 'url?limit=10000&mimetype=application/octet-stream',
+				test: /\.(woff|woff2|ttf|eot|svg)$/,
+				type: 'asset/inline',
 			},
 			{
-				test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
-				loader: 'url?limit=10000&mimetype=image/svg+xml',
-			},
-			//font-awesome
-			{
-				test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-				loader: 'url-loader?limit=10000&minetype=application/font-woff',
-			},
-			{
-				test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-				loader: 'file-loader',
+				test: /\.(jpg|png)$/,
+				type: 'asset/resource',
 			},
 		],
 	},
