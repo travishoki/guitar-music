@@ -1,8 +1,21 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import SvgUpArrow from '~svg/SvgUpArrow';
 
 const ScrollToTopButton = () => {
+	const [isAtTop, setIsAtTop] = useState(true);
+
+	useEffect(() => {
+		const onScroll = () => {
+			setIsAtTop(window.scrollY < 10);
+		};
+
+		onScroll();
+		window.addEventListener('scroll', onScroll, { passive: true });
+
+		return () => window.removeEventListener('scroll', onScroll);
+	}, []);
+
 	const onClick = () => {
 		window.scrollTo({
 			behavior: 'smooth',
@@ -11,7 +24,11 @@ const ScrollToTopButton = () => {
 	};
 
 	return (
-		<button onClick={onClick} style={buttonStyle}>
+		<button
+			disabled={isAtTop}
+			onClick={onClick}
+			style={{ ...buttonStyle, opacity: isAtTop ? 0.4 : 1 }}
+		>
 			<SvgUpArrow style={iconStyle} />
 			To Top
 		</button>

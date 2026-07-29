@@ -221,7 +221,12 @@ footer {
 		padding: 0 18px;
 		transition:
 			background-color 0.15s ease,
-			color 0.15s ease;
+			color 0.15s ease,
+			opacity 0.15s ease;
+
+		&:disabled {
+			cursor: default;
+		}
 	}
 }
 
@@ -238,11 +243,11 @@ body.dark-mode {
 				fill: #e8eaed;
 			}
 
-			&:hover {
+			&:not(:disabled):hover {
 				background: rgba(255, 255, 255, 0.08);
 			}
 
-			&:active {
+			&:not(:disabled):active {
 				background: rgba(255, 255, 255, 0.14);
 			}
 		}
@@ -262,11 +267,11 @@ body.light-mode {
 				fill: #202124;
 			}
 
-			&:hover {
+			&:not(:disabled):hover {
 				background: rgba(0, 0, 0, 0.06);
 			}
 
-			&:active {
+			&:not(:disabled):active {
 				background: rgba(0, 0, 0, 0.1);
 			}
 		}
