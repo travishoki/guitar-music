@@ -4,7 +4,9 @@ import SvgMoon from '~svg/SvgMoon';
 import SvgSun from '~svg/SvgSun';
 
 const DarkModeToggle = ({ isdarkMode, onClick }: DarkModeToggleTypes) => (
-	<button onClick={onClick}>{isdarkMode ? <SvgMoon /> : <SvgSun />}</button>
+	<button onClick={onClick} title="Dark Mode">
+		{isdarkMode ? <SvgMoon /> : <SvgSun />}
+	</button>
 );
 
 type DarkModeToggleTypes = {
