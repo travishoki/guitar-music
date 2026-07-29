@@ -41,7 +41,6 @@ const buttonStyle: React.CSSProperties = {
 
 const iconStyle: React.CSSProperties = {
 	height: 20,
-	marginRight: 4,
 	width: 20,
 };
 

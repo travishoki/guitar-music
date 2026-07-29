@@ -210,20 +210,66 @@ footer {
 
 	button,
 	.button {
+		background: transparent;
 		border-radius: 0;
+		font-size: 13px;
+		font-weight: 600;
+		gap: 6px;
 		height: 100%;
+		letter-spacing: 0.03em;
+		min-width: 88px;
+		padding: 0 18px;
+		transition:
+			background-color 0.15s ease,
+			color 0.15s ease;
 	}
 }
 
 body.dark-mode {
 	footer {
 		background: #202124;
+		border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+		button,
+		.button {
+			color: #e8eaed;
+
+			svg {
+				fill: #e8eaed;
+			}
+
+			&:hover {
+				background: rgba(255, 255, 255, 0.08);
+			}
+
+			&:active {
+				background: rgba(255, 255, 255, 0.14);
+			}
+		}
 	}
 }
 
 body.light-mode {
 	footer {
 		background: @WHITE;
+		border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+		button,
+		.button {
+			color: #202124;
+
+			svg {
+				fill: #202124;
+			}
+
+			&:hover {
+				background: rgba(0, 0, 0, 0.06);
+			}
+
+			&:active {
+				background: rgba(0, 0, 0, 0.1);
+			}
+		}
 	}
 }
 

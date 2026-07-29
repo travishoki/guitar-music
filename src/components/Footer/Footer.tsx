@@ -12,7 +12,7 @@ const Footer = () => {
 	const isRootPath = location.pathname === '/';
 
 	return (
-		<footer style={footerBorderStyle}>
+		<footer>
 			<div className="max-container" style={footerStyle}>
 				<div style={leftSlotStyle}>{!isRootPath && <BackButton />}</div>
 				<div style={centerSlotStyle}>
@@ -24,10 +24,6 @@ const Footer = () => {
 			</div>
 		</footer>
 	);
-};
-
-const footerBorderStyle: React.CSSProperties = {
-	borderTop: '1px solid #333333',
 };
 
 const footerStyle: React.CSSProperties = {
