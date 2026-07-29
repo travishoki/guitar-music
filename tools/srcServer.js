@@ -23,7 +23,7 @@ app.use(
 
 app.use(webpackHotMiddleware(compiler));
 
-app.get('*', function (req, res) {
+app.use(function (req, res) {
 	res.sendFile(path.join(__dirname, '../src/index.html'));
 });
 

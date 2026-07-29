@@ -1,13 +1,10 @@
-#!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
-
 #-- Functions
 
-function printTitle() {
+printTitle() {
     echo "\n==================== Git Push ===================="
 }
 
-function printSectionTitle() {
+printSectionTitle() {
     echo "\n---------- $1 ----------\n"
 }
 
