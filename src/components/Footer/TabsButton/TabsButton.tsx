@@ -2,10 +2,9 @@ import React from 'react';
 
 import { useLocation } from 'react-router-dom';
 
-import SvgGuitar from '~svg/SvgGuitar';
-
 import { SongList } from '../../../const/SongList';
 import { fixUrlTitle } from '../../../routes/home/SongTable/SongRow/helpers';
+import TabLogo from '../../common/TabLogo';
 
 const TabsButton = () => {
 	const location = useLocation();
@@ -27,7 +26,7 @@ const TabsButton = () => {
 			target="_blank"
 			title="Go to Guitar Tabs"
 		>
-			<SvgGuitar style={iconStyle} />
+			<TabLogo link={song.link} style={iconStyle} />
 			Tabs
 		</a>
 	);

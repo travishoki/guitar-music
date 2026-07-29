@@ -1,17 +1,12 @@
 import React from 'react';
 
-import SvgGuitar from '~svg/SvgGuitar';
-
+import TabLogo from './TabLogo';
 import { SongType } from '../../types';
 
 const GuitarTabLink = ({ song }: GuitarTabLinkTypes) => {
 	const { link } = song;
 
 	if (!link) return null;
-
-	const guitarLink = {
-		width: 40,
-	};
 
 	return (
 		<a
@@ -21,9 +16,13 @@ const GuitarTabLink = ({ song }: GuitarTabLinkTypes) => {
 			target="_blank"
 			title="Go to Guitar Tabs"
 		>
-			<SvgGuitar style={guitarLink} />
+			<TabLogo link={link} style={guitarLink} />
 		</a>
 	);
+};
+
+const guitarLink = {
+	width: 40,
 };
 
 type GuitarTabLinkTypes = {

@@ -67,7 +67,7 @@ type HomePageTypes = {
 };
 
 const controlsStyle: React.CSSProperties = {
-	padding: 10,
+	paddingBottom: 10,
 };
 
 export default HomePage;
