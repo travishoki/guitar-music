@@ -3,7 +3,6 @@ import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
 import Title from './Title/Title';
-import GuitarTabLink from '../../components/common/GuitarTabLink';
 import { SongList } from '../../const/SongList';
 import { fixUrlTitle } from '../home/SongTable/SongRow/helpers';
 
@@ -27,13 +26,6 @@ const SongPage = () => {
 				{song.lyrics && (
 					<div className="lyrics">
 						<song.lyrics />
-					</div>
-				)}
-
-				{song.link && (
-					<div className="go-to-tabs">
-						<GuitarTabLink song={song} />
-						<p>Go to tabs</p>
 					</div>
 				)}
 			</div>

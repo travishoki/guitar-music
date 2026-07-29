@@ -13,7 +13,7 @@ const ScrollToTopButton = () => {
 	return (
 		<button onClick={onClick} style={buttonStyle}>
 			<SvgUpArrow style={iconStyle} />
-			Scroll To Top
+			To Top
 		</button>
 	);
 };
