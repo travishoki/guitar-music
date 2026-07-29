@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 
 import { createRoot } from 'react-dom/client';
+import toast, { Toaster } from 'react-hot-toast';
 import { BrowserRouter } from 'react-router-dom';
 
 import Footer from './components/Footer/Footer';
@@ -19,6 +20,12 @@ const App = () => {
 	};
 
 	const onToggleIsGuitarMode = () => {
+		const toastMessage = isGuitarMode ? '🎤 Singing mode' : '🎸 Guitar mode';
+		const toastOption = {
+			duration: 1500,
+		};
+		toast(toastMessage, toastOption);
+
 		setIsGuitarMode(!isGuitarMode);
 		setIncludesBarChord(true);
 	};
@@ -49,6 +56,7 @@ const App = () => {
 				onToggleIsGuitarMode={onToggleIsGuitarMode}
 			/>
 			<Footer />
+			<Toaster containerStyle={{ top: 60 }} position="top-center" />
 		</div>
 	);
 };
