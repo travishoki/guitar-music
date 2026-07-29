@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useLayoutEffect, useState } from 'react';
 
 import BarChordToggle from './BarChordToggle/BarChordToggle';
 import Genre from './Genre/Genre';
@@ -8,6 +8,10 @@ import DarkModeToggle from '../../components/DarkModeToggle/DarkModeToggle';
 import GuitarModeToggle from '../../components/GuitarModeToggle/GuitarModeToggle';
 import { ALL as GENRE_ALL } from '../../const/genres';
 import { TITLE } from '../../const/sort';
+
+// Remembers the home page scroll position across route changes (e.g. going
+// into a song and clicking back) so the list stays where it was.
+let savedScrollY = 0;
 
 const HomePage = ({
 	includesBarChord,
@@ -19,6 +23,18 @@ const HomePage = ({
 }: HomePageTypes) => {
 	const [genre, setGenre] = useState(GENRE_ALL);
 	const [sortTerm, setSort] = useState(TITLE);
+
+	useLayoutEffect(() => {
+		window.scrollTo(0, savedScrollY);
+
+		const onScroll = () => {
+			savedScrollY = window.scrollY;
+		};
+
+		window.addEventListener('scroll', onScroll, { passive: true });
+
+		return () => window.removeEventListener('scroll', onScroll);
+	}, []);
 
 	return (
 		<>
