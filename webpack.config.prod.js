@@ -2,6 +2,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 import HtmlWebpackPlugin from 'html-webpack-plugin';
+import TerserPlugin from 'terser-webpack-plugin';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -16,6 +17,20 @@ export default {
 		publicPath: '/',
 		filename: 'bundle.js',
 		clean: true,
+	},
+	optimization: {
+		minimizer: [
+			new TerserPlugin({
+				// Escape all non-ASCII characters (e.g. lodash's accent map and
+				// smart quotes) to \uXXXX so the bundle can't be corrupted by a
+				// server charset or a text-mode upload during deploy.
+				terserOptions: {
+					format: {
+						ascii_only: true,
+					},
+				},
+			}),
+		],
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
