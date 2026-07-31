@@ -2,6 +2,8 @@ import React from 'react';
 
 const BabyILoveYourWay = () => (
 	<p>
+		[Verse 1]
+		<br />
 		Shadows grow so long before my eyes
 		<br />
 		And they&apos;re moving across the page
@@ -15,12 +17,16 @@ const BabyILoveYourWay = () => (
 		&apos;Cause your love won&apos;t wait
 		<br />
 		<br />
+		[Chorus]
+		<br />
 		Ooh, baby I love your way, (everyday)
 		<br />
 		Wanna tell you I love your way, (everyday)
 		<br />
 		Wanna be with you night and day
 		<br />
+		<br />
+		[Verse 2]
 		<br />
 		Moon appears to shine and light the sky
 		<br />
@@ -35,12 +41,16 @@ const BabyILoveYourWay = () => (
 		&apos;Cause your love won&apos;t wait
 		<br />
 		<br />
+		[Chorus]
+		<br />
 		Ooh, baby I love your way, (everyday)
 		<br />
 		Wanna tell you I love your way, (oh)
 		<br />
 		Wanna be with you night and day, (oh yeah)
 		<br />
+		<br />
+		[Verse 3]
 		<br />
 		I can see the sunset in your eyes
 		<br />
@@ -56,6 +66,8 @@ const BabyILoveYourWay = () => (
 		<br />
 		&apos;Cause your love won&apos;t wait
 		<br />
+		<br />
+		[Chorus]
 		<br />
 		Ooh, baby I love your way, (everyday)
 		<br />

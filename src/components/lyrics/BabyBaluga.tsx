@@ -2,6 +2,8 @@ import React from 'react';
 
 const BabyBaluga = () => (
 	<p>
+		[Verse 1]
+		<br />
 		Baby beluga in the deep blue sea
 		<br />
 		Swim so wild and you swim so free
@@ -11,12 +13,16 @@ const BabyBaluga = () => (
 		And a little white whale on the go
 		<br />
 		<br />
+		[Chorus]
+		<br />
 		Baby beluga, baby beluga
 		<br />
 		Is the water warm
 		<br />
 		Is your mama home with you, so happy
 		<br />
+		<br />
+		[Verse 2]
 		<br />
 		Way down yonder where the dolphins play
 		<br />
@@ -27,12 +33,16 @@ const BabyBaluga = () => (
 		See the water squirtin&apos; out of your spout
 		<br />
 		<br />
+		[Chorus]
+		<br />
 		Baby beluga, oh, baby beluga
 		<br />
 		Sing your little song
 		<br />
 		Sing for all your friends, we like to hear you
 		<br />
+		<br />
+		[Verse 3]
 		<br />
 		When it&apos;s dark, you&apos;re home and fed
 		<br />
@@ -43,12 +53,16 @@ const BabyBaluga = () => (
 		Good night, little whale, good night
 		<br />
 		<br />
+		[Chorus]
+		<br />
 		Baby beluga, oh, baby beluga
 		<br />
 		With tomorrow&apos;s sun, another day&apos;s begun
 		<br />
 		You&apos;ll soon be wakin&apos;
 		<br />
+		<br />
+		[Verse 4]
 		<br />
 		Baby beluga in the deep blue sea
 		<br />

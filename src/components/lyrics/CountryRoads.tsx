@@ -2,6 +2,8 @@ import React from 'react';
 
 const CountryRoads = () => (
 	<p>
+		[Verse 1]
+		<br />
 		Almost heaven, West Virginia,
 		<br />
 		Blue Ridge Mountains, Shenandoah River.
@@ -11,12 +13,16 @@ const CountryRoads = () => (
 		Younger than the mountains, blowing like a breeze.
 		<br />
 		<br />
+		[Chorus]
+		<br />
 		Country roads, take me home to the place I belong.
 		<br />
 		West Virginia, mountain mamma,
 		<br />
 		Take me home, country roads.
 		<br />
+		<br />
+		[Verse 2]
 		<br />
 		All my memories gather round her,
 		<br />
@@ -27,12 +33,16 @@ const CountryRoads = () => (
 		Misty taste of moonshine, teardrop in my eye.
 		<br />
 		<br />
+		[Chorus]
+		<br />
 		Country roads, take me home to the place I belong.
 		<br />
 		West Virginia, mountain mamma,
 		<br />
 		Take me home, country roads.
 		<br />
+		<br />
+		[Bridge]
 		<br />
 		I hear her voice in the morning hour, she calls me,
 		<br />
@@ -41,6 +51,8 @@ const CountryRoads = () => (
 		And driving down the road I get a feeling that I should have been home
 		yesterday, yesterday.
 		<br />
+		<br />
+		[Chorus]
 		<br />
 		Country roads, take me home to the place I belong.
 		<br />

@@ -2,6 +2,8 @@ import React from 'react';
 
 const BlowinInTheWind = () => (
 	<p>
+		[Verses]
+		<br />
 		There&apos;s two things I know for sure
 		<br />
 		She was sent here from heaven

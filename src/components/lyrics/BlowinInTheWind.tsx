@@ -2,7 +2,7 @@ import React from 'react';
 
 const BlowinInTheWind = () => (
 	<p>
-		How many roads must a man walk down
+		[Verse] How many roads must a man walk down
 		<br />
 		Before you call him a man?
 		<br />
@@ -15,10 +15,14 @@ const BlowinInTheWind = () => (
 		Before they&apos;re forever banned?
 		<br />
 		<br />
+		[Chorus]
+		<br />
 		The answer, my friend, is blowin&apos; in the wind
 		<br />
 		The answer is blowin&apos; in the wind.
 		<br />
+		<br />
+		[Verse]
 		<br />
 		Yes, and how many years can a mountain exist
 		<br />
@@ -33,12 +37,14 @@ const BlowinInTheWind = () => (
 		And pretend that he just doesn&apos;t see?
 		<br />
 		<br />
+		[Chorus]
+		<br />
 		The answer, my friend, is blowin&apos; in the wind
 		<br />
 		The answer is blowin&apos; in the wind.
 		<br />
 		<br />
-		Yes, and how many times must a man look up
+		[Verse] Yes, and how many times must a man look up
 		<br />
 		Before he can see the sky?
 		<br />
@@ -50,6 +56,8 @@ const BlowinInTheWind = () => (
 		<br />
 		That too many people have died?
 		<br />
+		<br />
+		[Chorus]
 		<br />
 		The answer, my friend, is blowin&apos; in the wind
 		<br />

@@ -2,6 +2,8 @@ import React from 'react';
 
 const BackHome = () => (
 	<p>
+		[Verse 1]
+		<br />
 		I&apos;m gonna need you to raise your glass
 		<br />
 		I don&apos;t care what you put in it
@@ -20,6 +22,8 @@ const BackHome = () => (
 		Don&apos;t compare to the friends that last
 		<br />
 		<br />
+		[Pre Chorus]
+		<br />
 		See, we won&apos;t forget where we came from
 		<br />
 		The city won&apos;t change us
@@ -33,14 +37,7 @@ const BackHome = () => (
 		We beat to the same drum, the same drum
 		<br />
 		<br />
-		La-dah-dah-dah-dah-dah-dah-dah
-		<br />
-		La-dah-dah-dah-dah-dah-dah-doe (Hey)
-		<br />
-		And no matter where we go
-		<br />
-		We always find our way back home
-		<br />
+		[Chorus]
 		<br />
 		La-dah-dah-dah-dah-dah-dah-dah
 		<br />
@@ -50,6 +47,17 @@ const BackHome = () => (
 		<br />
 		We always find our way back home
 		<br />
+		<br />
+		La-dah-dah-dah-dah-dah-dah-dah
+		<br />
+		La-dah-dah-dah-dah-dah-dah-doe (Hey)
+		<br />
+		And no matter where we go
+		<br />
+		We always find our way back home
+		<br />
+		<br />
+		[Verse 2]
 		<br />
 		So here&apos;s to the cheap sunglasses
 		<br />
@@ -60,6 +68,8 @@ const BackHome = () => (
 		The world didn&apos;t understand
 		<br />
 		<br />
+		[Pre Chorus]
+		<br />
 		See, we won&apos;t forget where we came from
 		<br />
 		The city won&apos;t change us
@@ -73,14 +83,7 @@ const BackHome = () => (
 		We beat to the same drum, the same drum
 		<br />
 		<br />
-		La-dah-dah-dah-dah-dah-dah-dah
-		<br />
-		La-dah-dah-dah-dah-dah-dah-doe (Hey)
-		<br />
-		And no matter where we go
-		<br />
-		We always find our way back home
-		<br />
+		[Chorus]
 		<br />
 		La-dah-dah-dah-dah-dah-dah-dah
 		<br />
@@ -90,6 +93,17 @@ const BackHome = () => (
 		<br />
 		We always find our way back home
 		<br />
+		<br />
+		La-dah-dah-dah-dah-dah-dah-dah
+		<br />
+		La-dah-dah-dah-dah-dah-dah-doe (Hey)
+		<br />
+		And no matter where we go
+		<br />
+		We always find our way back home
+		<br />
+		<br />
+		[Bridge]
 		<br />
 		When ties loosen
 		<br />
@@ -101,6 +115,8 @@ const BackHome = () => (
 		<br />
 		To the same damn things
 		<br />
+		<br />
+		[Chorus]
 		<br />
 		Oh no, the city won&apos;t change us
 		<br />
@@ -139,6 +155,8 @@ const BackHome = () => (
 		<br />
 		We always find our way back home
 		<br />
+		<br />
+		[Outro]
 		<br />
 		We always find our way back home
 		<br />
