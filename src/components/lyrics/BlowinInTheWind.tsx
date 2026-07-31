@@ -2,7 +2,9 @@ import React from 'react';
 
 const BlowinInTheWind = () => (
 	<p>
-		[Verse] How many roads must a man walk down
+		[Verse]
+		<br />
+		How many roads must a man walk down
 		<br />
 		Before you call him a man?
 		<br />
@@ -44,7 +46,9 @@ const BlowinInTheWind = () => (
 		The answer is blowin&apos; in the wind.
 		<br />
 		<br />
-		[Verse] Yes, and how many times must a man look up
+		[Verse]
+		<br />
+		Yes, and how many times must a man look up
 		<br />
 		Before he can see the sky?
 		<br />
