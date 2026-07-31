@@ -2,6 +2,8 @@ import React from 'react';
 
 const ClosingTimeChords = () => (
 	<p>
+		[Verse 1]
+		<br />
 		Closing time,
 		<br />
 		Open all the doors
@@ -28,6 +30,8 @@ const ClosingTimeChords = () => (
 		But you can&apos;t stay here
 		<br />
 		<br />
+		[Chorus]
+		<br />
 		I know who I want to take me home
 		<br />
 		I know who I want to take me home
@@ -36,6 +40,8 @@ const ClosingTimeChords = () => (
 		<br />
 		Take me home
 		<br />
+		<br />
+		[Verse 2]
 		<br />
 		Closing time,
 		<br />
@@ -61,6 +67,8 @@ const ClosingTimeChords = () => (
 		Comes from some other beginning&apos;s end, yeah
 		<br />
 		<br />
+		[Chorus]
+		<br />
 		I know who I want to take me home
 		<br />
 		I know who I want to take me home
@@ -69,6 +77,8 @@ const ClosingTimeChords = () => (
 		<br />
 		Take me home
 		<br />
+		<br />
+		[Bridge]
 		<br />
 		Closing time,
 		<br />
@@ -77,6 +87,8 @@ const ClosingTimeChords = () => (
 		To the places you will be from
 		<br />
 		<br />
+		[Chorus]
+		<br />
 		I know who I want to take me home
 		<br />
 		I know who I want to take me home
@@ -85,6 +97,8 @@ const ClosingTimeChords = () => (
 		<br />
 		Take me home
 		<br />
+		<br />
+		[Chorus]
 		<br />
 		I know who I want to take me home
 		<br />
