@@ -65,6 +65,13 @@ export const SongList: SongType[] = [
 	},
 	// - F -
 	{
+		artist: 'Randy Travis',
+		genres: [ERAS.EIGHTIES],
+		link: 'https://tabs.ultimate-guitar.com/tab/randy-travis/forever-and-ever-amen-chords-87134',
+		lyrics: LYRIC_LIST.ForeverAndEverAmen,
+		title: 'Forever And Ever Amen',
+	},
+	{
 		artist: 'Tom Petty',
 		genres: [ERAS.EIGHTIES],
 		link: 'https://www.chordie.com/chord.pere/www.guitaretab.com/p/petty-tom/14472.html',

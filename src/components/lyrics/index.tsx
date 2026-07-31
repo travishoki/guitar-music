@@ -8,6 +8,7 @@ import ButterflyKisses from './ButterflyKisses';
 import ClosingTimeChords from './ClosingTimeChords';
 import CountryRoads from './CountryRoads';
 // - F -
+import ForeverAndEverAmen from './ForeverAndEverAmen';
 import FreeFallin from './FreeFallin';
 // - G -
 import GivingTree from './GivingTree';
@@ -67,6 +68,7 @@ export default {
 	ClosingTimeChords,
 	CountryRoads,
 	// - F -
+	ForeverAndEverAmen,
 	FreeFallin,
 	// - G -
 	GivingTree,
