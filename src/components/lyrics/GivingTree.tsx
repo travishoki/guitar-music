@@ -2,6 +2,8 @@ import React from 'react';
 
 const GivingTree = () => (
 	<p>
+		[Verse]
+		<br />
 		All the leaves on the giving tree have fallen
 		<br />
 		No shade to crawl in underneath
@@ -10,6 +12,8 @@ const GivingTree = () => (
 		<br />
 		Where you carved your heart into me
 		<br />
+		<br />
+		[Chorus]
 		<br />
 		If all you wanted was love
 		<br />
@@ -21,6 +25,8 @@ const GivingTree = () => (
 		<br />
 		Settle down, build a home, and make you happy?
 		<br />
+		<br />
+		[Verse]
 		<br />
 		I lie in the dead of night and I wonder
 		<br />
@@ -31,6 +37,8 @@ const GivingTree = () => (
 		You feel hollow, so you crawl home back to me
 		<br />
 		<br />
+		[Chorus]
+		<br />
 		If all you wanted was love
 		<br />
 		Why would you use me up
@@ -41,6 +49,8 @@ const GivingTree = () => (
 		<br />
 		Settle down, build a home, and make you happy?
 		<br />
+		<br />
+		[Bridge]
 		<br />
 		Well, I see a trail that starts
 		<br />
@@ -52,6 +62,8 @@ const GivingTree = () => (
 		<br />
 		With nothing left but roots to show, oh
 		<br />
+		<br />
+		[Chorus]
 		<br />
 		If all you wanted was love
 		<br />

@@ -2,6 +2,8 @@ import React from 'react';
 
 const GodBlessTheUSA = () => (
 	<p>
+		[Verse 1]
+		<br />
 		If tomorrow all the things were gone
 		<br />
 		I&apos;d worked for all my life
@@ -18,6 +20,8 @@ const GodBlessTheUSA = () => (
 		<br />
 		And they can&apos;t take that away
 		<br />
+		<br />
+		[Chorus]
 		<br />
 		I&apos;m proud to be an American
 		<br />
@@ -36,6 +40,8 @@ const GodBlessTheUSA = () => (
 		God bless the USA
 		<br />
 		<br />
+		[Verse 2]
+		<br />
 		From the lakes of Minnesota,
 		<br />
 		To the hills of Tennessee
@@ -53,6 +59,8 @@ const GodBlessTheUSA = () => (
 		And it&apos;s time we stand and say that
 		<br />
 		<br />
+		[Chorus]
+		<br />
 		I&apos;m proud to be an American
 		<br />
 		Where at least I know I&apos;m free
@@ -69,6 +77,8 @@ const GodBlessTheUSA = () => (
 		<br />
 		God bless the USA
 		<br />
+		<br />
+		[Chorus]
 		<br />
 		I&apos;m proud to be an American
 		<br />

@@ -84,7 +84,7 @@ export const SongList: SongType[] = [
 		genres: [ERAS.TENS],
 		link: 'https://tabs.ultimate-guitar.com/tab/plain-white-ts/the-giving-tree-chords-1240804',
 		lyrics: LYRIC_LIST.GivingTree,
-		title: 'The Giving Tree',
+		title: 'Giving Tree',
 	},
 	{
 		artist: 'Lee Greenwood',
