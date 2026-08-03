@@ -10,7 +10,10 @@
 	if (el) el.remove();
 });
 
-
 // Check Author Line
 const el = document.querySelector('.relZm')
 if (el && el.textContent.includes('Author Unregistered.')) 	el.remove();
+
+// Bump Font Size
+const el = document.querySelector('.k_vI3.KLhHx')
+if (el) el.style.fontSize = '20px';
