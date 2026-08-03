@@ -1,5 +1,7 @@
 import React, { useLayoutEffect, useState } from 'react';
 
+import toast from 'react-hot-toast';
+
 import BarChordToggle from './BarChordToggle/BarChordToggle';
 import Genre from './Genre/Genre';
 import SongTable from './SongTable/SongTable';
@@ -24,6 +26,12 @@ const HomePage = ({
 	const [genre, setGenre] = useState(GENRE_ALL);
 	const [sortTerm, setSort] = useState(TITLE);
 
+	const handleSort = (option: string) => {
+		const label = option.charAt(0).toUpperCase() + option.slice(1);
+		toast(`Sorting by ${label}`, { duration: 1500 });
+		setSort(option);
+	};
+
 	useLayoutEffect(() => {
 		window.scrollTo(0, savedScrollY);
 
@@ -40,7 +48,7 @@ const HomePage = ({
 		<>
 			<div style={controlsStyle}>
 				<div className="top-controls">
-					<Sort currentOption={sortTerm} onClick={setSort} />
+					<Sort currentOption={sortTerm} onClick={handleSort} />
 
 					<div className="toggle-controls">
 						{isGuitarMode && (
