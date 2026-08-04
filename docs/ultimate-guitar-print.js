@@ -147,7 +147,7 @@ const sectionHeadings = [
 			if (seen.has(key)) {
 				range.deleteContents();
 				const label = heading.textContent.trim().replace(/^\[|\]$/g, '');
-				heading.after(document.createTextNode(`\n    Repeat ${label} Above\n\n`));
+				heading.after(document.createTextNode(`\n    Repeat ${label}\n\n`));
 			} else {
 				seen.add(key);
 			}
