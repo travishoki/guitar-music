@@ -154,6 +154,16 @@ const sectionHeadings = [
 	dedupe(document.querySelector('.Y9v5o'));
 })();
 
+// Drop the strumming section when there's no pattern for this song
+(() => {
+	const NO_PATTERN = 'There is no strumming pattern for this song yet.';
+	document.querySelectorAll('.S6KHd').forEach((el) => {
+		if (el.textContent.includes(NO_PATTERN)) {
+			el.closest('._5giwr.LyFB-')?.remove();
+		}
+	});
+})();
+
 // Put the two _5giwr sections side by side, 50% each
 (() => {
 	const sections = document.querySelectorAll('._5giwr');
@@ -179,4 +189,22 @@ const sectionHeadings = [
 	// following content (e.g. .Y9v5o) instead of above it. Force it to block so
 	// the two-column row and everything after it stack vertically.
 	parent.style.display = 'block';
+})();
+
+// Put the strumming-pattern articles side by side, 50% each
+(() => {
+	// The two <article class="mXLvx"> already share a <section class="_61oxx">
+	// parent, so just make that parent a flex row and size each article to half.
+	const container = document.querySelector('._61oxx');
+	if (!container) return;
+
+	container.style.display = 'flex';
+	container.style.alignItems = 'flex-start';
+	container.style.width = '100%';
+
+	container.querySelectorAll('.mXLvx').forEach((article) => {
+		article.style.flex = '1';
+		article.style.width = '50%';
+		article.style.boxSizing = 'border-box';
+	});
 })();
