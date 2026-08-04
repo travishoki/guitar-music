@@ -1,3 +1,6 @@
+const FONT_SIZE = '16px'
+const PAD = 0.5 * 96;
+
 // Only keep the body
 const mainContent = '.LLGvZ.BqjAv'
 const keep = document.querySelector(mainContent);
@@ -36,7 +39,7 @@ if (elContent) {
 
 // Inner wrapper has inline font-size that overrides the parent
 const elInnerContent = document.querySelector('.k_vI3.KLhHx');
-if (elInnerContent) elInnerContent.style.fontSize = '18px';
+if (elInnerContent) elInnerContent.style.fontSize = FONT_SIZE;
 
 // Remove all canvas elements inside each RZayQ
 document.querySelectorAll('.RZayQ').forEach((rzayq) => {
@@ -50,6 +53,11 @@ document.querySelectorAll('.FlgDy.pvu2n').forEach((el) => {
 });
 const elChordSection = document.querySelector('.lnasI')
 if (elChordSection) elChordSection.style.paddingRight = '0';
+
+// Style top section
+document.querySelectorAll('.zRulg').forEach((el) => {
+	el.style.padding = '0px';
+});
 
 // Section headings, shared by the wrap + de-dupe steps below.
 const sectionHeadings = [
@@ -207,7 +215,10 @@ const sectionHeadings = [
 // Put the two _5giwr sections side by side, 50% each
 (() => {
 	const sections = document.querySelectorAll('._5giwr');
-	if (sections.length < 2) return;
+	if (sections.length < 2) {
+        sections[0].style.margin = '0px';
+        return
+    };
 
 	const [first, second] = sections;
 	const parent = first.parentNode;
@@ -216,12 +227,15 @@ const sectionHeadings = [
 	row.classList.add('print-lead-sections');
 	row.style.display = 'flex';
 	row.style.alignItems = 'flex-start';
+	row.style.gap = '20px';
 	row.style.width = '100%';
 
 	// Drop the row where the first section is, then move both sections into it.
 	parent.insertBefore(row, first);
 	[first, second].forEach((section) => {
 		section.style.width = '50%';
+		section.style.paddingBottom = '0px';        
+		section.style.margin = '0px';        
 		section.style.boxSizing = 'border-box';
 		row.appendChild(section);
 	});
@@ -250,7 +264,7 @@ const sectionHeadings = [
 	});
 })();
 
-// Paginate the tab into red-bordered 8.5 x 11 pages (print at 100% scale for a
+// Paginate the tab into 8.5 x 11 pages (print at 100% scale for a
 // 1:1 match). Blocks that would overflow a page get pushed to the next one.
 (() => {
 	const source = document.querySelector('.k_vI3.KLhHx');
@@ -259,7 +273,6 @@ const sectionHeadings = [
 	// 8.5 x 11 inch at 96 CSS px/in, with a 0.5in inner margin.
 	const PAGE_W = 8.5 * 96;
 	const PAGE_H = 11 * 96;
-	const PAD = 0.5 * 96;
 
 	// HTML content that leads the first page, in order: the title/info header,
 	// then the Chords + Strumming row (or the lone Chords section if there's no
@@ -280,9 +293,10 @@ const sectionHeadings = [
 		page.classList.add('print-page');
 		Object.assign(page.style, {
 			boxSizing: 'border-box',
+			position: 'relative',
 			width: `${PAGE_W}px`,
 			height: `${PAGE_H}px`,
-			padding: `${PAD}px ${PAD / 2}px`,
+			padding: `${PAD}px ${PAD}px`,
 			margin: '0 auto 16px',
 			overflow: 'hidden',
 			background: '#fff',
@@ -300,7 +314,7 @@ const sectionHeadings = [
 		Object.assign(flow.style, {
 			whiteSpace: 'pre',
 			fontFamily: "'Roboto Mono', 'Courier New', monospace",
-			fontSize: '18px',
+			fontSize: FONT_SIZE,
 		});
 		return flow;
 	};
@@ -330,6 +344,25 @@ const sectionHeadings = [
 			page.appendChild(flow);
 			flow.appendChild(block);
 		}
+	});
+
+	// Page numbers — bottom right, outside the content flow.
+	const pageEls = pages.querySelectorAll('.print-page');
+	const pageTotal = pageEls.length;
+	pageEls.forEach((page, i) => {
+		const num = document.createElement('div');
+		num.classList.add('print-page-number');
+		num.textContent = `${i + 1}/${pageTotal}`;
+		Object.assign(num.style, {
+			position: 'absolute',
+			right: `${PAD}px`,
+			bottom: `${PAD}px`,
+			fontSize: '14px',
+			fontFamily: 'sans-serif',
+			color: '#666',
+			lineHeight: '1',
+		});
+		page.appendChild(num);
 	});
 
 	// Hoist the pages to the document root so ancestor padding/indent can't
