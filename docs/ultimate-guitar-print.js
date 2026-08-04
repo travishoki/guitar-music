@@ -181,8 +181,8 @@ const sectionHeadings = [
 			}
 
 			const div = document.createElement('div');
-			div.style.border = '1px solid #aaa';
-			div.style.padding = '8px 20px';
+			div.style.borderTop = '1px solid #aaa';
+			div.style.paddingTop = '8px';
 			div.style.marginBottom = '8px';
 			// extractContents + insertNode instead of surroundContents, which
 			// throws if the range boundaries don't sit on clean node edges.
@@ -215,6 +215,7 @@ const sectionHeadings = [
 	const parent = first.parentNode;
 
 	const row = document.createElement('div');
+	row.classList.add('print-lead-sections');
 	row.style.display = 'flex';
 	row.style.alignItems = 'flex-start';
 	row.style.width = '100%';
@@ -248,5 +249,87 @@ const sectionHeadings = [
 		article.style.flex = '1';
 		article.style.width = '50%';
 		article.style.boxSizing = 'border-box';
+	});
+})();
+
+// Paginate the tab into red-bordered 8.5 x 11 pages (print at 100% scale for a
+// 1:1 match). Blocks that would overflow a page get pushed to the next one.
+(() => {
+	const source = document.querySelector('.k_vI3.KLhHx');
+	if (!source) return;
+
+	// 8.5 x 11 inch at 96 CSS px/in, with a 0.5in inner margin.
+	const PAGE_W = 8.5 * 96;
+	const PAGE_H = 11 * 96;
+	const PAD = 0.5 * 96;
+
+	// HTML content that leads the first page, in order: the title/info header,
+	// then the Chords + Strumming row (or the lone Chords section if there's no
+	// strumming paired with it).
+	const leadBlocks = [
+		document.querySelector('.zRulg.VIa44'),
+		document.querySelector('.print-lead-sections') || document.querySelector('.lnasI'),
+	].filter(Boolean);
+
+	// The monospace tab blocks: the pre's children (title text + section divs).
+	const tabBlocks = Array.from(source.childNodes);
+
+	const pages = document.createElement('div');
+	source.replaceWith(pages);
+
+	const makePage = () => {
+		const page = document.createElement('div');
+		Object.assign(page.style, {
+			boxSizing: 'border-box',
+			width: `${PAGE_W}px`,
+			height: `${PAGE_H}px`,
+			padding: `${PAD}px`,
+			margin: '0 auto 16px',
+			border: '1px solid red',
+			overflow: 'hidden',
+			background: '#fff',
+			breakAfter: 'page',
+		});
+		pages.appendChild(page);
+		return page;
+	};
+
+	// Pre-styled wrapper so tab content keeps its monospace alignment once it's
+	// out of the original <pre>. Lead (HTML) content is NOT put in one of these.
+	const makeFlow = () => {
+		const flow = document.createElement('div');
+		Object.assign(flow.style, {
+			whiteSpace: 'pre',
+			fontFamily: "'Roboto Mono', 'Courier New', monospace",
+			fontSize: '18px',
+		});
+		return flow;
+	};
+
+	let page = makePage();
+
+	// 1) Lead HTML blocks (header/info) go on the first page, unstyled.
+	leadBlocks.forEach((block) => {
+		page.appendChild(block);
+		if (page.scrollHeight > page.clientHeight && page.childNodes.length > 1) {
+			page = makePage();
+			page.appendChild(block);
+		}
+	});
+
+	// 2) Tab blocks flow into pre-styled wrappers, breaking to a new page on overflow.
+	let flow = makeFlow();
+	page.appendChild(flow);
+	tabBlocks.forEach((block) => {
+		flow.appendChild(block);
+
+		const overflowed = page.scrollHeight > page.clientHeight;
+		const pageHasOther = page.childNodes.length > 1 || flow.childNodes.length > 1;
+		if (overflowed && pageHasOther) {
+			page = makePage();
+			flow = makeFlow();
+			page.appendChild(flow);
+			flow.appendChild(block);
+		}
 	});
 })();
