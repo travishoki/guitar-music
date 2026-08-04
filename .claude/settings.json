@@ -5,7 +5,8 @@
       "Bash(yarn -v)",
       "Bash(yarn jest *)",
       "Bash(yarn lint *)",
-      "Bash(node --check docs/ultimate-guitar-print.js)"
+      "Bash(node --check docs/ultimate-guitar-print.js)",
+      "Bash(python3 -)"
     ]
   }
 }
