@@ -279,15 +279,16 @@ const sectionHeadings = [
 
 	const makePage = () => {
 		const page = document.createElement('div');
+		page.classList.add('print-page');
 		Object.assign(page.style, {
 			boxSizing: 'border-box',
 			width: `${PAGE_W}px`,
 			height: `${PAGE_H}px`,
 			padding: `${PAD}px ${PAD / 2}px`,
 			margin: '0 auto 16px',
-			border: '1px solid red',
 			overflow: 'hidden',
 			background: '#fff',
+			color: '#000',
 			breakAfter: 'page',
 		});
 		pages.appendChild(page);
@@ -332,4 +333,20 @@ const sectionHeadings = [
 			flow.appendChild(block);
 		}
 	});
+
+	// Hoist the pages to the document root so ancestor padding/indent can't
+	// offset them, and drop the now-empty leftover containers.
+	document.body.replaceChildren(pages);
+
+	// Kill the browser's print margins so each red page fills the sheet 1:1
+	// (print at 100% scale, "Headers and footers" off).
+	const printStyle = document.createElement('style');
+	printStyle.textContent = `
+		@page { margin: 0; }
+		@media print {
+			html, body { margin: 0; }
+			.print-page { margin: 0 auto !important; }
+		}
+	`;
+	document.head.appendChild(printStyle);
 })();
