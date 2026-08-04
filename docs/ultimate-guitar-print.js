@@ -59,6 +59,7 @@ const sectionHeadings = [
 	'[Outro]',
 	'[Verse]',
 	'[Chorus]',
+    '[Pre-Chorus]',
 	'[Bridge]',
 	'[Verse 1]',
 	'[Verse 2]',
