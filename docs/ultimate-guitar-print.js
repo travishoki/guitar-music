@@ -16,7 +16,6 @@ if (keep) document.body.replaceChildren(keep.cloneNode(true));
     '._-27s-', // Song Modification Menu
     '.XkJho', // Bottom Controls
     '._aGHQ', // Song Stats
-    '.fqEMR', // Pin Button
     '.Lf02O:nth-child(2)', // Author Line Contrubutors
     '.eU82V', // Instrument Menu
     '.ZoZpf', // Play Strum Button
