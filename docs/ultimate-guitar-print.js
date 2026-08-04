@@ -184,12 +184,16 @@ const sectionHeadings = [
 			div.style.border = '1px solid #aaa';
 			div.style.padding = '8px 20px';
 			div.style.marginBottom = '8px';
-			range.surroundContents(div);
+			// extractContents + insertNode instead of surroundContents, which
+			// throws if the range boundaries don't sit on clean node edges.
+			div.appendChild(range.extractContents());
+			range.insertNode(div);
 		});
 	};
 
+	// Only the inner <pre> holds the section text; wrapping a parent too would
+	// double-wrap the same headings and leave stray empty borders.
 	wrapSections(document.querySelector('.k_vI3.KLhHx'));
-	wrapSections(document.querySelector('.Y9v5o'));
 })();
 
 // Drop the strumming section when there's no pattern for this song
