@@ -128,6 +128,9 @@ const sectionHeadings = [
 
 		const seen = new Set();
 		headings.forEach((heading, i) => {
+			// Only collapse repeated [Chorus] sections.
+			if (heading.textContent.trim() !== '[Chorus]') return;
+
 			const next = headings[i + 1];
 
 			// The section body = everything between this heading and the next one.
@@ -153,6 +156,40 @@ const sectionHeadings = [
 
 	dedupe(document.querySelector('.k_vI3.KLhHx'));
 	dedupe(document.querySelector('.Y9v5o'));
+})();
+
+// Wrap each section (heading + its content) in a bordered div
+(() => {
+	const wrapSections = (container) => {
+		if (!container) return;
+
+		// Heading spans at ANY depth, in document order.
+		const headings = Array.from(container.querySelectorAll('span')).filter((el) =>
+			sectionHeadings.includes(el.textContent.trim()),
+		);
+
+		headings.forEach((heading, i) => {
+			const next = headings[i + 1];
+
+			// Select from this heading through everything up to the next heading.
+			const range = document.createRange();
+			range.setStartBefore(heading);
+			if (next) {
+				range.setEndBefore(next);
+			} else {
+				range.setEndAfter(container.lastChild);
+			}
+
+			const div = document.createElement('div');
+			div.style.border = '1px solid #aaa';
+			div.style.padding = '8px 20px';
+			div.style.marginBottom = '8px';
+			range.surroundContents(div);
+		});
+	};
+
+	wrapSections(document.querySelector('.k_vI3.KLhHx'));
+	wrapSections(document.querySelector('.Y9v5o'));
 })();
 
 // Drop the strumming section when there's no pattern for this song
