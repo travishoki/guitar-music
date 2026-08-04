@@ -30,7 +30,15 @@ if (elAuthorLine && elAuthorLine.textContent.includes('Author Unregistered.')) 	
 
 // Bump Font Size
 const elContent = document.querySelector('.Y9v5o')
-if (elContent) elContent.style.fontSize = '18px';
+if (elContent) {
+    elContent.style.clear = 'both';
+    elContent.style.display = 'block';
+    elContent.style.paddingTop = '0';
+}
+
+// Inner wrapper has inline font-size that overrides the parent
+const elInnerContent = document.querySelector('.k_vI3.KLhHx');
+if (elInnerContent) elInnerContent.style.fontSize = '18px';
 
 // Remove all canvas elements inside each RZayQ
 document.querySelectorAll('.RZayQ').forEach((rzayq) => {
@@ -45,21 +53,24 @@ document.querySelectorAll('.FlgDy.pvu2n').forEach((el) => {
 const elChordSection = document.querySelector('.lnasI')
 if (elChordSection) elChordSection.style.paddingRight = '0';
 
+// Section headings, shared by the wrap + de-dupe steps below.
+const sectionHeadings = [
+	'[Intro]',
+	'[Outro]',
+	'[Verse]',
+	'[Chorus]',
+	'[Bridge]',
+	'[Verse 1]',
+	'[Verse 2]',
+	'[Verse 3]',
+	'[Verse 4]',
+	'[Verse 5]',
+];
+
 // Wrap section headers in spans
 (() => {
-	const targets = [
-		'[Intro]',
-		'[Outro]',
-		'[Verse]',
-		'[Verse 1]',
-		'[Verse 2]',
-		'[Verse 3]',
-		'[Verse 4]',
-		'[Verse 5]',
-	];
-
 	const escape = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-	const re = new RegExp(targets.map(escape).join('|'), 'g');
+	const re = new RegExp(sectionHeadings.map(escape).join('|'), 'g');
 
 	// Collect matching text nodes first, since wrapping mutates the tree.
 	const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
@@ -97,4 +108,75 @@ if (elChordSection) elChordSection.style.paddingRight = '0';
 
 		textNode.parentNode.replaceChild(frag, textNode);
 	});
+})();
+
+// Collapse repeated sections: keep the heading, drop content that already appeared
+(() => {
+	// Key sections by their heading only, so EVERY repeat of a heading (e.g.
+	// [Chorus]) collapses - even if a later one has a minor content difference.
+	const normalize = (str) => str.replace(/\s+/g, ' ').trim();
+
+	const dedupe = (container) => {
+		if (!container) return;
+
+		// Heading spans at ANY depth, in document order.
+		const headings = Array.from(container.querySelectorAll('span')).filter((el) =>
+			sectionHeadings.includes(el.textContent.trim()),
+		);
+		if (headings.length === 0) return;
+
+		const seen = new Set();
+		headings.forEach((heading, i) => {
+			const next = headings[i + 1];
+
+			// The section body = everything between this heading and the next one.
+			const range = document.createRange();
+			range.setStartAfter(heading);
+			if (next) {
+				range.setEndBefore(next);
+			} else {
+				range.setEndAfter(container.lastChild);
+			}
+
+			const key = normalize(heading.textContent);
+
+			if (seen.has(key)) {
+				range.deleteContents();
+				const label = heading.textContent.trim().replace(/^\[|\]$/g, '');
+				heading.after(document.createTextNode(`\n    Repeat ${label} Above\n\n`));
+			} else {
+				seen.add(key);
+			}
+		});
+	};
+
+	dedupe(document.querySelector('.k_vI3.KLhHx'));
+	dedupe(document.querySelector('.Y9v5o'));
+})();
+
+// Put the two _5giwr sections side by side, 50% each
+(() => {
+	const sections = document.querySelectorAll('._5giwr');
+	if (sections.length < 2) return;
+
+	const [first, second] = sections;
+	const parent = first.parentNode;
+
+	const row = document.createElement('div');
+	row.style.display = 'flex';
+	row.style.alignItems = 'flex-start';
+	row.style.width = '100%';
+
+	// Drop the row where the first section is, then move both sections into it.
+	parent.insertBefore(row, first);
+	[first, second].forEach((section) => {
+		section.style.width = '50%';
+		section.style.boxSizing = 'border-box';
+		row.appendChild(section);
+	});
+
+	// If the parent is itself a flex container, the row would sit *beside* the
+	// following content (e.g. .Y9v5o) instead of above it. Force it to block so
+	// the two-column row and everything after it stack vertically.
+	parent.style.display = 'block';
 })();
