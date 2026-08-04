@@ -19,9 +19,7 @@ if (keep) document.body.replaceChildren(keep.cloneNode(true));
     '.ZoZpf', // Play Strum Button
     '.fqEMR', // Strum Edit Button
 ].forEach((selector) => {
-	const el = document.querySelector(selector);
-
-	if (el) el.remove();
+	document.querySelectorAll(selector).forEach((el) => el.remove());
 });
 
 // Check Author Line
@@ -181,7 +179,7 @@ const sectionHeadings = [
 			}
 
 			const div = document.createElement('div');
-			div.style.borderTop = '1px solid #aaa';
+			div.style.borderTop = '1px solid #ccc';
 			div.style.paddingTop = '8px';
 			div.style.marginBottom = '8px';
 			// extractContents + insertNode instead of surroundContents, which
