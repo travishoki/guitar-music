@@ -7,7 +7,11 @@
       "Bash(yarn lint *)",
       "Bash(node --check docs/ultimate-guitar-print.js)",
       "Bash(python3 -)",
-      "Bash(node --check docs/ultimate-guitar-lyrics.js)"
+      "Bash(node --check docs/ultimate-guitar-lyrics.js)",
+      "Bash(grep -v \"^$\")",
+      "Bash(python3 -c \"import json;print\\(json.load\\(open\\('package.json'\\)\\).get\\('scripts'\\)\\)\")",
+      "Bash(npx eslint *)",
+      "Bash(npx prettier *)"
     ]
   }
 }
