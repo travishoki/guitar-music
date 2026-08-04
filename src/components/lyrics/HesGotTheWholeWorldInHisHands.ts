@@ -1,0 +1,28 @@
+const HesGotTheWholeWorldInHisHands = [
+	"He's got the whole world in his hands",
+	"He's got the whole wide world in his hands",
+	"He's got the whole wide world in his hands",
+	"He's got the whole world in his hands",
+	'',
+	"He's got the little bitty baby in his hands",
+	"He's got the little bitty baby in his hands",
+	"He's got the little bitty baby in his hands",
+	"He's got the whole world in his hands",
+	"He's got the whole world in his hands...",
+	'',
+	"He's got you and me brother in his hands",
+	"He's got you and me sister in his hands",
+	"He's got you and me brother in his hands",
+	"He's got the whole world in his hands",
+	"He's got the whole world in his hands...",
+	'',
+	"He's got everybody here in his hands",
+	"He's got everybody here in his hands",
+	"He's got everybody here in his hands",
+	"He's got the whole world in his hands",
+	"He's got the whole world in his hands...",
+	"He's got you and me brother...",
+	"He's got the whole world in his hands...",
+];
+
+export default HesGotTheWholeWorldInHisHands;

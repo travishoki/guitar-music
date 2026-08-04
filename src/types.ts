@@ -4,7 +4,7 @@ export type SongType = {
 	barChords?: boolean;
 	genres: string[];
 	link: string;
-	lyrics: () => React.JSX.Element;
+	lyrics: string[];
 	strumPattern?: string;
 	title: string;
 };

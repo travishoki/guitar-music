@@ -23,9 +23,16 @@ const SongPage = () => {
 		<div id="songPage">
 			<Title artist={song.artist} title={song.title} />
 			<div className="page-content">
-				{song.lyrics && (
+				{song.lyrics.length > 0 && (
 					<div className="lyrics">
-						<song.lyrics />
+						<p>
+							{song.lyrics.map((line, index) => (
+								<React.Fragment key={index}>
+									{line}
+									<br />
+								</React.Fragment>
+							))}
+						</p>
 					</div>
 				)}
 			</div>
