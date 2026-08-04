@@ -48,8 +48,11 @@ document.querySelectorAll('.RZayQ').forEach((rzayq) => {
 // Cleanup Chords Section
 document.querySelectorAll('.RZayQ').forEach((el) => el.remove());
 document.querySelectorAll('.FlgDy.pvu2n').forEach((el) => {
-    el.style.width = '80px';
+    el.style.margin = '0 20px 20px 0';
+    el.style.padding = '0px';
 });
+const elChordInnerContainer = document.querySelector('.lpqIc')
+if (elChordInnerContainer) elChordInnerContainer.style.margin = '0';
 const elChordSection = document.querySelector('.lnasI')
 if (elChordSection) elChordSection.style.paddingRight = '0';
 
