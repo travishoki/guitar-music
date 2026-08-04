@@ -40,7 +40,60 @@ document.querySelectorAll('.RZayQ').forEach((rzayq) => {
 document.querySelectorAll('.RZayQ').forEach((el) => el.remove());
 document.querySelectorAll('.FlgDy.pvu2n').forEach((el) => {
     el.style.width = '80px';
-    el.style.padding = '0px';
 });
 const elChordSection = document.querySelector('.lnasI')
-if (elChordSection) elChordSection.style.removeProperty('padding-right');
+if (elChordSection) elChordSection.style.paddingRight = '0';
+
+// Wrap section headers in spans
+(() => {
+	const targets = [
+		'[Intro]',
+		'[Outro]',
+		'[Verse]',
+		'[Verse 1]',
+		'[Verse 2]',
+		'[Verse 3]',
+		'[Verse 4]',
+		'[Verse 5]',
+	];
+
+	const escape = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+	const re = new RegExp(targets.map(escape).join('|'), 'g');
+
+	// Collect matching text nodes first, since wrapping mutates the tree.
+	const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+	const nodes = [];
+	let node;
+	while ((node = walker.nextNode())) {
+		re.lastIndex = 0;
+		if (re.test(node.nodeValue)) nodes.push(node);
+	}
+
+	nodes.forEach((textNode) => {
+		const text = textNode.nodeValue;
+		const frag = document.createDocumentFragment();
+		let last = 0;
+		let match;
+		re.lastIndex = 0;
+
+		while ((match = re.exec(text))) {
+			if (match.index > last) {
+				frag.appendChild(document.createTextNode(text.slice(last, match.index)));
+			}
+
+			const span = document.createElement('span');
+			span.style.marginTop = '0';
+			span.style.display = 'inline-block';
+			span.textContent = match[0];
+			frag.appendChild(span);
+
+			last = match.index + match[0].length;
+		}
+
+		if (last < text.length) {
+			frag.appendChild(document.createTextNode(text.slice(last)));
+		}
+
+		textNode.parentNode.replaceChild(frag, textNode);
+	});
+})();
