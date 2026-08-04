@@ -17,6 +17,7 @@ if (keep) document.body.replaceChildren(keep.cloneNode(true));
     '.Lf02O:nth-child(2)', // Author Line Contrubutors
     '.eU82V', // Instrument Menu
     '.ZoZpf', // Play Strum Button
+    '.fqEMR', // Strum Edit Button
 ].forEach((selector) => {
 	const el = document.querySelector(selector);
 
@@ -28,8 +29,8 @@ const elAuthorLine = document.querySelector('.relZm')
 if (elAuthorLine && elAuthorLine.textContent.includes('Author Unregistered.')) 	elAuthorLine.remove();
 
 // Bump Font Size
-const elContent = document.querySelector('.k_vI3.KLhHx')
-if (elContent) elContent.style.fontSize = '20px';
+const elContent = document.querySelector('.Y9v5o')
+if (elContent) elContent.style.fontSize = '18px';
 
 // Remove all canvas elements inside each RZayQ
 document.querySelectorAll('.RZayQ').forEach((rzayq) => {
