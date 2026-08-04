@@ -283,7 +283,7 @@ const sectionHeadings = [
 			boxSizing: 'border-box',
 			width: `${PAGE_W}px`,
 			height: `${PAGE_H}px`,
-			padding: `${PAD}px`,
+			padding: `${PAD}px ${PAD / 2}px`,
 			margin: '0 auto 16px',
 			border: '1px solid red',
 			overflow: 'hidden',
