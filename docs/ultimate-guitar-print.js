@@ -1,35 +1,73 @@
 const FONT_SIZE = '16px'
 const PAD = 0.5 * 96;
 
+// Every Ultimate Guitar class name lives here, so a site-side rename only has
+// to be fixed in one place.
+const UG = {
+	// Page structure
+	mainContent: '.LLGvZ.BqjAv',
+	content: '.Y9v5o',
+	tab: '.k_vI3.KLhHx',
+	topSection: '.zRulg',
+	songHeader: '.zRulg.VIa44',
+	authorLine: '.relZm',
+
+	// Chords
+	chordSection: '.lnasI',
+	chordInnerContainer: '.lpqIc',
+	chordCard: '.FlgDy.pvu2n',
+	chordDiagram: '.RZayQ',
+
+	// Chords / Strumming lead sections
+	leadSection: '._5giwr',
+	strummingSection: '._5giwr.LyFB-',
+	strummingText: '.S6KHd',
+	strummingRow: '._61oxx',
+	strummingArticle: '.mXLvx',
+
+	// Chrome that gets removed outright
+	floatingControls: '.JxP4w',
+	floatingControlsSecondary: '.Vzz2Z',
+	comments: '._66LiL',
+	topMenu: '.NLKCx',
+	ugc: '.n04zq',
+	songModificationMenu: '._-27s-',
+	bottomControls: '.XkJho',
+	songStats: '._aGHQ',
+	authorContributors: '.Lf02O:nth-child(2)',
+	instrumentMenu: '.eU82V',
+	playStrumButton: '.ZoZpf',
+	strumEditButton: '.fqEMR',
+};
+
 // Only keep the body
-const mainContent = '.LLGvZ.BqjAv'
-const keep = document.querySelector(mainContent);
+const keep = document.querySelector(UG.mainContent);
 if (keep) document.body.replaceChildren(keep.cloneNode(true));
 
 // Remove Elements
 [
-    '.JxP4w', // Floating Right Controls
-    '.Vzz2Z', // Floating Right Controls
-    '._66LiL', // Comments Section
-	'.NLKCx', // Top Section Menu
-    '.n04zq', // UGC
-    '._-27s-', // Song Modification Menu
-    '.XkJho', // Bottom Controls
-    '._aGHQ', // Song Stats
-    '.Lf02O:nth-child(2)', // Author Line Contrubutors
-    '.eU82V', // Instrument Menu
-    '.ZoZpf', // Play Strum Button
-    '.fqEMR', // Strum Edit Button
+	UG.floatingControls,
+	UG.floatingControlsSecondary,
+	UG.comments,
+	UG.topMenu,
+	UG.ugc,
+	UG.songModificationMenu,
+	UG.bottomControls,
+	UG.songStats,
+	UG.authorContributors,
+	UG.instrumentMenu,
+	UG.playStrumButton,
+	UG.strumEditButton,
 ].forEach((selector) => {
 	document.querySelectorAll(selector).forEach((el) => el.remove());
 });
 
 // Check Author Line
-const elAuthorLine = document.querySelector('.relZm')
+const elAuthorLine = document.querySelector(UG.authorLine)
 if (elAuthorLine && elAuthorLine.textContent.includes('Author Unregistered.')) 	elAuthorLine.remove();
 
 // Bump Font Size
-const elContent = document.querySelector('.Y9v5o')
+const elContent = document.querySelector(UG.content)
 if (elContent) {
     elContent.style.clear = 'both';
     elContent.style.display = 'block';
@@ -37,27 +75,27 @@ if (elContent) {
 }
 
 // Inner wrapper has inline font-size that overrides the parent
-const elInnerContent = document.querySelector('.k_vI3.KLhHx');
+const elInnerContent = document.querySelector(UG.tab);
 if (elInnerContent) elInnerContent.style.fontSize = FONT_SIZE;
 
-// Remove all canvas elements inside each RZayQ
-document.querySelectorAll('.RZayQ').forEach((rzayq) => {
+// Remove all canvas elements inside each chord diagram
+document.querySelectorAll(UG.chordDiagram).forEach((rzayq) => {
 	rzayq.querySelectorAll('canvas').forEach((canvas) => canvas.remove());
 });
 
 // Cleanup Chords Section
-document.querySelectorAll('.RZayQ').forEach((el) => el.remove());
-document.querySelectorAll('.FlgDy.pvu2n').forEach((el) => {
+document.querySelectorAll(UG.chordDiagram).forEach((el) => el.remove());
+document.querySelectorAll(UG.chordCard).forEach((el) => {
     el.style.margin = '0 20px 20px 0';
     el.style.padding = '0px';
 });
-const elChordInnerContainer = document.querySelector('.lpqIc')
+const elChordInnerContainer = document.querySelector(UG.chordInnerContainer)
 if (elChordInnerContainer) elChordInnerContainer.style.margin = '0';
-const elChordSection = document.querySelector('.lnasI')
+const elChordSection = document.querySelector(UG.chordSection)
 if (elChordSection) elChordSection.style.paddingRight = '0';
 
 // Style top section
-document.querySelectorAll('.zRulg').forEach((el) => {
+document.querySelectorAll(UG.topSection).forEach((el) => {
 	el.style.padding = '0px';
 });
 
@@ -155,15 +193,18 @@ const sectionHeadings = [
 			if (seen.has(key)) {
 				range.deleteContents();
 				const label = heading.textContent.trim().replace(/^\[|\]$/g, '');
-				heading.after(document.createTextNode(`\n    Repeat ${label}\n\n`));
+				const repeat = document.createElement('span');
+				repeat.textContent = `Repeat ${label}`;
+				repeat.style.marginRight = '20px';
+				heading.after(repeat);
 			} else {
 				seen.add(key);
 			}
 		});
 	};
 
-	dedupe(document.querySelector('.k_vI3.KLhHx'));
-	dedupe(document.querySelector('.Y9v5o'));
+	dedupe(document.querySelector(UG.tab));
+	dedupe(document.querySelector(UG.content));
 })();
 
 // Wrap each section (heading + its content) in a bordered div
@@ -201,24 +242,25 @@ const sectionHeadings = [
 
 	// Only the inner <pre> holds the section text; wrapping a parent too would
 	// double-wrap the same headings and leave stray empty borders.
-	wrapSections(document.querySelector('.k_vI3.KLhHx'));
+	wrapSections(document.querySelector(UG.tab));
 })();
 
 // Drop the strumming section when there's no pattern for this song
 (() => {
 	const NO_PATTERN = 'There is no strumming pattern for this song yet.';
-	document.querySelectorAll('.S6KHd').forEach((el) => {
+	document.querySelectorAll(UG.strummingText).forEach((el) => {
 		if (el.textContent.includes(NO_PATTERN)) {
-			el.closest('._5giwr.LyFB-')?.remove();
+			el.closest(UG.strummingSection)?.remove();
 		}
 	});
 })();
 
-// Put the two _5giwr sections side by side, 50% each
+// Put the two lead sections side by side, 50% each
 (() => {
-	const sections = document.querySelectorAll('._5giwr');
+	const sections = document.querySelectorAll(UG.leadSection);
 	if (sections.length < 2) {
         sections[0].style.margin = '0px';
+        sections[0].style.paddingBottom = '0px';
         return
     };
 
@@ -243,23 +285,23 @@ const sectionHeadings = [
 	});
 
 	// If the parent is itself a flex container, the row would sit *beside* the
-	// following content (e.g. .Y9v5o) instead of above it. Force it to block so
+	// following content (e.g. the tab content) instead of above it. Force it to block so
 	// the two-column row and everything after it stack vertically.
 	parent.style.display = 'block';
 })();
 
 // Put the strumming-pattern articles side by side, 50% each
 (() => {
-	// The two <article class="mXLvx"> already share a <section class="_61oxx">
+	// The two strumming articles already share a strumming-row
 	// parent, so just make that parent a flex row and size each article to half.
-	const container = document.querySelector('._61oxx');
+	const container = document.querySelector(UG.strummingRow);
 	if (!container) return;
 
 	container.style.display = 'flex';
 	container.style.alignItems = 'flex-start';
 	container.style.width = '100%';
 
-	container.querySelectorAll('.mXLvx').forEach((article) => {
+	container.querySelectorAll(UG.strummingArticle).forEach((article) => {
 		article.style.flex = '1';
 		article.style.width = '50%';
 		article.style.boxSizing = 'border-box';
@@ -269,7 +311,7 @@ const sectionHeadings = [
 // Paginate the tab into 8.5 x 11 pages (print at 100% scale for a
 // 1:1 match). Blocks that would overflow a page get pushed to the next one.
 (() => {
-	const source = document.querySelector('.k_vI3.KLhHx');
+	const source = document.querySelector(UG.tab);
 	if (!source) return;
 
 	// 8.5 x 11 inch at 96 CSS px/in, with a 0.5in inner margin.
@@ -280,8 +322,8 @@ const sectionHeadings = [
 	// then the Chords + Strumming row (or the lone Chords section if there's no
 	// strumming paired with it).
 	const leadBlocks = [
-		document.querySelector('.zRulg.VIa44'),
-		document.querySelector('.print-lead-sections') || document.querySelector('.lnasI'),
+		document.querySelector(UG.songHeader),
+		document.querySelector('.print-lead-sections') || document.querySelector(UG.chordSection),
 	].filter(Boolean);
 
 	// The monospace tab blocks: the pre's children (title text + section divs).
