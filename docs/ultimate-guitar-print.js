@@ -347,19 +347,23 @@ const sectionHeadings = [
 	});
 
 	// Page numbers — bottom right, outside the content flow.
+	const songTitle =
+		document.querySelector('h1')?.textContent.split('\n')[0].trim().replace(/\s*\bchords\b\s*/i, ' ').trim() ??
+		'';
 	const pageEls = pages.querySelectorAll('.print-page');
 	const pageTotal = pageEls.length;
 	pageEls.forEach((page, i) => {
 		const num = document.createElement('div');
 		num.classList.add('print-page-number');
-		num.textContent = `${i + 1}/${pageTotal}`;
+		const pagination = `${i + 1}/${pageTotal}`;
+		num.textContent = songTitle ? `${songTitle} (${pagination})` : pagination;
 		Object.assign(num.style, {
 			position: 'absolute',
 			right: `${PAD}px`,
 			bottom: `${PAD}px`,
 			fontSize: '14px',
 			fontFamily: 'sans-serif',
-			color: '#666',
+			color: '#999',
 			lineHeight: '1',
 		});
 		page.appendChild(num);
