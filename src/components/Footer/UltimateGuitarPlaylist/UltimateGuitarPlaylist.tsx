@@ -1,11 +1,18 @@
 import React from 'react';
 
+import { useLocation } from 'react-router-dom';
+
 import SvgUltimateGuitar from '~svg/SvgUltimateGuitar';
 
 const compfirePlaylistLink =
 	'https://www.ultimate-guitar.com/user/playlist/shared?h=YBjqHjExTl9w6xbjruJM3aB-';
 
 export const UltimateGuitarPlaylist = () => {
+	const location = useLocation();
+
+	// Home page only.
+	if (location.pathname !== '/') return null;
+
 	return (
 		<a
 			className="button"
@@ -14,8 +21,8 @@ export const UltimateGuitarPlaylist = () => {
 			style={buttonStyle}
 			target="_blank"
 		>
-			Playlist
 			<SvgUltimateGuitar style={guitarLink} />
+			Playlist
 		</a>
 	);
 };
@@ -28,5 +35,5 @@ const buttonStyle: React.CSSProperties = {
 };
 
 const guitarLink = {
-	width: 25,
+	width: 20,
 };
