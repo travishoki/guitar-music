@@ -5,6 +5,7 @@ import { useLocation } from 'react-router-dom';
 import BackButton from './BackButton/BackButton';
 import ScrollToTopButton from './ScrollToTopButton/ScrollToTopButton';
 import TabsButton from './TabsButton/TabsButton';
+import { UltimateGuitarPlaylist } from './UltimateGuitarPlaylist/UltimateGuitarPlaylist';
 
 const Footer = () => {
 	const location = useLocation();
@@ -17,6 +18,7 @@ const Footer = () => {
 				<div style={leftSlotStyle}>{!isRootPath && <BackButton />}</div>
 				<div style={centerSlotStyle}>
 					<TabsButton />
+					<UltimateGuitarPlaylist />
 				</div>
 				<div style={rightSlotStyle}>
 					<ScrollToTopButton />

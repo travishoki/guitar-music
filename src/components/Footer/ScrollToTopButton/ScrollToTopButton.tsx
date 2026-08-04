@@ -30,7 +30,7 @@ const ScrollToTopButton = () => {
 			style={{ ...buttonStyle, opacity: isAtTop ? 0.4 : 1 }}
 		>
 			<SvgUpArrow style={iconStyle} />
-			To Top
+			Strum Up
 		</button>
 	);
 };
