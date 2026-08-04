@@ -46,10 +46,49 @@ if (tab) {
 	});
 }
 
-// Trim leading/trailing blanks, then collapse runs of blank lines down to one.
-while (lines.length && lines[0] === '') lines.shift();
-while (lines.length && lines[lines.length - 1] === '') lines.pop();
-const body = lines.filter((line, i) => line !== '' || lines[i - 1] !== '');
+// Some tabs open with an "Artist: / Title: / Album:" header block. Drop those
+// leading "Label: value" lines along with any blanks around them. Section
+// headings start with "[", so they can't be swallowed by this.
+const HEADER_LINE = /^[A-Za-z][A-Za-z ]{0,20}:\s*\S/;
+while (lines.length && (lines[0] === '' || HEADER_LINE.test(lines[0]))) lines.shift();
+
+// Trim trailing blanks, plus the stray "X" (a close button) UG leaves behind at
+// the end of the tab.
+const TRAILING_NOISE = /^[Xx]$/;
+while (
+	lines.length &&
+	(lines[lines.length - 1] === '' || TRAILING_NOISE.test(lines[lines.length - 1]))
+) {
+	lines.pop();
+}
+
+// Collapse runs of blank lines down to one, with no blanks on either end.
+const tidy = (list) => {
+	const out = list.filter((line, i) => line !== '' || list[i - 1] !== '');
+	while (out.length && out[0] === '') out.shift();
+	while (out.length && out[out.length - 1] === '') out.pop();
+	return out;
+};
+
+// A section whose content was nothing but chords is left as a lone heading
+// (e.g. "[Intro]"). "Empty" means nothing but blanks between it and the next
+// heading - checking only the following line would delete every heading in a
+// tab that puts a blank line under its section labels.
+const isHeading = (line) => /^\[.*\]$/.test(line);
+const hasContent = (list, start) => {
+	for (let i = start + 1; i < list.length; i += 1) {
+		if (isHeading(list[i])) return false;
+		if (list[i] !== '') return true;
+	}
+	return false;
+};
+
+const body = tidy(
+	tidy(lines)
+		.filter((line, i, list) => !isHeading(line) || hasContent(list, i))
+		// Close up a blank line sitting between a heading and its first line.
+		.filter((line, i, list) => line !== '' || !isHeading(list[i - 1])),
+);
 
 // Match Prettier's singleQuote rule: whichever quote needs fewer escapes.
 const quote = (str) => {
