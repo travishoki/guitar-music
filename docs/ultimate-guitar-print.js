@@ -195,7 +195,8 @@ const sectionHeadings = [
 				const label = heading.textContent.trim().replace(/^\[|\]$/g, '');
 				const repeat = document.createElement('span');
 				repeat.textContent = `Repeat ${label}`;
-				repeat.style.marginRight = '20px';
+				repeat.style.marginLeft = '10px';
+				repeat.style.color = '#666';
 				heading.after(repeat);
 			} else {
 				seen.add(key);
