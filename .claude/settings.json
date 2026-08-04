@@ -11,7 +11,8 @@
       "Bash(grep -v \"^$\")",
       "Bash(python3 -c \"import json;print\\(json.load\\(open\\('package.json'\\)\\).get\\('scripts'\\)\\)\")",
       "Bash(npx eslint *)",
-      "Bash(npx prettier *)"
+      "Bash(npx prettier *)",
+      "Bash(python3 -c ' *)"
     ]
   }
 }
