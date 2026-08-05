@@ -118,6 +118,8 @@ const code = [
 	'];',
 	'',
 	`export default ${varName};`,
+	// Trailing blank so the pasted file ends in a line break, as ESLint wants.
+	'',
 ].join('\n');
 
 // Render it as source, ready to copy into src/components/lyrics.
@@ -135,6 +137,36 @@ Object.assign(pre.style, {
 	whiteSpace: 'pre',
 });
 
+// Copy Button
+const copyButton = document.createElement('button');
+copyButton.textContent = 'Copy';
+Object.assign(copyButton.style, {
+	background: '#000',
+	border: 'none',
+	borderRadius: '4px',
+	color: '#fff',
+	cursor: 'pointer',
+	fontFamily: 'sans-serif',
+	fontSize: '14px',
+	padding: '8px 16px',
+	position: 'fixed',
+	right: '20px',
+	top: '20px',
+});
+copyButton.addEventListener('click', () => {
+	navigator.clipboard.writeText(code).then(
+		() => {
+			copyButton.textContent = 'Copied';
+			setTimeout(() => {
+				copyButton.textContent = 'Copy';
+			}, 1500);
+		},
+		() => {
+			copyButton.textContent = 'Copy failed';
+		},
+	);
+});
+
 document.body.style.background = '#fff';
 document.body.style.margin = '0';
-document.body.replaceChildren(pre);
+document.body.replaceChildren(pre, copyButton);
