@@ -137,15 +137,14 @@ Object.assign(pre.style, {
 	whiteSpace: 'pre',
 });
 
-// Copy Button
-const copyButton = document.createElement('button');
-copyButton.textContent = 'Copy';
-Object.assign(copyButton.style, {
+// Status banner for the copy below, which reports whether the clipboard write
+// landed - if it didn't, the rendered text is still there to select by hand.
+const status = document.createElement('div');
+status.textContent = 'Copying...';
+Object.assign(status.style, {
 	background: '#000',
-	border: 'none',
 	borderRadius: '4px',
 	color: '#fff',
-	cursor: 'pointer',
 	fontFamily: 'sans-serif',
 	fontSize: '14px',
 	padding: '8px 16px',
@@ -153,20 +152,19 @@ Object.assign(copyButton.style, {
 	right: '20px',
 	top: '20px',
 });
-copyButton.addEventListener('click', () => {
-	navigator.clipboard.writeText(code).then(
-		() => {
-			copyButton.textContent = 'Copied';
-			setTimeout(() => {
-				copyButton.textContent = 'Copy';
-			}, 1500);
-		},
-		() => {
-			copyButton.textContent = 'Copy failed';
-		},
-	);
-});
 
 document.body.style.background = '#fff';
 document.body.style.margin = '0';
-document.body.replaceChildren(pre, copyButton);
+document.body.replaceChildren(pre, status);
+
+// Copy on run. Hand-selecting the text drops the final newline, because
+// browsers leave a <pre>'s trailing line break out of the selection.
+navigator.clipboard.writeText(code).then(
+	() => {
+		status.textContent = 'Copied to clipboard';
+	},
+	() => {
+		// Usually means the page wasn't focused (e.g. run with DevTools focused).
+		status.textContent = 'Copy failed - click the page and re-run';
+	},
+);
