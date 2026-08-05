@@ -13,7 +13,7 @@ export default tseslint.config(
 	{
 		// Only application source is linted; build/tooling config files are not.
 		ignores: [
-			'docs',
+			'scripts/dist',
 			'dist',
 			'node_modules',
 			'jest-coverage',
@@ -30,6 +30,17 @@ export default tseslint.config(
 	importPlugin.flatConfigs.typescript,
 	promise.configs['flat/recommended'],
 	prettierRecommended,
+	{
+		// Browser snippets, run as bookmarklets rather than bundled with the app.
+		files: ['scripts/*.js'],
+		languageOptions: {
+			globals: {
+				NodeFilter: 'readonly',
+				document: 'readonly',
+				navigator: 'readonly',
+			},
+		},
+	},
 	{
 		files: ['src/**/*.{js,ts,tsx}'],
 		languageOptions: {

@@ -9,6 +9,7 @@
 		"open:src": "babel-node tools/srcServer.js",
 		"build:html": "babel-node tools/buildHtml.js",
 		"build:dev": "webpack --config ./webpack.config.dev.js",
+		"build:bookmarklets": "babel-node tools/buildBookmarklets.js",
 		"build:prod": "webpack --config ./webpack.config.prod.js",
 		"lint": "eslint src/",
 		"bounce": "rm -rf node_modules && yarn install",

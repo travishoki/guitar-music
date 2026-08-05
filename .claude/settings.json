@@ -5,14 +5,17 @@
       "Bash(yarn -v)",
       "Bash(yarn jest *)",
       "Bash(yarn lint *)",
-      "Bash(node --check docs/ultimate-guitar-print.js)",
+      "Bash(node --check scripts/ultimate-guitar-print.js)",
       "Bash(python3 -)",
-      "Bash(node --check docs/ultimate-guitar-lyrics.js)",
+      "Bash(node --check scripts/ultimate-guitar-lyrics.js)",
       "Bash(grep -v \"^$\")",
       "Bash(python3 -c \"import json;print\\(json.load\\(open\\('package.json'\\)\\).get\\('scripts'\\)\\)\")",
       "Bash(npx eslint *)",
       "Bash(npx prettier *)",
-      "Bash(python3 -c ' *)"
+      "Bash(python3 -c ' *)",
+      "Bash(npm run *)",
+      "Bash(git mv *)",
+      "Bash(node -e \"console.log\\('globals', require\\('globals/package.json'\\).version\\)\")"
     ]
   }
 }

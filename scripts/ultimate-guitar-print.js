@@ -1,4 +1,4 @@
-const FONT_SIZE = '16px'
+const FONT_SIZE = '16px';
 const PAD = 0.5 * 96;
 
 // Every Ultimate Guitar class name lives here, so a site-side rename only has
@@ -63,15 +63,16 @@ if (keep) document.body.replaceChildren(keep.cloneNode(true));
 });
 
 // Check Author Line
-const elAuthorLine = document.querySelector(UG.authorLine)
-if (elAuthorLine && elAuthorLine.textContent.includes('Author Unregistered.')) 	elAuthorLine.remove();
+const elAuthorLine = document.querySelector(UG.authorLine);
+if (elAuthorLine && elAuthorLine.textContent.includes('Author Unregistered.'))
+	elAuthorLine.remove();
 
 // Bump Font Size
-const elContent = document.querySelector(UG.content)
+const elContent = document.querySelector(UG.content);
 if (elContent) {
-    elContent.style.clear = 'both';
-    elContent.style.display = 'block';
-    elContent.style.paddingTop = '0';
+	elContent.style.clear = 'both';
+	elContent.style.display = 'block';
+	elContent.style.paddingTop = '0';
 }
 
 // Inner wrapper has inline font-size that overrides the parent
@@ -86,12 +87,12 @@ document.querySelectorAll(UG.chordDiagram).forEach((rzayq) => {
 // Cleanup Chords Section
 document.querySelectorAll(UG.chordDiagram).forEach((el) => el.remove());
 document.querySelectorAll(UG.chordCard).forEach((el) => {
-    el.style.margin = '0 20px 20px 0';
-    el.style.padding = '0px';
+	el.style.margin = '0 20px 20px 0';
+	el.style.padding = '0px';
 });
-const elChordInnerContainer = document.querySelector(UG.chordInnerContainer)
+const elChordInnerContainer = document.querySelector(UG.chordInnerContainer);
 if (elChordInnerContainer) elChordInnerContainer.style.margin = '0';
-const elChordSection = document.querySelector(UG.chordSection)
+const elChordSection = document.querySelector(UG.chordSection);
 if (elChordSection) elChordSection.style.paddingRight = '0';
 
 // Style top section
@@ -105,10 +106,10 @@ const sectionHeadings = [
 	'[Outro]',
 	'[Verse]',
 	'[Chorus]',
-    '[Pre Chorus]',
+	'[Pre Chorus]',
 	'[Pre-Chorus]',
-    '[Final Chorus]',
-    '[Final-Chorus]',
+	'[Final Chorus]',
+	'[Final-Chorus]',
 	'[Bridge]',
 	'[Verse 1]',
 	'[Verse 2]',
@@ -140,7 +141,9 @@ const sectionHeadings = [
 
 		while ((match = re.exec(text))) {
 			if (match.index > last) {
-				frag.appendChild(document.createTextNode(text.slice(last, match.index)));
+				frag.appendChild(
+					document.createTextNode(text.slice(last, match.index)),
+				);
 			}
 
 			const span = document.createElement('span');
@@ -170,8 +173,8 @@ const sectionHeadings = [
 		if (!container) return;
 
 		// Heading spans at ANY depth, in document order.
-		const headings = Array.from(container.querySelectorAll('span')).filter((el) =>
-			sectionHeadings.includes(el.textContent.trim()),
+		const headings = Array.from(container.querySelectorAll('span')).filter(
+			(el) => sectionHeadings.includes(el.textContent.trim()),
 		);
 		if (headings.length === 0) return;
 
@@ -217,8 +220,8 @@ const sectionHeadings = [
 		if (!container) return;
 
 		// Heading spans at ANY depth, in document order.
-		const headings = Array.from(container.querySelectorAll('span')).filter((el) =>
-			sectionHeadings.includes(el.textContent.trim()),
+		const headings = Array.from(container.querySelectorAll('span')).filter(
+			(el) => sectionHeadings.includes(el.textContent.trim()),
 		);
 
 		headings.forEach((heading, i) => {
@@ -263,10 +266,10 @@ const sectionHeadings = [
 (() => {
 	const sections = document.querySelectorAll(UG.leadSection);
 	if (sections.length < 2) {
-        sections[0].style.margin = '0px';
-        sections[0].style.paddingBottom = '0px';
-        return
-    };
+		sections[0].style.margin = '0px';
+		sections[0].style.paddingBottom = '0px';
+		return;
+	}
 
 	const [first, second] = sections;
 	const parent = first.parentNode;
@@ -282,8 +285,8 @@ const sectionHeadings = [
 	parent.insertBefore(row, first);
 	[first, second].forEach((section) => {
 		section.style.width = '50%';
-		section.style.paddingBottom = '0px';        
-		section.style.margin = '0px';        
+		section.style.paddingBottom = '0px';
+		section.style.margin = '0px';
 		section.style.boxSizing = 'border-box';
 		row.appendChild(section);
 	});
@@ -327,7 +330,8 @@ const sectionHeadings = [
 	// strumming paired with it).
 	const leadBlocks = [
 		document.querySelector(UG.songHeader),
-		document.querySelector('.print-lead-sections') || document.querySelector(UG.chordSection),
+		document.querySelector('.print-lead-sections') ||
+			document.querySelector(UG.chordSection),
 	].filter(Boolean);
 
 	// The monospace tab blocks: the pre's children (title text + section divs).
@@ -385,7 +389,8 @@ const sectionHeadings = [
 		flow.appendChild(block);
 
 		const overflowed = page.scrollHeight > page.clientHeight;
-		const pageHasOther = page.childNodes.length > 1 || flow.childNodes.length > 1;
+		const pageHasOther =
+			page.childNodes.length > 1 || flow.childNodes.length > 1;
 		if (overflowed && pageHasOther) {
 			page = makePage();
 			flow = makeFlow();
@@ -396,8 +401,12 @@ const sectionHeadings = [
 
 	// Page numbers — bottom right, outside the content flow.
 	const songTitle =
-		document.querySelector('h1')?.textContent.split('\n')[0].trim().replace(/\s*\bchords\b\s*/i, ' ').trim() ??
-		'';
+		document
+			.querySelector('h1')
+			?.textContent.split('\n')[0]
+			.trim()
+			.replace(/\s*\bchords\b\s*/i, ' ')
+			.trim() ?? '';
 	const pageEls = pages.querySelectorAll('.print-page');
 	const pageTotal = pageEls.length;
 	pageEls.forEach((page, i) => {

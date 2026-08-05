@@ -18,7 +18,8 @@ const CHORD_MARK = '\u0000';
 const CHORD_RESIDUE = /^[\s*]*(?:-[a-z]+[\s*]*)*$/i;
 
 // The <h1> disappears with the rest of the page, so read the title first.
-const songTitle = document.querySelector('h1')?.textContent.split('\n')[0].trim() ?? '';
+const songTitle =
+	document.querySelector('h1')?.textContent.split('\n')[0].trim() ?? '';
 
 // "Baby Beluga Chords by Raffi" -> "BabyBeluga". An all-caps heading gets
 // lower-cased first; a mixed-case one keeps its word interiors so acronyms
@@ -63,14 +64,16 @@ if (tab) {
 // leading "Label: value" lines along with any blanks around them. Section
 // headings start with "[", so they can't be swallowed by this.
 const HEADER_LINE = /^[A-Za-z][A-Za-z ]{0,20}:\s*\S/;
-while (lines.length && (lines[0] === '' || HEADER_LINE.test(lines[0]))) lines.shift();
+while (lines.length && (lines[0] === '' || HEADER_LINE.test(lines[0])))
+	lines.shift();
 
 // Trim trailing blanks, plus the stray "X" (a close button) UG leaves behind at
 // the end of the tab.
 const TRAILING_NOISE = /^[Xx]$/;
 while (
 	lines.length &&
-	(lines[lines.length - 1] === '' || TRAILING_NOISE.test(lines[lines.length - 1]))
+	(lines[lines.length - 1] === '' ||
+		TRAILING_NOISE.test(lines[lines.length - 1]))
 ) {
 	lines.pop();
 }
@@ -159,12 +162,13 @@ document.body.replaceChildren(pre, status);
 
 // Copy on run. Hand-selecting the text drops the final newline, because
 // browsers leave a <pre>'s trailing line break out of the selection.
-navigator.clipboard.writeText(code).then(
-	() => {
+navigator.clipboard
+	.writeText(code)
+	.then(() => {
 		status.textContent = 'Copied to clipboard';
-	},
-	() => {
+		return true;
+	})
+	.catch(() => {
 		// Usually means the page wasn't focused (e.g. run with DevTools focused).
 		status.textContent = 'Copy failed - click the page and re-run';
-	},
-);
+	});
