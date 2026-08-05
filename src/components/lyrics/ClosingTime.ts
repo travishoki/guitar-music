@@ -1,4 +1,4 @@
-const ClosingTimeChords = [
+const ClosingTime = [
 	'[Verse 1]',
 	'Closing time,',
 	'Open all the doors',
@@ -55,4 +55,4 @@ const ClosingTimeChords = [
 	"comes from some other beginning's end",
 ];
 
-export default ClosingTimeChords;
+export default ClosingTime;

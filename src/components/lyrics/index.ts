@@ -5,7 +5,7 @@ import BackHome from './BackHome';
 import BlowinInTheWind from './BlowinInTheWind';
 import ButterflyKisses from './ButterflyKisses';
 // - C -
-import ClosingTimeChords from './ClosingTimeChords';
+import ClosingTime from './ClosingTime';
 import CountryRoads from './CountryRoads';
 // - F -
 import ForeverAndEverAmen from './ForeverAndEverAmen';
@@ -65,7 +65,7 @@ export default {
 	BlowinInTheWind,
 	ButterflyKisses,
 	// - C -
-	ClosingTimeChords,
+	ClosingTime,
 	CountryRoads,
 	// - F -
 	ForeverAndEverAmen,

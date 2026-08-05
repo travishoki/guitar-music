@@ -53,7 +53,7 @@ export const SongList: SongType[] = [
 		artist: 'Semisonic',
 		genres: [ERAS.NINETIES],
 		link: 'https://tabs.ultimate-guitar.com/tab/semisonic/closing-time-chords-1743417',
-		lyrics: LYRIC_LIST.ClosingTimeChords,
+		lyrics: LYRIC_LIST.ClosingTime,
 		title: 'Closing Time',
 	},
 	{
