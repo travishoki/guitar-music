@@ -10,8 +10,12 @@ const UG = {
 
 // Chord spans get marked instead of removed, so that once the tab is flattened
 // to text a chord-only line can be dropped outright while a line that was
-// ALREADY blank survives as a real section break.
+// ALREADY blank survives as a real section break. Only the chord NAME lives in
+// the span though - the strum marker ("Cadd9*") and any playing note
+// ("C -once", "G -stop") sit outside it as plain text, so a chord line comes
+// back not as empty but as that leftover residue.
 const CHORD_MARK = '\u0000';
+const CHORD_RESIDUE = /^[\s*]*(?:-[a-z]+[\s*]*)*$/i;
 
 // The <h1> disappears with the rest of the page, so read the title first.
 const songTitle = document.querySelector('h1')?.textContent.split('\n')[0].trim() ?? '';
@@ -47,8 +51,9 @@ if (tab) {
 	});
 
 	clone.textContent.split('\n').forEach((raw) => {
-		const text = raw.split(CHORD_MARK).join('').trim();
-		if (text === '' && raw.includes(CHORD_MARK)) return;
+		// Chord alignment leaves runs of spaces mid-line ("where we     go").
+		const text = raw.split(CHORD_MARK).join('').replace(/\s+/g, ' ').trim();
+		if (raw.includes(CHORD_MARK) && CHORD_RESIDUE.test(text)) return;
 		if (isTabLine(text)) return;
 		lines.push(text);
 	});
