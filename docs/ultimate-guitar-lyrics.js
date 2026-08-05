@@ -29,6 +29,13 @@ const varName =
 		.map((word) => word.charAt(0).toUpperCase() + word.slice(1))
 		.join('') || 'Lyrics';
 
+// Tab staves ("e|-10----------10----------|") are notation, not lyrics. Matched
+// either by the leading string name or by being dash-dominant, so an unlabelled
+// stave still counts.
+const isTabLine = (line) =>
+	/^[eEaAdDgGbB][#b]?\s*\|/.test(line) ||
+	(line.includes('|') && (line.match(/-/g) || []).length >= 4);
+
 // Flatten the tab to one string per line.
 const lines = [];
 const tab = document.querySelector(UG.tab);
@@ -42,6 +49,7 @@ if (tab) {
 	clone.textContent.split('\n').forEach((raw) => {
 		const text = raw.split(CHORD_MARK).join('').trim();
 		if (text === '' && raw.includes(CHORD_MARK)) return;
+		if (isTabLine(text)) return;
 		lines.push(text);
 	});
 }

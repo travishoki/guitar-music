@@ -106,6 +106,7 @@ const sectionHeadings = [
 	'[Verse]',
 	'[Chorus]',
     '[Pre-Chorus]',
+    '[Final Chorus]',
 	'[Bridge]',
 	'[Verse 1]',
 	'[Verse 2]',
