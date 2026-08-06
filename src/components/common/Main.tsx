@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Routes, Route } from 'react-router-dom';
 
+import ChordsPage from '../../routes/chords/ChordsPage';
 import HomePage from '../../routes/home/HomePage';
 import NotFoundPage from '../../routes/notFound/NotFoundPage';
 import SongPage from '../../routes/song/SongPage';
@@ -30,6 +31,7 @@ const Main = ({
 				path="/"
 			/>
 			<Route element={<SongPage />} path="/song/:title" />
+			<Route element={<ChordsPage />} path="/chords" />
 			<Route element={<NotFoundPage />} path="*" />
 		</Routes>
 	</main>

@@ -3,11 +3,12 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 
 import BackButton from './BackButton/BackButton';
+import ChordsButton from './ChordsButton/ChordsButton';
 import ScrollToTopButton from './ScrollToTopButton/ScrollToTopButton';
 import TabsButton from './TabsButton/TabsButton';
 import { UltimateGuitarPlaylist } from './UltimateGuitarPlaylist/UltimateGuitarPlaylist';
 
-const Footer = () => {
+const Footer = ({ isGuitarMode }: FooterTypes) => {
 	const location = useLocation();
 
 	const isRootPath = location.pathname === '/';
@@ -19,6 +20,7 @@ const Footer = () => {
 				<div style={centerSlotStyle}>
 					<TabsButton />
 					<UltimateGuitarPlaylist />
+					{isGuitarMode && <ChordsButton />}
 				</div>
 				<div style={rightSlotStyle}>
 					<ScrollToTopButton />
@@ -26,6 +28,10 @@ const Footer = () => {
 			</div>
 		</footer>
 	);
+};
+
+type FooterTypes = {
+	isGuitarMode: boolean;
 };
 
 const footerStyle: React.CSSProperties = {

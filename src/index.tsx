@@ -72,7 +72,7 @@ const App = () => {
 				onToggleIsDarkMode={onToggleIsDarkMode}
 				onToggleIsGuitarMode={onToggleIsGuitarMode}
 			/>
-			<Footer />
+			<Footer isGuitarMode={isGuitarMode} />
 			<Toaster
 				containerStyle={{ top: 'calc(var(--header-height) + 10px)' }}
 				position="top-center"
