@@ -1,7 +1,4 @@
-/*
-To build:
-run yarn build:bookmarklets
-*/
+// To build, run: yarn build:bookmarklets
 
 // Tab staves ("e|-10----------10----------|") are notation, not lyrics. Matched
 // either by the leading string name or by being dash-dominant, so an unlabelled

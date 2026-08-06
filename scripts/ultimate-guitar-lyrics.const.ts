@@ -1,7 +1,4 @@
-/*
-To build:
-run yarn build:bookmarklets
-*/
+// To build, run: yarn build:bookmarklets
 
 // Chord spans get marked instead of removed, so that once the tab is flattened
 // to text a chord-only line can be dropped outright while a line that was

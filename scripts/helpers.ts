@@ -1,7 +1,4 @@
-/*
-To build:
-run yarn build:bookmarklets
-*/
+// To build, run: yarn build:bookmarklets
 
 // "Back Home Chords by Andy Grammer" -> "Back Home by Andy Grammer". Both
 // scripts read the <h1> before replacing the body, and neither wants the

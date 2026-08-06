@@ -1,7 +1,4 @@
-/*
-To build:
-run yarn build:bookmarklets
-*/
+// To build, run: yarn build:bookmarklets
 
 // Every Ultimate Guitar class name lives here, so a site-side rename only has
 // to be fixed in one place.
