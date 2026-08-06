@@ -1,5 +1,7 @@
 import React from 'react';
 
+import ChordCard from './ChordCard/ChordCard';
+
 // Glob every chord image at build time so new files in the folder show up
 // automatically without needing to be imported one by one.
 const chordContext = require.context('../../images/chords', false, /\.png$/);
@@ -19,10 +21,7 @@ const chords = chordContext
 const ChordsPage = () => (
 	<div style={gridStyle}>
 		{chords.map((chord) => (
-			<div key={chord.title} style={cardStyle}>
-				<span style={titleStyle}>{chord.title}</span>
-				<img alt={chord.title} src={chord.src} style={imageStyle} />
-			</div>
+			<ChordCard key={chord.title} src={chord.src} title={chord.title} />
 		))}
 	</div>
 );
@@ -32,27 +31,6 @@ const gridStyle: React.CSSProperties = {
 	gap: 16,
 	gridTemplateColumns: 'repeat(auto-fill, minmax(120px, 1fr))',
 	padding: 16,
-};
-
-const cardStyle: React.CSSProperties = {
-	alignItems: 'center',
-	backgroundColor: '#ffffff',
-	borderRadius: 8,
-	display: 'flex',
-	flexDirection: 'column',
-	padding: 8,
-};
-
-const imageStyle: React.CSSProperties = {
-	display: 'block',
-	height: 'auto',
-	maxWidth: '100%',
-};
-
-const titleStyle: React.CSSProperties = {
-	color: '#000000',
-	fontSize: 24,
-	fontWeight: 700,
 };
 
 export default ChordsPage;
