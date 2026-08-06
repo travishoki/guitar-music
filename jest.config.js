@@ -2,6 +2,14 @@ export default {
 	collectCoverage: true,
 	collectCoverageFrom: [
 		'src/**/*.{js,ts}',
+		'scripts/**/*.{js,ts}',
+		// Built bundles, plus the entry scripts themselves - those run top to
+		// bottom against a live page, so there is no unit to import.
+		'!scripts/dist/**',
+		'!scripts/ultimate-guitar-lyrics.ts',
+		'!scripts/ultimate-guitar-print.ts',
+		'!scripts/const.js',
+		'!scripts/**/*.const.ts',
 		'!src/**/*.d.ts',
 		'!src/**/const.ts',
 		'!src/**/data.ts',
