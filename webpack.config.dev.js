@@ -85,7 +85,7 @@ export default {
 					},
 				],
 			},
-			{ test: /\.(jpg|png)$/, use: ['file'] },
+			{ test: /\.(jpg|png)$/, type: 'asset/resource' },
 			{
 				test: /\.m?js/,
 				type: 'javascript/auto',
