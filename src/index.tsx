@@ -14,6 +14,11 @@ const App = () => {
 	const [isdarkMode, setIsdarkMode] = useState(true);
 	const [isGuitarMode, setIsGuitarMode] = useState(false);
 	const [includesBarChord, setIncludesBarChord] = useState(true);
+	const [isNavOpen, setIsNavOpen] = useState(true);
+
+	const onToggleNav = () => {
+		setIsNavOpen(!isNavOpen);
+	};
 
 	const onToggleIsDarkMode = () => {
 		setIsdarkMode(!isdarkMode);
@@ -44,9 +49,13 @@ const App = () => {
 		}
 	}, [isdarkMode]);
 
+	useEffect(() => {
+		document.body.classList.toggle('nav-collapsed', !isNavOpen);
+	}, [isNavOpen]);
+
 	return (
 		<div className="max-container" id="content">
-			<Header />
+			<Header isNavOpen={isNavOpen} onToggleNav={onToggleNav} />
 			<Main
 				includesBarChord={includesBarChord}
 				isGuitarMode={isGuitarMode}
