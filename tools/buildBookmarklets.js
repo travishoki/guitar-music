@@ -1,9 +1,6 @@
 // Bundles each entry in /scripts (following its imports of const.js and
-// helpers.ts) and writes two files per entry into scripts/dist:
-//
-//   <name>.js           - the bundle, paste-able into the browser console
-//   <name>-bookmarklet  - the same bundle as a `javascript:` URL, paste-able
-//                         into the URL field of a new bookmark
+// helpers.ts) and writes scripts/dist/<name>-bookmarklet: the bundle as a
+// `javascript:` URL, paste-able into the URL field of a new bookmark.
 import fs from 'fs';
 import path from 'path';
 import webpack from 'webpack';
@@ -81,7 +78,9 @@ const run = async () => {
 		const urlPath = path.join(OUTPUT_DIR, `${name}-bookmarklet`);
 
 		fs.writeFileSync(urlPath, url, 'utf8');
-		console.log(`${bundlePath} written (${code.length} chars)`.green);
+		// webpack has to write the bundle to disk for us to read it back, but the
+		// bookmarklet is the only thing worth keeping.
+		fs.unlinkSync(bundlePath);
 		console.log(`${urlPath} written (${url.length} chars)`.green);
 	});
 };

@@ -16,7 +16,8 @@
       "Bash(npm run *)",
       "Bash(git mv *)",
       "Bash(node -e \"console.log\\('globals', require\\('globals/package.json'\\).version\\)\")",
-      "Bash(npx jest *)"
+      "Bash(npx jest *)",
+      "Bash(node -e ' *)"
     ]
   }
 }
