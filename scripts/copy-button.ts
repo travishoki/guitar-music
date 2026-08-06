@@ -16,15 +16,18 @@ export const createCopyButton = (text: string) => {
 	Object.assign(element.style, {
 		background: '#000',
 		border: 'none',
-		borderRadius: '4px',
+		borderRadius: '6px',
 		color: '#fff',
 		cursor: 'pointer',
 		fontFamily: 'sans-serif',
-		fontSize: '14px',
-		padding: '8px 16px',
+		fontSize: '20px',
+		left: '50%',
+		padding: '16px 32px',
 		position: 'fixed',
-		right: '20px',
 		top: '20px',
+		// Centring on `left: 50%` alone would hang the button half a width to the
+		// right of centre.
+		transform: 'translateX(-50%)',
 	});
 
 	let revertTimer = 0;
