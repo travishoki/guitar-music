@@ -8,6 +8,15 @@ const CAPO_3 = 'Capo 3';
 const CAPO_5 = 'Capo 5';
 
 export const SongList: SongType[] = [
+	// - A -
+	{
+		artist: 'America',
+		eras: [ERAS.SEVENTIES],
+		genres: [GENRES.FOLK, GENRES.ROCK],
+		link: 'https://tabs.ultimate-guitar.com/tab/america/a-horse-with-no-name-chords-1042336',
+		lyrics: LYRIC_LIST.AHorseWithNoName,
+		title: 'A Horse With No Name',
+	},
 	// - B -
 	{
 		artist: 'Raffi Cavoukian',
@@ -135,6 +144,14 @@ export const SongList: SongType[] = [
 		title: "He's Got the Whole World in His Hands",
 	},
 	{
+		artist: 'Misc Traditional',
+		eras: [ERAS.EIGHTEEN_SEVENTIES],
+		genres: [GENRES.WESTERN, GENRES.FOLK],
+		link: 'https://tabs.ultimate-guitar.com/tab/misc-traditional/home-on-the-range-chords-1726287',
+		lyrics: LYRIC_LIST.HomeOnTheRange,
+		title: 'Home On The Range',
+	},
+	{
 		alteration: CAPO_5,
 		artist: 'Kenny Loggins',
 		barChords: true,
@@ -203,6 +220,15 @@ export const SongList: SongType[] = [
 	},
 	// - M -
 	{
+		artist: 'Rod Stewart',
+		barChords: true,
+		eras: [ERAS.SEVENTIES],
+		genres: [GENRES.ROCK, GENRES.FOLK],
+		link: 'https://tabs.ultimate-guitar.com/tab/rod-stewart/maggie-may-chords-85329',
+		lyrics: LYRIC_LIST.MaggieMay,
+		title: 'Maggie May',
+	},
+	{
 		artist: 'Adele',
 		eras: [ERAS.ZEROS],
 		genres: [],
@@ -247,6 +273,14 @@ export const SongList: SongType[] = [
 		title: 'Night Changes',
 	},
 	// - O -
+	{
+		artist: 'Misc Traditional',
+		eras: [ERAS.EIGHTEEN_FOURTIES],
+		genres: [GENRES.FOLK],
+		link: 'https://tabs.ultimate-guitar.com/tab/misc-traditional/oh-susanna-chords-1050965',
+		lyrics: LYRIC_LIST.OhSusanna,
+		title: 'Oh Susanna',
+	},
 	{
 		artist: 'The Original Caste',
 		barChords: true,

@@ -6,6 +6,8 @@ export const SEVENTIES = '70s';
 export const SIXTIES = '60s';
 export const FIFTIES = '50s';
 export const FOURTIES = '40s';
+export const EIGHTEEN_SEVENTIES = '1870s';
+export const EIGHTEEN_FOURTIES = '1840s';
 
 export const ERA_LIST = [
 	TENS,
@@ -16,4 +18,6 @@ export const ERA_LIST = [
 	SIXTIES,
 	FIFTIES,
 	FOURTIES,
+	EIGHTEEN_SEVENTIES,
+	EIGHTEEN_FOURTIES,
 ];

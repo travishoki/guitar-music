@@ -1,3 +1,5 @@
+// - A -
+import AHorseWithNoName from './AHorseWithNoName';
 // - B -
 import BabyBaluga from './BabyBaluga';
 import BabyILoveYourWay from './BabyILoveYourWay';
@@ -18,6 +20,7 @@ import GodBlessTheUSA from './GodBlessTheUSA';
 import GoodAsYou from './GoodAsYou';
 // - H -
 import HesGotTheWholeWorldInHisHands from './HesGotTheWholeWorldInHisHands';
+import HomeOnTheRange from './HomeOnTheRange';
 import HouseAtPoohCorner from './HouseAtPoohCorner';
 // - I -
 import ICantMakeYouLoveMe from './ICantMakeYouLoveMe';
@@ -29,6 +32,7 @@ import Jumper from './Jumper';
 import LeanOnMe from './LeanOnMe';
 import LeavingOnAJetPlane from './LeavingOnAJetPlane';
 // - M -
+import MaggieMay from './MaggieMay';
 import MakeYouFeelMyLove from './MakeYouFeelMyLove';
 import MichaelFinnegan from './MichaelFinnegan';
 import MichaelRowTheBoatAshore from './MichaelRowTheBoatAshore';
@@ -36,6 +40,7 @@ import Mockingbird from './Mockingbird';
 // - N -
 import NightChanges from './NightChanges';
 // - O -
+import OhSusanna from './OhSusanna';
 import OneTinSoldier from './OneTinSoldier';
 import OverTheRainbow from './OverTheRainbow';
 // - P -
@@ -65,6 +70,8 @@ import YouAreMySunshine from './YouAreMySunshine';
 import YoureStillTheOne from './YoureStillTheOne';
 
 export default {
+	// - A -
+	AHorseWithNoName,
 	// - B -
 	BabyBaluga,
 	BabyILoveYourWay,
@@ -85,6 +92,7 @@ export default {
 	GoodAsYou,
 	// - H -
 	HesGotTheWholeWorldInHisHands,
+	HomeOnTheRange,
 	HouseAtPoohCorner,
 	// - I -
 	ICantMakeYouLoveMe,
@@ -96,6 +104,7 @@ export default {
 	LeanOnMe,
 	LeavingOnAJetPlane,
 	// - M -
+	MaggieMay,
 	MakeYouFeelMyLove,
 	MichaelFinnegan,
 	MichaelRowTheBoatAshore,
@@ -103,6 +112,7 @@ export default {
 	// - N -
 	NightChanges,
 	// - O -
+	OhSusanna,
 	OneTinSoldier,
 	OverTheRainbow,
 	// - P -

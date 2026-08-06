@@ -6,6 +6,7 @@ export const R_AND_B = 'R&B';
 export const ROCK = 'Rock';
 export const SOUL = 'Soul';
 export const TRADITIONAL = 'Traditional';
+export const WESTERN = 'Western';
 
 export const GENRE_LIST = [
 	COUNTRY,
@@ -16,4 +17,5 @@ export const GENRE_LIST = [
 	ROCK,
 	SOUL,
 	TRADITIONAL,
+	WESTERN,
 ];
