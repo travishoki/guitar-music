@@ -1,3 +1,11 @@
+export type ChordType = {
+	flat: boolean;
+	major: boolean;
+	sharp: boolean;
+	title: string;
+	url: string;
+};
+
 export type SongType = {
 	alteration?: string;
 	artist: string;
