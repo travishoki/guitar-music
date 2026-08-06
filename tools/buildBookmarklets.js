@@ -16,13 +16,13 @@ const SOURCE_DIR = 'scripts';
 const OUTPUT_DIR = 'scripts/dist';
 
 // Entry points. const.js and helpers.ts are pulled in by import, not listed.
-const SCRIPTS = ['ultimate-guitar-lyrics.js', 'ultimate-guitar-print.js'];
+const SCRIPTS = ['ultimate-guitar-lyrics.ts', 'ultimate-guitar-print.ts'];
 
 const config = {
 	mode: 'production',
 	entry: Object.fromEntries(
 		SCRIPTS.map((file) => [
-			path.basename(file, '.js'),
+			path.basename(file, '.ts'),
 			path.resolve(SOURCE_DIR, file),
 		]),
 	),
@@ -74,7 +74,7 @@ const run = async () => {
 	await bundle();
 
 	SCRIPTS.forEach((file) => {
-		const name = path.basename(file, '.js');
+		const name = path.basename(file, '.ts');
 		const bundlePath = path.join(OUTPUT_DIR, `${name}.js`);
 		const code = fs.readFileSync(bundlePath, 'utf8');
 		const url = `javascript:${encodeURIComponent(code)}`;

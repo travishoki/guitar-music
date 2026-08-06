@@ -13,7 +13,7 @@
 		"build:prod": "webpack --config ./webpack.config.prod.js",
 		"lint": "eslint src/",
 		"bounce": "rm -rf node_modules && yarn install",
-		"ts-check": "npx tsc",
+		"ts-check": "npx tsc --noEmit",
 		"prepare": "husky",
 		"test": "jest",
 		"test:coverage": "jest --coverage",

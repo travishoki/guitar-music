@@ -4,13 +4,13 @@ run yarn build:bookmarklets
 */
 
 import { UG } from './const.js';
-import { getSongTitle } from './helpers.ts';
+import { getSongTitle } from './helpers';
 
 const FONT_SIZE = '16px';
 const PAD = 0.5 * 96;
 
 // Only keep the body
-const keep = document.querySelector(UG.mainContent);
+const keep = document.querySelector<HTMLElement>(UG.mainContent);
 if (keep) document.body.replaceChildren(keep.cloneNode(true));
 
 // Remove Elements
@@ -32,12 +32,12 @@ if (keep) document.body.replaceChildren(keep.cloneNode(true));
 });
 
 // Check Author Line
-const elAuthorLine = document.querySelector(UG.authorLine);
-if (elAuthorLine && elAuthorLine.textContent.includes('Author Unregistered.'))
+const elAuthorLine = document.querySelector<HTMLElement>(UG.authorLine);
+if (elAuthorLine?.textContent?.includes('Author Unregistered.'))
 	elAuthorLine.remove();
 
 // Bump Font Size
-const elContent = document.querySelector(UG.content);
+const elContent = document.querySelector<HTMLElement>(UG.content);
 if (elContent) {
 	elContent.style.clear = 'both';
 	elContent.style.display = 'block';
@@ -45,27 +45,31 @@ if (elContent) {
 }
 
 // Inner wrapper has inline font-size that overrides the parent
-const elInnerContent = document.querySelector(UG.tab);
+const elInnerContent = document.querySelector<HTMLElement>(UG.tab);
 if (elInnerContent) elInnerContent.style.fontSize = FONT_SIZE;
 
 // Remove all canvas elements inside each chord diagram
-document.querySelectorAll(UG.chordDiagram).forEach((rzayq) => {
+document.querySelectorAll<HTMLElement>(UG.chordDiagram).forEach((rzayq) => {
 	rzayq.querySelectorAll('canvas').forEach((canvas) => canvas.remove());
 });
 
 // Cleanup Chords Section
-document.querySelectorAll(UG.chordDiagram).forEach((el) => el.remove());
-document.querySelectorAll(UG.chordCard).forEach((el) => {
+document
+	.querySelectorAll<HTMLElement>(UG.chordDiagram)
+	.forEach((el) => el.remove());
+document.querySelectorAll<HTMLElement>(UG.chordCard).forEach((el) => {
 	el.style.margin = '0 20px 20px 0';
 	el.style.padding = '0px';
 });
-const elChordInnerContainer = document.querySelector(UG.chordInnerContainer);
+const elChordInnerContainer = document.querySelector<HTMLElement>(
+	UG.chordInnerContainer,
+);
 if (elChordInnerContainer) elChordInnerContainer.style.margin = '0';
-const elChordSection = document.querySelector(UG.chordSection);
+const elChordSection = document.querySelector<HTMLElement>(UG.chordSection);
 if (elChordSection) elChordSection.style.paddingRight = '0';
 
 // Style top section
-document.querySelectorAll(UG.topSection).forEach((el) => {
+document.querySelectorAll<HTMLElement>(UG.topSection).forEach((el) => {
 	el.style.padding = '0px';
 });
 
@@ -89,7 +93,7 @@ const sectionHeadings = [
 
 // Wrap section headers in spans
 (() => {
-	const escape = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+	const escape = (str: string) => str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 	const re = new RegExp(sectionHeadings.map(escape).join('|'), 'g');
 
 	// Collect matching text nodes first, since wrapping mutates the tree.
@@ -136,21 +140,21 @@ const sectionHeadings = [
 (() => {
 	// Key sections by their heading only, so EVERY repeat of a heading (e.g.
 	// [Chorus]) collapses - even if a later one has a minor content difference.
-	const normalize = (str) => str.replace(/\s+/g, ' ').trim();
+	const normalize = (str: string) => str.replace(/\s+/g, ' ').trim();
 
-	const dedupe = (container) => {
+	const dedupe = (container: HTMLElement | null) => {
 		if (!container) return;
 
 		// Heading spans at ANY depth, in document order.
 		const headings = Array.from(container.querySelectorAll('span')).filter(
-			(el) => sectionHeadings.includes(el.textContent.trim()),
+			(el) => sectionHeadings.includes((el.textContent ?? '').trim()),
 		);
 		if (headings.length === 0) return;
 
-		const seen = new Set();
+		const seen = new Set<string>();
 		headings.forEach((heading, i) => {
 			// Only collapse repeated [Chorus] sections.
-			if (heading.textContent.trim() !== '[Chorus]') return;
+			if ((heading.textContent ?? '').trim() !== '[Chorus]') return;
 
 			const next = headings[i + 1];
 
@@ -159,15 +163,17 @@ const sectionHeadings = [
 			range.setStartAfter(heading);
 			if (next) {
 				range.setEndBefore(next);
-			} else {
+			} else if (container.lastChild) {
 				range.setEndAfter(container.lastChild);
 			}
 
-			const key = normalize(heading.textContent);
+			const key = normalize(heading.textContent ?? '');
 
 			if (seen.has(key)) {
 				range.deleteContents();
-				const label = heading.textContent.trim().replace(/^\[|\]$/g, '');
+				const label = (heading.textContent ?? '')
+					.trim()
+					.replace(/^\[|\]$/g, '');
 				const repeat = document.createElement('span');
 				repeat.textContent = `Repeat ${label}`;
 				repeat.style.marginLeft = '10px';
@@ -179,18 +185,18 @@ const sectionHeadings = [
 		});
 	};
 
-	dedupe(document.querySelector(UG.tab));
-	dedupe(document.querySelector(UG.content));
+	dedupe(document.querySelector<HTMLElement>(UG.tab));
+	dedupe(document.querySelector<HTMLElement>(UG.content));
 })();
 
 // Wrap each section (heading + its content) in a bordered div
 (() => {
-	const wrapSections = (container) => {
+	const wrapSections = (container: HTMLElement | null) => {
 		if (!container) return;
 
 		// Heading spans at ANY depth, in document order.
 		const headings = Array.from(container.querySelectorAll('span')).filter(
-			(el) => sectionHeadings.includes(el.textContent.trim()),
+			(el) => sectionHeadings.includes((el.textContent ?? '').trim()),
 		);
 
 		headings.forEach((heading, i) => {
@@ -201,7 +207,7 @@ const sectionHeadings = [
 			range.setStartBefore(heading);
 			if (next) {
 				range.setEndBefore(next);
-			} else {
+			} else if (container.lastChild) {
 				range.setEndAfter(container.lastChild);
 			}
 
@@ -218,13 +224,13 @@ const sectionHeadings = [
 
 	// Only the inner <pre> holds the section text; wrapping a parent too would
 	// double-wrap the same headings and leave stray empty borders.
-	wrapSections(document.querySelector(UG.tab));
+	wrapSections(document.querySelector<HTMLElement>(UG.tab));
 })();
 
 // Drop the strumming section when there's no pattern for this song
 (() => {
 	const NO_PATTERN = 'There is no strumming pattern for this song yet.';
-	document.querySelectorAll(UG.strummingText).forEach((el) => {
+	document.querySelectorAll<HTMLElement>(UG.strummingText).forEach((el) => {
 		if (el.textContent.includes(NO_PATTERN)) {
 			el.closest(UG.strummingSection)?.remove();
 		}
@@ -233,15 +239,15 @@ const sectionHeadings = [
 
 // Put the two lead sections side by side, 50% each
 (() => {
-	const sections = document.querySelectorAll(UG.leadSection);
+	const sections = document.querySelectorAll<HTMLElement>(UG.leadSection);
 	if (sections.length < 2) {
 		sections[0].style.margin = '0px';
 		sections[0].style.paddingBottom = '0px';
 		return;
 	}
 
-	const [first, second] = sections;
-	const parent = first.parentNode;
+	const [first, second] = Array.from(sections);
+	const parent = first.parentElement as HTMLElement;
 
 	const row = document.createElement('div');
 	row.classList.add('print-lead-sections');
@@ -270,24 +276,26 @@ const sectionHeadings = [
 (() => {
 	// The two strumming articles already share a strumming-row
 	// parent, so just make that parent a flex row and size each article to half.
-	const container = document.querySelector(UG.strummingRow);
+	const container = document.querySelector<HTMLElement>(UG.strummingRow);
 	if (!container) return;
 
 	container.style.display = 'flex';
 	container.style.alignItems = 'flex-start';
 	container.style.width = '100%';
 
-	container.querySelectorAll(UG.strummingArticle).forEach((article) => {
-		article.style.flex = '1';
-		article.style.width = '50%';
-		article.style.boxSizing = 'border-box';
-	});
+	container
+		.querySelectorAll<HTMLElement>(UG.strummingArticle)
+		.forEach((article) => {
+			article.style.flex = '1';
+			article.style.width = '50%';
+			article.style.boxSizing = 'border-box';
+		});
 })();
 
 // Paginate the tab into 8.5 x 11 pages (print at 100% scale for a
 // 1:1 match). Blocks that would overflow a page get pushed to the next one.
 (() => {
-	const source = document.querySelector(UG.tab);
+	const source = document.querySelector<HTMLElement>(UG.tab);
 	if (!source) return;
 
 	// 8.5 x 11 inch at 96 CSS px/in, with a 0.5in inner margin.
@@ -298,9 +306,9 @@ const sectionHeadings = [
 	// then the Chords + Strumming row (or the lone Chords section if there's no
 	// strumming paired with it).
 	const leadBlocks = [
-		document.querySelector(UG.songHeader),
-		document.querySelector('.print-lead-sections') ||
-			document.querySelector(UG.chordSection),
+		document.querySelector<HTMLElement>(UG.songHeader),
+		document.querySelector<HTMLElement>('.print-lead-sections') ||
+			document.querySelector<HTMLElement>(UG.chordSection),
 	].filter(Boolean);
 
 	// The monospace tab blocks: the pre's children (title text + section divs).
@@ -370,7 +378,7 @@ const sectionHeadings = [
 
 	// Page numbers — bottom right, outside the content flow.
 	const songTitle = getSongTitle();
-	const pageEls = pages.querySelectorAll('.print-page');
+	const pageEls = pages.querySelectorAll<HTMLElement>('.print-page');
 	const pageTotal = pageEls.length;
 	pageEls.forEach((page, i) => {
 		const num = document.createElement('div');

@@ -4,7 +4,7 @@ run yarn build:bookmarklets
 */
 
 import { UG } from './const.js';
-import { getSongTitle } from './helpers.ts';
+import { getSongTitle } from './helpers';
 
 // Chord spans get marked instead of removed, so that once the tab is flattened
 // to text a chord-only line can be dropped outright while a line that was
@@ -33,21 +33,21 @@ const varName =
 // Tab staves ("e|-10----------10----------|") are notation, not lyrics. Matched
 // either by the leading string name or by being dash-dominant, so an unlabelled
 // stave still counts.
-const isTabLine = (line) =>
+const isTabLine = (line: string) =>
 	/^[eEaAdDgGbB][#b]?\s*\|/.test(line) ||
 	(line.includes('|') && (line.match(/-/g) || []).length >= 4);
 
 // Flatten the tab to one string per line.
-const lines = [];
+const lines: string[] = [];
 const tab = document.querySelector(UG.tab);
 
 if (tab) {
-	const clone = tab.cloneNode(true);
+	const clone = tab.cloneNode(true) as Element;
 	clone.querySelectorAll(UG.notes).forEach((el) => {
 		el.textContent = CHORD_MARK;
 	});
 
-	clone.textContent.split('\n').forEach((raw) => {
+	(clone.textContent ?? '').split('\n').forEach((raw) => {
 		// Chord alignment leaves runs of spaces mid-line ("where we     go").
 		const text = raw.split(CHORD_MARK).join('').replace(/\s+/g, ' ').trim();
 		if (raw.includes(CHORD_MARK) && CHORD_RESIDUE.test(text)) return;
@@ -75,7 +75,7 @@ while (
 }
 
 // Collapse runs of blank lines down to one, with no blanks on either end.
-const tidy = (list) => {
+const tidy = (list: string[]) => {
 	const out = list.filter((line, i) => line !== '' || list[i - 1] !== '');
 	while (out.length && out[0] === '') out.shift();
 	while (out.length && out[out.length - 1] === '') out.pop();
@@ -86,8 +86,8 @@ const tidy = (list) => {
 // (e.g. "[Intro]"). "Empty" means nothing but blanks between it and the next
 // heading - checking only the following line would delete every heading in a
 // tab that puts a blank line under its section labels.
-const isHeading = (line) => /^\[.*\]$/.test(line);
-const hasContent = (list, start) => {
+const isHeading = (line: string) => /^\[.*\]$/.test(line);
+const hasContent = (list: string[], start: number) => {
 	for (let i = start + 1; i < list.length; i += 1) {
 		if (isHeading(list[i])) return false;
 		if (list[i] !== '') return true;
@@ -103,7 +103,7 @@ const body = tidy(
 );
 
 // Match Prettier's singleQuote rule: whichever quote needs fewer escapes.
-const quote = (str) => {
+const quote = (str: string) => {
 	const escaped = str.replace(/\\/g, '\\\\');
 	const singles = (str.match(/'/g) || []).length;
 	const doubles = (str.match(/"/g) || []).length;
