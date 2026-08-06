@@ -43,7 +43,7 @@ import Sunshine from './Sunshine';
 // - T -
 import TearsInHeaven from './TearsInHeaven';
 import TheCatCameBack from './TheCatCameBack';
-import TheSoundsOfSilence from './TheSoundsOfSilence';
+import TheSoundOfSilence from './TheSoundOfSilence';
 import ThisLandIsYourLand from './ThisLandIsYourLand';
 import TieMeKangarooDownSport from './TieMeKangarooDownSport';
 import TurnTurnTurn from './TurnTurnTurn';
@@ -103,7 +103,7 @@ export default {
 	// - T -
 	TearsInHeaven,
 	TheCatCameBack,
-	TheSoundsOfSilence,
+	TheSoundOfSilence,
 	ThisLandIsYourLand,
 	TieMeKangarooDownSport,
 	TurnTurnTurn,

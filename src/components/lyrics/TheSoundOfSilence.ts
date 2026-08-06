@@ -1,4 +1,4 @@
-const TheSoundsOfSilence = [
+const TheSoundOfSilence = [
 	'[Verse 1]',
 	'Hello darkness, my old friend,',
 	"I've come to talk with you again,",
@@ -49,4 +49,4 @@ const TheSoundsOfSilence = [
 	"And whisper'd in the sounds of silence.",
 ];
 
-export default TheSoundsOfSilence;
+export default TheSoundOfSilence;

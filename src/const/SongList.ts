@@ -260,7 +260,7 @@ export const SongList: SongType[] = [
 		barChords: true,
 		genres: [ERAS.SIXTIES, GENRE.FOLK],
 		link: 'https://tabs.ultimate-guitar.com/s/simon_garfunkel/the_sound_of_silence_ver4_crd.htm',
-		lyrics: LYRIC_LIST.TheSoundsOfSilence,
+		lyrics: LYRIC_LIST.TheSoundOfSilence,
 		title: 'The Sounds of Silence',
 	},
 	{
