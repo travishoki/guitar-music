@@ -18,6 +18,7 @@ export const sectionHeadings = [
 	'[Final Chorus]',
 	'[Final-Chorus]',
 	'[Bridge]',
+	'[Hook]',
 	'[Verse 1]',
 	'[Verse 2]',
 	'[Verse 3]',
