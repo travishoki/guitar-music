@@ -23,5 +23,9 @@ export const CAPO_LINE =
 // the chord names inside it have been stripped out.
 export const BAR_LINE = /^[|\s]+$/;
 
+// Page furniture that lands in the tab text: a separator rule ("=", "----"),
+// and the "Set8" label off the font-size control.
+export const NOISE_LINE = /^(?:[-=_~]+|Set\s*\d+)$/i;
+
 // The stray "X" (a close button) UG leaves behind at the end of the tab.
 export const TRAILING_NOISE = /^[Xx]$/;

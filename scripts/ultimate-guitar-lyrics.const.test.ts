@@ -2,6 +2,7 @@ import {
 	BAR_LINE,
 	CAPO_LINE,
 	CHORD_RESIDUE,
+	NOISE_LINE,
 } from './ultimate-guitar-lyrics.const';
 
 // What CHORD_RESIDUE is tested against is a chord line with the chord NAMES
@@ -63,5 +64,16 @@ describe('BAR_LINE', () => {
 
 	test('should not match a lyric line', () => {
 		expect(BAR_LINE.test('Baby beluga | in the sea')).toEqual(false);
+	});
+});
+
+describe('NOISE_LINE', () => {
+	test('should match page furniture left in the tab text', () => {
+		expect(NOISE_LINE.test('=')).toEqual(true);
+		expect(NOISE_LINE.test('Set8')).toEqual(true);
+	});
+
+	test('should not match a lyric line', () => {
+		expect(NOISE_LINE.test('Settle down, build a home')).toEqual(false);
 	});
 });

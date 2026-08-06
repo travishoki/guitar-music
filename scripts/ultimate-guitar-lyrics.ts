@@ -8,6 +8,7 @@ import {
 	CHORD_MARK,
 	CHORD_RESIDUE,
 	HEADER_LINE,
+	NOISE_LINE,
 	TRAILING_NOISE,
 } from './ultimate-guitar-lyrics.const';
 import {
@@ -40,6 +41,7 @@ if (tab) {
 		if (isTabLine(text)) return;
 		if (CAPO_LINE.test(text)) return;
 		if (BAR_LINE.test(text)) return;
+		if (NOISE_LINE.test(text)) return;
 		lines.push(text);
 	});
 }
