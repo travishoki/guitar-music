@@ -1,5 +1,5 @@
 const ICantMakeYouLoveMe = [
-	'[Verse]',
+	'[Verse 1]',
 	'Turn down the lights,',
 	'turn down the bed',
 	'Turn down these voices inside my head',
@@ -15,7 +15,7 @@ const ICantMakeYouLoveMe = [
 	"But you won't, no, you won't",
 	"Cause I can't make you love me if you don't",
 	'',
-	'[Verse]',
+	'[Verse 2]',
 	"I'll close my eyes, then I won't see",
 	"The love you don't feel when you're holding me",
 	"Morning will come and I'll do what's right",
