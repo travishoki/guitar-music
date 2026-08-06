@@ -70,6 +70,16 @@ export const SongList: SongType[] = [
 		lyrics: LYRIC_LIST.CountryRoads,
 		title: 'Country Roads',
 	},
+	// - D -
+	{
+		artist: 'Journey',
+		barChords: true,
+		eras: [ERAS.EIGHTIES],
+		genres: [GENRES.ROCK],
+		link: 'https://tabs.ultimate-guitar.com/tab/journey/dont-stop-believin-chords-275297',
+		lyrics: LYRIC_LIST.DontStopBelievin,
+		title: "Don't Stop Believin'",
+	},
 	// - F -
 	{
 		artist: 'Randy Travis',
@@ -143,6 +153,15 @@ export const SongList: SongType[] = [
 		link: 'https://tabs.ultimate-guitar.com/tab/bonnie-raitt/i-cant-make-you-love-me-chords-611294',
 		lyrics: LYRIC_LIST.ICantMakeYouLoveMe,
 		title: 'I Cant Make You Love Me',
+	},
+	{
+		artist: 'Burl Ives',
+		barChords: true,
+		eras: [ERAS.FIFTIES],
+		genres: [GENRES.KIDS, GENRES.FOLK],
+		link: 'https://tabs.ultimate-guitar.com/tab/burl-ives/i-know-an-old-lady-who-swallowed-a-fly-chords-674886',
+		lyrics: LYRIC_LIST.IKnowAnOldLadyWhoSwallowedAFly,
+		title: 'I Know An Old Lady Who Swallowed A Fly',
 	},
 	{
 		artist: 'Tim McGraw',

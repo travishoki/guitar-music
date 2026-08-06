@@ -7,6 +7,8 @@ import ButterflyKisses from './ButterflyKisses';
 // - C -
 import ClosingTime from './ClosingTime';
 import CountryRoads from './CountryRoads';
+// - D -
+import DontStopBelievin from './DontStopBelievin';
 // - F -
 import ForeverAndEverAmen from './ForeverAndEverAmen';
 import FreeFallin from './FreeFallin';
@@ -19,6 +21,7 @@ import HesGotTheWholeWorldInHisHands from './HesGotTheWholeWorldInHisHands';
 import HouseAtPoohCorner from './HouseAtPoohCorner';
 // - I -
 import ICantMakeYouLoveMe from './ICantMakeYouLoveMe';
+import IKnowAnOldLadyWhoSwallowedAFly from './IKnowAnOldLadyWhoSwallowedAFly';
 import ItsYourLove from './ItsYourLove';
 // - J -
 import Jumper from './Jumper';
@@ -71,6 +74,8 @@ export default {
 	// - C -
 	ClosingTime,
 	CountryRoads,
+	// - D -
+	DontStopBelievin,
 	// - F -
 	ForeverAndEverAmen,
 	FreeFallin,
@@ -83,6 +88,7 @@ export default {
 	HouseAtPoohCorner,
 	// - I -
 	ICantMakeYouLoveMe,
+	IKnowAnOldLadyWhoSwallowedAFly,
 	ItsYourLove,
 	// - J -
 	Jumper,
