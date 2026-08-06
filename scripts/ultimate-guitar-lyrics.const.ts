@@ -19,5 +19,9 @@ export const HEADER_LINE = /^[A-Za-z][A-Za-z ]{0,20}:\s*\S/;
 export const CAPO_LINE =
 	/^capo\b[\s:]*(?:on\s+)?(?:\d+(?:st|nd|rd|th)?|[ivx]+)?(?:\s*fret)?$/i;
 
+// A row of bar lines, which is what a "| G | C | D |" chord chart leaves once
+// the chord names inside it have been stripped out.
+export const BAR_LINE = /^[|\s]+$/;
+
 // The stray "X" (a close button) UG leaves behind at the end of the tab.
 export const TRAILING_NOISE = /^[Xx]$/;

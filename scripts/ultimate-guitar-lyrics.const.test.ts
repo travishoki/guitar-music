@@ -1,4 +1,8 @@
-import { CAPO_LINE, CHORD_RESIDUE } from './ultimate-guitar-lyrics.const';
+import {
+	BAR_LINE,
+	CAPO_LINE,
+	CHORD_RESIDUE,
+} from './ultimate-guitar-lyrics.const';
 
 // What CHORD_RESIDUE is tested against is a chord line with the chord NAMES
 // already stripped out - so "(A) (D)" arrives as "() ()".
@@ -49,5 +53,15 @@ describe('CAPO_LINE', () => {
 
 	test('should not match a lyric that merely mentions a capo', () => {
 		expect(CAPO_LINE.test('I put a capo on 2')).toEqual(false);
+	});
+});
+
+describe('BAR_LINE', () => {
+	test('should match a row of bar lines', () => {
+		expect(BAR_LINE.test('| | | | |')).toEqual(true);
+	});
+
+	test('should not match a lyric line', () => {
+		expect(BAR_LINE.test('Baby beluga | in the sea')).toEqual(false);
 	});
 });

@@ -3,6 +3,7 @@
 import { UG } from './const';
 import { getSongTitle } from './helpers';
 import {
+	BAR_LINE,
 	CAPO_LINE,
 	CHORD_MARK,
 	CHORD_RESIDUE,
@@ -38,6 +39,7 @@ if (tab) {
 		if (raw.includes(CHORD_MARK) && CHORD_RESIDUE.test(text)) return;
 		if (isTabLine(text)) return;
 		if (CAPO_LINE.test(text)) return;
+		if (BAR_LINE.test(text)) return;
 		lines.push(text);
 	});
 }
