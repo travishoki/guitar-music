@@ -1,4 +1,4 @@
-const RightHereWaitingChords = [
+const RightHereWaiting = [
 	'[Verse 1]',
 	'Oceans apart, day after day',
 	'And I slowly go insane',
@@ -58,4 +58,4 @@ const RightHereWaitingChords = [
 	'(Waiting for you)',
 ];
 
-export default RightHereWaitingChords;
+export default RightHereWaiting;

@@ -227,7 +227,7 @@ export const SongList: SongType[] = [
 		barChords: true,
 		genres: [ERAS.EIGHTIES],
 		link: 'https://tabs.ultimate-guitar.com/tab/richard-marx/right-here-waiting-chords-93388',
-		lyrics: LYRIC_LIST.RightHereWaitingChords,
+		lyrics: LYRIC_LIST.RightHereWaiting,
 		title: 'Right Here Waiting',
 	},
 	// - S -

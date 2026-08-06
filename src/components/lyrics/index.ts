@@ -37,7 +37,7 @@ import OverTheRainbow from './OverTheRainbow';
 // - P -
 import PuffTheMagicDragon from './PuffTheMagicDragon';
 // - R -
-import RightHereWaitingChords from './RightHereWaitingChords';
+import RightHereWaiting from './RightHereWaiting';
 // - S -
 import Sunshine from './Sunshine';
 // - T -
@@ -97,7 +97,7 @@ export default {
 	// - P -
 	PuffTheMagicDragon,
 	// - R -
-	RightHereWaitingChords,
+	RightHereWaiting,
 	// - S -
 	Sunshine,
 	// - T -
