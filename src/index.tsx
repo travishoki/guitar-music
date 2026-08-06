@@ -36,6 +36,14 @@ const App = () => {
 	};
 
 	const onToggleIncludesBarChord = () => {
+		const toastMessage = includesBarChord
+			? '🚫 Hiding bar chord songs'
+			: '🎸 Showing bar chord songs';
+		const toastOption = {
+			duration: 1500,
+		};
+		toast(toastMessage, toastOption);
+
 		setIncludesBarChord(!includesBarChord);
 	};
 
