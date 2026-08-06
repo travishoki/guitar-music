@@ -1,4 +1,4 @@
-// To build, run: yarn build:bookmarklets
+/* To build, run: yarn build:bookmarklets */
 
 export const FONT_SIZE = '16px';
 

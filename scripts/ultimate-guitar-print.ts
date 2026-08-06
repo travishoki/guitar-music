@@ -1,4 +1,4 @@
-// To build, run: yarn build:bookmarklets
+/* To build, run: yarn build:bookmarklets */
 
 import { UG } from './const';
 import { getSongTitle } from './helpers';
