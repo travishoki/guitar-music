@@ -32,7 +32,7 @@ export default tseslint.config(
 	prettierRecommended,
 	{
 		// Browser snippets, run as bookmarklets rather than bundled with the app.
-		files: ['scripts/*.js'],
+		files: ['scripts/*.{js,ts}'],
 		languageOptions: {
 			globals: {
 				NodeFilter: 'readonly',

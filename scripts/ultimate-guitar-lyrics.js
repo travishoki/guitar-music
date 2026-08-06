@@ -1,12 +1,10 @@
-// Every Ultimate Guitar class name lives here, so a site-side rename only has
-// to be fixed in one place.
-const UG = {
-	// Page structure
-	tab: '.k_vI3.KLhHx',
+/*
+To build:
+run yarn build:bookmarklets
+*/
 
-	// Tabs
-	notes: '.eSJpP',
-};
+import { UG } from './const.js';
+import { getSongTitle } from './helpers.ts';
 
 // Chord spans get marked instead of removed, so that once the tab is flattened
 // to text a chord-only line can be dropped outright while a line that was
@@ -18,16 +16,14 @@ const CHORD_MARK = '\u0000';
 const CHORD_RESIDUE = /^[\s*]*(?:-[a-z]+[\s*]*)*$/i;
 
 // The <h1> disappears with the rest of the page, so read the title first.
-const songTitle =
-	document.querySelector('h1')?.textContent.split('\n')[0].trim() ?? '';
+const songTitle = getSongTitle();
 
-// "Baby Beluga Chords by Raffi" -> "BabyBeluga". An all-caps heading gets
-// lower-cased first; a mixed-case one keeps its word interiors so acronyms
-// (e.g. "God Bless The USA") survive.
+// "Baby Beluga by Raffi" -> "BabyBeluga". An all-caps heading gets lower-cased
+// first; a mixed-case one keeps its word interiors so acronyms (e.g. "God Bless
+// The USA") survive.
 const varName =
 	(/[a-z]/.test(songTitle) ? songTitle : songTitle.toLowerCase())
 		.replace(/\s+by\s+.*$/i, '')
-		.replace(/\s*\bchords\b\s*/i, ' ')
 		.replace(/[^a-zA-Z0-9 ]/g, '')
 		.trim()
 		.split(/\s+/)

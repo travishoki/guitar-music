@@ -1,44 +1,13 @@
+/*
+To build:
+run yarn build:bookmarklets
+*/
+
+import { UG } from './const.js';
+import { getSongTitle } from './helpers.ts';
+
 const FONT_SIZE = '16px';
 const PAD = 0.5 * 96;
-
-// Every Ultimate Guitar class name lives here, so a site-side rename only has
-// to be fixed in one place.
-const UG = {
-	// Page structure
-	mainContent: '.LLGvZ.BqjAv',
-	content: '.Y9v5o',
-	tab: '.k_vI3.KLhHx',
-	topSection: '.zRulg',
-	songHeader: '.zRulg.VIa44',
-	authorLine: '.relZm',
-
-	// Chords
-	chordSection: '.lnasI',
-	chordInnerContainer: '.lpqIc',
-	chordCard: '.FlgDy.pvu2n',
-	chordDiagram: '.RZayQ',
-
-	// Chords / Strumming lead sections
-	leadSection: '._5giwr',
-	strummingSection: '._5giwr.LyFB-',
-	strummingText: '.S6KHd',
-	strummingRow: '._61oxx',
-	strummingArticle: '.mXLvx',
-
-	// Chrome that gets removed outright
-	floatingControls: '.JxP4w',
-	floatingControlsSecondary: '.Vzz2Z',
-	comments: '._66LiL',
-	topMenu: '.NLKCx',
-	ugc: '.n04zq',
-	songModificationMenu: '._-27s-',
-	bottomControls: '.XkJho',
-	songStats: '._aGHQ',
-	authorContributors: '.Lf02O:nth-child(2)',
-	instrumentMenu: '.eU82V',
-	playStrumButton: '.ZoZpf',
-	strumEditButton: '.fqEMR',
-};
 
 // Only keep the body
 const keep = document.querySelector(UG.mainContent);
@@ -400,13 +369,7 @@ const sectionHeadings = [
 	});
 
 	// Page numbers — bottom right, outside the content flow.
-	const songTitle =
-		document
-			.querySelector('h1')
-			?.textContent.split('\n')[0]
-			.trim()
-			.replace(/\s*\bchords\b\s*/i, ' ')
-			.trim() ?? '';
+	const songTitle = getSongTitle();
 	const pageEls = pages.querySelectorAll('.print-page');
 	const pageTotal = pageEls.length;
 	pageEls.forEach((page, i) => {
