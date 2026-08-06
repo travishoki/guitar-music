@@ -8,7 +8,7 @@ export default {
 		'!scripts/dist/**',
 		'!scripts/ultimate-guitar-lyrics.ts',
 		'!scripts/ultimate-guitar-print.ts',
-		'!scripts/const.js',
+		'!scripts/const.ts',
 		'!scripts/**/*.const.ts',
 		'!src/**/*.d.ts',
 		'!src/**/const.ts',

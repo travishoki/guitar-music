@@ -10,3 +10,7 @@ export const getSongTitle = (): string =>
 		.trim()
 		.replace(/\s*\bchords\b\s*/i, ' ')
 		.trim() ?? '';
+
+// "[Verse]" + 2 -> "[Verse 2]", keeping whatever casing the tab used.
+export const numberVerseHeading = (heading: string, position: number) =>
+	heading.replace(/\]$/, ` ${position}]`);

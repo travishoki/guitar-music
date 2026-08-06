@@ -1,7 +1,7 @@
 /* To build, run: yarn build:bookmarklets */
 
-import { UG } from './const';
-import { getSongTitle } from './helpers';
+import { UG, VERSE_HEADING } from './const';
+import { getSongTitle, numberVerseHeading } from './helpers';
 import {
 	FONT_SIZE,
 	NO_PATTERN,
@@ -10,7 +10,11 @@ import {
 	PAGE_W,
 	sectionHeadings,
 } from './ultimate-guitar-print.const';
-import { escapeRegExp, normalize } from './ultimate-guitar-print.helpers';
+import {
+	escapeRegExp,
+	isSectionHeading,
+	normalize,
+} from './ultimate-guitar-print.helpers';
 
 // Only keep the body
 const keep = document.querySelector<HTMLElement>(UG.mainContent);
@@ -120,6 +124,23 @@ document.querySelectorAll<HTMLElement>(UG.topSection).forEach((el) => {
 	});
 })();
 
+// Number the [Verse] headings when a tab has more than one of them, so they
+// read [Verse 1], [Verse 2], ... Runs after the wrap step, which is what put
+// each heading in a span of its own.
+(() => {
+	const verses = Array.from(document.body.querySelectorAll('span')).filter(
+		(el) => VERSE_HEADING.test((el.textContent ?? '').trim()),
+	);
+	if (verses.length < 2) return;
+
+	verses.forEach((verse, i) => {
+		verse.textContent = numberVerseHeading(
+			(verse.textContent ?? '').trim(),
+			i + 1,
+		);
+	});
+})();
+
 // Collapse repeated sections: keep the heading, drop content that already appeared
 (() => {
 	// Key sections by their heading only, so EVERY repeat of a heading (e.g.
@@ -129,7 +150,7 @@ document.querySelectorAll<HTMLElement>(UG.topSection).forEach((el) => {
 
 		// Heading spans at ANY depth, in document order.
 		const headings = Array.from(container.querySelectorAll('span')).filter(
-			(el) => sectionHeadings.includes((el.textContent ?? '').trim()),
+			(el) => isSectionHeading((el.textContent ?? '').trim()),
 		);
 		if (headings.length === 0) return;
 
@@ -178,7 +199,7 @@ document.querySelectorAll<HTMLElement>(UG.topSection).forEach((el) => {
 
 		// Heading spans at ANY depth, in document order.
 		const headings = Array.from(container.querySelectorAll('span')).filter(
-			(el) => sectionHeadings.includes((el.textContent ?? '').trim()),
+			(el) => isSectionHeading((el.textContent ?? '').trim()),
 		);
 
 		headings.forEach((heading, i) => {

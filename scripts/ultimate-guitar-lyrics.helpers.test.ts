@@ -2,6 +2,7 @@ import {
 	hasContent,
 	isHeading,
 	isTabLine,
+	numberVerses,
 	quote,
 	tidy,
 	toVariableName,
@@ -167,5 +168,24 @@ describe('toVariableName', () => {
 
 	test('should fall back to "Lyrics" when nothing usable is left', () => {
 		expect(toVariableName('!!!')).toEqual('Lyrics');
+	});
+});
+
+describe('numberVerses', () => {
+	test('should number the verses when there is more than one', () => {
+		const list = ['[Verse]', 'a', '[Chorus]', 'b', '[Verse]', 'c'];
+
+		expect(numberVerses(list)).toEqual([
+			'[Verse 1]',
+			'a',
+			'[Chorus]',
+			'b',
+			'[Verse 2]',
+			'c',
+		]);
+	});
+
+	test('should leave a lone verse bare', () => {
+		expect(numberVerses(['[Verse]', 'a'])).toEqual(['[Verse]', 'a']);
 	});
 });

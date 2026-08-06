@@ -1,5 +1,8 @@
 /* To build, run: yarn build:bookmarklets */
 
+// A section heading of a bare "[Verse]", with no number after it.
+export const VERSE_HEADING = /^\[verse\]$/i;
+
 // Every Ultimate Guitar class name lives here, so a site-side rename only has
 // to be fixed in one place.
 export const UG = {

@@ -1,5 +1,8 @@
 /* To build, run: yarn build:bookmarklets */
 
+import { VERSE_HEADING } from './const';
+import { numberVerseHeading } from './helpers';
+
 // Tab staves ("e|-10----------10----------|") are notation, not lyrics. Matched
 // either by the leading string name or by being dash-dominant, so an unlabelled
 // stave still counts.
@@ -48,3 +51,17 @@ export const toVariableName = (title: string) =>
 		.split(/\s+/)
 		.map((word) => word.charAt(0).toUpperCase() + word.slice(1))
 		.join('') || 'Lyrics';
+
+// Tabs that split a song into several unnumbered "[Verse]" sections read better
+// as "[Verse 1]", "[Verse 2]", ... A lone verse is left alone.
+export const numberVerses = (list: string[]) => {
+	const isBareVerse = (line: string) => VERSE_HEADING.test(line);
+	if (list.filter(isBareVerse).length < 2) return list;
+
+	let position = 0;
+	return list.map((line) => {
+		if (!isBareVerse(line)) return line;
+		position += 1;
+		return numberVerseHeading(line, position);
+	});
+};

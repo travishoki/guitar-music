@@ -13,6 +13,7 @@ import {
 	hasContent,
 	isHeading,
 	isTabLine,
+	numberVerses,
 	quote,
 	tidy,
 	toVariableName,
@@ -56,11 +57,13 @@ while (
 
 // A section whose content was nothing but chords is left as a lone heading
 // (e.g. "[Intro]"), so drop those.
-const body = tidy(
-	tidy(lines)
-		.filter((line, i, list) => !isHeading(line) || hasContent(list, i))
-		// Close up a blank line sitting between a heading and its first line.
-		.filter((line, i, list) => line !== '' || !isHeading(list[i - 1])),
+const body = numberVerses(
+	tidy(
+		tidy(lines)
+			.filter((line, i, list) => !isHeading(line) || hasContent(list, i))
+			// Close up a blank line sitting between a heading and its first line.
+			.filter((line, i, list) => line !== '' || !isHeading(list[i - 1])),
+	),
 );
 
 const code = [

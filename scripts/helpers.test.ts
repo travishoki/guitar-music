@@ -1,4 +1,4 @@
-import { getSongTitle } from './helpers';
+import { getSongTitle, numberVerseHeading } from './helpers';
 
 // getSongTitle only reads document.querySelector('h1')?.textContent, so a stub
 // is enough - no need for a jsdom test environment.
@@ -53,5 +53,15 @@ describe('getSongTitle', () => {
 		setHeading(null);
 
 		expect(getSongTitle()).toEqual('');
+	});
+});
+
+describe('numberVerseHeading', () => {
+	test('should append the position inside the brackets', () => {
+		expect(numberVerseHeading('[Verse]', 2)).toEqual('[Verse 2]');
+	});
+
+	test('should keep the casing the tab used', () => {
+		expect(numberVerseHeading('[VERSE]', 1)).toEqual('[VERSE 1]');
 	});
 });

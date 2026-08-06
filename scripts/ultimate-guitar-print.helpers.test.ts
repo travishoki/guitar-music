@@ -1,4 +1,8 @@
-import { escapeRegExp, normalize } from './ultimate-guitar-print.helpers';
+import {
+	escapeRegExp,
+	isSectionHeading,
+	normalize,
+} from './ultimate-guitar-print.helpers';
 
 describe('escapeRegExp', () => {
 	test('should escape the brackets around a section heading', () => {
@@ -46,5 +50,15 @@ describe('normalize', () => {
 
 	test('should reduce an all-whitespace string to empty', () => {
 		expect(normalize('   ')).toEqual('');
+	});
+});
+
+describe('isSectionHeading', () => {
+	test('should match a numbered verse that is not in the list', () => {
+		expect(isSectionHeading('[Verse 9]')).toEqual(true);
+	});
+
+	test('should not match a lyric line', () => {
+		expect(isSectionHeading('Baby beluga')).toEqual(false);
 	});
 });

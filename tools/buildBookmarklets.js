@@ -1,4 +1,4 @@
-// Bundles each entry in /scripts (following its imports of const.js and
+// Bundles each entry in /scripts (following its imports of const.ts and
 // helpers.ts) and writes scripts/dist/<name>-bookmarklet: the bundle as a
 // `javascript:` URL, paste-able into the URL field of a new bookmark.
 import fs from 'fs';
@@ -12,7 +12,7 @@ import colors from 'colors';
 const SOURCE_DIR = 'scripts';
 const OUTPUT_DIR = 'scripts/dist';
 
-// Entry points. const.js and helpers.ts are pulled in by import, not listed.
+// Entry points. const.ts and helpers.ts are pulled in by import, not listed.
 const SCRIPTS = ['ultimate-guitar-lyrics.ts', 'ultimate-guitar-print.ts'];
 
 const config = {
