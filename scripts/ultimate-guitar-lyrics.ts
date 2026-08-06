@@ -83,7 +83,7 @@ const code = [
 	'',
 ].join('\n');
 
-// Render it as source, ready to copy into src/components/lyrics.
+// Render it as source, ready to copy into src/lyrics.
 const pre = document.createElement('pre');
 pre.textContent = code;
 Object.assign(pre.style, {

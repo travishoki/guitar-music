@@ -1,6 +1,6 @@
 import * as ERAS from './eras';
 import * as GENRES from './genres';
-import LYRIC_LIST from '../components/lyrics';
+import LYRIC_LIST from '../lyrics';
 import { SongType } from '../types';
 
 const CAPO_2 = 'Capo 2';
