@@ -1,5 +1,5 @@
 const GivingTree = [
-	'[Verse]',
+	'[Verse 1]',
 	'All the leaves on the giving tree have fallen',
 	'No shade to crawl in underneath',
 	"I've got scars from a pocket knife",
@@ -12,7 +12,7 @@ const GivingTree = [
 	'When all I wanted to be was your giving tree',
 	'Settle down, build a home, and make you happy?',
 	'',
-	'[Verse]',
+	'[Verse 2]',
 	'I lie in the dead of night and I wonder',
 	"Whose covers you're between",
 	"And it's sad laying in his bed",
