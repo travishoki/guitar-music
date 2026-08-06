@@ -1,4 +1,4 @@
-const TurnTurnTurnToEverythingThereIsASeason = [
+const TurnTurnTurn = [
 	'[CHORUS]',
 	'To everything,(turn, turn, turn)',
 	'there is a season;(turn, turn, turn)',
@@ -45,4 +45,4 @@ const TurnTurnTurnToEverythingThereIsASeason = [
 	"I swear it's not too late",
 ];
 
-export default TurnTurnTurnToEverythingThereIsASeason;
+export default TurnTurnTurn;
