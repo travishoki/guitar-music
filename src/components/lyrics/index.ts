@@ -44,6 +44,7 @@ import SittinOnTheDockOfTheBay from './SittinOnTheDockOfTheBay';
 import StandByMe from './StandByMe';
 import Sunshine from './Sunshine';
 // - T -
+import TakeItEasy from './TakeItEasy';
 import TearsInHeaven from './TearsInHeaven';
 import TheCatCameBack from './TheCatCameBack';
 import TheSoundOfSilence from './TheSoundOfSilence';
@@ -107,6 +108,7 @@ export default {
 	StandByMe,
 	Sunshine,
 	// - T -
+	TakeItEasy,
 	TearsInHeaven,
 	TheCatCameBack,
 	TheSoundOfSilence,

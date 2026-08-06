@@ -294,6 +294,14 @@ export const SongList: SongType[] = [
 	},
 	// - T -
 	{
+		artist: 'Eagles',
+		eras: [ERAS.SEVENTIES],
+		genres: [GENRES.ROCK],
+		link: 'https://tabs.ultimate-guitar.com/tab/eagles/take-it-easy-chords-14303',
+		lyrics: LYRIC_LIST.TakeItEasy,
+		title: 'Take It Easy',
+	},
+	{
 		artist: 'Eric Clapton',
 		barChords: true,
 		eras: [ERAS.NINETIES],
