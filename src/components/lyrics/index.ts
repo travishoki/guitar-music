@@ -39,6 +39,7 @@ import PuffTheMagicDragon from './PuffTheMagicDragon';
 // - R -
 import RightHereWaiting from './RightHereWaiting';
 // - S -
+import SittinOnTheDockOfTheBay from './SittinOnTheDockOfTheBay';
 import Sunshine from './Sunshine';
 // - T -
 import TearsInHeaven from './TearsInHeaven';
@@ -99,6 +100,7 @@ export default {
 	// - R -
 	RightHereWaiting,
 	// - S -
+	SittinOnTheDockOfTheBay,
 	Sunshine,
 	// - T -
 	TearsInHeaven,
