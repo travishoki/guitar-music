@@ -1,4 +1,4 @@
-/* global document */
+/* global document, sessionStorage */
 import React, { useEffect, useState } from 'react';
 
 import { createRoot } from 'react-dom/client';
@@ -11,8 +11,12 @@ import Main from './components/common/Main';
 import './styles/index.less';
 
 const App = () => {
-	const [isdarkMode, setIsdarkMode] = useState(true);
-	const [isGuitarMode, setIsGuitarMode] = useState(false);
+	const [isdarkMode, setIsdarkMode] = useState(
+		() => sessionStorage.getItem('isdarkMode') !== 'false',
+	);
+	const [isGuitarMode, setIsGuitarMode] = useState(
+		() => sessionStorage.getItem('isGuitarMode') === 'true',
+	);
 	const [includesBarChord, setIncludesBarChord] = useState(true);
 	const [isNavOpen, setIsNavOpen] = useState(true);
 
@@ -48,6 +52,8 @@ const App = () => {
 	};
 
 	useEffect(() => {
+		sessionStorage.setItem('isdarkMode', String(isdarkMode));
+
 		if (isdarkMode) {
 			document.body.classList.add('dark-mode');
 			document.body.classList.remove('light-mode');
@@ -56,6 +62,10 @@ const App = () => {
 			document.body.classList.remove('dark-mode');
 		}
 	}, [isdarkMode]);
+
+	useEffect(() => {
+		sessionStorage.setItem('isGuitarMode', String(isGuitarMode));
+	}, [isGuitarMode]);
 
 	useEffect(() => {
 		document.body.classList.toggle('nav-collapsed', !isNavOpen);
