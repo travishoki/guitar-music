@@ -3,11 +3,17 @@ To build:
 run yarn build:bookmarklets
 */
 
-import { UG } from './const.js';
+import { UG } from './const';
 import { getSongTitle } from './helpers';
-
-const FONT_SIZE = '16px';
-const PAD = 0.5 * 96;
+import {
+	FONT_SIZE,
+	NO_PATTERN,
+	PAD,
+	PAGE_H,
+	PAGE_W,
+	sectionHeadings,
+} from './ultimate-guitar-print.const';
+import { escapeRegExp, normalize } from './ultimate-guitar-print.helpers';
 
 // Only keep the body
 const keep = document.querySelector<HTMLElement>(UG.mainContent);
@@ -73,28 +79,9 @@ document.querySelectorAll<HTMLElement>(UG.topSection).forEach((el) => {
 	el.style.padding = '0px';
 });
 
-// Section headings, shared by the wrap + de-dupe steps below.
-const sectionHeadings = [
-	'[Intro]',
-	'[Outro]',
-	'[Verse]',
-	'[Chorus]',
-	'[Pre Chorus]',
-	'[Pre-Chorus]',
-	'[Final Chorus]',
-	'[Final-Chorus]',
-	'[Bridge]',
-	'[Verse 1]',
-	'[Verse 2]',
-	'[Verse 3]',
-	'[Verse 4]',
-	'[Verse 5]',
-];
-
 // Wrap section headers in spans
 (() => {
-	const escape = (str: string) => str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-	const re = new RegExp(sectionHeadings.map(escape).join('|'), 'g');
+	const re = new RegExp(sectionHeadings.map(escapeRegExp).join('|'), 'g');
 
 	// Collect matching text nodes first, since wrapping mutates the tree.
 	const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
@@ -140,8 +127,6 @@ const sectionHeadings = [
 (() => {
 	// Key sections by their heading only, so EVERY repeat of a heading (e.g.
 	// [Chorus]) collapses - even if a later one has a minor content difference.
-	const normalize = (str: string) => str.replace(/\s+/g, ' ').trim();
-
 	const dedupe = (container: HTMLElement | null) => {
 		if (!container) return;
 
@@ -229,7 +214,6 @@ const sectionHeadings = [
 
 // Drop the strumming section when there's no pattern for this song
 (() => {
-	const NO_PATTERN = 'There is no strumming pattern for this song yet.';
 	document.querySelectorAll<HTMLElement>(UG.strummingText).forEach((el) => {
 		if (el.textContent.includes(NO_PATTERN)) {
 			el.closest(UG.strummingSection)?.remove();
@@ -297,10 +281,6 @@ const sectionHeadings = [
 (() => {
 	const source = document.querySelector<HTMLElement>(UG.tab);
 	if (!source) return;
-
-	// 8.5 x 11 inch at 96 CSS px/in, with a 0.5in inner margin.
-	const PAGE_W = 8.5 * 96;
-	const PAGE_H = 11 * 96;
 
 	// HTML content that leads the first page, in order: the title/info header,
 	// then the Chords + Strumming row (or the lone Chords section if there's no
