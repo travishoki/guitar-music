@@ -1,5 +1,5 @@
 import * as ERAS from './eras';
-import * as GENRE from './genres';
+import * as GENRES from './genres';
 import LYRIC_LIST from '../components/lyrics';
 import { SongType } from '../types';
 
@@ -12,7 +12,8 @@ export const SongList: SongType[] = [
 	{
 		artist: 'Raffi Cavoukian',
 		barChords: true,
-		genres: [GENRE.KIDS, ERAS.EIGHTIES],
+		eras: [ERAS.EIGHTIES],
+		genres: [GENRES.KIDS],
 		link: 'https://tabs.ultimate-guitar.com/r/raffi/baby_beluga_crd.htm',
 		lyrics: LYRIC_LIST.BabyBaluga,
 		title: 'Baby Baluga',
@@ -20,21 +21,24 @@ export const SongList: SongType[] = [
 	{
 		artist: 'Peter Frampton',
 		barChords: true,
-		genres: [ERAS.NINETIES],
+		eras: [ERAS.NINETIES],
+		genres: [],
 		link: 'https://tabs.ultimate-guitar.com/p/peter_frampton/baby_i_love_your_way_crd.htm',
 		lyrics: LYRIC_LIST.BabyILoveYourWay,
 		title: 'Baby I Love Your Way',
 	},
 	{
 		artist: 'Andy Grammer',
-		genres: [ERAS.TENS],
+		eras: [ERAS.TENS],
+		genres: [],
 		link: 'https://tabs.ultimate-guitar.com/tab/andy-grammer/back-home-chords-1479557',
 		lyrics: LYRIC_LIST.BackHome,
 		title: 'Back Home',
 	},
 	{
 		artist: 'Bob Dylan',
-		genres: [ERAS.SIXTIES],
+		eras: [ERAS.SIXTIES],
+		genres: [],
 		link: 'https://tabs.ultimate-guitar.com/tab/bob-dylan/blowin-in-the-wind-chords-14835',
 		lyrics: LYRIC_LIST.BlowinInTheWind,
 		title: "Blowin' in the Wind",
@@ -42,7 +46,8 @@ export const SongList: SongType[] = [
 	{
 		artist: 'Bob Carlisle',
 		barChords: true,
-		genres: [ERAS.NINETIES],
+		eras: [ERAS.NINETIES],
+		genres: [],
 		link: 'https://tabs.ultimate-guitar.com/tab/bob-carlisle/butterfly-kisses-chords-64393',
 		lyrics: LYRIC_LIST.ButterflyKisses,
 		title: 'Butterfly Kisses',
@@ -51,14 +56,16 @@ export const SongList: SongType[] = [
 	{
 		alteration: CAPO_2,
 		artist: 'Semisonic',
-		genres: [ERAS.NINETIES],
+		eras: [ERAS.NINETIES],
+		genres: [],
 		link: 'https://tabs.ultimate-guitar.com/tab/semisonic/closing-time-chords-1743417',
 		lyrics: LYRIC_LIST.ClosingTime,
 		title: 'Closing Time',
 	},
 	{
 		artist: 'John Denver',
-		genres: [ERAS.SEVENTIES, GENRE.COUNTRY],
+		eras: [ERAS.SEVENTIES],
+		genres: [GENRES.COUNTRY],
 		link: 'https://tabs.ultimate-guitar.com/tab/john-denver/take-me-home-country-roads-chords-1101747',
 		lyrics: LYRIC_LIST.CountryRoads,
 		title: 'Country Roads',
@@ -66,14 +73,16 @@ export const SongList: SongType[] = [
 	// - F -
 	{
 		artist: 'Randy Travis',
-		genres: [ERAS.EIGHTIES],
+		eras: [ERAS.EIGHTIES],
+		genres: [],
 		link: 'https://tabs.ultimate-guitar.com/tab/randy-travis/forever-and-ever-amen-chords-87134',
 		lyrics: LYRIC_LIST.ForeverAndEverAmen,
 		title: 'Forever And Ever Amen',
 	},
 	{
 		artist: 'Tom Petty',
-		genres: [ERAS.EIGHTIES],
+		eras: [ERAS.EIGHTIES],
+		genres: [],
 		link: 'https://www.chordie.com/chord.pere/www.guitaretab.com/p/petty-tom/14472.html',
 		lyrics: LYRIC_LIST.FreeFallin,
 		title: 'Free Fallin',
@@ -81,7 +90,8 @@ export const SongList: SongType[] = [
 	// - G -
 	{
 		artist: "Plain White T's",
-		genres: [ERAS.TENS],
+		eras: [ERAS.TENS],
+		genres: [],
 		link: 'https://tabs.ultimate-guitar.com/tab/plain-white-ts/the-giving-tree-chords-1240804',
 		lyrics: LYRIC_LIST.GivingTree,
 		title: 'Giving Tree',
@@ -89,7 +99,8 @@ export const SongList: SongType[] = [
 	{
 		artist: 'Lee Greenwood',
 		barChords: true,
-		genres: [ERAS.EIGHTIES, GENRE.PATRIOTIC],
+		eras: [ERAS.EIGHTIES],
+		genres: [GENRES.PATRIOTIC],
 		link: 'https://tabs.ultimate-guitar.com/tab/lee-greenwood/god-bless-the-usa-chords-825566',
 		lyrics: LYRIC_LIST.GodBlessTheUSA,
 		title: 'God Bless the USA',
@@ -97,7 +108,8 @@ export const SongList: SongType[] = [
 	{
 		alteration: CAPO_5,
 		artist: 'Kane Brown',
-		genres: [ERAS.TENS, GENRE.COUNTRY],
+		eras: [ERAS.TENS],
+		genres: [GENRES.COUNTRY],
 		link: 'https://tabs.ultimate-guitar.com/tab/kane-brown/good-as-you-chords-2497455',
 		lyrics: LYRIC_LIST.GoodAsYou,
 		title: 'Good As You',
@@ -106,7 +118,8 @@ export const SongList: SongType[] = [
 	// - H -
 	{
 		artist: 'Misc Praise',
-		genres: [GENRE.TRADITIONAL, GENRE.RELIGIOUS],
+		eras: [],
+		genres: [GENRES.TRADITIONAL, GENRES.RELIGIOUS],
 		link: 'https://tabs.ultimate-guitar.com/m/misc_praise_songs/hes_got_the_whole_world_in_his_hands_crd.htm',
 		lyrics: LYRIC_LIST.HesGotTheWholeWorldInHisHands,
 		title: "He's Got the Whole World in His Hands",
@@ -115,7 +128,8 @@ export const SongList: SongType[] = [
 		alteration: CAPO_5,
 		artist: 'Kenny Loggins',
 		barChords: true,
-		genres: [GENRE.KIDS, ERAS.SEVENTIES],
+		eras: [ERAS.SEVENTIES],
+		genres: [GENRES.KIDS],
 		link: 'https://qcukes.com/music2/music.php?action=Song&song=House%20At%20Pooh%20Corner',
 		lyrics: LYRIC_LIST.HouseAtPoohCorner,
 		title: 'House At Pooh Corner',
@@ -124,14 +138,16 @@ export const SongList: SongType[] = [
 	// - I -
 	{
 		artist: 'Bonnie Raitt',
-		genres: [ERAS.NINETIES],
+		eras: [ERAS.NINETIES],
+		genres: [],
 		link: 'https://tabs.ultimate-guitar.com/tab/bonnie-raitt/i-cant-make-you-love-me-chords-611294',
 		lyrics: LYRIC_LIST.ICantMakeYouLoveMe,
 		title: 'I Cant Make You Love Me',
 	},
 	{
 		artist: 'Tim McGraw',
-		genres: [ERAS.NINETIES, GENRE.COUNTRY],
+		eras: [ERAS.NINETIES],
+		genres: [GENRES.COUNTRY],
 		link: 'https://tabs.ultimate-guitar.com/tab/tim-mcgraw/its-your-love-chords-76292',
 		lyrics: LYRIC_LIST.ItsYourLove,
 		strumPattern: 'DxDxDxDU',
@@ -142,7 +158,8 @@ export const SongList: SongType[] = [
 	{
 		alteration: CAPO_3,
 		artist: 'Third Eye Blind',
-		genres: [ERAS.NINETIES],
+		eras: [ERAS.NINETIES],
+		genres: [],
 		link: 'https://tabs.ultimate-guitar.com/tab/third-eye-blind/jumper-chords-159256',
 		lyrics: LYRIC_LIST.Jumper,
 		title: 'Jumper',
@@ -150,7 +167,8 @@ export const SongList: SongType[] = [
 	// - L -
 	{
 		artist: 'John Denver',
-		genres: [ERAS.SIXTIES, GENRE.ROCK],
+		eras: [ERAS.SIXTIES],
+		genres: [GENRES.ROCK],
 		link: 'https://www.laurenbateman.com/leaving-on-a-jet-plane-chord-chart',
 		lyrics: LYRIC_LIST.LeavingOnAJetPlane,
 		title: 'Leaving on a Jet Plane',
@@ -158,7 +176,8 @@ export const SongList: SongType[] = [
 	// - M -
 	{
 		artist: 'Adele',
-		genres: [ERAS.ZEROS],
+		eras: [ERAS.ZEROS],
+		genres: [],
 		link: 'https://tabs.ultimate-guitar.com/tab/adele/make-you-feel-my-love-chords-752102',
 		lyrics: LYRIC_LIST.MakeYouFeelMyLove,
 		strumPattern: '[Rock Strum] DxDUxUDU',
@@ -166,7 +185,8 @@ export const SongList: SongType[] = [
 	},
 	{
 		artist: 'Misc Traditional',
-		genres: [GENRE.TRADITIONAL, GENRE.KIDS],
+		eras: [],
+		genres: [GENRES.TRADITIONAL, GENRES.KIDS],
 		link: 'https://tabs.ultimate-guitar.com/tab/misc-children/michael-finnegan-chords-1721165',
 		lyrics: LYRIC_LIST.MichaelFinnegan,
 		title: 'Michael Finnegan',
@@ -174,14 +194,16 @@ export const SongList: SongType[] = [
 	{
 		artist: 'Misc Traditional',
 		barChords: true,
-		genres: [GENRE.TRADITIONAL],
+		eras: [],
+		genres: [GENRES.TRADITIONAL],
 		link: 'https://tabs.ultimate-guitar.com/tab/highwaymen/michael-row-the-boat-ashore-chords-1813491',
 		lyrics: LYRIC_LIST.MichaelRowTheBoatAshore,
 		title: 'Michael Row the Boat Ashore',
 	},
 	{
 		artist: 'Misc Traditional',
-		genres: [GENRE.TRADITIONAL],
+		eras: [],
+		genres: [GENRES.TRADITIONAL],
 		link: 'https://tabs.ultimate-guitar.com/m/mother_goose/hush_little_baby_crd.htm',
 		lyrics: LYRIC_LIST.Mockingbird,
 		title: 'Mockingbird',
@@ -190,7 +212,8 @@ export const SongList: SongType[] = [
 	{
 		artist: 'One Direction',
 		barChords: true,
-		genres: [ERAS.TENS],
+		eras: [ERAS.TENS],
+		genres: [],
 		link: 'https://tabs.ultimate-guitar.com/tab/one-direction/night-changes-chords-1678440',
 		lyrics: LYRIC_LIST.NightChanges,
 		title: 'Night Changes',
@@ -199,7 +222,8 @@ export const SongList: SongType[] = [
 	{
 		artist: 'The Original Caste',
 		barChords: true,
-		genres: [ERAS.SIXTIES],
+		eras: [ERAS.SIXTIES],
+		genres: [],
 		link: 'https://tabs.ultimate-guitar.com/tab/the-original-caste/one-tin-soldier-chords-980986',
 		lyrics: LYRIC_LIST.OneTinSoldier,
 		title: 'One Tin Soldier',
@@ -207,7 +231,8 @@ export const SongList: SongType[] = [
 	{
 		artist: "Israel Kamakawiwo'ole",
 		barChords: true,
-		genres: [ERAS.NINETIES],
+		eras: [ERAS.NINETIES],
+		genres: [],
 		link: 'https://tabs.ultimate-guitar.com/tab/2135261',
 		lyrics: LYRIC_LIST.OverTheRainbow,
 		title: 'Over the Rainbow',
@@ -216,7 +241,8 @@ export const SongList: SongType[] = [
 	{
 		artist: 'Peter, Paul & Mary',
 		barChords: true,
-		genres: [ERAS.SIXTIES, GENRE.FOLK, GENRE.KIDS],
+		eras: [ERAS.SIXTIES],
+		genres: [GENRES.FOLK, GENRES.KIDS],
 		link: 'https://tabs.ultimate-guitar.com/p/peter_paul_and_mary/puff_the_magic_dragon_ver3_crd.htm',
 		lyrics: LYRIC_LIST.PuffTheMagicDragon,
 		title: 'Puff The Magic Dragon',
@@ -225,15 +251,25 @@ export const SongList: SongType[] = [
 	{
 		artist: 'Richard Marx',
 		barChords: true,
-		genres: [ERAS.EIGHTIES],
+		eras: [ERAS.EIGHTIES],
+		genres: [],
 		link: 'https://tabs.ultimate-guitar.com/tab/richard-marx/right-here-waiting-chords-93388',
 		lyrics: LYRIC_LIST.RightHereWaiting,
 		title: 'Right Here Waiting',
 	},
 	// - S -
 	{
+		artist: 'Otis Redding',
+		eras: [ERAS.SIXTIES],
+		genres: [GENRES.R_AND_B],
+		link: 'https://tabs.ultimate-guitar.com/tab/otis-redding/sittin-on-the-dock-of-the-bay-chords-81840',
+		lyrics: LYRIC_LIST.SittinOnTheDockOfTheBay,
+		title: 'Sittin On The Dock Of The Bay',
+	},
+	{
 		artist: 'Jonathan Edwards',
-		genres: [ERAS.SEVENTIES],
+		eras: [ERAS.SEVENTIES],
+		genres: [],
 		link: 'https://tabs.ultimate-guitar.com/tab/jonathan-edwards/sunshine-chords-105167',
 		lyrics: LYRIC_LIST.Sunshine,
 		title: 'Sunshine',
@@ -242,7 +278,8 @@ export const SongList: SongType[] = [
 	{
 		artist: 'Eric Clapton',
 		barChords: true,
-		genres: [ERAS.NINETIES],
+		eras: [ERAS.NINETIES],
+		genres: [GENRES.R_AND_B],
 		link: 'https://www.guitartabsexplorer.com/clapton-eric-Tabs/tears-in-heaven-live-crd.php',
 		lyrics: LYRIC_LIST.TearsInHeaven,
 		strumPattern: 'DxDU, DxDU, DxDU UDUDD',
@@ -250,7 +287,7 @@ export const SongList: SongType[] = [
 	},
 	// {
 	// 	artist: 'Harry S Miller',
-	// 	genres: [GENRE.KIDS],
+	// 	genres: [GENRES.KIDS],
 	// 	link: 'https://tabs.ultimate-guitar.com/h/harry_s_miller/the_cat_came_back_crd.htm',
 	// 	lyrics: LYRIC_LIST.TheCatCameBack,
 	// 	title: 'The Cat Came Back',
@@ -258,21 +295,24 @@ export const SongList: SongType[] = [
 	{
 		artist: 'Simon & Garfunkel',
 		barChords: true,
-		genres: [ERAS.SIXTIES, GENRE.FOLK],
+		eras: [ERAS.SIXTIES],
+		genres: [GENRES.FOLK],
 		link: 'https://tabs.ultimate-guitar.com/s/simon_garfunkel/the_sound_of_silence_ver4_crd.htm',
 		lyrics: LYRIC_LIST.TheSoundOfSilence,
 		title: 'The Sounds of Silence',
 	},
 	{
 		artist: 'Woody Guthrie',
-		genres: [ERAS.FOURTIES, GENRE.PATRIOTIC],
+		eras: [ERAS.FOURTIES],
+		genres: [GENRES.PATRIOTIC],
 		link: 'http://www.guitaretab.com/w/woody-guthrie/223617.html',
 		lyrics: LYRIC_LIST.ThisLandIsYourLand,
 		title: 'This Land is your Land',
 	},
 	{
 		artist: 'Rolf Harris',
-		genres: [ERAS.SIXTIES, GENRE.KIDS],
+		eras: [ERAS.SIXTIES],
+		genres: [GENRES.KIDS],
 		link: 'https://tabs.ultimate-guitar.com/r/rolf_harris/tie_me_kangaroo_down_sport_ver4_crd.htm',
 		lyrics: LYRIC_LIST.TieMeKangarooDownSport,
 		title: 'Tie Me Kangaroo Down Sport',
@@ -280,7 +320,8 @@ export const SongList: SongType[] = [
 	{
 		artist: 'The Byrds',
 		barChords: true,
-		genres: [ERAS.SIXTIES, GENRE.FOLK],
+		eras: [ERAS.SIXTIES],
+		genres: [GENRES.FOLK],
 		link: 'https://tabs.ultimate-guitar.com/tab/the-byrds/turn-turn-turn-to-everything-there-is-a-season-chords-1055233',
 		lyrics: LYRIC_LIST.TurnTurnTurn,
 		title: 'Turn" Turn" Turn',
@@ -288,7 +329,8 @@ export const SongList: SongType[] = [
 	// - W -
 	{
 		artist: 'Katrina and the Waves',
-		genres: [ERAS.EIGHTIES],
+		eras: [ERAS.EIGHTIES],
+		genres: [],
 		link: 'https://tabs.ultimate-guitar.com/tab/katrina-and-the-waves/walking-on-sunshine-chords-595283',
 		lyrics: LYRIC_LIST.WalkingOnSunshine,
 		title: 'Walking On Sunshine',
@@ -297,7 +339,8 @@ export const SongList: SongType[] = [
 		alteration: 'Only sing on Choras. The other parts are more like chants',
 		artist: 'Jackie DeShannon',
 		barChords: true,
-		genres: [ERAS.SIXTIES],
+		eras: [ERAS.SIXTIES],
+		genres: [],
 		link: 'https://tabs.ultimate-guitar.com/j/jackie_deshannon/what_the_world_needs_now_is_love_crd.htm',
 		lyrics: LYRIC_LIST.WhatTheWorldNeedsNowIsLove,
 		title: 'What the World Needs Now is Love',
@@ -305,7 +348,8 @@ export const SongList: SongType[] = [
 	{
 		artist: 'Pete Seeger',
 		barChords: true,
-		genres: [ERAS.SIXTIES, GENRE.FOLK],
+		eras: [ERAS.SIXTIES],
+		genres: [GENRES.FOLK],
 		link: 'https://tabs.ultimate-guitar.com/p/peter_paul_and_mary/where_have_all_the_flowers_gone_ver2_crd.htm',
 		lyrics: LYRIC_LIST.WhereHaveAllTheFlowersGone,
 		title: 'Where Have All the Flowers Gone',
@@ -313,7 +357,8 @@ export const SongList: SongType[] = [
 	{
 		artist: 'U2',
 		barChords: true,
-		genres: [ERAS.EIGHTIES],
+		eras: [ERAS.EIGHTIES],
+		genres: [],
 		link: 'https://tabs.ultimate-guitar.com/tab/u2/with-or-without-you-chords-835',
 		lyrics: LYRIC_LIST.WithOrWithoutYou,
 		title: 'With Or Without You',
@@ -321,21 +366,24 @@ export const SongList: SongType[] = [
 	// - Y -
 	{
 		artist: 'The Beatles',
-		genres: [ERAS.SIXTIES],
+		eras: [ERAS.SIXTIES],
+		genres: [],
 		link: 'https://tabs.ultimate-guitar.com/t/the_beatles/yellow_submarine_ver2_crd.htm',
 		lyrics: LYRIC_LIST.YellowSubmarine,
 		title: 'Yellow Submarine',
 	},
 	{
 		artist: 'Chris Stapleton',
-		genres: [GENRE.TRADITIONAL],
+		eras: [],
+		genres: [GENRES.TRADITIONAL],
 		link: 'https://tabs.ultimate-guitar.com/tab/morgane-stapleton/you-are-my-sunshine-chords-1843946',
 		lyrics: LYRIC_LIST.YouAreMySunshine,
 		title: 'You Are My Sunshine',
 	},
 	{
 		artist: 'Shania Twain',
-		genres: [ERAS.NINETIES],
+		eras: [ERAS.NINETIES],
+		genres: [],
 		link: 'https://tabs.ultimate-guitar.com/tab/shania-twain/youre-still-the-one-chords-1345',
 		lyrics: LYRIC_LIST.YoureStillTheOne,
 		title: "You're Still The One",

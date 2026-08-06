@@ -5,7 +5,8 @@ import { sortBy } from 'lodash';
 import NoSongs from './NoSongs/NoSongs';
 import SongRow from './SongRow/SongRow';
 import { SongList } from '../../../const/SongList';
-import { ALL, UNCATEGORIZED } from '../../../const/genres';
+import { ERA_LIST } from '../../../const/eras';
+import { ALL, UNCATEGORIZED } from '../../../const/filters';
 
 const SongTable = ({
 	currentGenre,
@@ -13,15 +14,15 @@ const SongTable = ({
 	includesBarChord,
 	isGuitarMode,
 }: SongTableTypes) => {
-	let letter: string = null;
+	let letter: string | null = null;
 
-	const filteredSongs = SongList.filter(({ barChords, genres }) => {
+	const filteredSongs = SongList.filter(({ barChords, eras, genres }) => {
 		if (!includesBarChord && barChords) return false;
 		if (currentGenre === ALL) return true;
-		if (currentGenre === UNCATEGORIZED) {
-			return !genres;
+		if (currentGenre === UNCATEGORIZED) return genres.length === 0;
+		if (ERA_LIST.includes(currentGenre)) {
+			return eras.includes(currentGenre);
 		}
-		if (!genres) return false;
 
 		return genres.includes(currentGenre);
 	});
