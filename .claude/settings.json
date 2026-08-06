@@ -24,7 +24,9 @@
       "Bash(lsof -ti:9222 -sTCP:LISTEN)",
       "Bash(echo \"exit=$?\")",
       "Bash(echo \"tsc exit=$?\")",
-      "Bash(echo \"eslint exit=$?\")"
+      "Bash(echo \"eslint exit=$?\")",
+      "Bash(yarn build:bookmarklets)",
+      "Bash(git check-ignore *)"
     ]
   }
 }

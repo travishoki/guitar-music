@@ -1,6 +1,7 @@
 /* To build, run: yarn build:bookmarklets */
 
 import { UG } from './const';
+import { createCopyButton } from './copy-button';
 import { getSongTitle } from './helpers';
 import {
 	BAR_LINE,
@@ -97,35 +98,12 @@ Object.assign(pre.style, {
 	whiteSpace: 'pre',
 });
 
-// Status banner for the copy below, which reports whether the clipboard write
-// landed - if it didn't, the rendered text is still there to select by hand.
-const status = document.createElement('div');
-status.textContent = 'Copying...';
-Object.assign(status.style, {
-	background: '#000',
-	borderRadius: '4px',
-	color: '#fff',
-	fontFamily: 'sans-serif',
-	fontSize: '14px',
-	padding: '8px 16px',
-	position: 'fixed',
-	right: '20px',
-	top: '20px',
-});
+// Copied on run, because hand-selecting the text drops the final newline -
+// browsers leave a <pre>'s trailing line break out of the selection.
+const copyButton = createCopyButton(code);
 
 document.body.style.background = '#fff';
 document.body.style.margin = '0';
-document.body.replaceChildren(pre, status);
+document.body.replaceChildren(pre, copyButton.element);
 
-// Copy on run. Hand-selecting the text drops the final newline, because
-// browsers leave a <pre>'s trailing line break out of the selection.
-navigator.clipboard
-	.writeText(code)
-	.then(() => {
-		status.textContent = 'Copied to clipboard';
-		return true;
-	})
-	.catch(() => {
-		// Usually means the page wasn't focused (e.g. run with DevTools focused).
-		status.textContent = 'Copy failed - click the page and re-run';
-	});
+copyButton.copy();
