@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Title = ({ artist, title }: TitleProps) => (
-	<div className="body-color" style={containerStyle}>
+	<div className="body-color bottom-border" style={containerStyle}>
 		<h2 style={h2Style}>{title}</h2>
 		<p style={artistStyle}>by {artist}</p>
 	</div>
