@@ -3,6 +3,17 @@
 @WHITE: #ffffff;
 @BLACK: #000000;
 
+/*----- Sticky Offsets -----*/
+
+// Everything that sticks measures itself off these, so there is one place to
+// change when the header resizes. The nav is two fixed-height rows, so its
+// height is the same at every width - .top-nav is held to it below.
+:root {
+	--header-height: 50px;
+	--nav-height: 112px;
+	--sticky-top: calc(var(--header-height) + var(--nav-height));
+}
+
 /*----- General -----*/
 
 body {
@@ -146,13 +157,15 @@ body.light-mode {
 }
 
 body.dark-mode {
-	.side-scroll-selector {
+	.side-scroll-selector,
+	.toggle-controls {
 		background: #111;
 	}
 }
 
 body.light-mode {
-	.side-scroll-selector {
+	.side-scroll-selector,
+	.toggle-controls {
 		background: #ccc;
 	}
 }
@@ -174,22 +187,25 @@ h2 {
 /*----- Header -----*/
 
 header {
-	height: 50px;
+	height: var(--header-height);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	position: sticky;
 	top: 0;
+	z-index: 3;
 }
 
 body.dark-mode {
-	header {
+	header,
+	.top-nav {
 		background: #202124;
 	}
 }
 
 body.light-mode {
-	header {
+	header,
+	.top-nav {
 		background: @WHITE;
 	}
 }
@@ -280,6 +296,14 @@ body.light-mode {
 
 /*----- Controls -----*/
 
+.top-nav {
+	height: var(--nav-height);
+	padding-bottom: 10px;
+	position: sticky;
+	top: var(--header-height);
+	z-index: 2;
+}
+
 .top-controls {
 	align-items: center;
 	display: flex;
@@ -289,9 +313,13 @@ body.light-mode {
 
 .toggle-controls {
 	align-items: center;
+	// Stretch so the block matches the height of the sort scroller beside it,
+	// rather than hard-coding padding to match.
+	align-self: stretch;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	padding: 0 10px;
 
 	button {
 		align-items: center;
@@ -346,6 +374,12 @@ body.light-mode {
 
 /*----- Scroll Header -----*/
 
+.scroll-header {
+	position: sticky;
+	top: var(--sticky-top);
+	z-index: 1;
+}
+
 body.dark-mode {
 	.scroll-header {
 		background: #666;
@@ -355,5 +389,35 @@ body.dark-mode {
 body.light-mode {
 	.scroll-header {
 		background: #ccc;
+	}
+}
+
+/*----- Small Screens -----*/
+
+@media (max-width: 600px) {
+	:root {
+		--header-height: 44px;
+	}
+
+	h1 {
+		font-size: 26px;
+	}
+
+	h2 {
+		font-size: 24px;
+	}
+}
+
+@media (max-width: 400px) {
+	:root {
+		--header-height: 38px;
+	}
+
+	h1 {
+		font-size: 20px;
+	}
+
+	h2 {
+		font-size: 20px;
 	}
 }

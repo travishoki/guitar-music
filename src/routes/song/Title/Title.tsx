@@ -16,7 +16,9 @@ const containerStyle: React.CSSProperties = {
 	paddingBottom: 15,
 	paddingTop: 15,
 	position: 'sticky',
-	top: 50,
+	// No sticky nav on this route, so this sits directly under the header.
+	top: 'var(--header-height)',
+	zIndex: 1,
 };
 
 const h2Style: React.CSSProperties = {

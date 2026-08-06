@@ -56,7 +56,10 @@ const App = () => {
 				onToggleIsGuitarMode={onToggleIsGuitarMode}
 			/>
 			<Footer />
-			<Toaster containerStyle={{ top: 60 }} position="top-center" />
+			<Toaster
+				containerStyle={{ top: 'calc(var(--header-height) + 10px)' }}
+				position="top-center"
+			/>
 		</div>
 	);
 };

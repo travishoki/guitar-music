@@ -46,7 +46,7 @@ const HomePage = ({
 
 	return (
 		<>
-			<div style={controlsStyle}>
+			<div className="top-nav">
 				<div className="top-controls">
 					<Sort currentOption={sortTerm} onClick={handleSort} />
 
@@ -88,10 +88,6 @@ type HomePageTypes = {
 	onToggleIncludesBarChord: () => void;
 	onToggleIsDarkMode: () => void;
 	onToggleIsGuitarMode: () => void;
-};
-
-const controlsStyle: React.CSSProperties = {
-	paddingBottom: 10,
 };
 
 export default HomePage;

@@ -18,7 +18,10 @@
       "Bash(node -e \"console.log\\('globals', require\\('globals/package.json'\\).version\\)\")",
       "Bash(npx jest *)",
       "Bash(node -e ' *)",
-      "Bash(node ./.tmp-test.cjs)"
+      "Bash(node ./.tmp-test.cjs)",
+      "Bash(lsof -ti:3000 -sTCP:LISTEN)",
+      "Bash(xargs -r kill)",
+      "Bash(lsof -ti:9222 -sTCP:LISTEN)"
     ]
   }
 }
