@@ -41,6 +41,7 @@ import PuffTheMagicDragon from './PuffTheMagicDragon';
 import RightHereWaiting from './RightHereWaiting';
 // - S -
 import SittinOnTheDockOfTheBay from './SittinOnTheDockOfTheBay';
+import StandByMe from './StandByMe';
 import Sunshine from './Sunshine';
 // - T -
 import TearsInHeaven from './TearsInHeaven';
@@ -103,6 +104,7 @@ export default {
 	RightHereWaiting,
 	// - S -
 	SittinOnTheDockOfTheBay,
+	StandByMe,
 	Sunshine,
 	// - T -
 	TearsInHeaven,

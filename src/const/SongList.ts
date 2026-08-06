@@ -167,6 +167,7 @@ export const SongList: SongType[] = [
 	// - L -
 	{
 		artist: 'Bill Withers',
+		barChords: true,
 		eras: [ERAS.SEVENTIES],
 		genres: [GENRES.R_AND_B, GENRES.RELIGIOUS],
 		link: 'https://tabs.ultimate-guitar.com/tab/bill-withers/lean-on-me-chords-150987',
@@ -273,6 +274,15 @@ export const SongList: SongType[] = [
 		link: 'https://tabs.ultimate-guitar.com/tab/otis-redding/sittin-on-the-dock-of-the-bay-chords-81840',
 		lyrics: LYRIC_LIST.SittinOnTheDockOfTheBay,
 		title: 'Sittin On The Dock Of The Bay',
+	},
+	{
+		artist: 'Ben E. King',
+		barChords: true,
+		eras: [ERAS.SIXTIES],
+		genres: [GENRES.R_AND_B, GENRES.RELIGIOUS],
+		link: 'https://tabs.ultimate-guitar.com/tab/ben-e-king/stand-by-me-chords-73005',
+		lyrics: LYRIC_LIST.StandByMe,
+		title: 'Stand By Me',
 	},
 	{
 		artist: 'Jonathan Edwards',
