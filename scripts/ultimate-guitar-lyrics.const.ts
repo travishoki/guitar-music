@@ -4,10 +4,11 @@
 // to text a chord-only line can be dropped outright while a line that was
 // ALREADY blank survives as a real section break. Only the chord NAME lives in
 // the span though - the strum marker ("Cadd9*") and any playing note
-// ("C -once", "G -stop") sit outside it as plain text, so a chord line comes
-// back not as empty but as that leftover residue.
+// ("C -once", "G -stop") sit outside it as plain text - as do the brackets
+// around an optional chord ("(A)") - so a chord line comes back not as empty
+// but as that leftover residue.
 export const CHORD_MARK = '\u0000';
-export const CHORD_RESIDUE = /^[\s*]*(?:-[a-z]+[\s*]*)*$/i;
+export const CHORD_RESIDUE = /^[\s*()]*(?:-[a-z]+[\s*()]*)*$/i;
 
 // Some tabs open with an "Artist: / Title: / Album:" header block. Section
 // headings start with "[", so they can't be swallowed by this.
