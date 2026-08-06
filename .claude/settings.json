@@ -21,7 +21,10 @@
       "Bash(node ./.tmp-test.cjs)",
       "Bash(lsof -ti:3000 -sTCP:LISTEN)",
       "Bash(xargs -r kill)",
-      "Bash(lsof -ti:9222 -sTCP:LISTEN)"
+      "Bash(lsof -ti:9222 -sTCP:LISTEN)",
+      "Bash(echo \"exit=$?\")",
+      "Bash(echo \"tsc exit=$?\")",
+      "Bash(echo \"eslint exit=$?\")"
     ]
   }
 }
