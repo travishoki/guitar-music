@@ -23,6 +23,10 @@ export const CAPO_LINE =
 // the chord names inside it have been stripped out.
 export const BAR_LINE = /^[|\s]+$/;
 
+// A repeat marker on a line of its own ("\\ 4x", "x4", "(2x)") - how many
+// times to play the section, not a lyric.
+export const REPEAT_LINE = /^[\\/()\s]*(?:\d+\s*x|x\s*\d+)[\\/()\s]*$/i;
+
 // Page furniture that lands in the tab text: a separator rule ("=", "----"),
 // and the "Set8" label off the font-size control.
 export const NOISE_LINE = /^(?:[-=_~]+|Set\s*\d+)$/i;

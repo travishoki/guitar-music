@@ -3,6 +3,7 @@ import {
 	CAPO_LINE,
 	CHORD_RESIDUE,
 	NOISE_LINE,
+	REPEAT_LINE,
 } from './ultimate-guitar-lyrics.const';
 
 // What CHORD_RESIDUE is tested against is a chord line with the chord NAMES
@@ -75,5 +76,15 @@ describe('NOISE_LINE', () => {
 
 	test('should not match a lyric line', () => {
 		expect(NOISE_LINE.test('Settle down, build a home')).toEqual(false);
+	});
+});
+
+describe('REPEAT_LINE', () => {
+	test('should match a repeat marker on its own line', () => {
+		expect(REPEAT_LINE.test('\\ 4x')).toEqual(true);
+	});
+
+	test('should not match a lyric line', () => {
+		expect(REPEAT_LINE.test('I need you 4x a day')).toEqual(false);
 	});
 });
