@@ -14,5 +14,10 @@ export const CHORD_RESIDUE = /^[\s*()]*(?:-[a-z]+[\s*()]*)*$/i;
 // headings start with "[", so they can't be swallowed by this.
 export const HEADER_LINE = /^[A-Za-z][A-Za-z ]{0,20}:\s*\S/;
 
+// A capo note on a line of its own ("Capo 1", "Capo II", "CAPO ON 4",
+// "Capo 3rd fret"). It's playing instruction, not a lyric.
+export const CAPO_LINE =
+	/^capo\b[\s:]*(?:on\s+)?(?:\d+(?:st|nd|rd|th)?|[ivx]+)?(?:\s*fret)?$/i;
+
 // The stray "X" (a close button) UG leaves behind at the end of the tab.
 export const TRAILING_NOISE = /^[Xx]$/;

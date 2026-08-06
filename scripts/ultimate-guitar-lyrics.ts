@@ -3,6 +3,7 @@
 import { UG } from './const';
 import { getSongTitle } from './helpers';
 import {
+	CAPO_LINE,
 	CHORD_MARK,
 	CHORD_RESIDUE,
 	HEADER_LINE,
@@ -35,6 +36,7 @@ if (tab) {
 		const text = raw.split(CHORD_MARK).join('').replace(/\s+/g, ' ').trim();
 		if (raw.includes(CHORD_MARK) && CHORD_RESIDUE.test(text)) return;
 		if (isTabLine(text)) return;
+		if (CAPO_LINE.test(text)) return;
 		lines.push(text);
 	});
 }

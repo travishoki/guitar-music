@@ -1,4 +1,4 @@
-import { CHORD_RESIDUE } from './ultimate-guitar-lyrics.const';
+import { CAPO_LINE, CHORD_RESIDUE } from './ultimate-guitar-lyrics.const';
 
 // What CHORD_RESIDUE is tested against is a chord line with the chord NAMES
 // already stripped out - so "(A) (D)" arrives as "() ()".
@@ -39,5 +39,15 @@ describe('CHORD_RESIDUE', () => {
 
 	test('should not match a section heading', () => {
 		expect(CHORD_RESIDUE.test('[Chorus]')).toEqual(false);
+	});
+});
+
+describe('CAPO_LINE', () => {
+	test('should match a capo note on its own line', () => {
+		expect(CAPO_LINE.test('Capo 1')).toEqual(true);
+	});
+
+	test('should not match a lyric that merely mentions a capo', () => {
+		expect(CAPO_LINE.test('I put a capo on 2')).toEqual(false);
 	});
 });
