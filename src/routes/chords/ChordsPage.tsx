@@ -21,9 +21,7 @@ const ChordsPage = () => (
 		{chords.map((chord) => (
 			<div key={chord.title} style={cardStyle}>
 				<span style={titleStyle}>{chord.title}</span>
-				<div style={imageWrapperStyle}>
-					<img alt={chord.title} src={chord.src} style={imageStyle} />
-				</div>
+				<img alt={chord.title} src={chord.src} style={imageStyle} />
 			</div>
 		))}
 	</div>
@@ -38,14 +36,10 @@ const gridStyle: React.CSSProperties = {
 
 const cardStyle: React.CSSProperties = {
 	alignItems: 'center',
-	display: 'flex',
-	flexDirection: 'column',
-	gap: 8,
-};
-
-const imageWrapperStyle: React.CSSProperties = {
 	backgroundColor: '#ffffff',
 	borderRadius: 8,
+	display: 'flex',
+	flexDirection: 'column',
 	padding: 8,
 };
 
@@ -56,7 +50,9 @@ const imageStyle: React.CSSProperties = {
 };
 
 const titleStyle: React.CSSProperties = {
-	fontWeight: 600,
+	color: '#000000',
+	fontSize: 24,
+	fontWeight: 700,
 };
 
 export default ChordsPage;
