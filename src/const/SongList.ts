@@ -166,6 +166,14 @@ export const SongList: SongType[] = [
 	},
 	// - L -
 	{
+		artist: 'Bill Withers',
+		eras: [ERAS.SEVENTIES],
+		genres: [GENRES.R_AND_B, GENRES.RELIGIOUS],
+		link: 'https://tabs.ultimate-guitar.com/tab/bill-withers/lean-on-me-chords-150987',
+		lyrics: LYRIC_LIST.LeanOnMe,
+		title: 'Lean On Me',
+	},
+	{
 		artist: 'John Denver',
 		eras: [ERAS.SIXTIES],
 		genres: [GENRES.ROCK],

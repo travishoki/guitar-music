@@ -23,6 +23,7 @@ import ItsYourLove from './ItsYourLove';
 // - J -
 import Jumper from './Jumper';
 // - L -
+import LeanOnMe from './LeanOnMe';
 import LeavingOnAJetPlane from './LeavingOnAJetPlane';
 // - M -
 import MakeYouFeelMyLove from './MakeYouFeelMyLove';
@@ -84,6 +85,7 @@ export default {
 	// - J -
 	Jumper,
 	// - L -
+	LeanOnMe,
 	LeavingOnAJetPlane,
 	// - M -
 	MakeYouFeelMyLove,
