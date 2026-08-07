@@ -5,10 +5,11 @@ import Controls from '../common/Controls/Controls';
 
 const SideSCrollSelector = ({
 	currentOption,
+	fitContent = false,
 	list,
 	onClick,
 }: SideSCrollSelectorTypes) => (
-	<Controls scrollable>
+	<Controls className={fitContent ? 'controls--fit' : ''} scrollable>
 		{list.map((option) => (
 			<Control
 				active={option === currentOption}
@@ -23,6 +24,9 @@ const SideSCrollSelector = ({
 
 type SideSCrollSelectorTypes = {
 	currentOption: string;
+	// Size to the content and only scroll sideways when it overflows, rather
+	// than always stretching the full width.
+	fitContent?: boolean;
 	list: string[];
 	onClick: (option: string) => void;
 };

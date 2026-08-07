@@ -21,6 +21,14 @@
 	}
 }
 
+// Hug the content (capped at the available width, where --scrollable takes over
+// and scrolls) instead of stretching full width. align-self covers the case
+// where this sits in a flex column (the home page top nav).
+.controls--fit {
+	align-self: flex-start;
+	width: fit-content;
+}
+
 body.dark-mode {
 	.controls {
 		background: @gray-6;

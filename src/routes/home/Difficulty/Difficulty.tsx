@@ -6,6 +6,7 @@ import { DIFFICULTY_FILTER_LIST } from '../../../const/difficulty';
 const Difficulty = ({ currentOption, onClick }: DifficultyTypes) => (
 	<SideScrollSelector
 		currentOption={currentOption}
+		fitContent
 		list={DIFFICULTY_FILTER_LIST}
 		onClick={onClick}
 	/>

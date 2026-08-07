@@ -39,6 +39,7 @@ const ChordsPage = () => {
 		<>
 			<SideScrollSelector
 				currentOption={filter}
+				fitContent
 				list={CHORD_FILTER_LIST}
 				onClick={setFilter}
 			/>
