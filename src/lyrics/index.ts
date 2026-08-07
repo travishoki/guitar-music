@@ -28,6 +28,9 @@ import IKnowAnOldLadyWhoSwallowedAFly from './IKnowAnOldLadyWhoSwallowedAFly';
 import ItsYourLove from './ItsYourLove';
 // - J -
 import Jumper from './Jumper';
+// - K -
+import Kookaburra from './Kookaburra';
+import Kumbaya from './Kumbaya';
 // - L -
 import LeanOnMe from './LeanOnMe';
 import LeavingOnAJetPlane from './LeavingOnAJetPlane';
@@ -37,10 +40,12 @@ import MakeYouFeelMyLove from './MakeYouFeelMyLove';
 import MichaelFinnegan from './MichaelFinnegan';
 import MichaelRowTheBoatAshore from './MichaelRowTheBoatAshore';
 import Mockingbird from './Mockingbird';
+import MyBonnieLiesOverTheOcean from './MyBonnieLiesOverTheOcean';
 // - N -
 import NightChanges from './NightChanges';
 // - O -
 import OhSusanna from './OhSusanna';
+import OnTopOfSpaghetti from './OnTopOfSpaghetti';
 import OneTinSoldier from './OneTinSoldier';
 import OverTheRainbow from './OverTheRainbow';
 // - P -
@@ -48,6 +53,7 @@ import PuffTheMagicDragon from './PuffTheMagicDragon';
 // - R -
 import RightHereWaiting from './RightHereWaiting';
 // - S -
+import ShellBeComingRoundTheMountain from './ShellBeComingRoundTheMountain';
 import SittinOnTheDockOfTheBay from './SittinOnTheDockOfTheBay';
 import StandByMe from './StandByMe';
 import Sunshine from './Sunshine';
@@ -100,6 +106,9 @@ export default {
 	ItsYourLove,
 	// - J -
 	Jumper,
+	// - K -
+	Kookaburra,
+	Kumbaya,
 	// - L -
 	LeanOnMe,
 	LeavingOnAJetPlane,
@@ -109,10 +118,12 @@ export default {
 	MichaelFinnegan,
 	MichaelRowTheBoatAshore,
 	Mockingbird,
+	MyBonnieLiesOverTheOcean,
 	// - N -
 	NightChanges,
 	// - O -
 	OhSusanna,
+	OnTopOfSpaghetti,
 	OneTinSoldier,
 	OverTheRainbow,
 	// - P -
@@ -120,6 +131,7 @@ export default {
 	// - R -
 	RightHereWaiting,
 	// - S -
+	ShellBeComingRoundTheMountain,
 	SittinOnTheDockOfTheBay,
 	StandByMe,
 	Sunshine,

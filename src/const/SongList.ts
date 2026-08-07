@@ -200,6 +200,24 @@ export const SongList: SongType[] = [
 		lyrics: LYRIC_LIST.Jumper,
 		title: 'Jumper',
 	},
+	// - K -
+	{
+		artist: 'Marion Sinclair',
+		barChords: true,
+		eras: [ERAS.THIRTIES],
+		genres: [GENRES.FOLK, GENRES.KIDS],
+		link: 'https://tabs.ultimate-guitar.com/tab/marion-sinclair/kookaburra-chords-1048595',
+		lyrics: LYRIC_LIST.Kookaburra,
+		title: 'Kookaburra',
+	},
+	{
+		artist: 'Misc Praise Songs',
+		eras: [ERAS.TWENTIES],
+		genres: [GENRES.FOLK, GENRES.SOUL],
+		link: 'https://tabs.ultimate-guitar.com/tab/misc-praise-songs/kumbaya-chords-76633',
+		lyrics: LYRIC_LIST.Kumbaya,
+		title: 'Kumbaya',
+	},
 	// - L -
 	{
 		artist: 'Bill Withers',
@@ -262,6 +280,14 @@ export const SongList: SongType[] = [
 		lyrics: LYRIC_LIST.Mockingbird,
 		title: 'Mockingbird',
 	},
+	{
+		artist: 'Misc Traditional',
+		eras: [ERAS.EIGHTEEN_EIGHTIES],
+		genres: [GENRES.FOLK],
+		link: 'https://tabs.ultimate-guitar.com/tab/misc-traditional/my-bonnie-lies-over-the-ocean-chords-973976',
+		lyrics: LYRIC_LIST.MyBonnieLiesOverTheOcean,
+		title: 'My Bonnie Lies Over The Ocean',
+	},
 	// - N -
 	{
 		artist: 'One Direction',
@@ -280,6 +306,14 @@ export const SongList: SongType[] = [
 		link: 'https://tabs.ultimate-guitar.com/tab/misc-traditional/oh-susanna-chords-1050965',
 		lyrics: LYRIC_LIST.OhSusanna,
 		title: 'Oh Susanna',
+	},
+	{
+		artist: 'Misc Children',
+		eras: [ERAS.SIXTIES],
+		genres: [GENRES.KIDS, GENRES.FOLK],
+		link: 'https://tabs.ultimate-guitar.com/tab/misc-children/on-top-of-spaghetti-chords-1404074',
+		lyrics: LYRIC_LIST.OnTopOfSpaghetti,
+		title: 'On Top Of Spaghetti',
 	},
 	{
 		artist: 'The Original Caste',
@@ -320,6 +354,14 @@ export const SongList: SongType[] = [
 		title: 'Right Here Waiting',
 	},
 	// - S -
+	{
+		artist: 'Misc Traditional',
+		eras: [ERAS.TWENTIES],
+		genres: [GENRES.KIDS, GENRES.FOLK],
+		link: 'https://tabs.ultimate-guitar.com/tab/misc-traditional/shell-be-coming-round-the-mountain-chords-1178525',
+		lyrics: LYRIC_LIST.ShellBeComingRoundTheMountain,
+		title: "She'll Be Coming Round The Mountain",
+	},
 	{
 		artist: 'Otis Redding',
 		eras: [ERAS.SIXTIES],
