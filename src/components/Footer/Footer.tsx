@@ -55,6 +55,7 @@ const centerSlotStyle: React.CSSProperties = {
 	alignItems: 'center',
 	display: 'flex',
 	flex: 1,
+	gap: '1px',
 	justifyContent: 'center',
 };
 
