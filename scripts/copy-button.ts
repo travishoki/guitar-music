@@ -7,6 +7,12 @@ import { BANNER_BUTTON_STYLE } from './banner-button.const';
 const IDLE_TEXT = 'Click to copy';
 const REVERT_DELAY = 3000;
 
+// Background per state: black at rest / mid-copy, green on success, red on
+// failure.
+const BLACK = '#000';
+const GREEN = '#188038';
+const RED = '#d93025';
+
 // A fixed-position banner reporting whether the clipboard write landed, which
 // doubles as a button so the copy can be re-run without reloading the page. If
 // it never lands, the text rendered on the page is still there to select by
@@ -26,13 +32,16 @@ export const createCopyButton = (text: string) => {
 		// the timer the previous copy left running.
 		window.clearTimeout(revertTimer);
 		element.textContent = 'Copying...';
+		element.style.background = BLACK;
 
 		return navigator.clipboard
 			.writeText(text)
 			.then(() => {
 				element.textContent = 'Copied to clipboard';
+				element.style.background = GREEN;
 				revertTimer = window.setTimeout(() => {
 					element.textContent = IDLE_TEXT;
+					element.style.background = BLACK;
 				}, REVERT_DELAY);
 
 				return true;
@@ -42,6 +51,7 @@ export const createCopyButton = (text: string) => {
 				// focused). Left up rather than reverted on a timer, since unlike the
 				// success message it says what to do about it.
 				element.textContent = 'Copy failed - click to retry';
+				element.style.background = RED;
 			});
 	};
 
