@@ -1,17 +1,15 @@
 import React from 'react';
 
-import { useLocation } from 'react-router-dom';
-
 import SvgUltimateGuitar from '~svg/SvgUltimateGuitar';
+
+import useIsRootPath from '../../../hooks/useIsRootPath';
 
 const compfirePlaylistLink =
 	'https://www.ultimate-guitar.com/user/playlist/shared?h=YBjqHjExTl9w6xbjruJM3aB-';
 
 export const UltimateGuitarPlaylist = () => {
-	const location = useLocation();
-
 	// Home page only.
-	if (location.pathname !== '/') return null;
+	if (!useIsRootPath()) return null;
 
 	return (
 		<a

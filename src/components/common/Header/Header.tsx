@@ -1,17 +1,14 @@
 import React from 'react';
 
-import { useLocation } from 'react-router-dom';
-
 import SvgClose from '~svg/SvgClose';
 import SvgHamburger from '~svg/SvgHamburger';
 
+import useIsRootPath from '../../../hooks/useIsRootPath';
 import Logo from '../Logo/Logo';
 
 const Header = ({ isNavOpen, isSplash, onToggleNav }: HeaderTypes) => {
-	const location = useLocation();
-
 	// The nav only exists on the home page, so the toggle only belongs there.
-	const isRootPath = location.pathname === '/';
+	const isRootPath = useIsRootPath();
 
 	const label = isNavOpen ? 'Collapse filters' : 'Expand filters';
 
