@@ -1,10 +1,8 @@
 import React from 'react';
 
-import { Link } from 'react-router-dom';
-
 import SvgBarGraph from '~svg/SvgBarGraph';
 
-import { fixUrlTitle } from './helpers';
+import SongHeading from './SongHeading';
 import Chip from '../../../../components/common/Chip/Chip';
 import GuitarTabLink from '../../../../components/common/GuitarTabLink';
 import { SongType } from '../../../../types';
@@ -12,20 +10,7 @@ import { SongType } from '../../../../types';
 const SongRow = ({ isGuitarMode, song }: SongRowTypes) => (
 	<div className="bottom-border" style={rowStyle}>
 		<div style={firstColumnStyle}>
-			<Link
-				style={{
-					width: isGuitarMode ? 'auto' : '100%',
-					...linkStyle,
-				}}
-				to={'/song/' + fixUrlTitle(song.title)}
-			>
-				<p className="title-font" style={titleStyle}>
-					{song.title}
-				</p>
-				<p className="secondary-text-color" style={artistStyle}>
-					{song.artist}
-				</p>
-			</Link>
+			<SongHeading isGuitarMode={isGuitarMode} song={song} />
 
 			{isGuitarMode && (
 				<>
@@ -58,22 +43,6 @@ const rowStyle: React.CSSProperties = {
 	display: 'flex',
 	justifyContent: 'space-between',
 	padding: 10,
-};
-
-const linkStyle: React.CSSProperties = {
-	textDecoration: 'none',
-};
-
-const titleStyle: React.CSSProperties = {
-	fontSize: 20,
-	fontWeight: 'bold',
-	margin: 0,
-	marginBottom: 2,
-};
-
-const artistStyle: React.CSSProperties = {
-	fontSize: 14,
-	margin: 0,
 };
 
 const iconBarGraph: React.CSSProperties = {
