@@ -33,3 +33,7 @@ export const NOISE_LINE = /^(?:[-=_~]+|Set\s*\d+)$/i;
 
 // The stray "X" (a close button) UG leaves behind at the end of the tab.
 export const TRAILING_NOISE = /^[Xx]$/;
+
+// Sections with no lyrics worth keeping - dropped wholesale (the heading and
+// everything under it, up to the next heading).
+export const DROPPED_SECTION = /^\[\s*(?:instrumental|interlude)\b[^\]]*\]$/i;

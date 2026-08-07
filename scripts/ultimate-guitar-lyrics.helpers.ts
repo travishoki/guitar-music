@@ -20,6 +20,16 @@ export const tidy = (list: string[]) => {
 
 export const isHeading = (line: string) => /^\[.*\]$/.test(line);
 
+// Remove whole sections whose heading matches `pattern`: the heading line and
+// every line under it, up to the next heading (or the end of the tab).
+export const dropSections = (list: string[], pattern: RegExp) => {
+	let dropping = false;
+	return list.filter((line) => {
+		if (isHeading(line)) dropping = pattern.test(line);
+		return !dropping;
+	});
+};
+
 // "Empty" means nothing but blanks between this heading and the next one -
 // checking only the following line would report every heading in a tab that
 // puts a blank line under its section labels as empty.

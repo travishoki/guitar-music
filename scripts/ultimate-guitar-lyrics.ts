@@ -9,12 +9,14 @@ import {
 	CAPO_LINE,
 	CHORD_MARK,
 	CHORD_RESIDUE,
+	DROPPED_SECTION,
 	HEADER_LINE,
 	NOISE_LINE,
 	REPEAT_LINE,
 	TRAILING_NOISE,
 } from './ultimate-guitar-lyrics.const';
 import {
+	dropSections,
 	hasContent,
 	isHeading,
 	isTabLine,
@@ -64,10 +66,11 @@ while (
 }
 
 // A section whose content was nothing but chords is left as a lone heading
-// (e.g. "[Intro]"), so drop those.
+// (e.g. "[Intro]"), so drop those. [Instrumental]/[Interlude] sections are
+// dropped wholesale first, before the lone-heading pass.
 const body = numberVerses(
 	tidy(
-		tidy(lines)
+		tidy(dropSections(lines, DROPPED_SECTION))
 			.filter((line, i, list) => !isHeading(line) || hasContent(list, i))
 			// Close up a blank line sitting between a heading and its first line.
 			.filter((line, i, list) => line !== '' || !isHeading(list[i - 1])),
