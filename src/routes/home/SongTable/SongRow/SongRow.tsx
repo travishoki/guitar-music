@@ -11,31 +11,35 @@ import { SongType } from '../../../../types';
 
 const SongRow = ({ isGuitarMode, song }: SongRowTypes) => (
 	<div className="bottom-border" style={rowStyle}>
-		<Link
-			style={{
-				width: isGuitarMode ? 'auto' : '100%',
-				...linkStyle,
-			}}
-			to={'/song/' + fixUrlTitle(song.title)}
-		>
-			<div style={titleRowStyle}>
+		<div style={firstColumnStyle}>
+			<Link
+				style={{
+					width: isGuitarMode ? 'auto' : '100%',
+					...linkStyle,
+				}}
+				to={'/song/' + fixUrlTitle(song.title)}
+			>
 				<p className="title-font" style={titleStyle}>
 					{song.title}
 				</p>
-				{isGuitarMode && <Chip title={song.difficulty} />}
-			</div>
-			<p className="secondary-text-color" style={artistStyle}>
-				{song.artist}
-			</p>
+				<p className="secondary-text-color" style={artistStyle}>
+					{song.artist}
+				</p>
+			</Link>
+
 			{isGuitarMode && (
 				<>
-					{song.capo && <Chip title={song.capo} />}
 					{song.strumPattern && (
-						<p style={alternateStyle}>{song.strumPattern}</p>
+						<p style={strumpatternStyle}>{song.strumPattern}</p>
 					)}
+					<div style={chipRowStyle}>
+						<Chip title={song.difficulty} />
+						{song.capo && <Chip title={song.capo} />}
+					</div>
 				</>
 			)}
-		</Link>
+		</div>
+
 		{isGuitarMode && (
 			<div style={rightSectionStyle}>
 				{song.barChords && <SvgBarGraph style={iconBarGraph} />}
@@ -58,12 +62,6 @@ const rowStyle: React.CSSProperties = {
 
 const linkStyle: React.CSSProperties = {
 	textDecoration: 'none',
-};
-
-const titleRowStyle: React.CSSProperties = {
-	alignItems: 'center',
-	display: 'flex',
-	gap: 8,
 };
 
 const titleStyle: React.CSSProperties = {
@@ -90,10 +88,24 @@ const rightSectionStyle: React.CSSProperties = {
 	width: 60,
 };
 
-const alternateStyle: React.CSSProperties = {
+const strumpatternStyle: React.CSSProperties = {
 	fontSize: 14,
 	margin: 0,
 	marginTop: 3,
+};
+
+const firstColumnStyle: React.CSSProperties = {
+	display: 'flex',
+	flexDirection: 'column',
+	gap: 5,
+	justifyContent: 'flex-start',
+};
+
+const chipRowStyle: React.CSSProperties = {
+	alignItems: 'center',
+	display: 'flex',
+	gap: 10,
+	justifyContent: 'flex-start',
 };
 
 export default SongRow;
