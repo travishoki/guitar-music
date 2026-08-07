@@ -50,26 +50,24 @@ const HomePage = ({
 	return (
 		<>
 			<div className="top-nav">
-				<div className="top-controls">
-					<Sort currentOption={sortTerm} onClick={handleSort} />
+				<Sort currentOption={sortTerm} onClick={handleSort} />
 
-					<Controls className="toggle-controls">
-						{isGuitarMode && (
-							<BarChordToggle
-								includesBarChord={includesBarChord}
-								onClick={onToggleIncludesBarChord}
-							/>
-						)}
-						<DarkModeToggle
-							isdarkMode={isdarkMode}
-							onClick={onToggleIsDarkMode}
+				<Controls className="toggle-controls">
+					{isGuitarMode && (
+						<BarChordToggle
+							includesBarChord={includesBarChord}
+							onClick={onToggleIncludesBarChord}
 						/>
-						<GuitarModeToggle
-							isGuitarMode={isGuitarMode}
-							onClick={onToggleIsGuitarMode}
-						/>
-					</Controls>
-				</div>
+					)}
+					<DarkModeToggle
+						isdarkMode={isdarkMode}
+						onClick={onToggleIsDarkMode}
+					/>
+					<GuitarModeToggle
+						isGuitarMode={isGuitarMode}
+						onClick={onToggleIsGuitarMode}
+					/>
+				</Controls>
 
 				<Difficulty currentOption={difficulty} onClick={setDifficulty} />
 
