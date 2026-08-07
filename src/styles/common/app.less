@@ -211,6 +211,13 @@ header {
 	position: sticky;
 	top: 0;
 	z-index: 3;
+
+	// Sized off the header height so the logo scales with the header at each
+	// breakpoint and never forces it to grow.
+	.logo {
+		height: 100%;
+		width: auto;
+	}
 }
 
 body.dark-mode {
