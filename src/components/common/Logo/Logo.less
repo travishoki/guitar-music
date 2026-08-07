@@ -6,8 +6,9 @@
 //
 // The content is max-width 768px and centered, so its left edge sits at
 // max(0, (100vw - 768px) / 2) from the viewport edge - i.e. 384px left of centre
-// on wide screens, clamped to the viewport edge on narrow ones.
-@logo-rest-x: ~'max(-50vw, -384px)';
+// on wide screens, clamped to the viewport edge on narrow ones. The extra 10px
+// insets the logo so it isn't hugging the edge.
+@logo-rest-x: ~'max(calc(10px - 50vw), -374px)';
 
 .logo {
 	height: 90px;

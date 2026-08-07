@@ -12,7 +12,13 @@
 
 .controls--scrollable {
 	max-width: 100%;
+	// Scroll sideways only. overflow-x on its own leaves overflow-y computing to
+	// auto, which lets the row be dragged/rubber-banded vertically on mobile;
+	// pin it to hidden and hint the browser that only horizontal panning is ours
+	// so vertical drags scroll the page instead.
 	overflow-x: auto;
+	overflow-y: hidden;
+	touch-action: pan-x;
 
 	// Keep the buttons from squishing when the row scrolls.
 	.control {
