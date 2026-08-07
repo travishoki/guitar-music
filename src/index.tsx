@@ -8,6 +8,10 @@ import { BrowserRouter } from 'react-router-dom';
 import Footer from './components/Footer/Footer';
 import Header from './components/common/Header/Header';
 import Main from './components/common/Main';
+import { ALL } from './const/filters';
+import { TITLE } from './const/sort';
+import useIsRootPath from './hooks/useIsRootPath';
+import TopNav from './routes/home/TopNav/TopNav';
 import './styles/index.less';
 
 const App = () => {
@@ -19,6 +23,10 @@ const App = () => {
 	);
 	const [includesBarChord, setIncludesBarChord] = useState(true);
 	const [isNavOpen, setIsNavOpen] = useState(true);
+	const [genre, setGenre] = useState(ALL);
+	const [sortTerm, setSort] = useState(TITLE);
+	const [difficulty, setDifficulty] = useState(ALL);
+	const isRootPath = useIsRootPath();
 
 	// Splash the logo up from the middle of the screen and fade the rest of the
 	// content in behind it - but only the first time the app mounts in a
@@ -63,6 +71,12 @@ const App = () => {
 		setIncludesBarChord(!includesBarChord);
 	};
 
+	const handleSort = (option: string) => {
+		const label = option.charAt(0).toUpperCase() + option.slice(1);
+		toast(`Sorting by ${label}`, { duration: 1500 });
+		setSort(option);
+	};
+
 	useEffect(() => {
 		sessionStorage.setItem('isdarkMode', String(isdarkMode));
 
@@ -80,8 +94,26 @@ const App = () => {
 	}, [isGuitarMode]);
 
 	useEffect(() => {
-		document.body.classList.toggle('nav-collapsed', !isNavOpen);
-	}, [isNavOpen]);
+		// Off the home page the menu is always closed, which also shrinks the logo.
+		document.body.classList.toggle('nav-collapsed', !isNavOpen || !isRootPath);
+	}, [isNavOpen, isRootPath]);
+
+	const topNav = (
+		<TopNav
+			currentDifficulty={difficulty}
+			currentGenre={genre}
+			currentSort={sortTerm}
+			includesBarChord={includesBarChord}
+			isGuitarMode={isGuitarMode}
+			isdarkMode={isdarkMode}
+			onDifficulty={setDifficulty}
+			onGenre={setGenre}
+			onSort={handleSort}
+			onToggleIncludesBarChord={onToggleIncludesBarChord}
+			onToggleIsDarkMode={onToggleIsDarkMode}
+			onToggleIsGuitarMode={onToggleIsGuitarMode}
+		/>
+	);
 
 	return (
 		<div
@@ -92,14 +124,14 @@ const App = () => {
 				isNavOpen={isNavOpen}
 				isSplash={isSplash}
 				onToggleNav={onToggleNav}
+				topNav={topNav}
 			/>
 			<Main
+				currentDifficulty={difficulty}
+				currentGenre={genre}
+				currentSortTerm={sortTerm}
 				includesBarChord={includesBarChord}
 				isGuitarMode={isGuitarMode}
-				isdarkMode={isdarkMode}
-				onToggleIncludesBarChord={onToggleIncludesBarChord}
-				onToggleIsDarkMode={onToggleIsDarkMode}
-				onToggleIsGuitarMode={onToggleIsGuitarMode}
 			/>
 			<Footer isGuitarMode={isGuitarMode} />
 			<Toaster

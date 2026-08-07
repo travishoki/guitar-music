@@ -1,40 +1,18 @@
-import React, { useLayoutEffect, useState } from 'react';
+import React, { useLayoutEffect } from 'react';
 
-import toast from 'react-hot-toast';
-
-import BarChordToggle from './BarChordToggle/BarChordToggle';
-import Difficulty from './Difficulty/Difficulty';
-import Genre from './Genre/Genre';
 import SongTable from './SongTable/SongTable';
-import Sort from './Sort/Sort';
-import DarkModeToggle from '../../components/DarkModeToggle/DarkModeToggle';
-import GuitarModeToggle from '../../components/GuitarModeToggle/GuitarModeToggle';
-import Controls from '../../components/common/Controls/Controls';
-import { ALL } from '../../const/filters';
-import { TITLE } from '../../const/sort';
 
 // Remembers the home page scroll position across route changes (e.g. going
 // into a song and clicking back) so the list stays where it was.
 let savedScrollY = 0;
 
 const HomePage = ({
+	currentDifficulty,
+	currentGenre,
+	currentSortTerm,
 	includesBarChord,
 	isGuitarMode,
-	isdarkMode,
-	onToggleIncludesBarChord,
-	onToggleIsDarkMode,
-	onToggleIsGuitarMode,
 }: HomePageTypes) => {
-	const [genre, setGenre] = useState(ALL);
-	const [sortTerm, setSort] = useState(TITLE);
-	const [difficulty, setDifficulty] = useState(ALL);
-
-	const handleSort = (option: string) => {
-		const label = option.charAt(0).toUpperCase() + option.slice(1);
-		toast(`Sorting by ${label}`, { duration: 1500 });
-		setSort(option);
-	};
-
 	useLayoutEffect(() => {
 		window.scrollTo(0, savedScrollY);
 
@@ -48,50 +26,22 @@ const HomePage = ({
 	}, []);
 
 	return (
-		<>
-			<div className="top-nav">
-				<Sort currentOption={sortTerm} onClick={handleSort} />
-
-				<Controls className="toggle-controls">
-					{isGuitarMode && (
-						<BarChordToggle
-							includesBarChord={includesBarChord}
-							onClick={onToggleIncludesBarChord}
-						/>
-					)}
-					<DarkModeToggle
-						isdarkMode={isdarkMode}
-						onClick={onToggleIsDarkMode}
-					/>
-					<GuitarModeToggle
-						isGuitarMode={isGuitarMode}
-						onClick={onToggleIsGuitarMode}
-					/>
-				</Controls>
-
-				<Difficulty currentOption={difficulty} onClick={setDifficulty} />
-
-				<Genre currentOption={genre} onClick={setGenre} />
-			</div>
-
-			<SongTable
-				currentDifficulty={difficulty}
-				currentGenre={genre}
-				currentSortTerm={sortTerm}
-				includesBarChord={includesBarChord}
-				isGuitarMode={isGuitarMode}
-			/>
-		</>
+		<SongTable
+			currentDifficulty={currentDifficulty}
+			currentGenre={currentGenre}
+			currentSortTerm={currentSortTerm}
+			includesBarChord={includesBarChord}
+			isGuitarMode={isGuitarMode}
+		/>
 	);
 };
 
 type HomePageTypes = {
+	currentDifficulty: string;
+	currentGenre: string;
+	currentSortTerm: string;
 	includesBarChord: boolean;
 	isGuitarMode: boolean;
-	isdarkMode: boolean;
-	onToggleIncludesBarChord: () => void;
-	onToggleIsDarkMode: () => void;
-	onToggleIsGuitarMode: () => void;
 };
 
 export default HomePage;

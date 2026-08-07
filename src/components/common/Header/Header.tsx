@@ -6,8 +6,8 @@ import SvgHamburger from '~svg/SvgHamburger';
 import useIsRootPath from '../../../hooks/useIsRootPath';
 import Logo from '../Logo/Logo';
 
-const Header = ({ isNavOpen, isSplash, onToggleNav }: HeaderTypes) => {
-	// The nav only exists on the home page, so the toggle only belongs there.
+const Header = ({ isNavOpen, isSplash, onToggleNav, topNav }: HeaderTypes) => {
+	// The nav (and its controls) only exist on the home page.
 	const isRootPath = useIsRootPath();
 
 	const label = isNavOpen ? 'Collapse filters' : 'Expand filters';
@@ -29,6 +29,8 @@ const Header = ({ isNavOpen, isSplash, onToggleNav }: HeaderTypes) => {
 					</button>
 				)}
 			</header>
+
+			{isRootPath && topNav}
 		</>
 	);
 };
@@ -37,6 +39,7 @@ type HeaderTypes = {
 	isNavOpen: boolean;
 	isSplash: boolean;
 	onToggleNav: () => void;
+	topNav: React.ReactNode;
 };
 
 export default Header;

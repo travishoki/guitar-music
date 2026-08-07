@@ -5,9 +5,10 @@
 	justify-content: center;
 	padding: 0;
 	position: absolute;
+	// Sits in the top-right. 15px down keeps it centred in the collapsed 60px
+	// header, and in that same spot when the menu opens.
 	right: 10px;
-	top: 50%;
-	transform: translateY(-50%);
+	top: 15px;
 	width: 30px;
 
 	svg {
@@ -23,7 +24,18 @@ header {
 	align-items: center;
 	position: sticky;
 	top: 0;
+	transition: height 0.2s ease;
 	z-index: 3;
+}
+
+// With the menu closed there's no tall nav to hold the content clear of the
+// logo, so reserve room for the collapsed logo (90px scaled to ~50px, plus its
+// 5px top margin). Off the home page the menu is always closed, so this is also
+// what gives those pages their header.
+body.nav-collapsed {
+	header {
+		height: 60px;
+	}
 }
 
 body.dark-mode {

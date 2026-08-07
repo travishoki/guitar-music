@@ -8,24 +8,22 @@ import NotFoundPage from '../../routes/notFound/NotFoundPage';
 import SongPage from '../../routes/song/SongPage';
 
 const Main = ({
+	currentDifficulty,
+	currentGenre,
+	currentSortTerm,
 	includesBarChord,
 	isGuitarMode,
-	isdarkMode,
-	onToggleIncludesBarChord,
-	onToggleIsDarkMode,
-	onToggleIsGuitarMode,
 }: MainTypes) => (
 	<main>
 		<Routes>
 			<Route
 				element={
 					<HomePage
+						currentDifficulty={currentDifficulty}
+						currentGenre={currentGenre}
+						currentSortTerm={currentSortTerm}
 						includesBarChord={includesBarChord}
 						isGuitarMode={isGuitarMode}
-						isdarkMode={isdarkMode}
-						onToggleIncludesBarChord={onToggleIncludesBarChord}
-						onToggleIsDarkMode={onToggleIsDarkMode}
-						onToggleIsGuitarMode={onToggleIsGuitarMode}
 					/>
 				}
 				path="/"
@@ -38,12 +36,11 @@ const Main = ({
 );
 
 type MainTypes = {
+	currentDifficulty: string;
+	currentGenre: string;
+	currentSortTerm: string;
 	includesBarChord: boolean;
 	isGuitarMode: boolean;
-	isdarkMode: boolean;
-	onToggleIncludesBarChord: () => void;
-	onToggleIsDarkMode: () => void;
-	onToggleIsGuitarMode: () => void;
 };
 
 export default Main;

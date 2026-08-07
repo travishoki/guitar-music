@@ -1,14 +1,21 @@
-// Fixed over the top of the header. 90px with the menu open, scaled to 50px
-// (50 / 90) when it's collapsed - transform: scale so the change animates
-// (animating height stalls in Chromium here), scaling about the top so the 5px
-// margin above is kept in both states.
+// Fixed to the far left of the header, aligned with the left edge of the
+// centered content. 90px with the menu open, scaled to 50px (50 / 90) when it's
+// collapsed - transform: scale so the change animates (animating height stalls
+// in Chromium here). left: 50% keeps the splash's centering math simple;
+// @logo-rest-x then slides the resting logo out to the content's left edge.
+//
+// The content is max-width 768px and centered, so its left edge sits at
+// max(0, (100vw - 768px) / 2) from the viewport edge - i.e. 384px left of centre
+// on wide screens, clamped to the viewport edge on narrow ones.
+@logo-rest-x: ~'max(-50vw, -384px)';
+
 .logo {
 	height: 90px;
 	left: 50%;
 	margin-top: 5px;
 	position: fixed;
 	top: 0;
-	transform: translateX(-50%);
+	transform: translateX(@logo-rest-x);
 	transform-origin: top center;
 	transition: transform 0.2s ease;
 	width: auto;
@@ -17,7 +24,7 @@
 
 body.nav-collapsed {
 	.logo {
-		transform: translateX(-50%) scale(0.5556);
+		transform: translateX(@logo-rest-x) scale(0.5556);
 	}
 }
 
@@ -58,6 +65,6 @@ body.nav-collapsed {
 
 	100% {
 		opacity: 1;
-		transform: translateX(-50%) translateY(0) scale(1);
+		transform: translateX(@logo-rest-x) translateY(0) scale(1);
 	}
 }
