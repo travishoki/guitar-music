@@ -69,6 +69,11 @@ export default {
 			{
 				test: /\.(jpg|png)$/,
 				type: 'asset/resource',
+				// Emit images into an images/ subfolder (rather than alongside
+				// index.html) to keep the deploy directory tidy for FTP.
+				generator: {
+					filename: 'images/[hash][ext]',
+				},
 			},
 		],
 	},

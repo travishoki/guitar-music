@@ -85,7 +85,12 @@ export default {
 					},
 				],
 			},
-			{ test: /\.(jpg|png)$/, type: 'asset/resource' },
+			{
+				test: /\.(jpg|png)$/,
+				type: 'asset/resource',
+				// Match prod: emit images into an images/ subfolder.
+				generator: { filename: 'images/[hash][ext]' },
+			},
 			{
 				test: /\.m?js/,
 				type: 'javascript/auto',
