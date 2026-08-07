@@ -5,8 +5,7 @@
 
 /*----- Sticky Offsets -----*/
 
-@nav-height: 112px;
-
+// Shared layout values used across the header, nav, scroll headers and logo.
 // The header stays a fixed size whether or not the menu is open; only the logo
 // (a fixed overlay, sized off --header-height) grows and shrinks with the menu.
 //
@@ -14,6 +13,8 @@
 // that flips on collapse: a custom property changing in a style recalc stops
 // every transition in that recalc from starting (a Chromium quirk), which would
 // freeze the logo (and nav) animation.
+@nav-height: 112px;
+
 :root {
 	--header-height: 60px;
 }
@@ -51,20 +52,6 @@ body.dark-mode {
 body.light-mode {
 	background: @WHITE;
 	color: @BLACK;
-}
-
-body.dark-mode {
-	.body-color {
-		background: #202124;
-		color: @WHITE;
-	}
-}
-
-body.light-mode {
-	.body-color {
-		background: @WHITE;
-		color: @BLACK;
-	}
 }
 
 /*----- Content -----*/
@@ -136,44 +123,6 @@ body.light-mode {
 	}
 }
 
-/*----- Genre Filters -----*/
-
-.side-scroll-selector {
-	display: inline-block;
-	max-width: 100%;
-	overflow-x: scroll;
-
-	ul {
-		display: flex;
-		flex-direction: row;
-		list-style: none;
-		margin: 0;
-		padding: 10px;
-
-		li {
-			&:not(:last-child) {
-				button {
-					margin-right: 10px;
-				}
-			}
-		}
-	}
-}
-
-body.dark-mode {
-	.side-scroll-selector,
-	.toggle-controls {
-		background: #111;
-	}
-}
-
-body.light-mode {
-	.side-scroll-selector,
-	.toggle-controls {
-		background: #ccc;
-	}
-}
-
 /*----- Titles -----*/
 
 h1 {
@@ -188,166 +137,13 @@ h2 {
 	text-align: center;
 }
 
-/*----- Header -----*/
-
-.nav-toggle {
-	align-items: center;
-	display: flex;
-	height: 30px;
-	justify-content: center;
-	padding: 0;
-	position: absolute;
-	right: 10px;
-	top: 50%;
-	transform: translateY(-50%);
-	width: 30px;
-
-	svg {
-		height: 18px;
-		width: 18px;
-	}
-}
-
-header {
-	height: var(--header-height);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: sticky;
-	top: 0;
-	z-index: 3;
-}
-
-// Lifted out of the header and fixed over the top, so the logo's size no longer
-// depends on (or constrains) the header box. Its height fills the fixed-height
-// header (derived from --header-height) and is centred in it; collapsing the
-// menu scales it to half. The size change animates via transform: scale (which
-// also keeps it centred about its middle as it shrinks).
-.logo {
-	height: calc(var(--header-height) - 10px);
-	left: 50%;
-	position: fixed;
-	top: calc(var(--header-height) / 2);
-	transform: translate(-50%, -50%);
-	transition: transform 0.2s ease;
-	width: auto;
-	z-index: 4;
-}
-
-body.dark-mode {
-	header,
-	.top-nav {
-		background: #202124;
-	}
-
-	.nav-toggle {
-		background: transparent;
-
-		svg {
-			fill: @WHITE;
-		}
-	}
-}
-
-body.light-mode {
-	header,
-	.top-nav {
-		background: @WHITE;
-	}
-
-	.nav-toggle {
-		background: transparent;
-
-		svg {
-			fill: @BLACK;
-		}
-	}
-}
-
-/*----- Controls -----*/
-
-.top-nav {
-	height: @nav-height;
-	overflow: hidden;
-	padding-bottom: 10px;
-	position: sticky;
-	top: var(--header-height);
-	transition: height 0.2s ease;
-	z-index: 2;
-}
-
-body.nav-collapsed {
-	.top-nav {
-		height: 0;
-		padding-bottom: 0;
-	}
-
-	.scroll-header {
-		top: var(--header-height);
-	}
-
-	// The header height is unchanged; only the logo shrinks when the menu is
-	// collapsed - scaled (not resized) so the change animates. Half size.
-	.logo {
-		transform: translate(-50%, -50%) scale(0.5);
-	}
-}
-
-.top-controls {
-	align-items: center;
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 10px;
-}
-
-.toggle-controls {
-	align-items: center;
-	// Stretch so the block matches the height of the sort scroller beside it,
-	// rather than hard-coding padding to match.
-	align-self: stretch;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	padding: 0 10px;
-
-	button {
-		align-items: center;
-		display: flex;
-		height: 30px;
-		justify-content: center;
-		margin-left: 5px;
-		margin-right: 5px;
-		padding: 0;
-		width: 30px;
-
-		svg {
-			height: 20px;
-			width: 20px;
-		}
-	}
-}
-
 /*----- Links -----*/
 
 a {
 	color: inherit;
 }
 
-/*----- Text -----*/
-
-body.dark-mode {
-	.secondary-text-color {
-		color: #ccc;
-	}
-}
-
-body.light-mode {
-	.secondary-text-color {
-		color: #666;
-	}
-}
-
-/*----- Text -----*/
+/*----- Borders -----*/
 
 body.dark-mode {
 	.bottom-border {
@@ -358,30 +154,6 @@ body.dark-mode {
 body.light-mode {
 	.bottom-border {
 		border-bottom: solid 1px #ccc;
-	}
-}
-
-/*----- Scroll Header -----*/
-
-.scroll-header {
-	position: sticky;
-	// Sits below the header + open nav; body.nav-collapsed drops it to just
-	// below the header. An explicit length (not a custom property) so toggling
-	// the menu does not suppress this transition.
-	top: calc(var(--header-height) + @nav-height);
-	transition: top 0.2s ease;
-	z-index: 1;
-}
-
-body.dark-mode {
-	.scroll-header {
-		background: #666;
-	}
-}
-
-body.light-mode {
-	.scroll-header {
-		background: #ccc;
 	}
 }
 

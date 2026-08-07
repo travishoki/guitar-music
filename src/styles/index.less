@@ -1,8 +1,15 @@
-// Common
+// Common (colors, layout vars, and truly global element styles)
 @import './common/app.less';
 
 // Components
+@import '../components/common/Header/Header.less';
+@import '../components/common/Logo/Logo.less';
 @import '../components/Footer/Footer.less';
+@import '../components/SideScrollSelector/SideScrollSelector.less';
 
-// Pages
+// Routes
+@import '../routes/home/HomePage.less';
+@import '../routes/home/SongTable/SongTable.less';
+@import '../routes/home/SongTable/SongRow/SongRow.less';
+@import '../routes/song/Title/Title.less';
 @import './pages/song/SongPage.less';

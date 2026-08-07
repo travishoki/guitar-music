@@ -1,0 +1,27 @@
+.scroll-header {
+	position: sticky;
+	// Sits below the header + open nav; body.nav-collapsed drops it to just
+	// below the header. An explicit length (not a custom property) so toggling
+	// the menu does not suppress this transition.
+	top: calc(var(--header-height) + @nav-height);
+	transition: top 0.2s ease;
+	z-index: 1;
+}
+
+body.nav-collapsed {
+	.scroll-header {
+		top: var(--header-height);
+	}
+}
+
+body.dark-mode {
+	.scroll-header {
+		background: #666;
+	}
+}
+
+body.light-mode {
+	.scroll-header {
+		background: #ccc;
+	}
+}

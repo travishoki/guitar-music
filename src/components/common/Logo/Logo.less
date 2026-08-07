@@ -1,0 +1,23 @@
+// Lifted out of the header and fixed over the top, so the logo's size no longer
+// depends on (or constrains) the header box. Its height fills the fixed-height
+// header (derived from --header-height) and is centred in it; collapsing the
+// menu scales it to half. The size change animates via transform: scale (which
+// also keeps it centred about its middle as it shrinks).
+.logo {
+	height: calc(var(--header-height) - 10px);
+	left: 50%;
+	position: fixed;
+	top: calc(var(--header-height) / 2);
+	transform: translate(-50%, -50%);
+	transition: transform 0.2s ease;
+	width: auto;
+	z-index: 4;
+}
+
+// The header height is unchanged; only the logo shrinks when the menu is
+// collapsed - scaled (not resized) so the change animates. Half size.
+body.nav-collapsed {
+	.logo {
+		transform: translate(-50%, -50%) scale(0.5);
+	}
+}
