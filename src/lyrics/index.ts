@@ -1,5 +1,6 @@
 // - A -
 import AHorseWithNoName from './AHorseWithNoName';
+import AmericanPie from './AmericanPie';
 // - B -
 import BabyBaluga from './BabyBaluga';
 import BabyILoveYourWay from './BabyILoveYourWay';
@@ -7,6 +8,7 @@ import BackHome from './BackHome';
 import BlowinInTheWind from './BlowinInTheWind';
 import ButterflyKisses from './ButterflyKisses';
 // - C -
+import CantHelpFallingInLove from './CantHelpFallingInLove';
 import ClosingTime from './ClosingTime';
 import CountryRoads from './CountryRoads';
 // - D -
@@ -29,6 +31,7 @@ import ItsYourLove from './ItsYourLove';
 // - J -
 import Jumper from './Jumper';
 // - K -
+import KillingMeSoftly from './KillingMeSoftly';
 import Kookaburra from './Kookaburra';
 import Kumbaya from './Kumbaya';
 // - L -
@@ -78,6 +81,7 @@ import YoureStillTheOne from './YoureStillTheOne';
 export default {
 	// - A -
 	AHorseWithNoName,
+	AmericanPie,
 	// - B -
 	BabyBaluga,
 	BabyILoveYourWay,
@@ -85,6 +89,7 @@ export default {
 	BlowinInTheWind,
 	ButterflyKisses,
 	// - C -
+	CantHelpFallingInLove,
 	ClosingTime,
 	CountryRoads,
 	// - D -
@@ -107,6 +112,7 @@ export default {
 	// - J -
 	Jumper,
 	// - K -
+	KillingMeSoftly,
 	Kookaburra,
 	Kumbaya,
 	// - L -

@@ -23,6 +23,15 @@ export const SongList: SongType[] = [
 		lyrics: LYRIC_LIST.AHorseWithNoName,
 		title: 'A Horse With No Name',
 	},
+	{
+		artist: 'Don McLean',
+		difficulty: DIFFICULTY.INTERMEDIATE,
+		eras: [ERAS.SEVENTIES],
+		genres: [GENRES.FOLK, GENRES.ROCK],
+		link: 'https://tabs.ultimate-guitar.com/tab/don-mclean/american-pie-chords-187946',
+		lyrics: LYRIC_LIST.AmericanPie,
+		title: 'American Pie',
+	},
 	// - B -
 	{
 		alteration: CAPO_2,
@@ -76,6 +85,16 @@ export const SongList: SongType[] = [
 		title: 'Butterfly Kisses',
 	},
 	// - C -
+	{
+		alteration: CAPO_2,
+		artist: 'Elvis Presley',
+		difficulty: DIFFICULTY.INTERMEDIATE,
+		eras: [ERAS.SIXTIES],
+		genres: [GENRES.BALLAD],
+		link: 'https://tabs.ultimate-guitar.com/tab/elvis-presley/cant-help-falling-in-love-chords-1086983',
+		lyrics: LYRIC_LIST.CantHelpFallingInLove,
+		title: "Can't Help Falling In Love",
+	},
 	{
 		artist: 'Semisonic',
 		difficulty: DIFFICULTY.INTERMEDIATE,
@@ -232,6 +251,15 @@ export const SongList: SongType[] = [
 		title: 'Jumper',
 	},
 	// - K -
+	{
+		artist: 'Fugees',
+		difficulty: DIFFICULTY.INTERMEDIATE,
+		eras: [ERAS.NINETIES],
+		genres: [GENRES.R_AND_B, GENRES.SOUL, GENRES.HIP_HOP],
+		link: 'https://tabs.ultimate-guitar.com/tab/fugees/killing-me-softly-chords-50470',
+		lyrics: LYRIC_LIST.KillingMeSoftly,
+		title: 'Killing Me Softly',
+	},
 	{
 		artist: 'Marion Sinclair',
 		barChords: true,
