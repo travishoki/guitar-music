@@ -34,9 +34,9 @@ export const SongList: SongType[] = [
 	},
 	// - B -
 	{
-		alteration: CAPO_2,
 		artist: 'Raffi Cavoukian',
 		barChords: true,
+		capo: CAPO_2,
 		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.EIGHTIES],
 		genres: [GENRES.KIDS],
@@ -55,8 +55,8 @@ export const SongList: SongType[] = [
 		title: 'Baby I Love Your Way',
 	},
 	{
-		alteration: CAPO_4,
 		artist: 'Andy Grammer',
+		capo: CAPO_4,
 		difficulty: DIFFICULTY.INTERMEDIATE,
 		eras: [ERAS.TWENTY_TENS],
 		genres: [],
@@ -65,8 +65,8 @@ export const SongList: SongType[] = [
 		title: 'Back Home',
 	},
 	{
-		alteration: CAPO_7,
 		artist: 'Bob Dylan',
+		capo: CAPO_7,
 		difficulty: DIFFICULTY.ABSOLUTE_BEGINNER,
 		eras: [ERAS.SIXTIES],
 		genres: [],
@@ -86,8 +86,8 @@ export const SongList: SongType[] = [
 	},
 	// - C -
 	{
-		alteration: CAPO_2,
 		artist: 'Elvis Presley',
+		capo: CAPO_2,
 		difficulty: DIFFICULTY.INTERMEDIATE,
 		eras: [ERAS.SIXTIES],
 		genres: [GENRES.BALLAD],
@@ -105,8 +105,8 @@ export const SongList: SongType[] = [
 		title: 'Closing Time',
 	},
 	{
-		alteration: CAPO_2,
 		artist: 'John Denver',
+		capo: CAPO_2,
 		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.SEVENTIES],
 		genres: [GENRES.COUNTRY],
@@ -146,8 +146,8 @@ export const SongList: SongType[] = [
 	},
 	// - G -
 	{
-		alteration: CAPO_1,
 		artist: "Plain White T's",
+		capo: CAPO_1,
 		difficulty: DIFFICULTY.INTERMEDIATE,
 		eras: [ERAS.TWENTY_TENS],
 		genres: [],
@@ -156,9 +156,9 @@ export const SongList: SongType[] = [
 		title: 'Giving Tree',
 	},
 	{
-		alteration: CAPO_3,
 		artist: 'Lee Greenwood',
 		barChords: true,
+		capo: CAPO_3,
 		difficulty: DIFFICULTY.INTERMEDIATE,
 		eras: [ERAS.EIGHTIES],
 		genres: [GENRES.PATRIOTIC],
@@ -167,8 +167,8 @@ export const SongList: SongType[] = [
 		title: 'God Bless the USA',
 	},
 	{
-		alteration: CAPO_1,
 		artist: 'Kane Brown',
+		capo: CAPO_1,
 		difficulty: DIFFICULTY.ABSOLUTE_BEGINNER,
 		eras: [ERAS.TWENTY_TENS],
 		genres: [GENRES.COUNTRY],
@@ -197,9 +197,9 @@ export const SongList: SongType[] = [
 		title: 'Home On The Range',
 	},
 	{
-		alteration: CAPO_5,
 		artist: 'Kenny Loggins',
 		barChords: true,
+		capo: CAPO_5,
 		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.SEVENTIES],
 		genres: [GENRES.KIDS],
@@ -210,8 +210,8 @@ export const SongList: SongType[] = [
 	},
 	// - I -
 	{
-		alteration: CAPO_3,
 		artist: 'Bonnie Raitt',
+		capo: CAPO_3,
 		difficulty: DIFFICULTY.INTERMEDIATE,
 		eras: [ERAS.NINETIES],
 		genres: [],
@@ -311,8 +311,8 @@ export const SongList: SongType[] = [
 		title: 'Maggie May',
 	},
 	{
-		alteration: CAPO_3,
 		artist: 'Adele',
+		capo: CAPO_3,
 		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.TWO_THOUSANDS],
 		genres: [],
@@ -360,9 +360,9 @@ export const SongList: SongType[] = [
 	},
 	// - N -
 	{
-		alteration: CAPO_1,
 		artist: 'One Direction',
 		barChords: true,
+		capo: CAPO_1,
 		difficulty: DIFFICULTY.INTERMEDIATE,
 		eras: [ERAS.TWENTY_TENS],
 		genres: [],
@@ -400,9 +400,9 @@ export const SongList: SongType[] = [
 		title: 'One Tin Soldier',
 	},
 	{
-		alteration: CAPO_5,
 		artist: "Israel Kamakawiwo'ole",
 		barChords: true,
+		capo: CAPO_5,
 		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.NINETIES],
 		genres: [],
@@ -412,9 +412,9 @@ export const SongList: SongType[] = [
 	},
 	// - P -
 	{
-		alteration: CAPO_2,
 		artist: 'Peter, Paul & Mary',
 		barChords: true,
+		capo: CAPO_2,
 		difficulty: DIFFICULTY.INTERMEDIATE,
 		eras: [ERAS.SIXTIES],
 		genres: [GENRES.FOLK, GENRES.KIDS],
@@ -463,8 +463,8 @@ export const SongList: SongType[] = [
 		title: 'Stand By Me',
 	},
 	{
-		alteration: CAPO_1,
 		artist: 'Jonathan Edwards',
+		capo: CAPO_1,
 		difficulty: DIFFICULTY.ABSOLUTE_BEGINNER,
 		eras: [ERAS.SEVENTIES],
 		genres: [],
@@ -520,8 +520,8 @@ export const SongList: SongType[] = [
 		title: 'This Land is your Land',
 	},
 	{
-		alteration: CAPO_3,
 		artist: 'Rolf Harris',
+		capo: CAPO_3,
 		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.SIXTIES],
 		genres: [GENRES.KIDS],
@@ -541,8 +541,8 @@ export const SongList: SongType[] = [
 	},
 	// - W -
 	{
-		alteration: CAPO_1,
 		artist: 'Katrina and the Waves',
+		capo: CAPO_1,
 		difficulty: DIFFICULTY.ABSOLUTE_BEGINNER,
 		eras: [ERAS.EIGHTIES],
 		genres: [],
@@ -551,9 +551,9 @@ export const SongList: SongType[] = [
 		title: 'Walking On Sunshine',
 	},
 	{
-		alteration: CAPO_1,
 		artist: 'Jackie DeShannon',
 		barChords: true,
+		capo: CAPO_1,
 		difficulty: DIFFICULTY.INTERMEDIATE,
 		eras: [ERAS.SIXTIES],
 		genres: [],
@@ -562,9 +562,9 @@ export const SongList: SongType[] = [
 		title: 'What the World Needs Now is Love',
 	},
 	{
-		alteration: CAPO_5,
 		artist: 'Pete Seeger',
 		barChords: true,
+		capo: CAPO_5,
 		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.SIXTIES],
 		genres: [GENRES.FOLK],
@@ -602,8 +602,8 @@ export const SongList: SongType[] = [
 		title: 'You Are My Sunshine',
 	},
 	{
-		alteration: CAPO_1,
 		artist: 'Shania Twain',
+		capo: CAPO_1,
 		difficulty: DIFFICULTY.ABSOLUTE_BEGINNER,
 		eras: [ERAS.NINETIES],
 		genres: [],

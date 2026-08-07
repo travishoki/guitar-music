@@ -9,9 +9,9 @@ export type ChordType = {
 };
 
 export type SongType = {
-	alteration?: string;
 	artist: string;
 	barChords?: boolean;
+	capo?: string;
 	difficulty: DIFFICULTY;
 	eras: string[];
 	genres: string[];

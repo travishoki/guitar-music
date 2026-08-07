@@ -29,7 +29,7 @@ const SongRow = ({ isGuitarMode, song }: SongRowTypes) => (
 			</p>
 			{isGuitarMode && (
 				<>
-					{song.alteration && <p style={alternateStyle}>{song.alteration}</p>}
+					{song.capo && <Chip title={song.capo} />}
 					{song.strumPattern && (
 						<p style={alternateStyle}>{song.strumPattern}</p>
 					)}
