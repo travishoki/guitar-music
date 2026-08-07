@@ -38,7 +38,7 @@ export const SongList: SongType[] = [
 	},
 	{
 		artist: 'Andy Grammer',
-		eras: [ERAS.TENS],
+		eras: [ERAS.TWENTY_TENS],
 		genres: [],
 		link: 'https://tabs.ultimate-guitar.com/tab/andy-grammer/back-home-chords-1479557',
 		lyrics: LYRIC_LIST.BackHome,
@@ -109,7 +109,7 @@ export const SongList: SongType[] = [
 	// - G -
 	{
 		artist: "Plain White T's",
-		eras: [ERAS.TENS],
+		eras: [ERAS.TWENTY_TENS],
 		genres: [],
 		link: 'https://tabs.ultimate-guitar.com/tab/plain-white-ts/the-giving-tree-chords-1240804',
 		lyrics: LYRIC_LIST.GivingTree,
@@ -127,7 +127,7 @@ export const SongList: SongType[] = [
 	{
 		alteration: CAPO_5,
 		artist: 'Kane Brown',
-		eras: [ERAS.TENS],
+		eras: [ERAS.TWENTY_TENS],
 		genres: [GENRES.COUNTRY],
 		link: 'https://tabs.ultimate-guitar.com/tab/kane-brown/good-as-you-chords-2497455',
 		lyrics: LYRIC_LIST.GoodAsYou,
@@ -230,7 +230,7 @@ export const SongList: SongType[] = [
 	},
 	{
 		artist: 'Adele',
-		eras: [ERAS.ZEROS],
+		eras: [ERAS.TWO_THOUSANDS],
 		genres: [],
 		link: 'https://tabs.ultimate-guitar.com/tab/adele/make-you-feel-my-love-chords-752102',
 		lyrics: LYRIC_LIST.MakeYouFeelMyLove,
@@ -266,7 +266,7 @@ export const SongList: SongType[] = [
 	{
 		artist: 'One Direction',
 		barChords: true,
-		eras: [ERAS.TENS],
+		eras: [ERAS.TWENTY_TENS],
 		genres: [],
 		link: 'https://tabs.ultimate-guitar.com/tab/one-direction/night-changes-chords-1678440',
 		lyrics: LYRIC_LIST.NightChanges,

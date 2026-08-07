@@ -1,5 +1,5 @@
-export const TENS = '2010s';
-export const ZEROS = '2000s';
+export const TWENTY_TENS = '2010s';
+export const TWO_THOUSANDS = '2000s';
 export const NINETIES = '90s';
 export const EIGHTIES = '80s';
 export const SEVENTIES = '70s';
@@ -10,8 +10,8 @@ export const EIGHTEEN_SEVENTIES = '1870s';
 export const EIGHTEEN_FOURTIES = '1840s';
 
 export const ERAS = [
-	TENS,
-	ZEROS,
+	TWENTY_TENS,
+	TWO_THOUSANDS,
 	NINETIES,
 	EIGHTIES,
 	SEVENTIES,
