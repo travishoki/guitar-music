@@ -593,7 +593,6 @@ export const SongList: SongType[] = [
 		title: 'Yellow Submarine',
 	},
 	{
-		alteration: 'Tuning: D A D G B E',
 		artist: 'Chris Stapleton',
 		difficulty: DIFFICULTY.ABSOLUTE_BEGINNER,
 		eras: [],
