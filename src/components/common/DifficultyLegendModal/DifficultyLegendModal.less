@@ -1,0 +1,51 @@
+.difficulty-legend-overlay {
+	align-items: center;
+	background: rgba(0, 0, 0, 0.5);
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 10;
+}
+
+.difficulty-legend-panel {
+	border-radius: 8px;
+	max-width: 320px;
+	padding: 20px;
+	position: relative;
+	width: 80%;
+}
+
+.difficulty-legend-title {
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0 0 12px;
+}
+
+.difficulty-legend-row {
+	align-items: center;
+	display: flex;
+	gap: 10px;
+	padding: 4px 0;
+}
+
+.difficulty-legend-dot {
+	border-radius: 50%;
+	display: inline-block;
+	flex-shrink: 0;
+	height: 12px;
+	width: 12px;
+}
+
+body.dark-mode .difficulty-legend-panel {
+	background: #202124;
+	color: @WHITE;
+}
+
+body.light-mode .difficulty-legend-panel {
+	background: @WHITE;
+	color: @BLACK;
+}

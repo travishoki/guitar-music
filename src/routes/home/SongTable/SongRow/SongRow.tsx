@@ -4,6 +4,7 @@ import SvgBarGraph from '~svg/SvgBarGraph';
 
 import SongHeading from './SongHeading';
 import Chip from '../../../../components/common/Chip/Chip';
+import DifficultyDot from '../../../../components/common/DifficultyDot/DifficultyDot';
 import GuitarTabLink from '../../../../components/common/GuitarTabLink';
 import { SongType } from '../../../../types';
 
@@ -18,7 +19,7 @@ const SongRow = ({ isGuitarMode, song }: SongRowTypes) => (
 						<p style={strumpatternStyle}>{song.strumPattern}</p>
 					)}
 					<div style={chipRowStyle}>
-						<Chip title={song.difficulty} />
+						<DifficultyDot difficulty={song.difficulty} />
 						{song.capo && <Chip title={song.capo} />}
 					</div>
 				</>
