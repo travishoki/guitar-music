@@ -20,3 +20,44 @@ body.nav-collapsed {
 		transform: translateX(-50%) scale(0.5556);
 	}
 }
+
+// One-time splash: fade in small in the middle of the viewport, swell up to the
+// held size, hold there, then settle into place at the top. Runs once per
+// session (see Logo.tsx). transform-origin is top center, so translateY drops
+// the logo's top toward the middle and scale grows it about that point. All
+// timing comes from splash.less so the logo and the content fade-in stay in
+// sync.
+.logo--splash {
+	animation: logo-splash @splash-total cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes logo-splash {
+	0% {
+		opacity: 0;
+		transform: translateX(-50%) translateY(calc(50vh - 90px))
+			scale(@splash-scale-start);
+	}
+
+	// Faded in, still at the smaller start size. The timing function set here
+	// drives the swell segment that follows: a gentle ease-out with a touch of
+	// overshoot so it reads as a swell rather than a snap.
+	@{splash-fade-stop} {
+		animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+		opacity: 1;
+		transform: translateX(-50%) translateY(calc(50vh - 90px))
+			scale(@splash-scale-start);
+	}
+
+	// Swelled up to the held size, then held there until the move begins.
+	@{splash-swell-stop},
+	@{splash-hold-stop} {
+		opacity: 1;
+		transform: translateX(-50%) translateY(calc(50vh - 90px))
+			scale(@splash-scale);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(-50%) translateY(0) scale(1);
+	}
+}

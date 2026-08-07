@@ -1,4 +1,4 @@
-/* global document, sessionStorage */
+/* global document, sessionStorage, location, URLSearchParams */
 import React, { useEffect, useState } from 'react';
 
 import { createRoot } from 'react-dom/client';
@@ -19,6 +19,18 @@ const App = () => {
 	);
 	const [includesBarChord, setIncludesBarChord] = useState(true);
 	const [isNavOpen, setIsNavOpen] = useState(true);
+
+	// Splash the logo up from the middle of the screen and fade the rest of the
+	// content in behind it - but only the first time the app mounts in a
+	// session, so reloads within the same tab skip it. Add `?splash` to the URL
+	// to force it again (handy for testing the effect).
+	const [isSplash] = useState(() => {
+		const forceSplash = new URLSearchParams(location.search).has('splash');
+		const hasSplashed = sessionStorage.getItem('hasSplashed') === 'true';
+		sessionStorage.setItem('hasSplashed', 'true');
+
+		return forceSplash || !hasSplashed;
+	});
 
 	const onToggleNav = () => {
 		setIsNavOpen(!isNavOpen);
@@ -72,8 +84,15 @@ const App = () => {
 	}, [isNavOpen]);
 
 	return (
-		<div className="max-container" id="content">
-			<Header isNavOpen={isNavOpen} onToggleNav={onToggleNav} />
+		<div
+			className={isSplash ? 'max-container is-splashing' : 'max-container'}
+			id="content"
+		>
+			<Header
+				isNavOpen={isNavOpen}
+				isSplash={isSplash}
+				onToggleNav={onToggleNav}
+			/>
 			<Main
 				includesBarChord={includesBarChord}
 				isGuitarMode={isGuitarMode}

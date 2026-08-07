@@ -7,7 +7,7 @@ import SvgHamburger from '~svg/SvgHamburger';
 
 import Logo from '../Logo/Logo';
 
-const Header = ({ isNavOpen, onToggleNav }: HeaderTypes) => {
+const Header = ({ isNavOpen, isSplash, onToggleNav }: HeaderTypes) => {
 	const location = useLocation();
 
 	// The nav only exists on the home page, so the toggle only belongs there.
@@ -17,7 +17,7 @@ const Header = ({ isNavOpen, onToggleNav }: HeaderTypes) => {
 
 	return (
 		<>
-			<Logo />
+			<Logo isSplash={isSplash} />
 
 			<header>
 				{isRootPath && (
@@ -38,6 +38,7 @@ const Header = ({ isNavOpen, onToggleNav }: HeaderTypes) => {
 
 type HeaderTypes = {
 	isNavOpen: boolean;
+	isSplash: boolean;
 	onToggleNav: () => void;
 };
 

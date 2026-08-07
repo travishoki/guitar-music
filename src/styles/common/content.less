@@ -6,3 +6,21 @@
 .max-container {
 	max-width: 768px;
 }
+
+// During the one-time splash, hold everything but the logo hidden, then fade it
+// in while the logo is still flying to its place (@splash-content-delay, from
+// splash.less) so the content rises in behind the moving logo. `both` fill mode
+// keeps the content at opacity 0 through the delay.
+.is-splashing > *:not(.logo) {
+	animation: content-fade-in 0.6s ease @splash-content-delay both;
+}
+
+@keyframes content-fade-in {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}

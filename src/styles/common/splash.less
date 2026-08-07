@@ -1,0 +1,33 @@
+// Timing for the one-time logo splash, shared so the logo animation (Logo.less)
+// and the content fade-in (content.less) can't drift apart. The logo runs four
+// phases back to back: fade in small, swell up to full size, hold, then fly up
+// into place. Durations are kept as unitless seconds so the keyframe stops can
+// be derived by plain division, then turned back into `s` where a duration is
+// needed.
+@splash-fade-s: 0.15; // fade in while still small
+@splash-swell-s: 0.8; // swell up from the start size to the held size
+@splash-hold-s: 0.9; // hold big in the middle
+@splash-move-s: 1.4; // fly up into place
+@splash-total-s: @splash-fade-s + @splash-swell-s + @splash-hold-s +
+	@splash-move-s; // 3.55
+
+@splash-total: @splash-total-s * 1s; // used by both stylesheets
+
+// Cumulative moments (unitless seconds) marking the end of each phase.
+@splash-t-fade: @splash-fade-s; // 0.15
+@splash-t-swell: @splash-t-fade + @splash-swell-s; // 0.65
+@splash-t-hold: @splash-t-swell + @splash-hold-s; // 2.15
+
+// The content starts fading in partway through the logo's flight to its place -
+// halfway through the @splash-move leg - rather than waiting for it to land.
+@splash-content-delay: (@splash-t-hold + (@splash-move-s / 2)) * 1s; // 2.85s
+
+// Logo size while held big in the middle. It starts a touch smaller and swells
+// up to the held size before flying down to scale(1) in place.
+@splash-scale: 3;
+@splash-scale-start: 2.7;
+
+// Keyframe stops as a % of the total, derived so they track any timing change.
+@splash-fade-stop: percentage((@splash-t-fade / @splash-total-s));
+@splash-swell-stop: percentage((@splash-t-swell / @splash-total-s));
+@splash-hold-stop: percentage((@splash-t-hold / @splash-total-s));
