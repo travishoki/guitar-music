@@ -9,7 +9,7 @@
 // change when the header resizes. The nav is two fixed-height rows, so its
 // height is the same at every width - .top-nav is held to it below.
 :root {
-	--header-height: 50px;
+	--header-height: 70px;
 	--nav-height: 112px;
 }
 
@@ -212,10 +212,9 @@ header {
 	top: 0;
 	z-index: 3;
 
-	// Sized off the header height so the logo scales with the header at each
-	// breakpoint and never forces it to grow.
+	// Sized off the header height, leaving a 10px margin above and below.
 	.logo {
-		height: 100%;
+		height: calc(100% - 10px);
 		width: auto;
 	}
 }
@@ -449,7 +448,7 @@ body.light-mode {
 
 @media (max-width: 600px) {
 	:root {
-		--header-height: 44px;
+		--header-height: 64px;
 	}
 
 	h1 {
@@ -463,7 +462,7 @@ body.light-mode {
 
 @media (max-width: 400px) {
 	:root {
-		--header-height: 38px;
+		--header-height: 58px;
 	}
 
 	h1 {
