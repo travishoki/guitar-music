@@ -4,12 +4,17 @@ import SvgBarGraph from '~svg/SvgBarGraph';
 
 import SongHeading from './SongHeading';
 import Chip from '../../../../components/common/Chip/Chip';
-import DifficultyDot from '../../../../components/common/DifficultyDot/DifficultyDot';
+import DifficultyBar from '../../../../components/common/DifficultyBar/DifficultyBar';
 import GuitarTabLink from '../../../../components/common/GuitarTabLink';
 import { SongType } from '../../../../types';
 
 const SongRow = ({ isGuitarMode, song }: SongRowTypes) => (
-	<div className="bottom-border" style={rowStyle}>
+	<div
+		className="bottom-border"
+		style={{ ...rowStyle, paddingLeft: isGuitarMode ? 25 : 10 }}
+	>
+		{isGuitarMode && <DifficultyBar difficulty={song.difficulty} />}
+
 		<div style={firstColumnStyle}>
 			<SongHeading isGuitarMode={isGuitarMode} song={song} />
 
@@ -18,10 +23,11 @@ const SongRow = ({ isGuitarMode, song }: SongRowTypes) => (
 					{song.strumPattern && (
 						<p style={strumpatternStyle}>{song.strumPattern}</p>
 					)}
-					<div style={chipRowStyle}>
-						<DifficultyDot difficulty={song.difficulty} />
-						{song.capo && <Chip title={song.capo} />}
-					</div>
+					{song.capo && (
+						<div style={chipRowStyle}>
+							<Chip title={song.capo} />
+						</div>
+					)}
 				</>
 			)}
 		</div>
@@ -44,6 +50,8 @@ const rowStyle: React.CSSProperties = {
 	display: 'flex',
 	justifyContent: 'space-between',
 	padding: 10,
+	// Anchor for the absolutely-positioned DifficultyBar down the left edge.
+	position: 'relative',
 };
 
 const iconBarGraph: React.CSSProperties = {
