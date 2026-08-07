@@ -1,3 +1,5 @@
+import { DIFFICULTY } from './const/difficulty';
+
 export type ChordType = {
 	flat: boolean;
 	major: boolean;
@@ -10,6 +12,7 @@ export type SongType = {
 	alteration?: string;
 	artist: string;
 	barChords?: boolean;
+	difficulty: DIFFICULTY;
 	eras: string[];
 	genres: string[];
 	link: string;

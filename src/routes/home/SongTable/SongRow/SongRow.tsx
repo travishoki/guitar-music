@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import SvgBarGraph from '~svg/SvgBarGraph';
 
 import { fixUrlTitle } from './helpers';
+import Chip from '../../../../components/common/Chip/Chip';
 import GuitarTabLink from '../../../../components/common/GuitarTabLink';
 import { SongType } from '../../../../types';
 
@@ -17,9 +18,12 @@ const SongRow = ({ isGuitarMode, song }: SongRowTypes) => (
 			}}
 			to={'/song/' + fixUrlTitle(song.title)}
 		>
-			<p className="title-font" style={titleStyle}>
-				{song.title}
-			</p>
+			<div style={titleRowStyle}>
+				<p className="title-font" style={titleStyle}>
+					{song.title}
+				</p>
+				{isGuitarMode && <Chip title={song.difficulty} />}
+			</div>
 			<p className="secondary-text-color" style={artistStyle}>
 				{song.artist}
 			</p>
@@ -54,6 +58,12 @@ const rowStyle: React.CSSProperties = {
 
 const linkStyle: React.CSSProperties = {
 	textDecoration: 'none',
+};
+
+const titleRowStyle: React.CSSProperties = {
+	alignItems: 'center',
+	display: 'flex',
+	gap: 8,
 };
 
 const titleStyle: React.CSSProperties = {

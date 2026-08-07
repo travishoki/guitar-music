@@ -1,3 +1,4 @@
+import { DIFFICULTY } from './difficulty';
 import * as ERAS from './eras';
 import * as GENRES from './genres';
 import LYRIC_LIST from '../lyrics';
@@ -11,6 +12,7 @@ export const SongList: SongType[] = [
 	// - A -
 	{
 		artist: 'America',
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.SEVENTIES],
 		genres: [GENRES.FOLK, GENRES.ROCK],
 		link: 'https://tabs.ultimate-guitar.com/tab/america/a-horse-with-no-name-chords-1042336',
@@ -21,6 +23,7 @@ export const SongList: SongType[] = [
 	{
 		artist: 'Raffi Cavoukian',
 		barChords: true,
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.EIGHTIES],
 		genres: [GENRES.KIDS],
 		link: 'https://tabs.ultimate-guitar.com/r/raffi/baby_beluga_crd.htm',
@@ -30,6 +33,7 @@ export const SongList: SongType[] = [
 	{
 		artist: 'Peter Frampton',
 		barChords: true,
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.NINETIES],
 		genres: [],
 		link: 'https://tabs.ultimate-guitar.com/p/peter_frampton/baby_i_love_your_way_crd.htm',
@@ -38,6 +42,7 @@ export const SongList: SongType[] = [
 	},
 	{
 		artist: 'Andy Grammer',
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.TWENTY_TENS],
 		genres: [],
 		link: 'https://tabs.ultimate-guitar.com/tab/andy-grammer/back-home-chords-1479557',
@@ -46,6 +51,7 @@ export const SongList: SongType[] = [
 	},
 	{
 		artist: 'Bob Dylan',
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.SIXTIES],
 		genres: [],
 		link: 'https://tabs.ultimate-guitar.com/tab/bob-dylan/blowin-in-the-wind-chords-14835',
@@ -55,6 +61,7 @@ export const SongList: SongType[] = [
 	{
 		artist: 'Bob Carlisle',
 		barChords: true,
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.NINETIES],
 		genres: [],
 		link: 'https://tabs.ultimate-guitar.com/tab/bob-carlisle/butterfly-kisses-chords-64393',
@@ -65,6 +72,7 @@ export const SongList: SongType[] = [
 	{
 		alteration: CAPO_2,
 		artist: 'Semisonic',
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.NINETIES],
 		genres: [],
 		link: 'https://tabs.ultimate-guitar.com/tab/semisonic/closing-time-chords-1743417',
@@ -73,6 +81,7 @@ export const SongList: SongType[] = [
 	},
 	{
 		artist: 'John Denver',
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.SEVENTIES],
 		genres: [GENRES.COUNTRY],
 		link: 'https://tabs.ultimate-guitar.com/tab/john-denver/take-me-home-country-roads-chords-1101747',
@@ -83,6 +92,7 @@ export const SongList: SongType[] = [
 	{
 		artist: 'Journey',
 		barChords: true,
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.EIGHTIES],
 		genres: [GENRES.ROCK],
 		link: 'https://tabs.ultimate-guitar.com/tab/journey/dont-stop-believin-chords-275297',
@@ -92,6 +102,7 @@ export const SongList: SongType[] = [
 	// - F -
 	{
 		artist: 'Randy Travis',
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.EIGHTIES],
 		genres: [],
 		link: 'https://tabs.ultimate-guitar.com/tab/randy-travis/forever-and-ever-amen-chords-87134',
@@ -100,6 +111,7 @@ export const SongList: SongType[] = [
 	},
 	{
 		artist: 'Tom Petty',
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.EIGHTIES],
 		genres: [],
 		link: 'https://www.chordie.com/chord.pere/www.guitaretab.com/p/petty-tom/14472.html',
@@ -109,6 +121,7 @@ export const SongList: SongType[] = [
 	// - G -
 	{
 		artist: "Plain White T's",
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.TWENTY_TENS],
 		genres: [],
 		link: 'https://tabs.ultimate-guitar.com/tab/plain-white-ts/the-giving-tree-chords-1240804',
@@ -118,6 +131,7 @@ export const SongList: SongType[] = [
 	{
 		artist: 'Lee Greenwood',
 		barChords: true,
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.EIGHTIES],
 		genres: [GENRES.PATRIOTIC],
 		link: 'https://tabs.ultimate-guitar.com/tab/lee-greenwood/god-bless-the-usa-chords-825566',
@@ -127,6 +141,7 @@ export const SongList: SongType[] = [
 	{
 		alteration: CAPO_5,
 		artist: 'Kane Brown',
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.TWENTY_TENS],
 		genres: [GENRES.COUNTRY],
 		link: 'https://tabs.ultimate-guitar.com/tab/kane-brown/good-as-you-chords-2497455',
@@ -137,6 +152,7 @@ export const SongList: SongType[] = [
 	// - H -
 	{
 		artist: 'Misc Praise',
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [],
 		genres: [GENRES.TRADITIONAL, GENRES.SOUL],
 		link: 'https://tabs.ultimate-guitar.com/m/misc_praise_songs/hes_got_the_whole_world_in_his_hands_crd.htm',
@@ -145,6 +161,7 @@ export const SongList: SongType[] = [
 	},
 	{
 		artist: 'Misc Traditional',
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.EIGHTEEN_SEVENTIES],
 		genres: [GENRES.WESTERN, GENRES.FOLK],
 		link: 'https://tabs.ultimate-guitar.com/tab/misc-traditional/home-on-the-range-chords-1726287',
@@ -155,6 +172,7 @@ export const SongList: SongType[] = [
 		alteration: CAPO_5,
 		artist: 'Kenny Loggins',
 		barChords: true,
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.SEVENTIES],
 		genres: [GENRES.KIDS],
 		link: 'https://qcukes.com/music2/music.php?action=Song&song=House%20At%20Pooh%20Corner',
@@ -165,6 +183,7 @@ export const SongList: SongType[] = [
 	// - I -
 	{
 		artist: 'Bonnie Raitt',
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.NINETIES],
 		genres: [],
 		link: 'https://tabs.ultimate-guitar.com/tab/bonnie-raitt/i-cant-make-you-love-me-chords-611294',
@@ -174,6 +193,7 @@ export const SongList: SongType[] = [
 	{
 		artist: 'Burl Ives',
 		barChords: true,
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.FIFTIES],
 		genres: [GENRES.KIDS, GENRES.FOLK],
 		link: 'https://tabs.ultimate-guitar.com/tab/burl-ives/i-know-an-old-lady-who-swallowed-a-fly-chords-674886',
@@ -182,6 +202,7 @@ export const SongList: SongType[] = [
 	},
 	{
 		artist: 'Tim McGraw',
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.NINETIES],
 		genres: [GENRES.COUNTRY],
 		link: 'https://tabs.ultimate-guitar.com/tab/tim-mcgraw/its-your-love-chords-76292',
@@ -194,6 +215,7 @@ export const SongList: SongType[] = [
 	{
 		alteration: CAPO_3,
 		artist: 'Third Eye Blind',
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.NINETIES],
 		genres: [],
 		link: 'https://tabs.ultimate-guitar.com/tab/third-eye-blind/jumper-chords-159256',
@@ -204,6 +226,7 @@ export const SongList: SongType[] = [
 	{
 		artist: 'Marion Sinclair',
 		barChords: true,
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.THIRTIES],
 		genres: [GENRES.FOLK, GENRES.KIDS],
 		link: 'https://tabs.ultimate-guitar.com/tab/marion-sinclair/kookaburra-chords-1048595',
@@ -212,6 +235,7 @@ export const SongList: SongType[] = [
 	},
 	{
 		artist: 'Misc Praise',
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.TWENTIES],
 		genres: [GENRES.FOLK, GENRES.SOUL],
 		link: 'https://tabs.ultimate-guitar.com/tab/misc-praise-songs/kumbaya-chords-76633',
@@ -222,6 +246,7 @@ export const SongList: SongType[] = [
 	{
 		artist: 'Bill Withers',
 		barChords: true,
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.SEVENTIES],
 		genres: [GENRES.R_AND_B, GENRES.SOUL],
 		link: 'https://tabs.ultimate-guitar.com/tab/bill-withers/lean-on-me-chords-150987',
@@ -230,6 +255,7 @@ export const SongList: SongType[] = [
 	},
 	{
 		artist: 'John Denver',
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.SIXTIES],
 		genres: [GENRES.ROCK],
 		link: 'https://www.laurenbateman.com/leaving-on-a-jet-plane-chord-chart',
@@ -240,6 +266,7 @@ export const SongList: SongType[] = [
 	{
 		artist: 'Rod Stewart',
 		barChords: true,
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.SEVENTIES],
 		genres: [GENRES.ROCK, GENRES.FOLK],
 		link: 'https://tabs.ultimate-guitar.com/tab/rod-stewart/maggie-may-chords-85329',
@@ -248,6 +275,7 @@ export const SongList: SongType[] = [
 	},
 	{
 		artist: 'Adele',
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.TWO_THOUSANDS],
 		genres: [],
 		link: 'https://tabs.ultimate-guitar.com/tab/adele/make-you-feel-my-love-chords-752102',
@@ -257,6 +285,7 @@ export const SongList: SongType[] = [
 	},
 	{
 		artist: 'Misc Traditional',
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [],
 		genres: [GENRES.TRADITIONAL, GENRES.KIDS],
 		link: 'https://tabs.ultimate-guitar.com/tab/misc-children/michael-finnegan-chords-1721165',
@@ -266,6 +295,7 @@ export const SongList: SongType[] = [
 	{
 		artist: 'Misc Traditional',
 		barChords: true,
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [],
 		genres: [GENRES.TRADITIONAL],
 		link: 'https://tabs.ultimate-guitar.com/tab/highwaymen/michael-row-the-boat-ashore-chords-1813491',
@@ -274,6 +304,7 @@ export const SongList: SongType[] = [
 	},
 	{
 		artist: 'Misc Traditional',
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [],
 		genres: [GENRES.TRADITIONAL],
 		link: 'https://tabs.ultimate-guitar.com/m/mother_goose/hush_little_baby_crd.htm',
@@ -282,6 +313,7 @@ export const SongList: SongType[] = [
 	},
 	{
 		artist: 'Misc Traditional',
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.EIGHTEEN_EIGHTIES],
 		genres: [GENRES.FOLK],
 		link: 'https://tabs.ultimate-guitar.com/tab/misc-traditional/my-bonnie-lies-over-the-ocean-chords-973976',
@@ -292,6 +324,7 @@ export const SongList: SongType[] = [
 	{
 		artist: 'One Direction',
 		barChords: true,
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.TWENTY_TENS],
 		genres: [],
 		link: 'https://tabs.ultimate-guitar.com/tab/one-direction/night-changes-chords-1678440',
@@ -301,6 +334,7 @@ export const SongList: SongType[] = [
 	// - O -
 	{
 		artist: 'Misc Traditional',
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.EIGHTEEN_FOURTIES],
 		genres: [GENRES.FOLK],
 		link: 'https://tabs.ultimate-guitar.com/tab/misc-traditional/oh-susanna-chords-1050965',
@@ -309,6 +343,7 @@ export const SongList: SongType[] = [
 	},
 	{
 		artist: 'Misc Children',
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.SIXTIES],
 		genres: [GENRES.KIDS, GENRES.FOLK],
 		link: 'https://tabs.ultimate-guitar.com/tab/misc-children/on-top-of-spaghetti-chords-1404074',
@@ -318,6 +353,7 @@ export const SongList: SongType[] = [
 	{
 		artist: 'The Original Caste',
 		barChords: true,
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.SIXTIES],
 		genres: [],
 		link: 'https://tabs.ultimate-guitar.com/tab/the-original-caste/one-tin-soldier-chords-980986',
@@ -327,6 +363,7 @@ export const SongList: SongType[] = [
 	{
 		artist: "Israel Kamakawiwo'ole",
 		barChords: true,
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.NINETIES],
 		genres: [],
 		link: 'https://tabs.ultimate-guitar.com/tab/2135261',
@@ -337,6 +374,7 @@ export const SongList: SongType[] = [
 	{
 		artist: 'Peter, Paul & Mary',
 		barChords: true,
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.SIXTIES],
 		genres: [GENRES.FOLK, GENRES.KIDS],
 		link: 'https://tabs.ultimate-guitar.com/p/peter_paul_and_mary/puff_the_magic_dragon_ver3_crd.htm',
@@ -347,6 +385,7 @@ export const SongList: SongType[] = [
 	{
 		artist: 'Richard Marx',
 		barChords: true,
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.EIGHTIES],
 		genres: [],
 		link: 'https://tabs.ultimate-guitar.com/tab/richard-marx/right-here-waiting-chords-93388',
@@ -356,6 +395,7 @@ export const SongList: SongType[] = [
 	// - S -
 	{
 		artist: 'Misc Traditional',
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.TWENTIES],
 		genres: [GENRES.KIDS, GENRES.FOLK],
 		link: 'https://tabs.ultimate-guitar.com/tab/misc-traditional/shell-be-coming-round-the-mountain-chords-1178525',
@@ -364,6 +404,7 @@ export const SongList: SongType[] = [
 	},
 	{
 		artist: 'Otis Redding',
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.SIXTIES],
 		genres: [GENRES.R_AND_B],
 		link: 'https://tabs.ultimate-guitar.com/tab/otis-redding/sittin-on-the-dock-of-the-bay-chords-81840',
@@ -373,6 +414,7 @@ export const SongList: SongType[] = [
 	{
 		artist: 'Ben E. King',
 		barChords: true,
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.SIXTIES],
 		genres: [GENRES.R_AND_B, GENRES.SOUL],
 		link: 'https://tabs.ultimate-guitar.com/tab/ben-e-king/stand-by-me-chords-73005',
@@ -381,6 +423,7 @@ export const SongList: SongType[] = [
 	},
 	{
 		artist: 'Jonathan Edwards',
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.SEVENTIES],
 		genres: [],
 		link: 'https://tabs.ultimate-guitar.com/tab/jonathan-edwards/sunshine-chords-105167',
@@ -390,6 +433,7 @@ export const SongList: SongType[] = [
 	// - T -
 	{
 		artist: 'Eagles',
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.SEVENTIES],
 		genres: [GENRES.ROCK],
 		link: 'https://tabs.ultimate-guitar.com/tab/eagles/take-it-easy-chords-14303',
@@ -399,6 +443,7 @@ export const SongList: SongType[] = [
 	{
 		artist: 'Eric Clapton',
 		barChords: true,
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.NINETIES],
 		genres: [GENRES.R_AND_B],
 		link: 'https://www.guitartabsexplorer.com/clapton-eric-Tabs/tears-in-heaven-live-crd.php',
@@ -416,6 +461,7 @@ export const SongList: SongType[] = [
 	{
 		artist: 'Simon & Garfunkel',
 		barChords: true,
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.SIXTIES],
 		genres: [GENRES.FOLK],
 		link: 'https://tabs.ultimate-guitar.com/s/simon_garfunkel/the_sound_of_silence_ver4_crd.htm',
@@ -424,6 +470,7 @@ export const SongList: SongType[] = [
 	},
 	{
 		artist: 'Woody Guthrie',
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.FOURTIES],
 		genres: [GENRES.PATRIOTIC],
 		link: 'http://www.guitaretab.com/w/woody-guthrie/223617.html',
@@ -432,6 +479,7 @@ export const SongList: SongType[] = [
 	},
 	{
 		artist: 'Rolf Harris',
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.SIXTIES],
 		genres: [GENRES.KIDS],
 		link: 'https://tabs.ultimate-guitar.com/r/rolf_harris/tie_me_kangaroo_down_sport_ver4_crd.htm',
@@ -441,6 +489,7 @@ export const SongList: SongType[] = [
 	{
 		artist: 'The Byrds',
 		barChords: true,
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.SIXTIES],
 		genres: [GENRES.FOLK],
 		link: 'https://tabs.ultimate-guitar.com/tab/the-byrds/turn-turn-turn-to-everything-there-is-a-season-chords-1055233',
@@ -450,6 +499,7 @@ export const SongList: SongType[] = [
 	// - W -
 	{
 		artist: 'Katrina and the Waves',
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.EIGHTIES],
 		genres: [],
 		link: 'https://tabs.ultimate-guitar.com/tab/katrina-and-the-waves/walking-on-sunshine-chords-595283',
@@ -460,6 +510,7 @@ export const SongList: SongType[] = [
 		alteration: 'Only sing on Choras. The other parts are more like chants',
 		artist: 'Jackie DeShannon',
 		barChords: true,
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.SIXTIES],
 		genres: [],
 		link: 'https://tabs.ultimate-guitar.com/j/jackie_deshannon/what_the_world_needs_now_is_love_crd.htm',
@@ -469,6 +520,7 @@ export const SongList: SongType[] = [
 	{
 		artist: 'Pete Seeger',
 		barChords: true,
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.SIXTIES],
 		genres: [GENRES.FOLK],
 		link: 'https://tabs.ultimate-guitar.com/p/peter_paul_and_mary/where_have_all_the_flowers_gone_ver2_crd.htm',
@@ -478,6 +530,7 @@ export const SongList: SongType[] = [
 	{
 		artist: 'U2',
 		barChords: true,
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.EIGHTIES],
 		genres: [],
 		link: 'https://tabs.ultimate-guitar.com/tab/u2/with-or-without-you-chords-835',
@@ -487,6 +540,7 @@ export const SongList: SongType[] = [
 	// - Y -
 	{
 		artist: 'The Beatles',
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.SIXTIES],
 		genres: [],
 		link: 'https://tabs.ultimate-guitar.com/t/the_beatles/yellow_submarine_ver2_crd.htm',
@@ -495,6 +549,7 @@ export const SongList: SongType[] = [
 	},
 	{
 		artist: 'Chris Stapleton',
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [],
 		genres: [GENRES.TRADITIONAL],
 		link: 'https://tabs.ultimate-guitar.com/tab/morgane-stapleton/you-are-my-sunshine-chords-1843946',
@@ -503,6 +558,7 @@ export const SongList: SongType[] = [
 	},
 	{
 		artist: 'Shania Twain',
+		difficulty: DIFFICULTY.BEGINNER,
 		eras: [ERAS.NINETIES],
 		genres: [],
 		link: 'https://tabs.ultimate-guitar.com/tab/shania-twain/youre-still-the-one-chords-1345',
