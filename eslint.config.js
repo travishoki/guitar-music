@@ -179,4 +179,11 @@ export default tseslint.config(
 			'typescript-sort-keys/string-enum': 'error',
 		},
 	},
+	{
+		// Song objects lead with `title` rather than sorting keys alphabetically.
+		files: ['src/const/SongList.ts'],
+		rules: {
+			'sort-keys': 'off',
+		},
+	},
 );

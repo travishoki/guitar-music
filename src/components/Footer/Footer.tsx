@@ -13,6 +13,10 @@ const Footer = ({ isGuitarMode }: FooterTypes) => {
 
 	const isRootPath = location.pathname === '/';
 
+	const isChordsPage = location.pathname === '/chords';
+	const isSongPage = location.pathname.startsWith('/song/');
+	const showChordsLink = isGuitarMode && !isChordsPage && !isSongPage;
+
 	return (
 		<footer>
 			<div className="max-container" style={footerStyle}>
@@ -20,7 +24,7 @@ const Footer = ({ isGuitarMode }: FooterTypes) => {
 				<div style={centerSlotStyle}>
 					<TabsButton />
 					<UltimateGuitarPlaylist />
-					{isGuitarMode && <ChordsButton />}
+					{showChordsLink && <ChordsButton />}
 				</div>
 				<div style={rightSlotStyle}>
 					<ScrollToTopButton />
