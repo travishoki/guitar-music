@@ -22,21 +22,15 @@ body.nav-collapsed {
 	margin-bottom: 10px;
 }
 
+// The container look (background, padding, gap) comes from ButtonContainer;
+// this only sizes the icon buttons to match the height of the text buttons in
+// the sort scroller beside it.
 .toggle-controls {
-	align-items: center;
-	align-self: stretch;
-	display: flex;
-	flex-direction: row;
-	gap: 10px;
-	justify-content: center;
-	padding: 0 10px;
-
 	button {
 		align-items: center;
 		display: flex;
 		height: 24px;
 		justify-content: center;
-		margin: 0;
 		padding: 0;
 		width: 24px;
 
@@ -51,18 +45,10 @@ body.dark-mode {
 	.top-nav {
 		background: #202124;
 	}
-
-	.toggle-controls {
-		background: #111;
-	}
 }
 
 body.light-mode {
 	.top-nav {
 		background: @WHITE;
-	}
-
-	.toggle-controls {
-		background: #ccc;
 	}
 }
