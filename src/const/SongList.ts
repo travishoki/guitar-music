@@ -211,7 +211,7 @@ export const SongList: SongType[] = [
 		title: 'Kookaburra',
 	},
 	{
-		artist: 'Misc Praise Songs',
+		artist: 'Misc Praise',
 		eras: [ERAS.TWENTIES],
 		genres: [GENRES.FOLK, GENRES.SOUL],
 		link: 'https://tabs.ultimate-guitar.com/tab/misc-praise-songs/kumbaya-chords-76633',

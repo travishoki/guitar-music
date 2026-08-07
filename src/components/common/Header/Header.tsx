@@ -16,21 +16,23 @@ const Header = ({ isNavOpen, onToggleNav }: HeaderTypes) => {
 	const label = isNavOpen ? 'Collapse filters' : 'Expand filters';
 
 	return (
-		<header>
+		<>
 			<img alt="Hoki Campfire Songs" className="logo" src={logo} />
 
-			{isRootPath && (
-				<button
-					aria-expanded={isNavOpen}
-					aria-label={label}
-					className="nav-toggle"
-					onClick={onToggleNav}
-					title={label}
-				>
-					{isNavOpen ? <SvgClose /> : <SvgHamburger />}
-				</button>
-			)}
-		</header>
+			<header>
+				{isRootPath && (
+					<button
+						aria-expanded={isNavOpen}
+						aria-label={label}
+						className="nav-toggle"
+						onClick={onToggleNav}
+						title={label}
+					>
+						{isNavOpen ? <SvgClose /> : <SvgHamburger />}
+					</button>
+				)}
+			</header>
+		</>
 	);
 };
 

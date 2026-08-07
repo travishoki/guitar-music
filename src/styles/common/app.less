@@ -5,12 +5,17 @@
 
 /*----- Sticky Offsets -----*/
 
-// Everything that sticks measures itself off these, so there is one place to
-// change when the header resizes. The nav is two fixed-height rows, so its
-// height is the same at every width - .top-nav is held to it below.
+@nav-height: 112px;
+
+// The header stays a fixed size whether or not the menu is open; only the logo
+// (a fixed overlay, sized off --header-height) grows and shrinks with the menu.
+//
+// The nav height is an explicit length (@nav-height / 0), not a custom property
+// that flips on collapse: a custom property changing in a style recalc stops
+// every transition in that recalc from starting (a Chromium quirk), which would
+// freeze the logo (and nav) animation.
 :root {
-	--header-height: 70px;
-	--nav-height: 112px;
+	--header-height: 120px;
 }
 
 /*----- General -----*/
@@ -211,13 +216,22 @@ header {
 	position: sticky;
 	top: 0;
 	z-index: 3;
+}
 
-	// Sized off the header height, leaving a 5px margin above and below
-	// (10px total removed from the full height).
-	.logo {
-		height: calc(100% - 10px);
-		width: auto;
-	}
+// Lifted out of the header and fixed over the top, so the logo's size no longer
+// depends on (or constrains) the header box. Its height fills the fixed-height
+// header (derived from --header-height) and is centred in it; collapsing the
+// menu scales it to half. The size change animates via transform: scale (which
+// also keeps it centred about its middle as it shrinks).
+.logo {
+	height: calc(var(--header-height) - 10px);
+	left: 50%;
+	position: fixed;
+	top: calc(var(--header-height) / 2);
+	transform: translate(-50%, -50%);
+	transition: transform 0.2s ease;
+	width: auto;
+	z-index: 4;
 }
 
 body.dark-mode {
@@ -337,7 +351,7 @@ body.light-mode {
 /*----- Controls -----*/
 
 .top-nav {
-	height: var(--nav-height);
+	height: @nav-height;
 	overflow: hidden;
 	padding-bottom: 10px;
 	position: sticky;
@@ -347,10 +361,19 @@ body.light-mode {
 }
 
 body.nav-collapsed {
-	--nav-height: 0px;
-
 	.top-nav {
+		height: 0;
 		padding-bottom: 0;
+	}
+
+	.scroll-header {
+		top: var(--header-height);
+	}
+
+	// The header height is unchanged; only the logo shrinks when the menu is
+	// collapsed - scaled (not resized) so the change animates. Half size.
+	.logo {
+		transform: translate(-50%, -50%) scale(0.5);
 	}
 }
 
@@ -426,9 +449,10 @@ body.light-mode {
 
 .scroll-header {
 	position: sticky;
-	// Composed here, not stored in a variable, so the collapsed override of
-	// --nav-height on <body> is picked up.
-	top: calc(var(--header-height) + var(--nav-height));
+	// Sits below the header + open nav; body.nav-collapsed drops it to just
+	// below the header. An explicit length (not a custom property) so toggling
+	// the menu does not suppress this transition.
+	top: calc(var(--header-height) + @nav-height);
 	transition: top 0.2s ease;
 	z-index: 1;
 }
@@ -448,10 +472,6 @@ body.light-mode {
 /*----- Small Screens -----*/
 
 @media (max-width: 600px) {
-	:root {
-		--header-height: 64px;
-	}
-
 	h1 {
 		font-size: 26px;
 	}
@@ -462,10 +482,6 @@ body.light-mode {
 }
 
 @media (max-width: 400px) {
-	:root {
-		--header-height: 58px;
-	}
-
 	h1 {
 		font-size: 20px;
 	}
