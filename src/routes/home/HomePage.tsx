@@ -3,12 +3,13 @@ import React, { useLayoutEffect, useState } from 'react';
 import toast from 'react-hot-toast';
 
 import BarChordToggle from './BarChordToggle/BarChordToggle';
+import Difficulty from './Difficulty/Difficulty';
 import Genre from './Genre/Genre';
 import SongTable from './SongTable/SongTable';
 import Sort from './Sort/Sort';
 import DarkModeToggle from '../../components/DarkModeToggle/DarkModeToggle';
 import GuitarModeToggle from '../../components/GuitarModeToggle/GuitarModeToggle';
-import ButtonContainer from '../../components/common/ButtonContainer/ButtonContainer';
+import Controls from '../../components/common/Controls/Controls';
 import { ALL } from '../../const/filters';
 import { TITLE } from '../../const/sort';
 
@@ -26,6 +27,7 @@ const HomePage = ({
 }: HomePageTypes) => {
 	const [genre, setGenre] = useState(ALL);
 	const [sortTerm, setSort] = useState(TITLE);
+	const [difficulty, setDifficulty] = useState(ALL);
 
 	const handleSort = (option: string) => {
 		const label = option.charAt(0).toUpperCase() + option.slice(1);
@@ -51,7 +53,7 @@ const HomePage = ({
 				<div className="top-controls">
 					<Sort currentOption={sortTerm} onClick={handleSort} />
 
-					<ButtonContainer className="toggle-controls">
+					<Controls className="toggle-controls">
 						{isGuitarMode && (
 							<BarChordToggle
 								includesBarChord={includesBarChord}
@@ -66,13 +68,16 @@ const HomePage = ({
 							isGuitarMode={isGuitarMode}
 							onClick={onToggleIsGuitarMode}
 						/>
-					</ButtonContainer>
+					</Controls>
 				</div>
+
+				<Difficulty currentOption={difficulty} onClick={setDifficulty} />
 
 				<Genre currentOption={genre} onClick={setGenre} />
 			</div>
 
 			<SongTable
+				currentDifficulty={difficulty}
 				currentGenre={genre}
 				currentSortTerm={sortTerm}
 				includesBarChord={includesBarChord}

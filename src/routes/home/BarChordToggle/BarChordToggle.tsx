@@ -2,10 +2,12 @@ import React from 'react';
 
 import SvgBarGraph from '~svg/SvgBarGraph';
 
+import Control from '../../../components/common/Control/Control';
+
 const BarChordToggle = ({ includesBarChord, onClick }: BarChordToggleTypes) => (
-	<button onClick={onClick} title="Bar Chords">
-		{includesBarChord ? <SvgBarGraph /> : <SvgBarGraph />}
-	</button>
+	<Control active={includesBarChord} onClick={onClick} title="Bar Chords">
+		<SvgBarGraph />
+	</Control>
 );
 
 type BarChordToggleTypes = {

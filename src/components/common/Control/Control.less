@@ -1,0 +1,41 @@
+// The button styling for controls (sort/genre options, mode toggles, chord
+// filters). `.active` marks the selected state - a lighter fill so it reads as
+// "on".
+.control {
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 12px;
+	padding: 5px 10px;
+	text-transform: capitalize;
+}
+
+body.dark-mode {
+	.control {
+		background: #666;
+		color: @BLACK;
+
+		&.active {
+			background: #ccc;
+		}
+
+		svg {
+			fill: #333;
+		}
+	}
+}
+
+body.light-mode {
+	.control {
+		background: #666;
+		color: @WHITE;
+
+		&.active {
+			background: #333;
+		}
+
+		svg {
+			fill: #ccc;
+		}
+	}
+}

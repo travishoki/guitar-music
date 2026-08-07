@@ -1,23 +1,24 @@
 import React from 'react';
 
-import ButtonContainer from '../common/ButtonContainer/ButtonContainer';
+import Control from '../common/Control/Control';
+import Controls from '../common/Controls/Controls';
 
 const SideSCrollSelector = ({
 	currentOption,
 	list,
 	onClick,
 }: SideSCrollSelectorTypes) => (
-	<ButtonContainer scrollable>
+	<Controls scrollable>
 		{list.map((option) => (
-			<button
-				className={option === currentOption ? 'active' : ''}
+			<Control
+				active={option === currentOption}
 				key={option}
 				onClick={() => onClick(option)}
 			>
 				{option}
-			</button>
+			</Control>
 		))}
-	</ButtonContainer>
+	</Controls>
 );
 
 type SideSCrollSelectorTypes = {

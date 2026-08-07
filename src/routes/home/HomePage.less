@@ -1,4 +1,7 @@
 .top-nav {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
 	height: @nav-height;
 	overflow: hidden;
 	padding-bottom: 10px;
@@ -19,12 +22,11 @@ body.nav-collapsed {
 	align-items: center;
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 10px;
 }
 
-// The container look (background, padding, gap) comes from ButtonContainer;
-// this only sizes the icon buttons to match the height of the text buttons in
-// the sort scroller beside it.
+// The container look (background, padding, gap) comes from Controls; this only
+// sizes the icon buttons to match the height of the text buttons in the sort
+// scroller beside it.
 .toggle-controls {
 	button {
 		align-items: center;

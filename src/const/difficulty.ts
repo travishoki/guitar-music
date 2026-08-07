@@ -1,3 +1,5 @@
+import { ALL } from './filters';
+
 export enum DIFFICULTY {
 	ABSOLUTE_BEGINNER = 'Absolute Beginner',
 	ADVANCED = 'Advanced',
@@ -21,3 +23,7 @@ export const DIFFICULTY_ORDER = [
 	DIFFICULTY.INTERMEDIATE,
 	DIFFICULTY.ADVANCED,
 ];
+
+// Options for the difficulty filter at the top of the home page - "All" plus
+// each difficulty from easiest to hardest.
+export const DIFFICULTY_FILTER_LIST = [ALL, ...DIFFICULTY_ORDER];

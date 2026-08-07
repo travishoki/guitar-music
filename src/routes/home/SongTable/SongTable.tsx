@@ -9,6 +9,7 @@ import { DECADES } from '../../../const/decades';
 import { ALL, UNCATEGORIZED } from '../../../const/filters';
 
 const SongTable = ({
+	currentDifficulty,
 	currentGenre,
 	currentSortTerm,
 	includesBarChord,
@@ -16,16 +17,21 @@ const SongTable = ({
 }: SongTableTypes) => {
 	let letter: string | null = null;
 
-	const filteredSongs = SongList.filter(({ barChords, decade, genres }) => {
-		if (!includesBarChord && barChords) return false;
-		if (currentGenre === ALL) return true;
-		if (currentGenre === UNCATEGORIZED) return genres.length === 0;
-		if (DECADES.includes(currentGenre)) {
-			return decade === currentGenre;
-		}
+	const filteredSongs = SongList.filter(
+		({ barChords, decade, difficulty, genres }) => {
+			if (!includesBarChord && barChords) return false;
+			if (currentDifficulty !== ALL && difficulty !== currentDifficulty) {
+				return false;
+			}
+			if (currentGenre === ALL) return true;
+			if (currentGenre === UNCATEGORIZED) return genres.length === 0;
+			if (DECADES.includes(currentGenre)) {
+				return decade === currentGenre;
+			}
 
-		return genres.includes(currentGenre);
-	});
+			return genres.includes(currentGenre);
+		},
+	);
 
 	const finalSongsList = sortBy(filteredSongs, currentSortTerm);
 
@@ -61,6 +67,7 @@ const SongTable = ({
 };
 
 type SongTableTypes = {
+	currentDifficulty: string;
 	currentGenre: string;
 	currentSortTerm: string;
 	includesBarChord: boolean;

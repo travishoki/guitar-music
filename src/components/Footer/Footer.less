@@ -58,23 +58,24 @@ body.dark-mode {
 
 body.light-mode {
 	footer {
-		background: @WHITE;
-		border-top: 1px solid rgba(0, 0, 0, 0.1);
+		// Dark bar even in light mode, so the white button text is readable.
+		background: #202124;
+		border-top: 1px solid rgba(255, 255, 255, 0.1);
 
 		button,
 		.button {
-			color: #202124;
+			color: @WHITE;
 
 			svg {
-				fill: #202124;
+				fill: @WHITE;
 			}
 
 			&:not(:disabled):hover {
-				background: rgba(0, 0, 0, 0.06);
+				background: rgba(255, 255, 255, 0.08);
 			}
 
 			&:not(:disabled):active {
-				background: rgba(0, 0, 0, 0.1);
+				background: rgba(255, 255, 255, 0.14);
 			}
 		}
 	}
