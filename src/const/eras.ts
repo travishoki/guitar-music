@@ -9,7 +9,7 @@ export const FOURTIES = '40s';
 export const EIGHTEEN_SEVENTIES = '1870s';
 export const EIGHTEEN_FOURTIES = '1840s';
 
-export const ERA_LIST = [
+export const ERAS = [
 	TENS,
 	ZEROS,
 	NINETIES,

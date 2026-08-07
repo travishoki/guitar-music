@@ -5,7 +5,7 @@ import { sortBy } from 'lodash';
 import NoSongs from './NoSongs/NoSongs';
 import SongRow from './SongRow/SongRow';
 import { SongList } from '../../../const/SongList';
-import { ERA_LIST } from '../../../const/eras';
+import { ERAS } from '../../../const/eras';
 import { ALL, UNCATEGORIZED } from '../../../const/filters';
 
 const SongTable = ({
@@ -20,7 +20,7 @@ const SongTable = ({
 		if (!includesBarChord && barChords) return false;
 		if (currentGenre === ALL) return true;
 		if (currentGenre === UNCATEGORIZED) return genres.length === 0;
-		if (ERA_LIST.includes(currentGenre)) {
+		if (ERAS.includes(currentGenre)) {
 			return eras.includes(currentGenre);
 		}
 

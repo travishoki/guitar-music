@@ -8,7 +8,7 @@ export const SOUL = 'Soul';
 export const TRADITIONAL = 'Traditional';
 export const WESTERN = 'Western';
 
-export const GENRE_LIST = [
+export const GENRES = [
 	COUNTRY,
 	FOLK,
 	KIDS,
