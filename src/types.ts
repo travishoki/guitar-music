@@ -13,8 +13,8 @@ export type SongType = {
 	artist: string;
 	barChords?: boolean;
 	capo?: string;
+	decade?: string;
 	difficulty: DIFFICULTY;
-	eras: string[];
 	genres: string[];
 	link: string;
 	lyrics: string[];

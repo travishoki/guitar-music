@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
 import Title from './Title/Title';
-import { SongList } from '../../const/SongList';
+import { SongList } from '../../const/SongList.const';
 import { fixUrlTitle } from '../home/SongTable/SongRow/helpers';
 
 const SongPage = () => {

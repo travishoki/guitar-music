@@ -4,8 +4,8 @@ import { sortBy } from 'lodash';
 
 import NoSongs from './NoSongs/NoSongs';
 import SongRow from './SongRow/SongRow';
-import { SongList } from '../../../const/SongList';
-import { ERAS } from '../../../const/eras';
+import { SongList } from '../../../const/SongList.const';
+import { DECADES } from '../../../const/decades';
 import { ALL, UNCATEGORIZED } from '../../../const/filters';
 
 const SongTable = ({
@@ -16,12 +16,12 @@ const SongTable = ({
 }: SongTableTypes) => {
 	let letter: string | null = null;
 
-	const filteredSongs = SongList.filter(({ barChords, eras, genres }) => {
+	const filteredSongs = SongList.filter(({ barChords, decade, genres }) => {
 		if (!includesBarChord && barChords) return false;
 		if (currentGenre === ALL) return true;
 		if (currentGenre === UNCATEGORIZED) return genres.length === 0;
-		if (ERAS.includes(currentGenre)) {
-			return eras.includes(currentGenre);
+		if (DECADES.includes(currentGenre)) {
+			return decade === currentGenre;
 		}
 
 		return genres.includes(currentGenre);

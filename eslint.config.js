@@ -181,7 +181,7 @@ export default tseslint.config(
 	},
 	{
 		// Song objects lead with `title` rather than sorting keys alphabetically.
-		files: ['src/const/SongList.ts'],
+		files: ['src/const/SongList.const.ts'],
 		rules: {
 			'sort-keys': 'off',
 		},

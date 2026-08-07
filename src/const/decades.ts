@@ -12,7 +12,7 @@ export const EIGHTEEN_EIGHTIES = '1880s';
 export const EIGHTEEN_SEVENTIES = '1870s';
 export const EIGHTEEN_FOURTIES = '1840s';
 
-export const ERAS = [
+export const DECADES = [
 	TWENTY_TENS,
 	TWO_THOUSANDS,
 	NINETIES,

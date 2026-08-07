@@ -2,7 +2,7 @@ import React from 'react';
 
 import { useLocation } from 'react-router-dom';
 
-import { SongList } from '../../../const/SongList';
+import { SongList } from '../../../const/SongList.const';
 import { fixUrlTitle } from '../../../routes/home/SongTable/SongRow/helpers';
 import TabLogo from '../../common/TabLogo';
 
