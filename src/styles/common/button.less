@@ -1,0 +1,41 @@
+button,
+.button {
+	border-radius: 5px;
+	border: none;
+	font-size: 12px;
+	cursor: pointer;
+	padding: 5px 10px;
+	text-transform: capitalize;
+}
+
+body.dark-mode {
+	button,
+	.button {
+		background: #666;
+		color: @BLACK;
+
+		&.active {
+			background: #ccc;
+		}
+
+		svg {
+			fill: #333;
+		}
+	}
+}
+
+body.light-mode {
+	button,
+	.button {
+		background: #666;
+		color: @WHITE;
+
+		&.active {
+			background: #333;
+		}
+
+		svg {
+			fill: #ccc;
+		}
+	}
+}

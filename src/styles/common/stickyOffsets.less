@@ -1,0 +1,13 @@
+// Shared layout values used across the header, nav, scroll headers and logo.
+// The header stays a fixed size whether or not the menu is open; only the logo
+// (a fixed overlay, sized off --header-height) grows and shrinks with the menu.
+//
+// The nav height is an explicit length (@nav-height / 0), not a custom property
+// that flips on collapse: a custom property changing in a style recalc stops
+// every transition in that recalc from starting (a Chromium quirk), which would
+// freeze the logo (and nav) animation.
+@nav-height: 112px;
+
+:root {
+	--header-height: 60px;
+}
