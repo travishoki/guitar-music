@@ -1,5 +1,5 @@
-export const ZEROS = '2000s';
 export const TENS = '2010s';
+export const ZEROS = '2000s';
 export const NINETIES = '90s';
 export const EIGHTIES = '80s';
 export const SEVENTIES = '70s';
