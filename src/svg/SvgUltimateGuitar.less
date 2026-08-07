@@ -1,3 +1,7 @@
+// Imported on its own (not through styles/index.less), so it needs the palette
+// directly. A variables-only import emits no CSS.
+@import '../styles/common/colors.less';
+
 .svg-ultimate-guitar {
 	transition: fill 0.15s ease;
 }
@@ -5,5 +9,5 @@
 .svg-ultimate-guitar:hover,
 .tabs-button:hover .svg-ultimate-guitar,
 .guitar-tab-link:hover .svg-ultimate-guitar {
-	fill: #ffd706;
+	fill: @ULTIMATE-GUITAR;
 }

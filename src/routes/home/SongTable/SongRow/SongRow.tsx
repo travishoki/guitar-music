@@ -1,7 +1,5 @@
 import React from 'react';
 
-import SvgBarGraph from '~svg/SvgBarGraph';
-
 import SongHeading from './SongHeading';
 import Chip from '../../../../components/common/Chip/Chip';
 import DifficultyBar from '../../../../components/common/DifficultyBar/DifficultyBar';
@@ -23,9 +21,10 @@ const SongRow = ({ isGuitarMode, song }: SongRowTypes) => (
 					{song.strumPattern && (
 						<p style={strumpatternStyle}>{song.strumPattern}</p>
 					)}
-					{song.capo && (
+					{(song.barChords || song.capo) && (
 						<div style={chipRowStyle}>
-							<Chip title={song.capo} />
+							{song.capo && <Chip title={song.capo} />}
+							{song.barChords && <Chip title="Bar Chords" />}
 						</div>
 					)}
 				</>
@@ -34,7 +33,6 @@ const SongRow = ({ isGuitarMode, song }: SongRowTypes) => (
 
 		{isGuitarMode && (
 			<div style={rightSectionStyle}>
-				{song.barChords && <SvgBarGraph style={iconBarGraph} />}
 				<GuitarTabLink song={song} />
 			</div>
 		)}
@@ -52,11 +50,6 @@ const rowStyle: React.CSSProperties = {
 	padding: 10,
 	// Anchor for the absolutely-positioned DifficultyBar down the left edge.
 	position: 'relative',
-};
-
-const iconBarGraph: React.CSSProperties = {
-	height: 20,
-	width: 20,
 };
 
 const rightSectionStyle: React.CSSProperties = {

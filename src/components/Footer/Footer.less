@@ -34,23 +34,23 @@ footer {
 
 body.dark-mode {
 	footer {
-		background: #202124;
-		border-top: 1px solid rgba(255, 255, 255, 0.1);
+		background: @gray-5;
+		border-top: 1px solid @OVERLAY-BORDER;
 
 		button,
 		.button {
-			color: #e8eaed;
+			color: @gray-1;
 
 			svg {
-				fill: #e8eaed;
+				fill: @gray-1;
 			}
 
 			&:not(:disabled):hover {
-				background: rgba(255, 255, 255, 0.08);
+				background: @OVERLAY-HOVER;
 			}
 
 			&:not(:disabled):active {
-				background: rgba(255, 255, 255, 0.14);
+				background: @OVERLAY-ACTIVE;
 			}
 		}
 	}
@@ -59,8 +59,8 @@ body.dark-mode {
 body.light-mode {
 	footer {
 		// Dark bar even in light mode, so the white button text is readable.
-		background: #202124;
-		border-top: 1px solid rgba(255, 255, 255, 0.1);
+		background: @gray-5;
+		border-top: 1px solid @OVERLAY-BORDER;
 
 		button,
 		.button {
@@ -71,11 +71,11 @@ body.light-mode {
 			}
 
 			&:not(:disabled):hover {
-				background: rgba(255, 255, 255, 0.08);
+				background: @OVERLAY-HOVER;
 			}
 
 			&:not(:disabled):active {
-				background: rgba(255, 255, 255, 0.14);
+				background: @OVERLAY-ACTIVE;
 			}
 		}
 	}
