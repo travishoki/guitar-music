@@ -133,6 +133,7 @@ export const SongList: SongType[] = [
 		genres: [],
 		link: 'https://tabs.ultimate-guitar.com/tab/randy-travis/forever-and-ever-amen-chords-87134',
 		lyrics: LYRIC_LIST.ForeverAndEverAmen,
+		strumPattern: 'Travis Picking',
 		title: 'Forever And Ever Amen',
 	},
 	{
