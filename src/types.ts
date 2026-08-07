@@ -1,4 +1,5 @@
 import { DIFFICULTY } from './const/difficulty';
+import { STRUM_PATTERN } from './const/strumPattern';
 
 export type ChordType = {
 	flat: boolean;
@@ -17,6 +18,6 @@ export type SongType = {
 	genres: string[];
 	link: string;
 	lyrics: string[];
-	strumPattern?: string;
+	strumPattern?: STRUM_PATTERN;
 	title: string;
 };
