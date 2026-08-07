@@ -1,5 +1,7 @@
 /* To build, run: yarn build:bookmarklets */
 
+import { BANNER_BUTTON_STYLE } from './banner-button.const';
+
 // How long "Copied to clipboard" stays up before the banner goes back to
 // advertising itself as a button.
 const IDLE_TEXT = 'Click to copy';
@@ -13,21 +15,8 @@ const REVERT_DELAY = 3000;
 export const createCopyButton = (text: string) => {
 	const element = document.createElement('button');
 	element.textContent = 'Copying...';
-	Object.assign(element.style, {
-		background: '#000',
-		border: 'none',
-		borderRadius: '6px',
-		color: '#fff',
-		cursor: 'pointer',
-		fontFamily: 'sans-serif',
-		fontSize: '20px',
-		left: '50%',
-		padding: '16px 32px',
-		position: 'fixed',
+	Object.assign(element.style, BANNER_BUTTON_STYLE, {
 		top: '20px',
-		// Centring on `left: 50%` alone would hang the button half a width to the
-		// right of centre.
-		transform: 'translateX(-50%)',
 	});
 
 	let revertTimer = 0;

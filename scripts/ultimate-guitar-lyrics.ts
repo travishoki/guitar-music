@@ -3,6 +3,7 @@
 import { UG } from './const';
 import { createCopyButton } from './copy-button';
 import { getSongTitle } from './helpers';
+import { createRefreshButton } from './refresh-button';
 import {
 	BAR_LINE,
 	CAPO_LINE,
@@ -101,9 +102,10 @@ Object.assign(pre.style, {
 // Copied on run, because hand-selecting the text drops the final newline -
 // browsers leave a <pre>'s trailing line break out of the selection.
 const copyButton = createCopyButton(code);
+const refreshButton = createRefreshButton();
 
 document.body.style.background = '#fff';
 document.body.style.margin = '0';
-document.body.replaceChildren(pre, copyButton.element);
+document.body.replaceChildren(pre, copyButton.element, refreshButton.element);
 
 copyButton.copy();
