@@ -5,7 +5,7 @@ import { useLocation } from 'react-router-dom';
 import SvgClose from '~svg/SvgClose';
 import SvgHamburger from '~svg/SvgHamburger';
 
-import logo from '../../../images/logo-large.png';
+import Logo from '../Logo/Logo';
 
 const Header = ({ isNavOpen, onToggleNav }: HeaderTypes) => {
 	const location = useLocation();
@@ -17,7 +17,7 @@ const Header = ({ isNavOpen, onToggleNav }: HeaderTypes) => {
 
 	return (
 		<>
-			<img alt="Hoki Campfire Songs" className="logo" src={logo} />
+			<Logo />
 
 			<header>
 				{isRootPath && (
