@@ -10,6 +10,13 @@
 // insets the logo so it isn't hugging the edge.
 @logo-rest-x: ~'max(calc(10px - 50vw), -374px)';
 
+// Vertical translate that centres the logo on screen during the splash. With
+// transform-origin: top center the logo grows downward, so where its centre
+// lands depends on the scale: drop the top to 50vh minus half the scaled logo
+// (45px = half of the 90px height) and its 5px top margin.
+@splash-center-start: 5px + (45px * @splash-scale-start); // 126.5px at start scale
+@splash-center-hold: 5px + (45px * @splash-scale); // 140px at held scale
+
 .logo {
 	height: 90px;
 	left: 50%;
@@ -42,7 +49,7 @@ body.nav-collapsed {
 @keyframes logo-splash {
 	0% {
 		opacity: 0;
-		transform: translateX(-50%) translateY(calc(50vh - 90px))
+		transform: translateX(-50%) translateY(calc(50vh - @splash-center-start))
 			scale(@splash-scale-start);
 	}
 
@@ -52,7 +59,7 @@ body.nav-collapsed {
 	@{splash-fade-stop} {
 		animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
 		opacity: 1;
-		transform: translateX(-50%) translateY(calc(50vh - 90px))
+		transform: translateX(-50%) translateY(calc(50vh - @splash-center-start))
 			scale(@splash-scale-start);
 	}
 
@@ -60,7 +67,7 @@ body.nav-collapsed {
 	@{splash-swell-stop},
 	@{splash-hold-stop} {
 		opacity: 1;
-		transform: translateX(-50%) translateY(calc(50vh - 90px))
+		transform: translateX(-50%) translateY(calc(50vh - @splash-center-hold))
 			scale(@splash-scale);
 	}
 
