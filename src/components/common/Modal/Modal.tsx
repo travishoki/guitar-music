@@ -28,7 +28,7 @@ const Modal = ({ children, onClose, title }: ModalTypes) => {
 					onClick={onClose}
 					type="button"
 				>
-					<SvgClose />
+					<SvgClose style={closeIconStyle} />
 				</button>
 				{title && <p className="modal-title">{title}</p>}
 				{children}
@@ -36,6 +36,14 @@ const Modal = ({ children, onClose, title }: ModalTypes) => {
 		</div>,
 		document.body,
 	);
+};
+
+// Set inline (like the difficulty legend modal) so it beats the global
+// `button svg` fill rule, keeping the close icon a consistent muted grey.
+const closeIconStyle: React.CSSProperties = {
+	fill: '#888888',
+	height: 16,
+	width: 16,
 };
 
 type ModalTypes = {

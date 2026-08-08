@@ -6,10 +6,10 @@ import { FILTER_LIST } from '../../../const/filters';
 const Genre = ({ currentOption, onClick }: GenreTypes) => (
 	<Select
 		currentOption={currentOption}
-		label="Genre:"
+		label="Genre / Decade:"
 		list={FILTER_LIST}
 		onClick={onClick}
-		title="Genre"
+		title="Genre / Decade"
 	/>
 );
 

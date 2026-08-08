@@ -1,30 +1,11 @@
-// A themed box holding a row of Control buttons with even gaps - the shared
-// look for the control groups at the top of the home page (sort, genre, mode
-// toggles). The `--scrollable` modifier is for groups that can overflow
-// horizontally.
+// A themed box holding a row of Control buttons with even gaps - used for the
+// mode-toggle row in the top nav.
 .controls {
 	align-items: center;
 	display: flex;
 	flex-direction: row;
 	gap: 10px;
 	padding: 10px;
-}
-
-.controls--scrollable {
-	max-width: 100%;
-	// Scroll sideways only. overflow-x on its own leaves overflow-y computing to
-	// auto, which lets the row be dragged/rubber-banded vertically on mobile;
-	// pin it to hidden and hint the browser that only horizontal panning is ours
-	// so vertical drags scroll the page instead.
-	overflow-x: auto;
-	overflow-y: hidden;
-	touch-action: pan-x;
-
-	// Keep the buttons from squishing when the row scrolls.
-	.control {
-		flex-shrink: 0;
-		white-space: nowrap;
-	}
 }
 
 body.dark-mode {
