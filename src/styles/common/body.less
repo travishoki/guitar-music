@@ -1,3 +1,11 @@
+// The logo is position: fixed while the header and content are sticky / in
+// flow, so a rubber-band overscroll bounces the page but not the logo, pulling
+// them apart. Disabling the vertical overscroll bounce keeps everything locked
+// together.
+html {
+	overscroll-behavior-y: none;
+}
+
 body {
 	font-family: 'Raleway', serif;
 	margin: 0;
