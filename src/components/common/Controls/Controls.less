@@ -1,7 +1,7 @@
 // A themed box holding a row of Control buttons with even gaps - the shared
 // look for the control groups at the top of the home page (sort, genre, mode
-// toggles) and the chord filters. The `--scrollable` modifier is for groups
-// that can overflow horizontally.
+// toggles). The `--scrollable` modifier is for groups that can overflow
+// horizontally.
 .controls {
 	align-items: center;
 	display: flex;
@@ -25,14 +25,6 @@
 		flex-shrink: 0;
 		white-space: nowrap;
 	}
-}
-
-// Hug the content (capped at the available width, where --scrollable takes over
-// and scrolls) instead of stretching full width. align-self covers the case
-// where this sits in a flex column (the home page top nav).
-.controls--fit {
-	align-self: flex-start;
-	width: fit-content;
 }
 
 body.dark-mode {

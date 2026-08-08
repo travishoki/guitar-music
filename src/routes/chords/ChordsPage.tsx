@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import ChordCard from './ChordCard/ChordCard';
-import SideScrollSelector from '../../components/SideScrollSelector/SideScrollSelector';
+import Select from '../../components/common/Select/Select';
 import { ChordList } from '../../const/ChordList';
 import {
 	ALL,
@@ -37,11 +37,12 @@ const ChordsPage = () => {
 
 	return (
 		<>
-			<SideScrollSelector
+			<Select
 				currentOption={filter}
-				fitContent
+				label="Chord Type:"
 				list={CHORD_FILTER_LIST}
 				onClick={setFilter}
+				title="Chord Type"
 			/>
 
 			<div style={gridStyle}>

@@ -1,0 +1,43 @@
+// A labelled selector: "<label>:" beside the value button. Hugs its content and
+// sits left, matching the control rows' box look.
+.select {
+	align-items: center;
+	align-self: flex-start;
+	display: flex;
+	gap: 8px;
+	padding: 10px;
+	width: fit-content;
+}
+
+.select__label {
+	font-size: 12px;
+}
+
+// The options inside the modal, stacked full width in a column, with a slightly
+// larger font than the compact control buttons. Long lists (genre) scroll
+// within the modal rather than pushing it past the viewport.
+.select__options {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	max-height: 60vh;
+	overflow-y: auto;
+
+	.control {
+		flex-shrink: 0;
+		font-size: 15px;
+		width: 100%;
+	}
+}
+
+body.dark-mode {
+	.select {
+		background: @gray-6;
+	}
+}
+
+body.light-mode {
+	.select {
+		background: @gray-2;
+	}
+}

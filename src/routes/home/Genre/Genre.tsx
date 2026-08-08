@@ -1,13 +1,15 @@
 import React from 'react';
 
-import SideSCrollSelector from '../../../components/SideScrollSelector/SideScrollSelector';
+import Select from '../../../components/common/Select/Select';
 import { FILTER_LIST } from '../../../const/filters';
 
 const Genre = ({ currentOption, onClick }: GenreTypes) => (
-	<SideSCrollSelector
+	<Select
 		currentOption={currentOption}
+		label="Genre:"
 		list={FILTER_LIST}
 		onClick={onClick}
+		title="Genre"
 	/>
 );
 
