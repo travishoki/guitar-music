@@ -10,8 +10,10 @@
 // During the one-time splash, hold everything but the logo hidden, then fade it
 // in while the logo is still flying to its place (@splash-content-delay, from
 // splash.less) so the content rises in behind the moving logo. `both` fill mode
-// keeps the content at opacity 0 through the delay.
-.is-splashing > *:not(.logo) {
+// keeps the content at opacity 0 through the delay. The logo is wrapped in an
+// .logo-link anchor and runs its own splash animation, so exclude it - otherwise
+// this would fade the logo out too.
+.is-splashing > *:not(.logo-link) {
 	animation: content-fade-in 0.6s ease @splash-content-delay both;
 }
 
