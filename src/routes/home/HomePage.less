@@ -1,50 +1,40 @@
+// The song-list controls, laid out inline and wrapped to as many rows as fit in
+// the band between the logo (fixed, far left) and the collapse button (top
+// right). The nav is a sticky, collapsible strip; collapsing animates the grid
+// row from its content height down to zero. Its rendered height is published as
+// --nav-height (see TopNav) so the scroll headers can sit just beneath it.
 .top-nav {
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
-	height: @nav-height;
-	overflow: hidden;
-	padding-bottom: 10px;
-	padding-top: 10px;
+	display: grid;
+	grid-template-rows: 1fr;
 	position: sticky;
 	top: var(--header-height);
-	transition: height 0.2s ease;
+	transition: grid-template-rows 0.2s ease;
 	z-index: 2;
-
-	// The top two rows (sort selector + mode toggles) hug their content and sit
-	// to the right of the logo (fixed on the far left). Difficulty and genre
-	// below start at the left edge, clear of the logo.
-	> :nth-child(1),
-	> :nth-child(2) {
-		align-self: flex-start;
-		margin-left: 110px;
-	}
 }
 
 body.nav-collapsed {
 	.top-nav {
-		height: 0;
-		padding-bottom: 0;
-		padding-top: 0;
+		grid-template-rows: 0fr;
 	}
 }
 
-// The container look (background, padding, gap) comes from Controls; this only
-// sizes the icon buttons to match the height of the text buttons in the sort
-// scroller beside it.
-.toggle-controls {
-	button {
-		align-items: center;
-		display: flex;
-		height: 24px;
-		justify-content: center;
-		padding: 0;
-		width: 24px;
+// The grid row is what collapses, so the clipping lives here - not on the padded
+// controls, whose padding would keep the row from reaching zero.
+.top-nav__track {
+	min-height: 0;
+	overflow: hidden;
+}
 
-		svg {
-			height: 16px;
-			width: 16px;
-		}
+.top-nav__controls {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	// Left clears the logo, right clears the collapse button; both sit at the
+	// content edges, so the controls stay in the band between them.
+	padding: 10px 50px 10px 110px;
+
+	.select {
+		flex-shrink: 0;
 	}
 }
 

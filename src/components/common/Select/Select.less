@@ -11,21 +11,31 @@
 
 .select__label {
 	font-size: 12px;
+	white-space: nowrap;
 }
 
-// The options inside the modal, stacked full width in a column, with a slightly
-// larger font than the compact control buttons. Long lists (genre) scroll
-// within the modal rather than pushing it past the viewport.
-.select__options {
-	display: flex;
-	flex-direction: column;
-	gap: 8px;
-	max-height: 60vh;
-	overflow-y: auto;
+// Colour-coded dot beside an option (e.g. difficulty), matching the legend.
+.select__dot {
+	border-radius: 50%;
+	display: inline-block;
+	height: 10px;
+	margin-right: 8px;
+	vertical-align: middle;
+	width: 10px;
+}
 
-	.control {
-		flex-shrink: 0;
-		font-size: 15px;
+// Icon beside an option/value (e.g. mode, theme). The svg inherits its fill from
+// the control it sits in.
+.select__icon {
+	align-items: center;
+	display: inline-flex;
+	height: 16px;
+	margin-right: 8px;
+	vertical-align: middle;
+	width: 16px;
+
+	svg {
+		height: 100%;
 		width: 100%;
 	}
 }

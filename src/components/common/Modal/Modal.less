@@ -25,14 +25,27 @@
 	margin: 0 0 12px;
 }
 
-.modal-close {
-	background: transparent;
-	border: none;
-	cursor: pointer;
-	padding: 0;
-	position: absolute;
-	right: 12px;
-	top: 12px;
+// A stacked, full-width list of option buttons inside a modal (selectors, mode
+// settings). Long lists scroll within the modal rather than pushing it past the
+// viewport.
+.modal-options {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	max-height: 60vh;
+	overflow-y: auto;
+
+	.control {
+		flex-shrink: 0;
+		font-size: 16px;
+		text-align: left;
+		transition: filter 0.15s ease;
+		width: 100%;
+
+		&:hover {
+			filter: brightness(1.15);
+		}
+	}
 }
 
 body.dark-mode .modal-panel {

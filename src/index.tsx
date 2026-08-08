@@ -2,7 +2,7 @@
 import React, { useEffect, useLayoutEffect, useState } from 'react';
 
 import { createRoot } from 'react-dom/client';
-import toast, { Toaster } from 'react-hot-toast';
+import { Toaster } from 'react-hot-toast';
 import { BrowserRouter } from 'react-router-dom';
 
 import Footer from './components/Footer/Footer';
@@ -51,31 +51,15 @@ const App = () => {
 	};
 
 	const onToggleIsGuitarMode = () => {
-		const toastMessage = isGuitarMode ? '🎤 Singing mode' : '🎸 Guitar mode';
-		const toastOption = {
-			duration: 1500,
-		};
-		toast(toastMessage, toastOption);
-
 		setIsGuitarMode(!isGuitarMode);
 		setIncludesBarChord(true);
 	};
 
 	const onToggleIncludesBarChord = () => {
-		const toastMessage = includesBarChord
-			? '🚫 Hiding bar chord songs'
-			: '🎸 Showing bar chord songs';
-		const toastOption = {
-			duration: 1500,
-		};
-		toast(toastMessage, toastOption);
-
 		setIncludesBarChord(!includesBarChord);
 	};
 
 	const handleSort = (option: string) => {
-		const label = option.charAt(0).toUpperCase() + option.slice(1);
-		toast(`Sorting by ${label}`, { duration: 1500 });
 		setSort(option);
 	};
 

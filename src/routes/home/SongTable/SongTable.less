@@ -1,9 +1,9 @@
 .scroll-header {
 	position: sticky;
 	// Sits below the header + open nav; body.nav-collapsed drops it to just
-	// below the header. An explicit length (not a custom property) so toggling
-	// the menu does not suppress this transition.
-	top: calc(var(--header-height) + @nav-height);
+	// below the header. --nav-height holds steady while the menu toggles (it only
+	// changes when the nav's rows reflow), so this transition is not suppressed.
+	top: calc(var(--header-height) + var(--nav-height));
 	transition: top 0.2s ease;
 	z-index: 1;
 }

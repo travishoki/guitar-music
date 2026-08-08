@@ -2,12 +2,12 @@
 // The header stays a fixed size whether or not the menu is open; only the logo
 // (a fixed overlay, sized off --header-height) grows and shrinks with the menu.
 //
-// The nav height is an explicit length (@nav-height / 0), not a custom property
-// that flips on collapse: a custom property changing in a style recalc stops
-// every transition in that recalc from starting (a Chromium quirk), which would
-// freeze the logo (and nav) animation.
-@nav-height: 226px;
-
+// --nav-height is the rendered height of the open nav, published by TopNav via a
+// ResizeObserver: the nav wraps to a variable number of rows, so its height is
+// not known up front. The scroll headers sit just beneath it. It only changes
+// when the nav's rows actually reflow (mode toggle, resize) - never on collapse -
+// so it does not suppress the collapse transitions.
 :root {
 	--header-height: 0px;
+	--nav-height: 0px;
 }

@@ -1,9 +1,9 @@
 import React from 'react';
 
-// A single button styled for use inside a Controls row (sort/genre options,
-// mode toggles, chord filters). Owns the control button styling; `active`
-// applies the selected state and any other button props (onClick, title,
-// aria-label, type...) pass straight through.
+// A single styled button - the selector value buttons and the option buttons
+// inside the modals. Owns the control button styling; `active` applies the
+// selected state and any other button props (onClick, title, aria-label,
+// type...) pass straight through.
 const Control = ({
 	active = false,
 	children,

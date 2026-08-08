@@ -24,8 +24,8 @@ const Modal = ({ children, onClose, title }: ModalTypes) => {
 			<div className="modal-panel" onClick={(event) => event.stopPropagation()}>
 				<button
 					aria-label="Close"
-					className="modal-close"
 					onClick={onClose}
+					style={closeButtonStyle}
 					type="button"
 				>
 					<SvgClose style={closeIconStyle} />
@@ -38,8 +38,19 @@ const Modal = ({ children, onClose, title }: ModalTypes) => {
 	);
 };
 
-// Set inline (like the difficulty legend modal) so it beats the global
-// `button svg` fill rule, keeping the close icon a consistent muted grey.
+// Set inline (like the difficulty legend modal) so they beat the global
+// `button` background / `button svg` fill rules - keeping the close control a
+// bare, muted-grey icon with no button background.
+const closeButtonStyle: React.CSSProperties = {
+	background: 'transparent',
+	border: 'none',
+	cursor: 'pointer',
+	padding: 0,
+	position: 'absolute',
+	right: 12,
+	top: 12,
+};
+
 const closeIconStyle: React.CSSProperties = {
 	fill: '#888888',
 	height: 16,
