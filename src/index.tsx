@@ -1,5 +1,5 @@
 /* global document, sessionStorage, location, URLSearchParams */
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useLayoutEffect, useState } from 'react';
 
 import { createRoot } from 'react-dom/client';
 import toast, { Toaster } from 'react-hot-toast';
@@ -95,9 +95,15 @@ const App = () => {
 		sessionStorage.setItem('isGuitarMode', String(isGuitarMode));
 	}, [isGuitarMode]);
 
-	useEffect(() => {
+	// useLayoutEffect (not useEffect) so the classes are applied before the first
+	// paint - otherwise a fresh non-home page paints the large logo, then shrinks
+	// it, which reads as a jump. `route-home` gates the logo's transition to the
+	// home page, so navigating to another page snaps the logo rather than
+	// animating it.
+	useLayoutEffect(() => {
 		// Off the home page the menu is always closed, which also shrinks the logo.
 		document.body.classList.toggle('nav-collapsed', !isNavOpen || !isRootPath);
+		document.body.classList.toggle('route-home', isRootPath);
 	}, [isNavOpen, isRootPath]);
 
 	const topNav = (

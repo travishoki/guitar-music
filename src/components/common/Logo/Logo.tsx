@@ -14,6 +14,7 @@ const Logo = ({ isSplash }: LogoTypes) => {
 	// already there); off it, it goes back home.
 	return (
 		<Link
+			className="logo-link"
 			onClick={isRootPath ? (event) => event.preventDefault() : undefined}
 			title={isRootPath ? undefined : 'Back to songs'}
 			to="/"

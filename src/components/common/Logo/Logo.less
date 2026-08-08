@@ -25,9 +25,17 @@
 	top: 0;
 	transform: translateX(@logo-rest-x);
 	transform-origin: top center;
-	transition: transform 0.2s ease;
 	width: auto;
 	z-index: 4;
+}
+
+// Only animate the scale change on the home page, where the nav toggle collapses
+// and expands it. Elsewhere the logo just sits collapsed, so navigating to
+// another page snaps it into place instead of animating.
+body.route-home {
+	.logo {
+		transition: transform 0.2s ease;
+	}
 }
 
 body.nav-collapsed {
