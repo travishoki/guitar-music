@@ -30,14 +30,16 @@ const App = () => {
 
 	// Splash the logo up from the middle of the screen and fade the rest of the
 	// content in behind it - but only the first time the app mounts in a
-	// session, so reloads within the same tab skip it. Add `?splash` to the URL
-	// to force it again (handy for testing the effect).
+	// session, so reloads within the same tab skip it. The animation is built
+	// around the home page layout, so only run it when that's the page we land
+	// on. Add `?splash` to the URL to force it again (handy for testing).
 	const [isSplash] = useState(() => {
+		const onHomePage = location.pathname === '/';
 		const forceSplash = new URLSearchParams(location.search).has('splash');
 		const hasSplashed = sessionStorage.getItem('hasSplashed') === 'true';
 		sessionStorage.setItem('hasSplashed', 'true');
 
-		return forceSplash || !hasSplashed;
+		return onHomePage && (forceSplash || !hasSplashed);
 	});
 
 	const onToggleNav = () => {

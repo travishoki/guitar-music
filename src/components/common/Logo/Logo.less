@@ -42,8 +42,11 @@ body.nav-collapsed {
 // the logo's top toward the middle and scale grows it about that point. All
 // timing comes from splash.less so the logo and the content fade-in stay in
 // sync.
+// No fill-mode: the animation ends on its 100% keyframe, which matches the base
+// .logo transform, so it reverts cleanly and stops overriding the collapsed
+// (small) logo transform once you navigate off the home page.
 .logo--splash {
-	animation: logo-splash @splash-total cubic-bezier(0.16, 1, 0.3, 1) both;
+	animation: logo-splash @splash-total cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 @keyframes logo-splash {
